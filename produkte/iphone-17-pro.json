@@ -1,0 +1,50 @@
+{
+ "id": "iphone-17-pro",
+ "produkt": "Apple iPhone 17 Pro, refurbished: Tiefblau oder Silber, 256 oder 512 GB, Zustand sehr gut/Exzellent, Akku neu oder optimal",
+ "zielpreis": 1000,
+ "uvp": 1299,
+ "warn_unter": 700,
+ "variante_muss": [
+  "iphone 17 pro"
+ ],
+ "quellen": [
+  {
+   "name": "refurbed Tiefblau 256 GB",
+   "typ": "jsonld",
+   "haendler": "refurbed",
+   "url": "https://www.refurbed.de/p/iphone-17-pro/407262/"
+  },
+  {
+   "name": "refurbed Silber 256 GB",
+   "typ": "jsonld",
+   "haendler": "refurbed",
+   "url": "https://www.refurbed.de/p/iphone-17-pro/407263aa/"
+  },
+  {
+   "name": "refurbed 512 GB",
+   "typ": "jsonld",
+   "haendler": "refurbed",
+   "url": "https://www.refurbed.de/p/iphone-17-pro/407259aa/"
+  },
+  {
+   "name": "Swappie 512 GB Silber",
+   "typ": "jsonld",
+   "haendler": "Swappie",
+   "url": "https://swappie.com/de/iphone/iphone-17-pro/iphone-17-pro-512gb-silber/"
+  },
+  {
+   "name": "Coolblue refurbished 512 GB Silber",
+   "typ": "jsonld",
+   "haendler": "Coolblue",
+   "url": "https://www.coolblue.de/produkt/971367/refurbished-iphone-17-pro-512gb-silber-sehr-gut.html"
+  },
+  {
+   "name": "Back Market iPhone 17 Pro",
+   "typ": "jsonld",
+   "haendler": "Back Market",
+   "url": "https://www.backmarket.de/de-de/p/iphone-17-pro"
+  }
+ ],
+ "gutscheine": [],
+ "cashback": []
+}

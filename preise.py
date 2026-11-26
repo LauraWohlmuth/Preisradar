@@ -8,13 +8,17 @@ import html
 import json
 import os
 import re
+import sys
 import urllib.request
 from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-CFG = json.load(open(os.path.join(ROOT, "config.json"), encoding="utf-8"))
-OUT = os.path.join(ROOT, "data", "prices.json")
-MD = os.path.join(ROOT, "übersicht.md")
+CFG_PFAD = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "config.json")
+CFG = json.load(open(CFG_PFAD, encoding="utf-8"))
+PID = CFG.get("id", "macbook")
+OUT = os.path.join(ROOT, "data", "prices.json" if PID == "macbook" else f"prices-{PID}.json")
+MD = os.path.join(ROOT, "übersicht.md" if PID == "macbook" else f"übersicht-{PID}.md")
+MUSS = [m.lower() for m in CFG.get("variante_muss", ["MDHE4D"])]
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
 
@@ -179,8 +183,8 @@ def pruefe(quelle, jetzt):
         deals = mydealz_deals(seite)
         eintrag.update(status="geprüft", grund=f"{len(deals)} aktive Deals zur Variante", deals=deals)
         return eintrag, []
-    if "MDHE4D" not in seite and "mdhe4d" not in seite.lower():
-        eintrag.update(status="Variante unsicher", grund="Modellnummer MDHE4D/A nicht auf der Seite gefunden")
+    if MUSS and not any(m in seite.lower() for m in MUSS):
+        eintrag.update(status="Variante unsicher", grund="Pflichtbegriff " + "/".join(MUSS) + " nicht auf der Seite gefunden")
         return eintrag, []
     if quelle.get("typ") == "notebookinfo":
         angebote = notebookinfo_angebote(seite, quelle)
@@ -343,7 +347,7 @@ def main():
     json.dump(alt, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     uebersicht(alt)
     print(json.dumps({"guenstigster": lauf["guenstigster"], "melden": lauf["melden"], "quellen": [(q["quelle"], q["status"]) for q in quellen]}, ensure_ascii=False))
-    if os.environ.get("GITHUB_OUTPUT"):
+    if os.environ.get("GITHUB_OUTPUT") and PID == "macbook":
         with open(os.environ["GITHUB_OUTPUT"], "a") as f:
             f.write(f"melden={'true' if lauf['melden'] else 'false'}\n")
             f.write(f"preis={lauf['guenstigster'] or ''}\n")
