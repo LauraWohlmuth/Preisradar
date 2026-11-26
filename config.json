@@ -93,5 +93,15 @@
    "refurb",
    "gebraucht"
   ]
+ },
+ "gesperrte_codes": {
+  "CLICK2P": "laut notebooksbilliger-Warenkorb am 26.11. ungültig (Screenshot von Laura)"
+ },
+ "bekannte_shoppreise": {
+  "notebooksbilliger.de": {
+   "preis": 1149.0,
+   "stand": "2026-11-26",
+   "quelle": "Warenkorb-Screenshot von Laura"
+  }
  }
 }

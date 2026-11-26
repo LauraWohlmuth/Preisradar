@@ -79,28 +79,20 @@
    "angebote": [
     {
      "haendler": "notebooksbilliger.de",
-     "preis": 1119.0,
+     "preis": 1149.0,
      "via": "geizhals.de",
      "url": "https://geizhals.de/redir/BAAAANt3JrfUAuN3_m0USmM7BH8tlIW8DWUJvQOke96LnwGar3bGwpDbnPjcPTn7999ayXqPp9eNHOp7dKfYVVvJ65G2-cdr67dVrMo9YS8vcMsaWlfTWeGFrv_WLEhonLARAZeJ5hNKLou0ZKn1ktKCkRPWNQVD-wmNa-f0iJDYKOL_zpzLKUzcimW9NYachIPi2kQj1t449m1hAbOjBRxlLNg",
      "versand": 0.0,
      "versand_bekannt": true,
-     "gesamtpreis": 1119.0,
+     "gesamtpreis": 1149.0,
      "lieferung": "lagernd, 24-h Service möglich, Lieferung 2-3 Werktage",
      "verfuegbar": true,
      "preis_stand": null,
      "variante_ok": true,
      "netzteil_dabei": false,
-     "gh_code": {
-      "code": "CLICK2P",
-      "rabatt_eur": 30.0,
-      "rabatt_prozent": null,
-      "gueltig_bis": "2026-12-06",
-      "beschreibung": "30.0 EURO Rabatt auf dieses Angebot / gültig bis 2026-12-06 23:59:00",
-      "quelle": "geizhals.de"
-     },
-     "preis_mit_code": 1119.0,
-     "code": "CLICK2P",
-     "code_bedingung": "bei geizhals schon im Preis enthalten (nachträglich korrigiert)",
+     "preis_mit_code": 1149.0,
+     "code": null,
+     "code_bedingung": "Code CLICK2P ungültig (nachträglich korrigiert)",
      "code_quelle": "geizhals.de"
     },
     {
@@ -445,28 +437,20 @@
    "angebote": [
     {
      "haendler": "notebooksbilliger.de",
-     "preis": 1119.0,
+     "preis": 1149.0,
      "via": "geizhals.de",
      "url": "https://geizhals.de/redir/BAAAANt3JrfUAuN3_m0USmM7BH8tlIW8DWUJvQOke96LnwGar3bGwpDbnPjcPTn7999ayXqPp9eNHOp7dKfYVVvJ65G2-cdr67dVrMo9YS8vcMsaWlfTWeGFrv_WLEhonLARAQoalQLzL2rRsubCwto1GL3WNQVD-wmNa-f0iJDYKOL_vEpZXrW9WxIzD11ohbv9w72CuBtgr-4qIdRVUoK0X5kDNc3U7PyXICExsUEshZ7Cp9sg3nCj9OztOBQdeM2z6w",
      "versand": 0.0,
      "versand_bekannt": true,
-     "gesamtpreis": 1119.0,
+     "gesamtpreis": 1149.0,
      "lieferung": "lagernd, 24-h Service möglich, Lieferung 2-3 Werktage",
      "verfuegbar": true,
      "preis_stand": null,
      "variante_ok": true,
      "netzteil_dabei": false,
-     "gh_code": {
-      "code": "CLICK2P",
-      "rabatt_eur": 30.0,
-      "rabatt_prozent": null,
-      "gueltig_bis": "2026-12-06",
-      "beschreibung": "30.0 EURO Rabatt auf dieses Angebot / gültig bis 2026-12-06 23:59:00",
-      "quelle": "geizhals.de"
-     },
-     "preis_mit_code": 1119.0,
-     "code": "CLICK2P",
-     "code_bedingung": "bei geizhals schon im Preis enthalten; Shoppreis ohne Code 1.149 €",
+     "preis_mit_code": 1149.0,
+     "code": null,
+     "code_bedingung": "Code CLICK2P ungültig (nachträglich korrigiert)",
      "code_quelle": "geizhals.de",
      "listenpreis": 1149.0
     },
@@ -929,8 +913,8 @@
       "quelle": "geizhals.de"
      },
      "preis_mit_code": 1149.0,
-     "code": "CLICK2P",
-     "code_bedingung": "bei geizhals schon im Preis enthalten; Shoppreis ohne Code 1.179 €",
+     "code": null,
+     "code_bedingung": "Code CLICK2P ungültig (nachträglich korrigiert)",
      "code_quelle": "geizhals.de",
      "listenpreis": 1179.0
     },
@@ -1408,8 +1392,8 @@
       "quelle": "geizhals.de"
      },
      "preis_mit_code": 1149.0,
-     "code": "CLICK2P",
-     "code_bedingung": "bei geizhals schon im Preis enthalten; Shoppreis ohne Code 1.179 €",
+     "code": null,
+     "code_bedingung": "Code CLICK2P ungültig (nachträglich korrigiert)",
      "code_quelle": "geizhals.de",
      "listenpreis": 1179.0
     },
@@ -1887,8 +1871,8 @@
       "quelle": "geizhals.de"
      },
      "preis_mit_code": 1149.0,
-     "code": "CLICK2P",
-     "code_bedingung": "bei geizhals schon im Preis enthalten; Shoppreis ohne Code 1.179 €",
+     "code": null,
+     "code_bedingung": "Code CLICK2P ungültig (nachträglich korrigiert)",
      "code_quelle": "geizhals.de",
      "listenpreis": 1179.0
     },
@@ -2336,8 +2320,8 @@
       "quelle": "geizhals.de"
      },
      "preis_mit_code": 1149.0,
-     "code": "CLICK2P",
-     "code_bedingung": "bei geizhals schon im Preis enthalten; Shoppreis ohne Code 1.179 €",
+     "code": null,
+     "code_bedingung": "Code CLICK2P ungültig (nachträglich korrigiert)",
      "code_quelle": "geizhals.de",
      "listenpreis": 1179.0
     },
@@ -2765,28 +2749,20 @@
    "angebote": [
     {
      "haendler": "notebooksbilliger.de",
-     "preis": 1119.0,
+     "preis": 1149.0,
      "via": "geizhals.de",
      "url": "https://geizhals.de/redir/BAAAANt3JrfUAuN3_m0USmM7BH8tlIW8DWUJvQOke96LnwGar3bGwpDbnPjcPTn7999ayXqPp9eNHOp7dKfYVVvJ65G2-cdr67dVrMo9YS8vcMsaWlfTWeGFrv_WLEhonLARAaXXhEcmA6xQHNs9u74ulJ3WNQVD-wmNa-f0iJDYKOL_51JCNw-gzfVRz3_O8t-sxgVGpkgvqP18vEJ4sJfH-H0PFdVYRk1h3N9UJW-l1s0Q2LIQw8ewOFKruDuWOVHEmA",
      "versand": 0.0,
      "versand_bekannt": true,
-     "gesamtpreis": 1119.0,
+     "gesamtpreis": 1149.0,
      "lieferung": "sofort ab Lager, Lieferung 2-3 Werktage",
      "verfuegbar": true,
      "preis_stand": null,
      "variante_ok": true,
      "netzteil_dabei": false,
-     "gh_code": {
-      "code": "CLICK2P",
-      "rabatt_eur": 30.0,
-      "rabatt_prozent": null,
-      "gueltig_bis": "2026-12-06",
-      "beschreibung": "30.0 EURO Rabatt auf dieses Angebot, nur bei Zahlung per Mastercard Click to Pay / gültig bis 2026-12-06 23:59:00",
-      "quelle": "geizhals.de"
-     },
-     "preis_mit_code": 1119.0,
-     "code": "CLICK2P",
-     "code_bedingung": "bei geizhals schon im Preis enthalten; Shoppreis ohne Code 1.149 €",
+     "preis_mit_code": 1149.0,
+     "code": null,
+     "code_bedingung": "Code CLICK2P ungültig (nachträglich korrigiert)",
      "code_quelle": "geizhals.de",
      "listenpreis": 1149.0
     },
@@ -3199,28 +3175,20 @@
    "angebote": [
     {
      "haendler": "notebooksbilliger.de",
-     "preis": 1119.0,
+     "preis": 1149.0,
      "via": "geizhals.de",
      "url": "https://geizhals.de/redir/BAAAANt3JrfUAuN3_m0USmM7BH8tlIW8DWUJvQOke96LnwGar3bGwpDbnPjcPTn7999ayXqPp9eNHOp7dKfYVVvJ65G2-cdr67dVrMo9YS8vcMsaWlfTWeGFrv_WLEhonLARAWzbyHI6fVpt2v0tFTsYW4DWNQVD-wmNa-f0iJDYKOL__wH0rRTnTwhc6OcjqpmPOdT-jUEd2oQOJWCPZw09NCc",
      "versand": 0.0,
      "versand_bekannt": true,
-     "gesamtpreis": 1119.0,
+     "gesamtpreis": 1149.0,
      "lieferung": "sofort ab Lager, Lieferung 2-3 Werktage",
      "verfuegbar": true,
      "preis_stand": null,
      "variante_ok": true,
      "netzteil_dabei": false,
-     "gh_code": {
-      "code": "CLICK2P",
-      "rabatt_eur": 30.0,
-      "rabatt_prozent": null,
-      "gueltig_bis": "2026-12-06",
-      "beschreibung": "30.0 EURO Rabatt auf dieses Angebot, nur bei Zahlung per Mastercard Click to Pay / gültig bis 2026-12-06 23:59:00",
-      "quelle": "geizhals.de"
-     },
-     "preis_mit_code": 1119.0,
-     "code": "CLICK2P",
-     "code_bedingung": "bei geizhals schon im Preis enthalten; Shoppreis ohne Code 1.149 €",
+     "preis_mit_code": 1149.0,
+     "code": null,
+     "code_bedingung": "Code CLICK2P ungültig (nachträglich korrigiert)",
      "code_quelle": "geizhals.de",
      "listenpreis": 1149.0
     },
@@ -3633,28 +3601,20 @@
    "angebote": [
     {
      "haendler": "notebooksbilliger.de",
-     "preis": 1119.0,
+     "preis": 1149.0,
      "via": "geizhals.de",
      "url": "https://geizhals.de/redir/BAAAANt3JrfUAuN3_m0USmM7BH8tlIW8DWUJvQOke96LnwGar3bGwpDbnPjcPTn7999ayXqPp9eNHOp7dKfYVVvJ65G2-cdr67dVrMo9YS8vcMsaWlfTWeGFrv_WLEhonLARAe5RjxJxYhrGuIpkJL5WZWfWNQVD-wmNa-f0iJDYKOL_wTr4bFoAMBcyjgu_zERSCALwo82bd50w6UAwUuCGfBSE8wE4CcW0XqmcDfVSEbbKm_nEyCgmbNrkPNT88nyNCw",
      "versand": 0.0,
      "versand_bekannt": true,
-     "gesamtpreis": 1119.0,
+     "gesamtpreis": 1149.0,
      "lieferung": "sofort ab Lager, Lieferung 2-3 Werktage",
      "verfuegbar": true,
      "preis_stand": null,
      "variante_ok": true,
      "netzteil_dabei": false,
-     "gh_code": {
-      "code": "CLICK2P",
-      "rabatt_eur": 30.0,
-      "rabatt_prozent": null,
-      "gueltig_bis": "2026-12-06",
-      "beschreibung": "30.0 EURO Rabatt auf dieses Angebot, nur bei Zahlung per Mastercard Click to Pay / gültig bis 2026-12-06 23:59:00",
-      "quelle": "geizhals.de"
-     },
-     "preis_mit_code": 1119.0,
-     "code": "CLICK2P",
-     "code_bedingung": "bei geizhals schon im Preis enthalten; Shoppreis ohne Code 1.149 €",
+     "preis_mit_code": 1149.0,
+     "code": null,
+     "code_bedingung": "Code CLICK2P ungültig (nachträglich korrigiert)",
      "code_quelle": "geizhals.de",
      "listenpreis": 1149.0
     },

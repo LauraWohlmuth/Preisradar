@@ -227,6 +227,14 @@ def gutscheine_anwenden(angebote, heute):
         a["preis_mit_code"] = a["gesamtpreis"]
         codes = list(CFG.get("gutscheine", [])) + list(MYDEALZ_CODES)
         gh = a.get("gh_code")
+        if gh and gh.get("code") in CFG.get("gesperrte_codes", {}):
+            # Code ist laut Shop ungültig: nicht abziehen. Bekannten Shoppreis verwenden, sonst Preis + Rabatt (geizhals zeigt den Preis mit Code).
+            bk = CFG.get("bekannte_shoppreise", {}).get(a["haendler"].lower())
+            neu = bk["preis"] if bk else round(a["preis"] + (gh.get("rabatt_eur") or 0), 2)
+            a.update(preis=neu, gesamtpreis=neu, preis_mit_code=neu, code=None,
+                     code_bedingung="Code " + gh["code"] + " ungültig: " + CFG["gesperrte_codes"][gh["code"]])
+            a.pop("gh_code", None)
+            gh = None
         if gh and gh.get("rabatt_eur"):
             # geizhals zeigt bei Gutscheinaktionen mit Betrag schon den Preis MIT Code (geprüft am 26.11. bei notebooksbilliger:
             # Shop 1.149 €, geizhals 1.119 € = mit CLICK2P). Nicht noch einmal abziehen.
