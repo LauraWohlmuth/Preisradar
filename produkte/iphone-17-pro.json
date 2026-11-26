@@ -9,6 +9,12 @@
  ],
  "quellen": [
   {
+   "name": "refurbed: dein Angebot (Tiefblau 256 GB)",
+   "typ": "jsonld",
+   "haendler": "refurbed",
+   "url": "https://www.refurbed.de/p/iphone-17-pro/407262aa/?offer=20894256"
+  },
+  {
    "name": "refurbed Tiefblau 256 GB",
    "typ": "jsonld",
    "haendler": "refurbed",
