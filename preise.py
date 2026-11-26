@@ -66,6 +66,57 @@ def jsonld_angebote(seite):
     return treffer
 
 
+def text(fragment):
+    t = re.sub(r"<svg.*?</svg>", "", fragment, flags=re.S)
+    t = re.sub(r"<[^>]+>", "|", t)
+    t = html.unescape(t)
+    t = re.sub(r"\s+", " ", t)
+    return re.sub(r"(\|\s*)+", "| ", t)
+
+
+def geizhals_angebote(seite, quelle):
+    """Liest die Angebotsliste von geizhals: Händler, Preis, Versand, Verfügbarkeit, Gutschein."""
+    starts = [m.start() for m in re.finditer(r'<div\s+class="offer offer--[^"]*"\s+id="offer-index-\d+"', seite)]
+    angebote = []
+    for i, st in enumerate(starts):
+        block = seite[st: starts[i + 1] if i + 1 < len(starts) else st + 80000]
+        klasse = re.search(r'class="offer ([^"]*)"', block).group(1)
+        preis_m = re.search(r'class="gh_price">([^<]+)<', block)
+        haendler_m = re.search(r'data-merchant-name="([^"]+)"', block)
+        if not preis_m or not haendler_m:
+            continue
+        t = text(block)
+        a = {"haendler": html.unescape(haendler_m.group(1)), "preis": euro(preis_m.group(1)), "via": "geizhals.de"}
+        link = re.search(r'href="(https://geizhals\.de/redir/[^"]+)"', block)
+        a["url"] = html.unescape(link.group(1)) if link else quelle["url"]
+        if "GRATISVERSAND" in t.upper() or re.search(r"versandkostenfrei", t, re.I):
+            a["versand"] = 0.0
+        else:
+            v = re.search(r"Versand[^|€]{0,30}€\s?([\d.,]+)|€\s?([\d.,]+)\s?Versand", t)
+            a["versand"] = euro(v.group(1) or v.group(2)) if v else None
+        a["versand_bekannt"] = a["versand"] is not None
+        a["gesamtpreis"] = round(a["preis"] + (a["versand"] or 0), 2)
+        lief = re.search(r"Onlineshop:\|\s*([^|]+)", t) or re.search(r"\|\s*((?:nicht )?lagernd[^|]*|Lieferzeit[^|]*|[^|]*Werktage[^|]*)", t)
+        a["lieferung"] = lief.group(1).strip() if lief else None
+        a["verfuegbar"] = "offer--available" in klasse
+        stand = re.search(r"Preis vom:\|\s*([\d.]+, [\d:]+)", t)
+        a["preis_stand"] = stand.group(1) if stand else None
+        a["variante_ok"] = "MDHE4D" in block
+        a["netzteil_dabei"] = False if re.search(r"kein Netzteil|ohne Netzteil", t, re.I) else None
+        code = re.search(r'data-coupon-code="([^"]+)"', block)
+        if code:
+            beschr = re.search(r"Gutschein:\s*\|?\s*" + re.escape(code.group(1)) + r"\s*\|?\s*\(([^)]*)\)", t)
+            b = beschr.group(1) if beschr else ""
+            eur_m = re.search(r"([\d.]+)\s*EURO", b)
+            pro_m = re.search(r"([\d.]+)\s*(?:%|PROZENT)", b, re.I)
+            bis = re.search(r"gültig bis (\d{4}-\d{2}-\d{2})", b)
+            a["gh_code"] = {"code": code.group(1), "rabatt_eur": float(eur_m.group(1)) if eur_m else None,
+                            "rabatt_prozent": float(pro_m.group(1)) if pro_m else None,
+                            "gueltig_bis": bis.group(1) if bis else None, "beschreibung": b.strip(), "quelle": "geizhals.de"}
+        angebote.append(a)
+    return angebote
+
+
 def pruefe(quelle, jetzt):
     eintrag = {"quelle": quelle["name"], "url": quelle["url"], "abgerufen_um": jetzt}
     try:
@@ -79,6 +130,15 @@ def pruefe(quelle, jetzt):
     print(f"[{quelle['name']}] {len(seite)} Zeichen, ld+json-Blöcke: {seite.count('application/ld+json')}, Titel: {re.search(r'<title>(.*?)</title>', seite, re.S).group(1).strip()[:80] if '<title>' in seite else '-'}")
     if "MDHE4D" not in seite and "mdhe4d" not in seite.lower():
         eintrag.update(status="Variante unsicher", grund="Modellnummer MDHE4D/A nicht auf der Seite gefunden")
+        return eintrag, []
+    if "geizhals." in quelle["url"]:
+        angebote = [a for a in geizhals_angebote(seite, quelle) if a["variante_ok"]]
+        verf = [a for a in angebote if a["verfuegbar"]]
+        if angebote:
+            eintrag.update(status="geprüft", tiefstpreis=min(a["gesamtpreis"] for a in (verf or angebote)),
+                           angebote_anzahl=len(angebote), grund=f"{len(verf)} lieferbar")
+            return eintrag, verf
+        eintrag.update(status="nicht prüfbar", grund="Angebotsliste auf der Seite nicht erkannt")
         return eintrag, []
     daten = jsonld_angebote(seite)
     angebote = []
@@ -104,14 +164,19 @@ def gutscheine_anwenden(angebote, heute):
     """Zieht nur belegte, gültige Codes ab (config.json). Cashback wird getrennt ausgewiesen."""
     for a in angebote:
         a["preis_mit_code"] = a["gesamtpreis"]
-        for g in CFG.get("gutscheine", []):
+        codes = list(CFG.get("gutscheine", []))
+        if a.get("gh_code"):
+            codes.append(dict(a["gh_code"], haendler=a["haendler"], bedingung="laut geizhals; im Warenkorb prüfen"))
+        for g in codes:
             if g["haendler"].lower() not in (a["haendler"] or "").lower():
                 continue
             if g.get("gueltig_bis") and g["gueltig_bis"] < heute:
                 continue
             if a["gesamtpreis"] < g.get("mindestwert", 0):
                 continue
-            rabatt = g.get("rabatt_eur") or round(a["gesamtpreis"] * g.get("rabatt_prozent", 0) / 100, 2)
+            rabatt = g.get("rabatt_eur") or round(a["gesamtpreis"] * (g.get("rabatt_prozent") or 0) / 100, 2)
+            if not rabatt:
+                continue
             if a["gesamtpreis"] - rabatt < a["preis_mit_code"]:
                 a.update(preis_mit_code=round(a["gesamtpreis"] - rabatt, 2), code=g["code"], code_bedingung=g.get("bedingung"), code_quelle=g.get("quelle"))
         for cb in CFG.get("cashback", []):
