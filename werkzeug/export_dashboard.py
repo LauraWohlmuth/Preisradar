@@ -59,6 +59,8 @@ def _iphone(out):
             lab, art, det = "refurbed: Silber, 256 GB", "pruefen", "vermutlich Premium (Endung aa), Akku nicht ausgelesen"
         elif "/407262/" in u:
             lab, art, det = "refurbed: Tiefblau, 256 GB (Voreinstellung)", "pruefen", "Zustand und Akku nicht ausgelesen"
+        elif "/407259aa/" in u:
+            lab, art, det = "refurbed: 512 GB (Voreinstellung)", "pruefen", "Farbe, Zustand und Akku nicht ausgelesen"
         elif "coolblue" in u:
             lab, art, det = "Coolblue: Silber, 512 GB", "pruefen", "Zustand sehr gut laut Adresse, Akku nicht ausgelesen"
         else:
