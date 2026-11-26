@@ -4,7 +4,7 @@
 
 **Stand 2026-11-26 16:49: günstigster geprüfter Preis 1.149 €** (0 € zum Lauf davor), noch 49 € über dem Ziel
 
-Tiefstwert 1.119 € · Höchstwert 1.149 € · 7 Läufe seit 2026-11-26
+Tiefstwert 1.119 € · Höchstwert 1.149 € · 8 Läufe seit 2026-11-26
 
 ## Angebote
 
@@ -49,6 +49,7 @@ Tiefstwert 1.119 € · Höchstwert 1.149 € · 7 Läufe seit 2026-11-26
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-26 16:49 | 1.149 € |
 | 2026-11-26 16:49 | 1.149 € |
 | 2026-11-26 13:57 | 1.149 € |
 | 2026-11-26 13:53 | 1.149 € |
