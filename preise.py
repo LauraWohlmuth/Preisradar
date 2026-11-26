@@ -73,6 +73,9 @@ def pruefe(quelle, jetzt):
     except Exception as e:  # Sperre, Zeitüberschreitung, 403 ...
         eintrag.update(status="nicht prüfbar", grund=f"Seite nicht geladen: {e}")
         return eintrag, []
+    if os.environ.get("DEBUG_HTML"):
+        os.makedirs(os.path.join(ROOT, "debug"), exist_ok=True)
+        open(os.path.join(ROOT, "debug", re.sub(r"[^a-z0-9]+", "-", quelle["name"].lower()) + ".html"), "w", encoding="utf-8").write(seite)
     print(f"[{quelle['name']}] {len(seite)} Zeichen, ld+json-Blöcke: {seite.count('application/ld+json')}, Titel: {re.search(r'<title>(.*?)</title>', seite, re.S).group(1).strip()[:80] if '<title>' in seite else '-'}")
     if "MDHE4D" not in seite and "mdhe4d" not in seite.lower():
         eintrag.update(status="Variante unsicher", grund="Modellnummer MDHE4D/A nicht auf der Seite gefunden")

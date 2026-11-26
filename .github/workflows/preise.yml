@@ -2,7 +2,12 @@ name: Preise prüfen
 on:
   schedule:
     - cron: "7 6-22 * * *"   # stündlich 7:07–23:07 Uhr deutscher Winterzeit (Sommerzeit: 8:07–0:07)
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "Rohseiten zum Analysieren speichern"
+        required: false
+        default: "nein"
 permissions:
   contents: write
   issues: write
@@ -19,11 +24,14 @@ jobs:
           python-version: "3.12"
       - id: lauf
         run: python preise.py
+        env:
+          DEBUG_HTML: ${{ github.event.inputs.debug == 'ja' && '1' || '' }}
       - name: Ergebnis speichern
         run: |
           git config user.name "preisradar-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/prices.json übersicht.md
+          [ -d debug ] && git add -f debug || true
           git commit -m "Preise: Lauf $(TZ=Europe/Berlin date '+%d.%m.%Y %H:%M')" || exit 0
           git pull --rebase
           git push
