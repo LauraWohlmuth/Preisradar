@@ -175,7 +175,7 @@ def pruefe(quelle, jetzt):
     except Exception as e:  # Sperre, Zeitüberschreitung, 403 ...
         eintrag.update(status="nicht prüfbar", grund=f"Seite nicht geladen: {e}")
         return eintrag, []
-    if os.environ.get("DEBUG_HTML"):
+    if os.environ.get("DEBUG_HTML") or CFG.get("debug"):
         os.makedirs(os.path.join(ROOT, "debug"), exist_ok=True)
         open(os.path.join(ROOT, "debug", re.sub(r"[^a-z0-9]+", "-", quelle["name"].lower()) + ".html"), "w", encoding="utf-8").write(seite)
     print(f"[{quelle['name']}] {len(seite)} Zeichen, ld+json-Blöcke: {seite.count('application/ld+json')}, Titel: {re.search(r'<title>(.*?)</title>', seite, re.S).group(1).strip()[:80] if '<title>' in seite else '-'}")
