@@ -2,15 +2,15 @@
 
 *Apple MacBook Air 13" (2026), M5, 10-Core CPU, 8-Core GPU, 16 GB RAM, 512 GB SSD, Mitternacht, QWERTZ (MDHE4D/A)* · Zielpreis **1.100 €**
 
-**Stand 2026-11-26 12:23: günstigster geprüfter Preis 1.089 €**, ✅ **Zielpreis erreicht!**
+**Stand 2026-11-26 12:23: günstigster geprüfter Preis 1.119 €**, noch 19 € über dem Ziel
 
-Tiefstwert 1.089 € · Höchstwert 1.089 € · 3 Läufe seit 2026-11-26
+Tiefstwert 1.119 € · Höchstwert 1.119 € · 3 Läufe seit 2026-11-26
 
 ## Angebote
 
 | Händler | Mit Code | Preis | Versand | Code | Cashback (später) |
 |---|---:|---:|---:|---|---|
-| [notebooksbilliger.de](https://geizhals.de/redir/BAAAANt3JrfUAuN3_m0USmM7BH8tlIW8DWUJvQOke96LnwGar3bGwpDbnPjcPTn7999ayXqPp9eNHOp7dKfYVVvJ65G2-cdr67dVrMo9YS8vcMsaWlfTWeGFrv_WLEhonLARAZeJ5hNKLou0ZKn1ktKCkRPWNQVD-wmNa-f0iJDYKOL_zpzLKUzcimW9NYachIPi2kQj1t449m1hAbOjBRxlLNg) | **1.089 €** | 1.119 € | 0 € | `CLICK2P` (laut geizhals; im Warenkorb prüfen) | – |
+| [notebooksbilliger.de](https://geizhals.de/redir/BAAAANt3JrfUAuN3_m0USmM7BH8tlIW8DWUJvQOke96LnwGar3bGwpDbnPjcPTn7999ayXqPp9eNHOp7dKfYVVvJ65G2-cdr67dVrMo9YS8vcMsaWlfTWeGFrv_WLEhonLARAZeJ5hNKLou0ZKn1ktKCkRPWNQVD-wmNa-f0iJDYKOL_zpzLKUzcimW9NYachIPi2kQj1t449m1hAbOjBRxlLNg) | **1.119 €** | 1.119 € | 0 € | `CLICK2P` (bei geizhals schon im Preis enthalten (nachträglich korrigiert)) | – |
 | [Amazon.de](https://geizhals.de/redir/BAAAAFY4XMbVVXpEZqv2o6_8gg655UVkOiYpP1lScsqxk0mh0FMoq3md0RTVnlju8ztl0IIri7YwXKlH1kHf-peIUd5hrTc8_-_jxThwt88LDDns_GKEHts5dDXxYsgj6gcSSVSNE8CCfWhCVmCjp461KjoEUfYh_40SidJobiM2pFFIf5YrNbojjA89mwEb7-n_GTLikblj6YAD5hOikzizl2RyHz27GKisedLS7_GxwOD8RCPW3jj2bWEBs6MFHGUs2A) | **1.149 €** | 1.149 € | 0 € | – | – |
 | [Cyberport Stores Deutschland](https://geizhals.de/redir/BAAAADdG-I__lxVbqoTG8FLCVhSVBf5WMRsegYytDcnMQWF2wBDcKTsSXPuVfu6LbIUIHdrbkbXhJ-4Bz5f0PdPnK1lTjOyFKlFJ4BlGgEaRVP84Z034M6u6pBSetfYG4cF-CqFwBcexyaDfw63eBvF5wrB1xkWnnFYl-txxjQVGZqYwJkiZUWFpZiRVIVxAMowb8BWZ4AtxInlbmLzgiL_5QT53NagKH9-WkpHQPZd04exlubSANg5upIK3H4KfwSB_BiatXOWYoQfhxTVkb5sd1yBHF1pqeZw1PHzK2No4dYT70lue7qeF7dS7TwhZIFBVagA0l3gndsIaFB3UatSL-yA) | **1.154 €** | 1.179 € | unbekannt | `PAYPAL25-BW26` (nur bei Zahlung mit PayPal; nicht mit anderen Aktionen kombinierbar) | 3.5 % über Shoop (wird später gutgeschrieben, nicht im Preis enthalten) → 1.113,61 € |
 | [Cyberport.de](https://geizhals.de/redir/BAAAAJXQtVlHP0SroHsxrei-O92VBf5WMRsegYytDcnMQWF2wBDcKTsSXPuVfu6LbIUIHdrbkbXhJ-4Bz5f0PdPnK1lTjOyFKlFJ4BlGgEaRVP84Z034M6u6pBSetfYG4cF-CqFwBcexyaDfw63eBvF5wrB1xkWnnFYl-txxjQVGZqYwJkiZUWFpZiRVIVxAMowb8BWZ4AtxInlbmLzgiL_5QT4ChyIfdhzjeHJRXfK5QULrIX8bdEM-QAgdHm9jHR2pq0BiphMoykmNituzpPRimRcBrH7mtw84Lsn-myZ4Zguo) | **1.154 €** | 1.179 € | 0 € | `PAYPAL25-BW26` (nur bei Zahlung mit PayPal; nicht mit anderen Aktionen kombinierbar) | 3.5 % über Shoop (wird später gutgeschrieben, nicht im Preis enthalten) → 1.113,61 € |
@@ -37,7 +37,7 @@ Tiefstwert 1.089 € · Höchstwert 1.089 € · 3 Läufe seit 2026-11-26
 
 | Zeit | günstigster Preis |
 |---|---:|
-| 2026-11-26 12:23 | 1.089 € |
+| 2026-11-26 12:23 | 1.119 € |
 | 2026-11-26 12:21 | – |
 | 2026-11-26 12:20 | – |
 

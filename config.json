@@ -6,7 +6,42 @@
  "quellen": [
   {
    "name": "geizhals.de",
+   "typ": "geizhals",
    "url": "https://geizhals.de/apple-macbook-air-13-m5-mdhe4d-a-z1l6-a3743120.html"
+  },
+  {
+   "name": "notebookinfo.de",
+   "typ": "notebookinfo",
+   "url": "https://www.notebookinfo.de/produkt/apple-macbook-air-13-2026-m5-10c-cpu-8c-gpu-16gb-ram-512gb-ssd-mitternacht-mdhe4d-a-48211"
+  },
+  {
+   "name": "mydealz.de",
+   "typ": "mydealz",
+   "url": "https://www.mydealz.de/search?q=macbook+air+m5"
+  },
+  {
+   "name": "idealo.de",
+   "typ": "blockiert",
+   "url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=MDHE4D%2FA",
+   "grund": "blockt automatische Abrufe (403), auch von GitHub"
+  },
+  {
+   "name": "billiger.de",
+   "typ": "blockiert",
+   "url": "https://www.billiger.de/search?searchstring=MDHE4D%2FA",
+   "grund": "blockt automatische Abrufe (403)"
+  },
+  {
+   "name": "guenstiger.de",
+   "typ": "blockiert",
+   "url": "https://www.guenstiger.de/Produkt/Apple/MacBook_Air_13_2026_M5_10_Core_CPU_8_Core_GPU_16GB_512GB_MDHE4D_A.html",
+   "grund": "blockt automatische Abrufe (403)"
+  },
+  {
+   "name": "check24.de",
+   "typ": "blockiert",
+   "url": "https://preisvergleich.check24.de/search?query=MDHE4D%2FA",
+   "grund": "blockt automatische Abrufe (403)"
   }
  ],
  "gutscheine": [
@@ -33,5 +68,30 @@
    "anbieter": "Shoop",
    "hinweis": "nur Neukunden; später gutgeschrieben"
   }
- ]
+ ],
+ "mydealz_filter": {
+  "muss": [
+   "m5",
+   "16",
+   "512"
+  ],
+  "nicht": [
+   "15\"",
+   "15 zoll",
+   "15”",
+   "24gb",
+   "24 gb",
+   "32gb",
+   "32 gb",
+   "1tb",
+   "1 tb",
+   "2tb",
+   "10c gpu",
+   "10-core gpu",
+   "10c/10c",
+   "10/10",
+   "refurb",
+   "gebraucht"
+  ]
+ }
 }

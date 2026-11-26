@@ -98,9 +98,9 @@
       "beschreibung": "30.0 EURO Rabatt auf dieses Angebot / gültig bis 2026-12-06 23:59:00",
       "quelle": "geizhals.de"
      },
-     "preis_mit_code": 1089.0,
+     "preis_mit_code": 1119.0,
      "code": "CLICK2P",
-     "code_bedingung": "laut geizhals; im Warenkorb prüfen",
+     "code_bedingung": "bei geizhals schon im Preis enthalten (nachträglich korrigiert)",
      "code_quelle": "geizhals.de"
     },
     {
@@ -349,9 +349,10 @@
      "preis_mit_code": 1286.0
     }
    ],
-   "guenstigster": 1089.0,
+   "guenstigster": 1119.0,
    "neuer_tiefstwert": true,
-   "melden": true
+   "melden": false,
+   "korrektur": "günstigster Preis von 1089.0 auf 1119.0 korrigiert: Gutschein war doppelt abgezogen"
   }
  ],
  "stand": "2026-11-26T12:23:21+01:00"

@@ -117,7 +117,54 @@ def geizhals_angebote(seite, quelle):
     return angebote
 
 
+def notebookinfo_angebote(seite, quelle):
+    i = seite.find('id="preisvergleich-')
+    teil = seite[i: seite.find("</table>", i)] if i >= 0 else ""
+    angebote = []
+    for zeile in re.findall(r"<tr>(.*?)</tr>", teil, re.S):
+        h = re.search(r'aria-label="Zum Anbieter ([^"]+)"', zeile)
+        p = re.search(r'<span class="price">([^<]+)<', zeile)
+        if not h or not p:
+            continue
+        t = text(zeile)
+        if re.search(r"kostenlose[rn]? Versand|versandkostenfrei", t, re.I):
+            versand = 0.0
+        else:
+            v = re.search(r"([\d.,]+)\s*€?\s*Versand", t)
+            versand = euro(v.group(1)) if v else None
+        lief = re.search(r'class="shipment-status"><span[^>]*>([^<]+)<', zeile)
+        preis = euro(html.unescape(p.group(1)))
+        angebote.append({"haendler": html.unescape(h.group(1)), "preis": preis, "versand": versand, "versand_bekannt": versand is not None,
+                         "gesamtpreis": round(preis + (versand or 0), 2), "url": quelle["url"] + "#" + teil[:0] + "preisvergleich",
+                         "via": quelle["name"], "lieferung": html.unescape(lief.group(1)).strip() if lief else None,
+                         "verfuegbar": "shipment-status-instant" in zeile, "variante_ok": True})
+    return angebote
+
+
+def mydealz_deals(seite):
+    deals = []
+    f = CFG.get("mydealz_filter", {"muss": [], "nicht": []})
+    for roh in re.findall(r"data-vue3='(\{\"name\":\"ThreadMainListItemNormalizer\".*?)'", seite):
+        try:
+            th = json.loads(html.unescape(roh))["props"]["thread"]
+        except (ValueError, KeyError):
+            continue
+        titel = th.get("title", "")
+        tl = titel.lower().replace(" ", " ")
+        if th.get("isExpired") or th.get("isGone") or th.get("type") != "Deal":
+            continue
+        if not all(m in tl for m in f["muss"]) or any(n in tl for n in f["nicht"]):
+            continue
+        deals.append({"titel": titel, "haendler": (th.get("merchant") or {}).get("merchantName"), "preis": th.get("price"),
+                      "vorher": th.get("nextBestPrice"), "code": th.get("voucherCode") or None, "temperatur": th.get("temperature"),
+                      "veroeffentlicht": dt.datetime.fromtimestamp(th.get("publishedAt", 0), ZoneInfo("Europe/Berlin")).isoformat(timespec="minutes"),
+                      "url": th.get("shareableLink") or f"https://www.mydealz.de/deals/{th.get('titleSlug')}-{th.get('threadId')}"})
+    return deals
+
+
 def pruefe(quelle, jetzt):
+    if quelle.get("typ") == "blockiert":
+        return {"quelle": quelle["name"], "url": quelle["url"], "abgerufen_um": jetzt, "status": "nicht prüfbar", "grund": quelle.get("grund")}, []
     eintrag = {"quelle": quelle["name"], "url": quelle["url"], "abgerufen_um": jetzt}
     try:
         seite = hole(quelle["url"])
@@ -128,8 +175,19 @@ def pruefe(quelle, jetzt):
         os.makedirs(os.path.join(ROOT, "debug"), exist_ok=True)
         open(os.path.join(ROOT, "debug", re.sub(r"[^a-z0-9]+", "-", quelle["name"].lower()) + ".html"), "w", encoding="utf-8").write(seite)
     print(f"[{quelle['name']}] {len(seite)} Zeichen, ld+json-Blöcke: {seite.count('application/ld+json')}, Titel: {re.search(r'<title>(.*?)</title>', seite, re.S).group(1).strip()[:80] if '<title>' in seite else '-'}")
+    if quelle.get("typ") == "mydealz":
+        deals = mydealz_deals(seite)
+        eintrag.update(status="geprüft", grund=f"{len(deals)} aktive Deals zur Variante", deals=deals)
+        return eintrag, []
     if "MDHE4D" not in seite and "mdhe4d" not in seite.lower():
         eintrag.update(status="Variante unsicher", grund="Modellnummer MDHE4D/A nicht auf der Seite gefunden")
+        return eintrag, []
+    if quelle.get("typ") == "notebookinfo":
+        angebote = notebookinfo_angebote(seite, quelle)
+        if angebote:
+            eintrag.update(status="geprüft", tiefstpreis=min(a["gesamtpreis"] for a in angebote), angebote_anzahl=len(angebote))
+            return eintrag, angebote
+        eintrag.update(status="nicht prüfbar", grund="Angebotsliste auf der Seite nicht erkannt")
         return eintrag, []
     if "geizhals." in quelle["url"]:
         angebote = [a for a in geizhals_angebote(seite, quelle) if a["variante_ok"]]
@@ -160,13 +218,21 @@ def pruefe(quelle, jetzt):
     return eintrag, angebote
 
 
+MYDEALZ_CODES = []
+
+
 def gutscheine_anwenden(angebote, heute):
     """Zieht nur belegte, gültige Codes ab (config.json). Cashback wird getrennt ausgewiesen."""
     for a in angebote:
         a["preis_mit_code"] = a["gesamtpreis"]
-        codes = list(CFG.get("gutscheine", []))
-        if a.get("gh_code"):
-            codes.append(dict(a["gh_code"], haendler=a["haendler"], bedingung="laut geizhals; im Warenkorb prüfen"))
+        codes = list(CFG.get("gutscheine", [])) + list(MYDEALZ_CODES)
+        gh = a.get("gh_code")
+        if gh and gh.get("rabatt_eur"):
+            # geizhals zeigt bei Gutscheinaktionen mit Betrag schon den Preis MIT Code (geprüft am 26.11. bei notebooksbilliger:
+            # Shop 1.149 €, geizhals 1.119 € = mit CLICK2P). Nicht noch einmal abziehen.
+            a.update(code=gh["code"], code_bedingung="bei geizhals schon im Preis enthalten; Shoppreis ohne Code " + eur(a["preis"] + gh["rabatt_eur"]),
+                     code_quelle="geizhals.de", listenpreis=round(a["preis"] + gh["rabatt_eur"], 2))
+            codes = []
         for g in codes:
             if g["haendler"].lower() not in (a["haendler"] or "").lower():
                 continue
@@ -248,6 +314,11 @@ def main():
         e, a = pruefe(q, jetzt)
         quellen.append(e)
         angebote.extend(a)
+    for q in quellen:
+        for d in q.get("deals", []):
+            if d.get("code") and d.get("haendler") and d.get("preis") and d.get("vorher") and d["vorher"] > d["preis"]:
+                MYDEALZ_CODES.append({"haendler": d["haendler"].split(".")[0], "code": d["code"], "rabatt_eur": round(d["vorher"] - d["preis"], 2),
+                                      "bedingung": "laut mydealz-Deal; im Warenkorb prüfen", "quelle": d["url"]})
     angebote = gutscheine_anwenden(angebote, jetzt[:10])
     preise = [q["tiefstpreis"] for q in quellen if q.get("status") == "geprüft" and q.get("tiefstpreis")]
     preise += [a["preis_mit_code"] for a in angebote]
