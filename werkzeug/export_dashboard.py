@@ -67,6 +67,16 @@ def _iphone(out):
     zeilen.sort(key=lambda z: (z[2] != "passt", z[1]))
     with open(f"{out}/iphone_angebote.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["label", "preis", "art", "detail", "link"]); w.writerows(zeilen)
+    # Verlauf deines Angebots und Quellenstatus
+    with open(f"{out}/iphone_laeufe.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["zeit", "preis"])
+        for l_ in d["laeufe"]:
+            x = next((a["preis_mit_code"] for a in l_.get("angebote", []) if fokus in a.get("url", "") and "?offer=" not in a.get("url", "")), None)
+            if x is not None: w.writerow([l_["zeit"][:16], x])
+    with open(f"{out}/iphone_quellen.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["quelle", "status", "hinweis", "link"])
+        for q in last["quellen"]:
+            w.writerow([q["quelle"], q["status"], q.get("grund") or (f"{q.get('angebote_anzahl')} Angebote" if q.get("angebote_anzahl") else ""), q["url"]])
     fok = next((z for z in zeilen if z[2] == "passt"), None)
     preise = [l["guenstigster"] for l in d["laeufe"] if l.get("guenstigster")]
     return {"id": "iphone", "name": "iPhone 17 Pro refurbished", "unter": "Tiefblau/Silber · 256/512 GB · Exzellent+ · Akku neu/optimal",
