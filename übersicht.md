@@ -2,7 +2,7 @@
 
 *Apple MacBook Air 13" (2026), M5, 10-Core CPU, 8-Core GPU, 16 GB RAM, 512 GB SSD, Mitternacht, QWERTZ (MDHE4D/A)* · Zielpreis **1.100 €**
 
-**Stand 2026-11-26 12:20:** Keine Quelle konnte geprüft werden. Details unten.
+**Stand 2026-11-26 12:21:** Keine Quelle konnte geprüft werden. Details unten.
 
 ## Quellen
 
@@ -16,6 +16,7 @@
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-26 12:21 | – |
 | 2026-11-26 12:20 | – |
 
 _Preise werden nie geschätzt: Was nicht lesbar war, steht als „nicht prüfbar“ da. Codes nur, wenn belegt und gültig; Cashback zählt nicht zum Preis. Vor dem Kauf im Shop prüfen._

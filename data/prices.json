@@ -32,7 +32,37 @@
    "guenstigster": null,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-26T12:21:28+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de",
+     "url": "https://geizhals.de/apple-macbook-air-13-m5-mdhe4d-a-z1l6-a3743120.html",
+     "abgerufen_um": "2026-11-26T12:21:28+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Keine Preisdaten (schema.org) auf der Seite gefunden"
+    },
+    {
+     "quelle": "Cyberport",
+     "url": "https://www.cyberport.de/tools/search-results.html?q=MDHE4D%2FA",
+     "abgerufen_um": "2026-11-26T12:21:28+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 403: Forbidden"
+    },
+    {
+     "quelle": "Coolblue",
+     "url": "https://www.coolblue.de/produkt/976890/apple-macbook-air-13-m5-10-core-cpu-8-core-gpu-16gb-512gb-mitternacht-qwertz.html",
+     "abgerufen_um": "2026-11-26T12:21:28+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Keine Preisdaten (schema.org) auf der Seite gefunden"
+    }
+   ],
+   "angebote": [],
+   "guenstigster": null,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-26T12:20:52+01:00"
+ "stand": "2026-11-26T12:21:28+01:00"
 }
