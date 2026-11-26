@@ -1,0 +1,36 @@
+name: Preise prüfen
+on:
+  schedule:
+    - cron: "7 6-22 * * *"   # stündlich 7:07–23:07 Uhr deutscher Winterzeit (Sommerzeit: 8:07–0:07)
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: preise
+  cancel-in-progress: false
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: lauf
+        run: python preise.py
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "preisradar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/prices.json übersicht.md
+          git commit -m "Preise: Lauf $(TZ=Europe/Berlin date '+%d.%m.%Y %H:%M')" || exit 0
+          git pull --rebase
+          git push
+      - name: Melden (GitHub-Benachrichtigung)
+        if: steps.lauf.outputs.melden == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "🔔 MacBook Air M5 für ${{ steps.lauf.outputs.preis }} €" \
+            --body "Neuer Tiefstwert oder Preis ≤ Zielpreis. Übersicht: ${{ github.server_url }}/${{ github.repository }}/blob/main/übersicht.md"

@@ -1,0 +1,47 @@
+{
+ "produkt": "Apple MacBook Air 13\" (2026), M5, 10-Core CPU, 8-Core GPU, 16 GB RAM, 512 GB SSD, Mitternacht, QWERTZ (MDHE4D/A)",
+ "zielpreis": 1100,
+ "uvp": 1399,
+ "warn_unter": 900,
+ "quellen": [
+  {
+   "name": "geizhals.de",
+   "url": "https://geizhals.de/apple-macbook-air-13-m5-mdhe4d-a-z1l6-a3743120.html"
+  },
+  {
+   "name": "Cyberport",
+   "haendler": "Cyberport",
+   "url": "https://www.cyberport.de/tools/search-results.html?q=MDHE4D%2FA"
+  },
+  {
+   "name": "Coolblue",
+   "haendler": "Coolblue",
+   "url": "https://www.coolblue.de/produkt/976890/apple-macbook-air-13-m5-10-core-cpu-8-core-gpu-16gb-512gb-mitternacht-qwertz.html"
+  }
+ ],
+ "gutscheine": [
+  {
+   "haendler": "Cyberport",
+   "code": "PAYPAL25-BW26",
+   "rabatt_eur": 25,
+   "mindestwert": 150,
+   "gueltig_bis": "2026-12-02",
+   "bedingung": "nur bei Zahlung mit PayPal; nicht mit anderen Aktionen kombinierbar",
+   "quelle": "https://www.mydealz.de/deals/apple-macbook-air-13-m5-2026-16-gb-ram-512-gb-ssd-fur-1154eur-2878268"
+  }
+ ],
+ "cashback": [
+  {
+   "haendler": "Cyberport",
+   "prozent": 3.5,
+   "anbieter": "Shoop",
+   "hinweis": "wird später gutgeschrieben, nicht im Preis enthalten"
+  },
+  {
+   "haendler": "Coolblue",
+   "prozent": 5,
+   "anbieter": "Shoop",
+   "hinweis": "nur Neukunden; später gutgeschrieben"
+  }
+ ]
+}
