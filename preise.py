@@ -328,8 +328,10 @@ def main():
                 MYDEALZ_CODES.append({"haendler": d["haendler"].split(".")[0], "code": d["code"], "rabatt_eur": round(d["vorher"] - d["preis"], 2),
                                       "bedingung": "laut mydealz-Deal; im Warenkorb prüfen", "quelle": d["url"]})
     angebote = gutscheine_anwenden(angebote, jetzt[:10])
-    preise = [q["tiefstpreis"] for q in quellen if q.get("status") == "geprüft" and q.get("tiefstpreis")]
-    preise += [a["preis_mit_code"] for a in angebote]
+    # Der günstigste Preis kommt nur aus den ausgewerteten Angeboten (mit Code-Prüfung), nicht aus dem rohen Quellen-Tiefstpreis.
+    preise = [a["preis_mit_code"] for a in angebote]
+    if not preise:
+        preise = [q["tiefstpreis"] for q in quellen if q.get("status") == "geprüft" and q.get("tiefstpreis")]
     preise = [p for p in preise if p >= CFG["warn_unter"]]  # darunter: Fake-Shop-Verdacht, zählt nicht
     lauf = {"zeit": jetzt, "quellen": quellen, "angebote": sorted(angebote, key=lambda a: a["preis_mit_code"]),
             "guenstigster": min(preise) if preise else None}

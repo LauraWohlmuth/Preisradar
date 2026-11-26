@@ -341,10 +341,10 @@
      "preis_mit_code": 1286.0
     }
    ],
-   "guenstigster": 1119.0,
+   "guenstigster": 1149.0,
    "neuer_tiefstwert": true,
    "melden": false,
-   "korrektur": "günstigster Preis von 1089.0 auf 1119.0 korrigiert: Gutschein war doppelt abgezogen"
+   "korrektur": "günstigster Preis von 1119.0 auf 1149.0 korrigiert: Code CLICK2P ist im Shop ungültig"
   },
   {
    "zeit": "2026-11-26T12:31:05+01:00",
@@ -798,9 +798,10 @@
      "preis_mit_code": 1338.0
     }
    ],
-   "guenstigster": 1119.0,
+   "guenstigster": 1149.0,
    "neuer_tiefstwert": false,
-   "melden": false
+   "melden": false,
+   "korrektur": "günstigster Preis von 1119.0 auf 1149.0 korrigiert: Code CLICK2P ist im Shop ungültig"
   },
   {
    "zeit": "2026-11-26T13:53:05+01:00",
@@ -3080,9 +3081,10 @@
      "preis_mit_code": 1338.0
     }
    ],
-   "guenstigster": 1119.0,
+   "guenstigster": 1149.0,
    "neuer_tiefstwert": false,
-   "melden": false
+   "melden": false,
+   "korrektur": "günstigster Preis von 1119.0 auf 1149.0 korrigiert: Code CLICK2P ist im Shop ungültig"
   },
   {
    "zeit": "2026-11-26T23:17:45+01:00",
@@ -3506,9 +3508,10 @@
      "preis_mit_code": 1338.0
     }
    ],
-   "guenstigster": 1119.0,
+   "guenstigster": 1149.0,
    "neuer_tiefstwert": false,
-   "melden": false
+   "melden": false,
+   "korrektur": "günstigster Preis von 1119.0 auf 1149.0 korrigiert: Code CLICK2P ist im Shop ungültig"
   },
   {
    "zeit": "2026-11-26T23:37:32+01:00",
@@ -3932,9 +3935,10 @@
      "preis_mit_code": 1338.0
     }
    ],
-   "guenstigster": 1119.0,
+   "guenstigster": 1149.0,
    "neuer_tiefstwert": false,
-   "melden": false
+   "melden": false,
+   "korrektur": "günstigster Preis von 1119.0 auf 1149.0 korrigiert: Code CLICK2P ist im Shop ungültig"
   }
  ],
  "stand": "2026-11-26T23:37:32+01:00"
