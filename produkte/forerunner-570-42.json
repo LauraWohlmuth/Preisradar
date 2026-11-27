@@ -3,7 +3,7 @@
  "kurzname": "Garmin Forerunner 570 (42 mm)",
  "unterzeile": "Steinweiß / Cloud Blue Aluminium · 010-02970-01 · neu",
  "produkt": "Garmin Forerunner 570, 42 mm, Cloud Blue Aluminium mit Armband Steinweiß/Cloud Blue (010-02970-01), neu",
- "zielpreis": 350,
+ "zielpreis": 415,
  "uvp": 549.99,
  "warn_unter": 250,
  "variante_muss": [
@@ -49,5 +49,5 @@
  },
  "gutscheine": [],
  "cashback": [],
- "debug": true
+ "debug": false
 }
