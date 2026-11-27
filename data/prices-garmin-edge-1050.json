@@ -547,7 +547,23 @@
    "guenstigster": 548.98,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-27T19:54:25+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: Garmin Edge 1050",
+     "url": "https://geizhals.de/garmin-edge-1050-010-02890-01-a3217786.html",
+     "abgerufen_um": "2026-11-27T19:54:25+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 429: Too Many Requests"
+    }
+   ],
+   "angebote": [],
+   "guenstigster": null,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-27T19:48:27+01:00"
+ "stand": "2026-11-27T19:54:25+01:00"
 }

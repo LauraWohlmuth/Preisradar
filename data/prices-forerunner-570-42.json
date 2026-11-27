@@ -210,7 +210,64 @@
    "guenstigster": 449.0,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-27T19:54:23+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: Forerunner 570 42 mm Cloud Blue",
+     "url": "https://geizhals.de/garmin-forerunner-570-42mm-cloud-blue-aluminium-translucent-whitestone-cloud-blue-010-02970-01-a3493611.html",
+     "abgerufen_um": "2026-11-27T19:54:23+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 429: Too Many Requests"
+    },
+    {
+     "quelle": "bike-components",
+     "url": "https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/",
+     "abgerufen_um": "2026-11-27T19:54:23+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 414.0
+    },
+    {
+     "quelle": "r2-bike",
+     "url": "https://r2-bike.com/GARMIN-Forerunner-570-GPS-Lauf-und-Triathlon-Smartwatch-42-mm-Steinweiss-Cloud-Blue",
+     "abgerufen_um": "2026-11-27T19:54:23+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 403: Forbidden"
+    },
+    {
+     "quelle": "Bike24",
+     "url": "https://www.bike24.de/p1936960.html",
+     "abgerufen_um": "2026-11-27T19:54:23+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 403: Forbidden"
+    },
+    {
+     "quelle": "mydealz.de",
+     "url": "https://www.mydealz.de/search?q=forerunner+570",
+     "abgerufen_um": "2026-11-27T19:54:23+01:00",
+     "status": "geprüft",
+     "grund": "0 aktive Deals zur Variante",
+     "deals": []
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "bike-components",
+     "preis": 414.0,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 414.0,
+     "url": "https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/?o=1001011080-steinweiss-blau",
+     "via": "bike-components",
+     "verfuegbar": false,
+     "preis_mit_code": 414.0
+    }
+   ],
+   "guenstigster": 414.0,
+   "neuer_tiefstwert": true,
+   "melden": true
   }
  ],
- "stand": "2026-11-27T19:48:26+01:00"
+ "stand": "2026-11-27T19:54:23+01:00"
 }

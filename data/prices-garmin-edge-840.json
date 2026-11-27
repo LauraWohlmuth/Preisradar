@@ -534,7 +534,42 @@
    "guenstigster": 319.44,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-27T19:54:27+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: Garmin Edge 840",
+     "url": "https://geizhals.de/garmin-edge-840-010-02695-01-a2928592.html",
+     "abgerufen_um": "2026-11-27T19:54:27+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 429: Too Many Requests"
+    },
+    {
+     "quelle": "mydealz.de",
+     "url": "https://www.mydealz.de/search?q=garmin+edge+840",
+     "abgerufen_um": "2026-11-27T19:54:27+01:00",
+     "status": "geprüft",
+     "grund": "1 aktive Deals zur Variante",
+     "deals": [
+      {
+       "titel": "Garmin Edge 840 Radcomputer Rad Navigation",
+       "haendler": null,
+       "preis": 349,
+       "vorher": 379,
+       "code": null,
+       "temperatur": 170.92,
+       "veroeffentlicht": "2026-10-22T16:31+02:00",
+       "url": "https://www.mydealz.de/share-deal/2857615"
+      }
+     ]
+    }
+   ],
+   "angebote": [],
+   "guenstigster": null,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-27T19:48:29+01:00"
+ "stand": "2026-11-27T19:54:27+01:00"
 }

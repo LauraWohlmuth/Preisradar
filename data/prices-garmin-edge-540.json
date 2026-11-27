@@ -1514,7 +1514,31 @@
    "guenstigster": 229.0,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-27T19:54:26+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: Garmin Edge 540",
+     "url": "https://geizhals.de/garmin-edge-540-010-02694-01-a2928679.html",
+     "abgerufen_um": "2026-11-27T19:54:26+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 429: Too Many Requests"
+    },
+    {
+     "quelle": "mydealz.de",
+     "url": "https://www.mydealz.de/search?q=garmin+edge+540",
+     "abgerufen_um": "2026-11-27T19:54:26+01:00",
+     "status": "geprüft",
+     "grund": "0 aktive Deals zur Variante",
+     "deals": []
+    }
+   ],
+   "angebote": [],
+   "guenstigster": null,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-27T19:48:28+01:00"
+ "stand": "2026-11-27T19:54:26+01:00"
 }

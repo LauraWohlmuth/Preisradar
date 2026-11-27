@@ -5489,7 +5489,76 @@
    "guenstigster": 399.95,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-27T19:54:28+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: KICKR CORE 2",
+     "url": "https://geizhals.de/wahoo-fitness-kickr-core-2-rollentrainer-wfbktr125-a3587353.html",
+     "abgerufen_um": "2026-11-27T19:54:28+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 429: Too Many Requests"
+    },
+    {
+     "quelle": "geizhals.de: KICKR CORE 2 inkl. Zwift Click & Cog",
+     "url": "https://geizhals.de/wahoo-fitness-kickr-core-2-inkl-zwift-click-cog-rollentrainer-wfbktr125-3cc-a3587357.html",
+     "abgerufen_um": "2026-11-27T19:54:28+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 429: Too Many Requests"
+    },
+    {
+     "quelle": "Wahoo (direkt)",
+     "url": "https://eu.wahoofitness.com/kickr-core-zwift-buy",
+     "abgerufen_um": "2026-11-27T19:54:28+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 399.99
+    },
+    {
+     "quelle": "Bike24",
+     "url": "https://www.bike24.de/p1966145.html",
+     "abgerufen_um": "2026-11-27T19:54:28+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 403: Forbidden"
+    },
+    {
+     "quelle": "mydealz.de",
+     "url": "https://www.mydealz.de/search?q=kickr+core+2",
+     "abgerufen_um": "2026-11-27T19:54:28+01:00",
+     "status": "geprüft",
+     "grund": "1 aktive Deals zur Variante",
+     "deals": [
+      {
+       "titel": "Wahoo Fitness KICKR CORE 2 Indoor Fahrradtrainer mit ZWIFT COG und Click - Orange Zahnrad 3. Generation",
+       "haendler": "Amazon",
+       "preis": 399.99,
+       "vorher": 439.95,
+       "code": null,
+       "temperatur": 165.21,
+       "veroeffentlicht": "2026-11-20T07:35+01:00",
+       "url": "https://www.mydealz.de/share-deal/2876702"
+      }
+     ]
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "Wahoo Fitness",
+     "preis": 399.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 399.99,
+     "url": "https://eu.wahoofitness.com/devices/indoor-cycling/bike-trainers/kickr-core-2-zwift-cog-and-click-buy",
+     "via": "Wahoo (direkt)",
+     "variante": "mit Zwift Click & Cog",
+     "verfuegbar": true,
+     "preis_mit_code": 399.99
+    }
+   ],
+   "guenstigster": 399.99,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-27T19:48:30+01:00"
+ "stand": "2026-11-27T19:54:28+01:00"
 }
