@@ -1,0 +1,24 @@
+{
+ "id": "forerunner-570-47-gelb",
+ "kurzname": "Garmin Forerunner 570 (47 mm, Amp Yellow)",
+ "produkt": "Garmin Forerunner 570 47 mm Amp Yellow / Steinweiß / Türkis (010-02971-01), neu",
+ "zielpreis": 0,
+ "uvp": 0,
+ "warn_unter": 250,
+ "nur_vergleich": true,
+ "gruppe": "uhr",
+ "variante_muss": [
+  "forerunner 570"
+ ],
+ "quellen": [
+  {
+   "name": "geizhals.de",
+   "typ": "geizhals",
+   "variante_block": "",
+   "url": "https://geizhals.de/garmin-forerunner-570-47mm-amp-yellow-aluminium-translucent-whitestone-turquoise-010-02971-01-a3493595.html"
+  }
+ ],
+ "gutscheine": [],
+ "cashback": [],
+ "debug": false
+}

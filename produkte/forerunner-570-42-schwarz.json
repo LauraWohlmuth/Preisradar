@@ -1,0 +1,31 @@
+{
+ "id": "forerunner-570-42-schwarz",
+ "kurzname": "Garmin Forerunner 570 (42 mm, Slate Grey)",
+ "produkt": "Garmin Forerunner 570 42 mm Slate Grey / Schwarz (010-02970-00), neu",
+ "zielpreis": 0,
+ "uvp": 0,
+ "warn_unter": 250,
+ "nur_vergleich": true,
+ "gruppe": "uhr",
+ "variante_muss": [
+  "forerunner 570"
+ ],
+ "quellen": [
+  {
+   "name": "geizhals.de",
+   "typ": "geizhals",
+   "variante_block": "",
+   "url": "https://geizhals.de/garmin-forerunner-570-42mm-slate-grey-aluminium-translucent-black-010-02970-00-a3493607.html"
+  },
+  {
+   "name": "bike-components",
+   "typ": "jsonld",
+   "haendler": "bike-components",
+   "url": "https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/",
+   "angebot_url_muss": "schwarz"
+  }
+ ],
+ "gutscheine": [],
+ "cashback": [],
+ "debug": false
+}

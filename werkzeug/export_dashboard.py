@@ -134,7 +134,7 @@ def _weitere(out):
                 verlauf.append([pid, l_["zeit"][:16], l_["guenstigster"]])
         if cfg.get("nur_vergleich"):
             continue
-        fc = cfg.get("gruppe") == "fahrradcomputer"  # Fahrradcomputer stehen nur im Vergleich (Filter zuerst), nicht doppelt unter „Weitere“
+        fc = cfg.get("gruppe") in ("fahrradcomputer", "uhr")  # Fahrradcomputer stehen nur im Vergleich (Filter zuerst), nicht doppelt unter „Weitere“
         la = dd["laeufe"][-1]
         ang = sorted([a for a in la.get("angebote", []) if a.get("passt", True)], key=lambda a: (a.get("verfuegbar", True) is False, a["preis_mit_code"]))
         for a in ang:
@@ -155,7 +155,7 @@ def _weitere(out):
                         "preis": best["preis_mit_code"] if best else "", "haendler": best["haendler"] if best else "–",
                         "ziel": cfg["zielpreis"], "stand": la["zeit"][:16],
                         "trend": _trend([l_["guenstigster"] for l_ in dd["laeufe"] if l_.get("guenstigster")]),
-                        "anker": "fahrradcomputer" if fc else "p-" + pid, "link": best["url"] if best else ""})
+                        "anker": ({"fahrradcomputer": "fahrradcomputer", "uhr": "uhren"}.get(cfg.get("gruppe")) if fc else "p-" + pid), "link": best["url"] if best else ""})
     with open(f"{out}/weitere_angebote.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["produkt", "haendler", "preis", "detail", "link"]); w.writerows(zeilen)
     with open(f"{out}/weitere_laeufe.csv", "w", newline="", encoding="utf-8") as f:
@@ -224,9 +224,9 @@ print("tagesaktuell:", _heute, "BW", _bw, "BF", _bf, "Monate", _monate)
 
 
 # ---- Fahrradcomputer-Vergleich: Datenblatt (werkzeug/fahrradcomputer_specs.csv) + aktueller Bestpreis ----
-def _fahrradcomputer(out):
+def _fahrradcomputer(out, datei="fahrradcomputer_specs.csv", name="fahrradcomputer"):
     basis = _os.path.dirname(_os.path.dirname(src))
-    sp = _os.path.join(basis, "werkzeug", "fahrradcomputer_specs.csv")
+    sp = _os.path.join(basis, "werkzeug", datei)
     if not _os.path.exists(sp): return
     zeilen = []
     for r in csv.DictReader(open(sp, encoding="utf-8")):
@@ -241,8 +241,9 @@ def _fahrradcomputer(out):
                     preis, haendler, link, code = ang[0]["preis_mit_code"], ang[0]["haendler"], ang[0].get("url", ""), ang[0].get("code") or ""
                 stand = la["zeit"][:16]
         zeilen.append({**r, "preis": preis, "haendler": haendler, "code": code, "link": link, "preis_stand": stand})
-    with open(f"{out}/fahrradcomputer.csv", "w", newline="", encoding="utf-8") as f:
+    with open(f"{out}/{name}.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(zeilen[0])); w.writeheader(); w.writerows(zeilen)
-    print("Fahrradcomputer:", len(zeilen))
+    print(name + ":", len(zeilen))
 
 _fahrradcomputer(out)
+_fahrradcomputer(out, "uhren_varianten.csv", "uhren")

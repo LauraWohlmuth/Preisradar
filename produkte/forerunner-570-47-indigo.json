@@ -1,0 +1,24 @@
+{
+ "id": "forerunner-570-47-indigo",
+ "kurzname": "Garmin Forerunner 570 (47 mm, Indigo)",
+ "produkt": "Garmin Forerunner 570 47 mm Indigo / Imperial Purple / Indigo (010-02971-02), neu",
+ "zielpreis": 0,
+ "uvp": 0,
+ "warn_unter": 250,
+ "nur_vergleich": true,
+ "gruppe": "uhr",
+ "variante_muss": [
+  "forerunner 570"
+ ],
+ "quellen": [
+  {
+   "name": "geizhals.de",
+   "typ": "geizhals",
+   "variante_block": "",
+   "url": "https://geizhals.de/garmin-forerunner-570-47mm-indigo-aluminium-translucent-imperial-purple-indigo-010-02971-02-a3493599.html"
+  }
+ ],
+ "gutscheine": [],
+ "cashback": [],
+ "debug": false
+}

@@ -190,7 +190,7 @@
 <div class="pr">
   <nav class="pr-nav" id="navigation" aria-label="Bereiche">
     <span class="pr-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 12l5-5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>Preisradar</span>
-    <div class="pr-navlinks"><a href="#angebote">Angebote</a><a href="#blackfriday">Black Friday</a><a href="#verlauf">Preisverlauf</a><a href="#vorgaenger">Vorjahre</a><a href="#deals">Deals</a><a href="#weitere">Weitere</a><a href="#fahrradcomputer">Radcomputer</a></div>
+    <div class="pr-navlinks"><a href="#angebote">Angebote</a><a href="#blackfriday">Black Friday</a><a href="#verlauf">Preisverlauf</a><a href="#vorgaenger">Vorjahre</a><a href="#deals">Deals</a><a href="#weitere">Weitere</a><a href="#fahrradcomputer">Radcomputer</a><a href="#uhren">Uhr</a></div>
     <a class="pr-btn pr-navbtn" id="alle-pruefen" href="https://github.com/LauraWohlmuth/preisradar/actions/workflows/preise.yml" target="_blank" rel="noopener" aria-describedby="alle-pruefen-hinweis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>Alle prüfen</a>
   </nav>
   
@@ -323,6 +323,12 @@
     <p class="pr-note">Erst die Ausstattung wählen, darunter erscheinen die passenden Geräte mit Preis und Preisverlauf. Wähle die Ausstattung, die du brauchst. Technische Daten aus den geizhals-Datenblättern, Preise aus dem letzten Lauf (günstigstes lieferbares Angebot inkl. Versand).</p>
     <div id="fc-filter"><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Touchscreen filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Touchscreen</span><button type="button" class="pr-chip" data-fcf="touch" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="touch" data-wert="ja" aria-pressed="false">Ja</button><button type="button" class="pr-chip" data-fcf="touch" data-wert="nein" aria-pressed="false">Nein</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Solar filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Solar</span><button type="button" class="pr-chip" data-fcf="solar" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="solar" data-wert="ja" aria-pressed="false">Ja</button><button type="button" class="pr-chip" data-fcf="solar" data-wert="nein" aria-pressed="false">Nein</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Akku filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Akku</span><button type="button" class="pr-chip" data-fcf="akku" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="akku" data-wert="24" aria-pressed="false">ab 24 h</button><button type="button" class="pr-chip" data-fcf="akku" data-wert="30" aria-pressed="false">ab 30 h</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Display filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Display</span><button type="button" class="pr-chip" data-fcf="display" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="display" data-wert="2.6" aria-pressed="false">ab 2,6"</button><button type="button" class="pr-chip" data-fcf="display" data-wert="3.5" aria-pressed="false">ab 3,5"</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Speicher filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Speicher</span><button type="button" class="pr-chip" data-fcf="speicher" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="speicher" data-wert="32" aria-pressed="false">ab 32 GB</button><button type="button" class="pr-chip" data-fcf="speicher" data-wert="64" aria-pressed="false">ab 64 GB</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach WLAN filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">WLAN</span><button type="button" class="pr-chip" data-fcf="wlan" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="wlan" data-wert="ja" aria-pressed="false">Ja</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Preis filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Preis</span><button type="button" class="pr-chip" data-fcf="preis" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="preis" data-wert="250" aria-pressed="false">bis 250 €</button><button type="button" class="pr-chip" data-fcf="preis" data-wert="350" aria-pressed="false">bis 350 €</button><button type="button" class="pr-chip" data-fcf="preis" data-wert="500" aria-pressed="false">bis 500 €</button></div><div class="pr-toolbar" style="margin-top:6px"><span class="pr-zaehler" data-draw="fc-zaehler">—</span></div></div>
     <div class="pr-list" data-draw="fc-rows" data-source="fahrradcomputer weitere_laeufe"></div>
+  </section>
+  <section class="pr-sec" id="uhren">
+    <h2 class="pr-h2">Garmin Forerunner 570: Farben und Größen</h2>
+    <p class="pr-note">Erst Farbe und Größe wählen, darunter erscheinen die passenden Varianten mit Preis und Preisverlauf. Deine Wahl (42 mm, Steinweiß / Cloud Blue) ist markiert und hat einen Preisalarm, die anderen laufen nur zum Vergleich mit.</p>
+    <div id="uh-filter"><div class="pr-toolbar" role="group" aria-label="Uhren nach Farbe filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Farbe</span><button type="button" class="pr-chip" data-uhf="farbe" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-uhf="farbe" data-wert="Weiß/Blau" aria-pressed="false">Weiß/Blau</button><button type="button" class="pr-chip" data-uhf="farbe" data-wert="Schwarz/Grau" aria-pressed="false">Schwarz/Grau</button><button type="button" class="pr-chip" data-uhf="farbe" data-wert="Pink" aria-pressed="false">Pink</button><button type="button" class="pr-chip" data-uhf="farbe" data-wert="Gelb" aria-pressed="false">Gelb</button><button type="button" class="pr-chip" data-uhf="farbe" data-wert="Lila" aria-pressed="false">Lila</button></div><div class="pr-toolbar" role="group" aria-label="Uhren nach Größe filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Größe</span><button type="button" class="pr-chip" data-uhf="groesse" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-uhf="groesse" data-wert="42 mm" aria-pressed="false">42 mm</button><button type="button" class="pr-chip" data-uhf="groesse" data-wert="47 mm" aria-pressed="false">47 mm</button></div><div class="pr-toolbar" style="margin-top:6px"><span class="pr-zaehler" data-draw="uh-zaehler">—</span></div></div>
+    <div class="pr-list" data-draw="uh-rows" data-source="uhren weitere_laeufe"></div>
   </section>
   <footer class="pr-footer" id="fusszeile"><span>Preisradar · privat für Laura</span><span>Daten: geizhals.de, notebookinfo.de, mydealz.de</span><span>stündlich geprüft, Preise ohne Gewähr</span><span>Kein Kauf über diese Seite</span></footer>
 </div>
@@ -936,4 +942,41 @@ window.prLaeufe = function (id) {
   const pt = d3.timeParse('%Y-%m-%dT%H:%M');
   return v.data.filter((x) => x.produkt === id).map((x) => ({t: pt(x.zeit), p: +x.preis})).filter((d) => d.t).sort((a, b) => a.t - b.t);
 };
+
+window.UH_STATE = {farbe: 'alle', groesse: 'alle'};
+window.uhAuswahl = (rows) => rows.filter((r) => (UH_STATE.farbe === 'alle' || r.farbe === UH_STATE.farbe) && (UH_STATE.groesse === 'alle' || r.groesse === UH_STATE.groesse));
+dash.draw('uh-zaehler', (el) => { const d = dash.data('uhren'); el.textContent = d.status === 'ok' ? uhAuswahl(d.data).length + ' von ' + d.data.length + ' Varianten' : '—'; });
+document.querySelectorAll('.pr-chip[data-uhf]').forEach((b) => b.addEventListener('click', () => {
+  window.UH_STATE[b.dataset.uhf] = b.dataset.wert;
+  document.querySelectorAll('.pr-chip[data-uhf="' + b.dataset.uhf + '"]').forEach((x) => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+  dash.draw('uh-rows'); dash.draw('uh-zaehler');
+}));
+dash.draw('uh-rows', (el) => {
+  const d = dash.data('uhren');
+  if (d.status !== 'ok') { if (d.status === 'error') el.textContent = 'Varianten konnten nicht geladen werden.'; else if (!el.firstChild) el.textContent = '—'; return; }
+  el.replaceChildren();
+  const p = dash.data('produkte'); const ziel = p.status === 'ok' ? +((p.data.find((x) => x.id === 'forerunner-570-42') || {}).ziel || 0) : 0;
+  const zeilen = uhAuswahl(d.data).sort((a, b) => (a.preis === null || a.preis === '' ? 1e9 : +a.preis) - (b.preis === null || b.preis === '' ? 1e9 : +b.preis));
+  if (!zeilen.length) { el.textContent = 'Keine Variante passt zu dieser Auswahl.'; return; }
+  const farbe = {'Weiß/Blau': '#7fb3e6', 'Schwarz/Grau': '#5b6573', 'Pink': '#d9557a', 'Gelb': '#e2c13a', 'Lila': '#7a5bd9'};
+  zeilen.forEach((r) => {
+    const deine = r.id === 'forerunner-570-42';
+    const row = prEl('div', 'pr-row' + (deine ? ' bester' : ''));
+    const logo = prEl('div', 'pr-logo-m', r.groesse.slice(0, 2)); logo.style.background = farbe[r.farbe] || '#5b8def'; logo.setAttribute('aria-hidden', 'true');
+    const mid = prEl('div'); mid.style.minWidth = '0';
+    const n = prEl('div', 'pr-row-name', 'Forerunner 570 · ' + r.groesse); if (deine) n.append(prEl('span', 'pr-badge top', 'deine Wahl · Alarm'));
+    const chips = prEl('div'); chips.style.cssText = 'display:flex;flex-wrap:wrap;gap:4px;margin:4px 0 2px';
+    const chip = (t) => { const c = prEl('span', 'pr-badge', t); c.style.marginLeft = '0'; return c; };
+    chips.append(chip('Gehäuse ' + r.gehaeuse), chip('Armband ' + r.armband), chip(r.art_nr));
+    const sub = prEl('div', 'pr-row-sub', r.preis ? 'bei ' + r.haendler + (r.code ? ' · mit Code ' + r.code : '') + ' · inkl. Versand' : 'gerade kein lieferbares Angebot gelesen');
+    const ch = prEl('div'); ch.dataset.source = 'weitere_laeufe'; ch.style.marginTop = '6px';
+    mid.append(n, chips, sub, ch);
+    requestAnimationFrame(() => prVerlauf(ch, prLaeufe(r.id), deine ? ziel : 0, 90));
+    const pr = prEl('div', 'pr-row-preis'); const b = prEl('b', null, r.preis ? PR.eur(r.preis) : '—');
+    if (r.preis) { b.dataset.source = 'uhren'; b.dataset.field = 'preis'; b.dataset.where = 'id=' + encodeURIComponent(r.id); }
+    pr.append(b); row.append(logo, mid, pr);
+    if (/^https?:\/\//.test(r.link || '')) { const l = prEl('a', 'pr-btn pr-btn-primary pr-shopbtn', 'Zum Angebot'); l.href = r.link; l.target = '_blank'; l.rel = 'noopener'; row.append(l); }
+    el.append(row);
+  });
+});
 </script>

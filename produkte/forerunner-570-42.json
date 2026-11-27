@@ -49,5 +49,6 @@
  },
  "gutscheine": [],
  "cashback": [],
- "debug": false
+ "debug": false,
+ "gruppe": "uhr"
 }
