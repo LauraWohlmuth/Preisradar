@@ -66,7 +66,9 @@ def jsonld_angebote(seite):
                     if isinstance(s, dict) and isinstance(s.get("shippingRate"), dict):
                         versand = s["shippingRate"].get("value")
                         break
-                treffer.append({"art": "angebot", "preis": x.get("price"), "versand": versand, "haendler": verk.get("name") if isinstance(verk, dict) else None, "url": x.get("url")})
+                verf = not re.search(r"OutOfStock|SoldOut|Discontinued", str(x.get("availability") or ""))
+                treffer.append({"art": "angebot", "preis": x.get("price"), "versand": versand, "haendler": verk.get("name") if isinstance(verk, dict) else None,
+                                "url": x.get("url"), "verfuegbar": verf})
     return treffer
 
 
@@ -365,6 +367,7 @@ def pruefe(quelle, jetzt):
                                  "url": d.get("url") or quelle["url"], "via": quelle["name"],
                                  **({"variante": quelle["variante"]} if quelle.get("variante") else {}),
                                  **({"ausstattung_ok": True} if quelle.get("ausstattung_ok") else {}),
+                                 "verfuegbar": d.get("verfuegbar", True),
                                  **({"farbe": quelle.get("farbe"), "speicher": quelle.get("speicher"), "zustand": quelle.get("zustand"),
                                      "akku": akku_lesen(seite) if quelle.get("akku_lesen") else (quelle.get("akku") or "nicht angegeben")}
                                     if (quelle.get("akku_lesen") or quelle.get("zustand")) else {})})
@@ -496,7 +499,7 @@ def main():
     angebote = gutscheine_anwenden(angebote, jetzt[:10])
     # Der günstigste Preis kommt nur aus den ausgewerteten Angeboten (mit Code-Prüfung), nicht aus dem rohen Quellen-Tiefstpreis.
     # Angebote mit Kriterien-Prüfung (iPhone: Farbe, Speicher, Zustand, Akku) zählen nur, wenn sie passen.
-    preise = [a["preis_mit_code"] for a in angebote if a.get("passt", True)]
+    preise = [a["preis_mit_code"] for a in angebote if a.get("passt", True) and a.get("verfuegbar", True) is not False]
     if not preise:
         preise = [q["tiefstpreis"] for q in quellen if q.get("status") == "geprüft" and q.get("tiefstpreis")]
     preise = [p for p in preise if p >= CFG["warn_unter"]]  # darunter: Fake-Shop-Verdacht, zählt nicht

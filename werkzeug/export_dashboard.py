@@ -129,9 +129,10 @@ def _weitere(out):
         if not dd["laeufe"]:
             continue
         la = dd["laeufe"][-1]
-        ang = sorted([a for a in la.get("angebote", []) if a.get("passt", True)], key=lambda a: a["preis_mit_code"])
+        ang = sorted([a for a in la.get("angebote", []) if a.get("passt", True)], key=lambda a: (a.get("verfuegbar", True) is False, a["preis_mit_code"]))
         for a in ang:
             det = []
+            if a.get("verfuegbar", True) is False: det.append("derzeit ausverkauft")
             if a.get("variante"): det.append(a["variante"])
             if a.get("ausstattung"): det.append(a["ausstattung"])
             if a.get("zustand"): det.append("Zustand " + a["zustand"])
@@ -143,7 +144,7 @@ def _weitere(out):
         for l_ in dd["laeufe"]:
             if l_.get("guenstigster"):
                 verlauf.append([pid, l_["zeit"][:16], l_["guenstigster"]])
-        best = ang[0] if ang else None
+        best = next((a for a in ang if a.get("verfuegbar", True) is not False), None)
         kurz = cfg.get("kurzname") or cfg["produkt"].split(",")[0].split("(")[0].strip()
         kacheln.append({"id": pid, "name": kurz, "unter": cfg.get("unterzeile", ""),
                         "preis": best["preis_mit_code"] if best else "", "haendler": best["haendler"] if best else "–",
