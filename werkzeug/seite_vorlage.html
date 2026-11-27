@@ -833,7 +833,7 @@ dash.draw('weitere', (el) => {
   const a = dash.data('weitere_angebote'), v = dash.data('weitere_laeufe'), p = dash.data('produkte');
   if (a.status !== 'ok' || p.status !== 'ok') { if (!el.firstChild) el.textContent = '—'; return; }
   el.replaceChildren();
-  const prods = p.data.filter((r) => r.id !== 'macbook' && r.id !== 'iphone' && r.anker !== 'fahrradcomputer');
+  const prods = p.data.filter((r) => r.id !== 'macbook' && r.id !== 'iphone' && r.anker !== 'fahrradcomputer' && r.anker !== 'uhren');
   if (!prods.length) { el.textContent = 'Noch keine weiteren Produkte gelesen.'; return; }
   prods.forEach((r) => {
     const box = prEl('div'); box.id = r.anker; box.style.marginTop = '18px';
