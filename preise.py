@@ -356,6 +356,10 @@ def pruefe(quelle, jetzt):
         eintrag.update(status="nicht prüfbar", grund="refurbed-Angebotsdaten nicht erkannt")
         return eintrag, []
     daten = jsonld_angebote(seite)
+    if quelle.get("angebot_url_muss"):
+        # Seiten mit mehreren Farben: nur Angebote der gewünschten Variante (Teil der Angebots-URL, z. B. „steinweiss“)
+        daten = [d for d in daten if d["art"] != "angebot" or quelle["angebot_url_muss"] in str(d.get("url") or "").lower()]
+        daten = [d for d in daten if d["art"] != "aggregat"]
     angebote = []
     for d in daten:
         if d["art"] == "angebot":
