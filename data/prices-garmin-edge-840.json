@@ -306,7 +306,83 @@
    "guenstigster": 319.44,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-27T19:39:59+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: Garmin Edge 840",
+     "url": "https://geizhals.de/garmin-edge-840-010-02695-01-a2928592.html",
+     "abgerufen_um": "2026-11-27T19:39:59+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 319.44,
+     "angebote_anzahl": 12,
+     "grund": "2 lieferbar"
+    },
+    {
+     "quelle": "mydealz.de",
+     "url": "https://www.mydealz.de/search?q=garmin+edge+840",
+     "abgerufen_um": "2026-11-27T19:39:59+01:00",
+     "status": "geprüft",
+     "grund": "1 aktive Deals zur Variante",
+     "deals": [
+      {
+       "titel": "Garmin Edge 840 Radcomputer Rad Navigation",
+       "haendler": null,
+       "preis": 349,
+       "vorher": 379,
+       "code": null,
+       "temperatur": 170.92,
+       "veroeffentlicht": "2026-10-22T16:31+02:00",
+       "url": "https://www.mydealz.de/share-deal/2857615"
+      }
+     ]
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "SportOkay.com Deutschland",
+     "preis": 319.44,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAOHGNgn-lZYpZ_LB4j8PhZ3NZ3QliajS845u3yEs1UpaJMEg7UDxJ5D2Cbo96lDuEa6Gm2FOuTtN1krAGXVL_OuwvItJs3BNPvVFS2b-e6XDVnhNeghQS2okBdp3W3KWZQOVsO6aJVRXNMDsaERhfkmxnYNaZR44fIilf_KNlMttAmZl7bWO8JgcEIY-6q4eeBkcOg9afi2DnMLTi5-2lSfMWf3O6YJA3LSz8KtMsLKCMOQKWkXcQZtIyp1XEjmFEpjdts7acleWn3GqBdoCVgX_Gv6V3quRkKV39wDC-jCe",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 319.44,
+     "lieferung": "Sofort lieferbar, Lieferzeit: Innerhalb 1 bis 3 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "gh_code": {
+      "code": "BLACK12",
+      "rabatt_eur": null,
+      "rabatt_prozent": null,
+      "gueltig_bis": null,
+      "beschreibung": "",
+      "quelle": "geizhals.de"
+     },
+     "preis_mit_code": 319.44
+    },
+    {
+     "haendler": "TechnikDirekt",
+     "preis": 381.58,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAANfDP1J7C1_RLO-4SZYGl_7KdHWJE0aRFzGp-BxGItW0k-rSK_vMwSbFBGchSFXaLa9J7Y1NcR05M9mijkr5voltDYJk-NYHazUHDiLBgje7pT442CKiMT5EVwilDp3M24DQ2-7BepUDJpYJlTV--JNjkOtsHz38aQKMS2hyvuMGWucUQq5waIiAb2FH13RWJA",
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 381.58,
+     "lieferung": "Auf Lager, Lieferung in 1-3 Werktagen",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 381.58
+    }
+   ],
+   "guenstigster": 319.44,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-27T19:37:36+01:00"
+ "stand": "2026-11-27T19:39:59+01:00"
 }

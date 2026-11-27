@@ -2,9 +2,9 @@
 
 *Garmin Edge MTB Fahrradcomputer, neu* · Zielpreis **0 €**
 
-**Stand 2026-11-27 19:37: günstigster geprüfter Preis 331,94 €** (0 € zum Lauf davor), noch 331,94 € über dem Ziel
+**Stand 2026-11-27 19:40: günstigster geprüfter Preis 331,94 €** (0 € zum Lauf davor), noch 331,94 € über dem Ziel
 
-Tiefstwert 331,94 € · Höchstwert 331,94 € · 2 Läufe seit 2026-11-27
+Tiefstwert 331,94 € · Höchstwert 331,94 € · 3 Läufe seit 2026-11-27
 
 ## Angebote
 
@@ -24,6 +24,7 @@ Tiefstwert 331,94 € · Höchstwert 331,94 € · 2 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-27 19:40 | 331,94 € |
 | 2026-11-27 19:37 | 331,94 € |
 | 2026-11-27 19:34 | 331,94 € |
 
