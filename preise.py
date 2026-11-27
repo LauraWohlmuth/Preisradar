@@ -210,7 +210,10 @@ def geizhals_angebote(seite, quelle):
         a["verfuegbar"] = "offer--available" in klasse
         stand = re.search(r"Preis vom:\|\s*([\d.]+, [\d:]+)", t)
         a["preis_stand"] = stand.group(1) if stand else None
-        a["variante_ok"] = "MDHE4D" in block
+        vb = quelle.get("variante_block", "MDHE4D")  # Pflichtbegriff im Angebot; leer = jede Zeile der Produktseite zählt
+        a["variante_ok"] = (vb in block) if vb else True
+        if quelle.get("variante"):
+            a["variante"] = quelle["variante"]
         a["netzteil_dabei"] = False if re.search(r"kein Netzteil|ohne Netzteil", t, re.I) else None
         code = re.search(r'data-coupon-code="([^"]+)"', block)
         if code:

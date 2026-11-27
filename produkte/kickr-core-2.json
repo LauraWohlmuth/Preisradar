@@ -1,0 +1,54 @@
+{
+ "id": "kickr-core-2",
+ "produkt": "Wahoo KICKR CORE 2 Smart-Trainer (neu), mit oder ohne Zwift Click & Cog",
+ "zielpreis": 375,
+ "uvp": 549.99,
+ "warn_unter": 250,
+ "variante_muss": [
+  "kickr core 2"
+ ],
+ "quellen": [
+  {
+   "name": "geizhals.de: KICKR CORE 2",
+   "typ": "geizhals",
+   "variante_block": "",
+   "variante": "ohne Zwift Cog",
+   "url": "https://geizhals.de/wahoo-fitness-kickr-core-2-rollentrainer-wfbktr125-a3587353.html"
+  },
+  {
+   "name": "geizhals.de: KICKR CORE 2 inkl. Zwift Click & Cog",
+   "typ": "geizhals",
+   "variante_block": "",
+   "variante": "mit Zwift Click & Cog",
+   "url": "https://geizhals.de/wahoo-fitness-kickr-core-2-inkl-zwift-click-cog-rollentrainer-wfbktr125-3cc-a3587357.html"
+  },
+  {
+   "name": "Wahoo (direkt)",
+   "typ": "jsonld",
+   "haendler": "Wahoo",
+   "variante": "mit Zwift Click & Cog",
+   "url": "https://eu.wahoofitness.com/kickr-core-zwift-buy"
+  },
+  {
+   "name": "Bike24",
+   "typ": "jsonld",
+   "haendler": "Bike24",
+   "url": "https://www.bike24.de/p1966145.html"
+  },
+  {
+   "name": "mydealz.de",
+   "typ": "mydealz",
+   "url": "https://www.mydealz.de/search?q=kickr+core+2"
+  }
+ ],
+ "mydealz_filter": {
+  "muss": [
+   "kickr",
+   "core 2"
+  ],
+  "nicht": []
+ },
+ "gutscheine": [],
+ "cashback": [],
+ "debug": true
+}
