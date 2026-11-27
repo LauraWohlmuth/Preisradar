@@ -70,6 +70,98 @@ def jsonld_angebote(seite):
     return treffer
 
 
+REF_ERLAUBT = {  # Lauras Kriterien; nur diese Optionen werden weiter verfolgt
+    "farbe": ["tiefblau", "silber"],
+    "speicher": ["256 gb", "512 gb"],
+    "zustand": ["sehr gut", "exzellent", "premium"],
+    "akku": ["neu", "optimal"],
+}
+REF_AKKU = {"new": "Neu", "optimal": "Optimal", "standard": "Standard", "good": "Gut"}
+REF_ZUSTAND = {"AA": "Premium", "A": "Exzellent", "B": "Sehr gut", "C": "Gut"}
+REF_FARBE = {"deep blue": "Tiefblau", "silver": "Silber", "cosmic orange": "Cosmic Orange"}
+
+
+def refurbed_optionen(seite):
+    """Liest die Auswahlfelder (Farbe, Speicher, Zustand, Akku) mit ihren Angebots-Links."""
+    opt = {}
+    for feld, sel in (("farbe", "product-color"), ("speicher", "product-storage"), ("zustand", "product-grade"), ("akku", "product-battery")):
+        m = re.search(r'<select[^>]*"' + sel + r'".*?</select>', seite, re.S)
+        if not m:
+            continue
+        for attrs, label in re.findall(r"<option([^>]*)>(.*?)</option>", m.group(0), re.S):
+            url = re.search(r'value="([^"]+)"', attrs)
+            if url:
+                opt.setdefault(feld, []).append((html.unescape(re.sub(r"<[^>]+>", "", label)).strip(), html.unescape(url.group(1))))
+    return opt
+
+
+def refurbed_angebot(seite, url, quelle):
+    """Ein refurbed-Angebot: Preis, Farbe, Speicher, Zustand und Akku aus den Seitendaten."""
+    m = re.search(r'var gtmData = (\{.*?\});', seite, re.S)
+    try:
+        item = json.loads(m.group(1))["item"] if m else {}
+    except (ValueError, KeyError):
+        item = {}
+    preis = euro(str(item.get("price2") or ""))
+    if not preis:
+        return None
+    lager = re.search(r'"availability":"https://schema.org/(\w+)"', seite)
+    akku_roh = str(item.get("battery_condition") or "").lower()
+    return {"haendler": "refurbed", "preis": preis, "versand": 0.0, "versand_bekannt": True, "gesamtpreis": preis,
+            "url": url, "via": quelle["name"], "verfuegbar": not lager or lager.group(1) == "InStock",
+            "farbe": REF_FARBE.get(str(item.get("color", "")).lower(), item.get("color")),
+            "speicher": item.get("memory_size"),
+            "zustand": REF_ZUSTAND.get(item.get("grade"), item.get("grade")),
+            "akku": REF_AKKU.get(akku_roh, akku_roh or "nicht angegeben"),
+            "angebot_id": item.get("offer_id")}
+
+
+def refurbed_alle(start, quelle, erste=None, max_seiten=40):
+    """Läuft über alle erlaubten Kombinationen (Farbe × Speicher × Zustand × Akku) und liest jedes Angebot einzeln."""
+    basis = "https://www.refurbed.de"
+    offen, gesehen, angebote = [(start, erste)], set(), {}
+    while offen and len(gesehen) < max_seiten:
+        url, seite = offen.pop(0)
+        if url in gesehen:
+            continue
+        gesehen.add(url)
+        if seite is None:
+            try:
+                seite = hole(url)
+            except Exception as e:
+                print(f"  refurbed {url}: {e}")
+                continue
+        a = refurbed_angebot(seite, url, quelle)
+        if a and a.get("angebot_id"):
+            angebote[a["angebot_id"]] = a
+        for feld, liste in refurbed_optionen(seite).items():
+            for label, link in liste:
+                if any(e in label.lower() for e in REF_ERLAUBT[feld]):
+                    voll = link if link.startswith("http") else basis + link
+                    if voll not in gesehen:
+                        offen.append((voll, None))
+    print(f"  refurbed: {len(gesehen)} Seiten gelesen, {len(angebote)} Angebote")
+    return list(angebote.values())
+
+
+def akku_lesen(seite):
+    """Akku-Zustand aus Shopseiten ohne refurbed-Daten (Swappie, Coolblue)."""
+    m = re.search(r'"batteryType":"([^"]+)"', seite)
+    if m:
+        return {"standard": "Standard (mind. 86 %)", "premium": "Neu"}.get(m.group(1).lower(), m.group(1))
+    t = text(re.sub(r"<script.*?</script>|<style.*?</style>", "", seite, flags=re.S))
+    m = re.search(r"Akku\| Akku\| ([^|]+)\|", t)
+    if m:
+        w = m.group(1).strip()
+        return "Neu" if "neu" in w.lower() else w
+    return "nicht angegeben"
+
+
+def passt_kriterien(a):
+    k = {"farbe": a.get("farbe"), "speicher": a.get("speicher"), "zustand": a.get("zustand"), "akku": a.get("akku")}
+    return all(v and any(e == str(v).lower() for e in REF_ERLAUBT[f]) for f, v in k.items())
+
+
 def text(fragment):
     t = re.sub(r"<svg.*?</svg>", "", fragment, flags=re.S)
     t = re.sub(r"<[^>]+>", "|", t)
@@ -202,6 +294,17 @@ def pruefe(quelle, jetzt):
             return eintrag, verf
         eintrag.update(status="nicht prüfbar", grund="Angebotsliste auf der Seite nicht erkannt")
         return eintrag, []
+    if quelle.get("typ") == "refurbed":
+        alle = refurbed_alle(quelle["url"], quelle, seite)
+        passend = [a for a in alle if passt_kriterien(a) and a["verfuegbar"]]
+        for a in alle:
+            a["passt"] = passt_kriterien(a)
+        if alle:
+            eintrag.update(status="geprüft", tiefstpreis=min(a["gesamtpreis"] for a in (passend or alle)), angebote_anzahl=len(alle),
+                           grund=f"{len(passend)} von {len(alle)} passen (Farbe, Speicher, Zustand, Akku)")
+            return eintrag, [a for a in alle if a["verfuegbar"]]
+        eintrag.update(status="nicht prüfbar", grund="refurbed-Angebotsdaten nicht erkannt")
+        return eintrag, []
     daten = jsonld_angebote(seite)
     angebote = []
     for d in daten:
@@ -211,7 +314,12 @@ def pruefe(quelle, jetzt):
                 v = euro(str(d["versand"])) if d.get("versand") is not None else None
                 angebote.append({"haendler": d.get("haendler") or quelle.get("haendler") or "unbekannt", "preis": p,
                                  "versand": v, "versand_bekannt": v is not None, "gesamtpreis": round(p + (v or 0), 2),
-                                 "url": d.get("url") or quelle["url"], "via": quelle["name"]})
+                                 "url": d.get("url") or quelle["url"], "via": quelle["name"],
+                                 **({"farbe": quelle.get("farbe"), "speicher": quelle.get("speicher"), "zustand": quelle.get("zustand"),
+                                     "akku": akku_lesen(seite)} if quelle.get("akku_lesen") else {})})
+    for a in angebote:
+        if "akku" in a:
+            a["passt"] = passt_kriterien(a)
     agg = next((d for d in daten if d["art"] == "aggregat" and d.get("tiefst") is not None), None)
     if agg:
         eintrag.update(status="geprüft", tiefstpreis=euro(str(agg["tiefst"])), hoechstpreis=euro(str(agg.get("hoechst") or "")), angebote_anzahl=agg.get("anzahl"))
@@ -333,7 +441,8 @@ def main():
                                       "bedingung": "laut mydealz-Deal; im Warenkorb prüfen", "quelle": d["url"]})
     angebote = gutscheine_anwenden(angebote, jetzt[:10])
     # Der günstigste Preis kommt nur aus den ausgewerteten Angeboten (mit Code-Prüfung), nicht aus dem rohen Quellen-Tiefstpreis.
-    preise = [a["preis_mit_code"] for a in angebote]
+    # Angebote mit Kriterien-Prüfung (iPhone: Farbe, Speicher, Zustand, Akku) zählen nur, wenn sie passen.
+    preise = [a["preis_mit_code"] for a in angebote if a.get("passt", True)]
     if not preise:
         preise = [q["tiefstpreis"] for q in quellen if q.get("status") == "geprüft" and q.get("tiefstpreis")]
     preise = [p for p in preise if p >= CFG["warn_unter"]]  # darunter: Fake-Shop-Verdacht, zählt nicht

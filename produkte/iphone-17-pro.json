@@ -9,40 +9,30 @@
  ],
  "quellen": [
   {
-   "name": "refurbed: dein Angebot (Tiefblau 256 GB)",
-   "typ": "jsonld",
+   "name": "refurbed: alle Kombinationen (Farbe, Speicher, Zustand, Akku)",
+   "typ": "refurbed",
    "haendler": "refurbed",
    "url": "https://www.refurbed.de/p/iphone-17-pro/407262aa/?offer=20894256"
-  },
-  {
-   "name": "refurbed Tiefblau 256 GB",
-   "typ": "jsonld",
-   "haendler": "refurbed",
-   "url": "https://www.refurbed.de/p/iphone-17-pro/407262/"
-  },
-  {
-   "name": "refurbed Silber 256 GB",
-   "typ": "jsonld",
-   "haendler": "refurbed",
-   "url": "https://www.refurbed.de/p/iphone-17-pro/407263aa/"
-  },
-  {
-   "name": "refurbed 512 GB",
-   "typ": "jsonld",
-   "haendler": "refurbed",
-   "url": "https://www.refurbed.de/p/iphone-17-pro/407259aa/"
   },
   {
    "name": "Swappie 512 GB Silber",
    "typ": "jsonld",
    "haendler": "Swappie",
-   "url": "https://swappie.com/de/iphone/iphone-17-pro/iphone-17-pro-512gb-silber/"
+   "url": "https://swappie.com/de/iphone/iphone-17-pro/iphone-17-pro-512gb-silber/",
+   "akku_lesen": true,
+   "farbe": "Silber",
+   "speicher": "512 GB",
+   "zustand": "nicht angegeben"
   },
   {
    "name": "Coolblue refurbished 512 GB Silber",
    "typ": "jsonld",
    "haendler": "Coolblue",
-   "url": "https://www.coolblue.de/produkt/971367/refurbished-iphone-17-pro-512gb-silber-sehr-gut.html"
+   "url": "https://www.coolblue.de/produkt/971367/refurbished-iphone-17-pro-512gb-silber-sehr-gut.html",
+   "akku_lesen": true,
+   "farbe": "Silber",
+   "speicher": "512 GB",
+   "zustand": "Sehr gut"
   },
   {
    "name": "Back Market iPhone 17 Pro",

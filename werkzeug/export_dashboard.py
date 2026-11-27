@@ -45,45 +45,53 @@ def _iphone(out):
     fokus = "/407262aa/"
     zeilen = []
     gesehen = set()
+    neu_format = any("akku" in a for a in last.get("angebote", []))
     for a in last.get("angebote", []):
         u = a.get("url", "")
         if u in gesehen: continue
         gesehen.add(u)
+        if neu_format:
+            # Jedes Angebot mit ausgelesenem Akku und Zustand
+            if "akku" not in a: continue
+            lab = f"{a['haendler']}: {a.get('farbe') or '?'}, {a.get('speicher') or '?'}"
+            if "offer=20894256" in u: lab = "Dein Angebot: " + lab.split(": ", 1)[1]
+            art = "passt" if a.get("passt") else "pruefen"
+            fehlt = [n for n, f in (("Farbe", "farbe"), ("Speicher", "speicher"), ("Zustand", "zustand"), ("Akku", "akku"))
+                     if not a.get("passt") and str(a.get(f) or "").lower() not in {"tiefblau", "silber", "256 gb", "512 gb", "sehr gut", "exzellent", "premium", "neu", "optimal"}]
+            det = "passt zu allen Kriterien" if a.get("passt") else "passt nicht: " + ", ".join(fehlt)
+            zeilen.append([lab, a["preis_mit_code"], art, det, u, a.get("akku") or "nicht angegeben", a.get("zustand") or "nicht angegeben"])
+            continue
         ist_fokus = fokus in u
-        # nur das Hauptangebot je Quelle: Pfad der Quell-URL muss in der Angebots-URL stehen
         passt = any(q["url"].split("?")[0].rstrip("/") in u for q in cfg["quellen"]) and "?offer=" not in u
-        if not passt: continue
+        if not passt and not ist_fokus: continue
         if ist_fokus:
-            lab, art, det = "Dein Angebot: Tiefblau, 256 GB", "passt", "Zustand Premium, Akku neu, lieferbar"
-        elif "/407263aa/" in u:
-            lab, art, det = "refurbed: Silber, 256 GB", "pruefen", "vermutlich Premium (Endung aa), Akku nicht ausgelesen"
-        elif "/407262/" in u:
-            lab, art, det = "refurbed: Tiefblau, 256 GB (Voreinstellung)", "pruefen", "Zustand und Akku nicht ausgelesen"
-        elif "/407259aa/" in u:
-            lab, art, det = "refurbed: 512 GB (Voreinstellung)", "pruefen", "Farbe, Zustand und Akku nicht ausgelesen"
-        elif "coolblue" in u:
-            lab, art, det = "Coolblue: Silber, 512 GB", "pruefen", "Zustand sehr gut laut Adresse, Akku nicht ausgelesen"
+            lab, art, det, ak, zu = "Dein Angebot: Tiefblau, 256 GB", "passt", "lieferbar", "Neu", "Premium"
         else:
-            lab, art, det = a["haendler"], "pruefen", "Zustand und Akku nicht ausgelesen"
-        zeilen.append([lab, a["preis_mit_code"], art, det, u])
+            lab, art, det, ak, zu = a["haendler"], "pruefen", "alter Lauf: Akku nicht ausgelesen", "nicht ausgelesen", "nicht ausgelesen"
+        zeilen.append([lab, a["preis_mit_code"], art, det, u, ak, zu])
     zeilen.sort(key=lambda z: (z[2] != "passt", z[1]))
     with open(f"{out}/iphone_angebote.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f); w.writerow(["label", "preis", "art", "detail", "link"]); w.writerows(zeilen)
+        w = csv.writer(f); w.writerow(["label", "preis", "art", "detail", "link", "akku", "zustand"]); w.writerows(zeilen)
     # Verlauf deines Angebots und Quellenstatus
     with open(f"{out}/iphone_laeufe.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["zeit", "preis"])
         for l_ in d["laeufe"]:
-            x = next((a["preis_mit_code"] for a in l_.get("angebote", []) if fokus in a.get("url", "") and "?offer=" not in a.get("url", "")), None)
+            if any("akku" in a for a in l_.get("angebote", [])):
+                x = l_.get("guenstigster")  # günstigstes passendes Angebot
+            else:
+                x = next((a["preis_mit_code"] for a in l_.get("angebote", []) if fokus in a.get("url", "")), None)
             if x is not None: w.writerow([l_["zeit"][:16], x])
     with open(f"{out}/iphone_quellen.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["quelle", "status", "hinweis", "link"])
         for q in last["quellen"]:
             w.writerow([q["quelle"], q["status"], q.get("grund") or (f"{q.get('angebote_anzahl')} Angebote" if q.get("angebote_anzahl") else ""), q["url"]])
     fok = next((z for z in zeilen if z[2] == "passt"), None)
-    preise = [l["guenstigster"] for l in d["laeufe"] if l.get("guenstigster")]
-    return {"id": "iphone", "name": "iPhone 17 Pro refurbished", "unter": "Tiefblau/Silber · 256/512 GB · Exzellent+ · Akku neu/optimal",
-            "preis": fok[1] if fok else "", "haendler": "refurbed", "ziel": cfg["zielpreis"], "stand": last["zeit"][:16],
-            "trend": "–", "anker": "iphone", "link": fok[4] if fok else ""}
+    hist = []
+    with open(f"{out}/iphone_laeufe.csv", encoding="utf-8") as f:
+        hist = [float(r["preis"]) for r in csv.DictReader(f) if r["preis"]]
+    return {"id": "iphone", "name": "iPhone 17 Pro refurbished", "unter": "Tiefblau/Silber · 256/512 GB · Sehr gut+ · Akku neu/optimal",
+            "preis": fok[1] if fok else "", "haendler": next((n for n in ("refurbed", "Swappie", "Coolblue") if fok and n.lower() in fok[4].lower()), "refurbed"), "ziel": cfg["zielpreis"], "stand": last["zeit"][:16],
+            "trend": _trend(hist), "anker": "iphone", "link": fok[4] if fok else ""}
 
 def _macbook():
     laeufe = [l for l in L if l.get("guenstigster")]
