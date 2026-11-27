@@ -35,7 +35,8 @@
    "speicher": "512 GB",
    "zustand": "Wie neu (Apple)",
    "akku": "laut Apple geprüft",
-   "variante": "Apple zertifiziert, 1 Jahr Garantie"
+   "variante": "Apple zertifiziert, 1 Jahr Garantie",
+   "ausstattung_ok": true
   },
   {
    "name": "refurbed: MacBook Air 13 M5 (alle Kombinationen)",
@@ -52,5 +53,14 @@
  ],
  "gutscheine": [],
  "cashback": [],
- "debug": true
+ "debug": true,
+ "ausstattung_muss": [
+  "16 GB",
+  "512 GB SSD",
+  "8-Core GPU",
+  "Mitternacht",
+  "DE"
+ ],
+ "refurbed_alle_links": true,
+ "refurbed_max_seiten": 80
 }

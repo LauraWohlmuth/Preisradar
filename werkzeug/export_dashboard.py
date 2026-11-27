@@ -129,10 +129,13 @@ def _weitere(out):
         if not dd["laeufe"]:
             continue
         la = dd["laeufe"][-1]
-        ang = sorted(la.get("angebote", []), key=lambda a: a["preis_mit_code"])
+        ang = sorted([a for a in la.get("angebote", []) if a.get("passt", True)], key=lambda a: a["preis_mit_code"])
         for a in ang:
             det = []
             if a.get("variante"): det.append(a["variante"])
+            if a.get("ausstattung"): det.append(a["ausstattung"])
+            if a.get("zustand"): det.append("Zustand " + a["zustand"])
+            if a.get("akku") and a["akku"] != "nicht angegeben": det.append("Akku " + a["akku"])
             det.append("Versand " + (f"{a['versand']:.2f} €".replace(".", ",") if a.get("versand") else ("frei" if a.get("versand") == 0 else "unbekannt")))
             if a.get("lieferung"): det.append(a["lieferung"])
             if a.get("code"): det.append(f"mit Code {a['code']}")

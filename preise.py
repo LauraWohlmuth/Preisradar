@@ -116,12 +116,16 @@ def refurbed_angebot(seite, url, quelle):
             "speicher": item.get("memory_size"),
             "zustand": REF_ZUSTAND.get(item.get("grade"), item.get("grade")),
             "akku": REF_AKKU.get(akku_roh, akku_roh or "nicht angegeben"),
-            "angebot_id": item.get("offer_id")}
+            "angebot_id": item.get("offer_id"),
+            "ausstattung": (lambda m_: html.unescape(re.sub(r"\s+", " ", m_.group(1))).strip() if m_ else None)(
+                re.search(r'data-test="instance-name"[^>]*>(.*?)</div>', seite, re.S))}
 
 
-def refurbed_alle(start, quelle, erste=None, max_seiten=40):
+def refurbed_alle(start, quelle, erste=None, max_seiten=None):
     """Läuft über alle erlaubten Kombinationen (Farbe × Speicher × Zustand × Akku) und liest jedes Angebot einzeln."""
     basis = "https://www.refurbed.de"
+    max_seiten = max_seiten or CFG.get("refurbed_max_seiten", 40)
+    praefix = re.match(r"https://www\.refurbed\.de(/p/[^/]+/)", start)
     offen, gesehen, angebote = [(start, erste)], set(), {}
     while offen and len(gesehen) < max_seiten:
         url, seite = offen.pop(0)
@@ -143,6 +147,12 @@ def refurbed_alle(start, quelle, erste=None, max_seiten=40):
                     voll = link if link.startswith("http") else basis + link
                     if voll not in gesehen:
                         offen.append((voll, None))
+        if CFG.get("refurbed_alle_links") and praefix:
+            # Ausstattungen ohne Auswahlfeld (Arbeitsspeicher, Tastatur, Grafik) stehen als Links auf der Seite
+            for link in set(re.findall(r'(?:href|value)="(' + re.escape(praefix.group(1)) + r'[^"]*\?offer=[1-9]\d*)"', seite)):
+                voll = basis + html.unescape(link)
+                if voll not in gesehen:
+                    offen.append((voll, None))
     print(f"  refurbed: {len(gesehen)} Seiten gelesen, {len(angebote)} Angebote")
     return list(angebote.values())
 
@@ -170,7 +180,16 @@ def passt_ohne_akku(a):
 
 def passt_kriterien(a):
     """Erste Wahl: alle Kriterien und Akku neu."""
-    return passt_ohne_akku(a) and (not AKKU_ZIEL or str(a.get("akku") or "").lower() in AKKU_ZIEL)
+    return passt_ohne_akku(a) and passt_ausstattung(a) and (not AKKU_ZIEL or str(a.get("akku") or "").lower() in AKKU_ZIEL)
+
+
+def passt_ausstattung(a):
+    """Zusatzmerkmale aus der refurbed-Ausstattungszeile (z. B. „16 GB | 512 GB SSD | 8-Core GPU | Mitternacht | DE“)."""
+    muss = CFG.get("ausstattung_muss") or []
+    if not muss or a.get("ausstattung") is None:
+        return True if not muss else bool(a.get("ausstattung_ok"))
+    teile = [t.strip().lower() for t in a["ausstattung"].split("|")]
+    return all(m.lower() in teile for m in muss)
 
 
 def zweite_wahl(a):
@@ -345,6 +364,7 @@ def pruefe(quelle, jetzt):
                                  "versand": v, "versand_bekannt": v is not None, "gesamtpreis": round(p + (v or 0), 2),
                                  "url": d.get("url") or quelle["url"], "via": quelle["name"],
                                  **({"variante": quelle["variante"]} if quelle.get("variante") else {}),
+                                 **({"ausstattung_ok": True} if quelle.get("ausstattung_ok") else {}),
                                  **({"farbe": quelle.get("farbe"), "speicher": quelle.get("speicher"), "zustand": quelle.get("zustand"),
                                      "akku": akku_lesen(seite) if quelle.get("akku_lesen") else (quelle.get("akku") or "nicht angegeben")}
                                     if (quelle.get("akku_lesen") or quelle.get("zustand")) else {})})
