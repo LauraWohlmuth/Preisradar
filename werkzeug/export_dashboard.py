@@ -60,6 +60,8 @@ def _iphone(out):
                      if str(a.get(f) or "").lower() not in {"tiefblau", "silber", "256 gb", "512 gb", "sehr gut", "exzellent", "premium", "neu"}]
             det = {"passt": "erste Wahl: passt mit neuem Akku",
                    "optimal": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel"}.get(art) or "passt nicht: " + ", ".join(fehlt)
+            if a.get("code") and a["preis_mit_code"] < a["gesamtpreis"]:
+                det += f" · mit Code {a['code']} (ohne Code {str(a['gesamtpreis']).replace('.', ',')} €; im Warenkorb prüfen)"
             zeilen.append([lab, a["preis_mit_code"], art, det, u, a.get("akku") or "nicht angegeben", a.get("zustand") or "nicht angegeben"])
             continue
         ist_fokus = fokus in u

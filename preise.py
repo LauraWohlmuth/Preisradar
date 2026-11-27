@@ -308,6 +308,15 @@ def pruefe(quelle, jetzt):
         eintrag.update(status="nicht prüfbar", grund="Angebotsliste auf der Seite nicht erkannt")
         return eintrag, []
     if quelle.get("typ") == "refurbed":
+        # Aktionscode aus dem Banner (z. B. „Spare 8% auf iPhone 16 & 17 mit Code IPHONE8OFF“) jeden Lauf neu lesen:
+        # verschwindet das Banner, wird auch nichts mehr abgezogen.
+        bt = text(re.sub(r"<script.*?</script>|<style.*?</style>", "", seite, flags=re.S))
+        bm = re.search(r"Spare (\d+(?:,\d+)?)\s?%([^|]{0,80}?)mit Code ([A-Z0-9]{4,20})", bt)
+        if bm:
+            MYDEALZ_CODES.append({"haendler": "refurbed", "code": bm.group(3), "rabatt_prozent": float(bm.group(1).replace(",", ".")),
+                                  "bedingung": f"Aktionscode laut Banner bei refurbed ({bm.group(0).strip()}); im Warenkorb prüfen. Dazu kommt eine Servicegebühr von 0,99 bis 5,99 €.",
+                                  "quelle": quelle["url"]})
+            print(f"  refurbed-Aktionscode: {bm.group(3)} −{bm.group(1)} %")
         alle = refurbed_alle(quelle["url"], quelle, seite)
         passend = [a for a in alle if passt_kriterien(a) and a["verfuegbar"]]
         for a in alle:
