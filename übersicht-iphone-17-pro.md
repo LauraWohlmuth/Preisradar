@@ -2,9 +2,9 @@
 
 *Apple iPhone 17 Pro, refurbished: Tiefblau oder Silber, 256 oder 512 GB, Zustand sehr gut/Exzellent, Akku neu oder optimal* · Zielpreis **1.000 €**
 
-**Stand 2026-11-27 10:51: günstigster geprüfter Preis 915,40 €** (0 € zum Lauf davor), ✅ **Zielpreis erreicht!**
+**Stand 2026-11-27 10:52: günstigster geprüfter Preis 915,40 €** (0 € zum Lauf davor), ✅ **Zielpreis erreicht!**
 
-Tiefstwert 915,40 € · Höchstwert 995 € · 17 Läufe seit 2026-11-26
+Tiefstwert 915,40 € · Höchstwert 995 € · 18 Läufe seit 2026-11-26
 
 ## Angebote
 
@@ -66,6 +66,7 @@ Tiefstwert 915,40 € · Höchstwert 995 € · 17 Läufe seit 2026-11-26
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-27 10:52 | 915,40 € |
 | 2026-11-27 10:51 | 915,40 € |
 | 2026-11-27 10:44 | 915,40 € |
 | 2026-11-27 10:33 | 915,40 € |
@@ -77,6 +78,5 @@ Tiefstwert 915,40 € · Höchstwert 995 € · 17 Läufe seit 2026-11-26
 | 2026-11-27 06:59 | 979,58 € |
 | 2026-11-27 06:22 | 979,58 € |
 | 2026-11-27 05:08 | 979,58 € |
-| 2026-11-27 00:22 | 981,99 € |
 
 _Preise werden nie geschätzt: Was nicht lesbar war, steht als „nicht prüfbar“ da. Codes nur, wenn belegt und gültig; Cashback zählt nicht zum Preis. Vor dem Kauf im Shop prüfen._
