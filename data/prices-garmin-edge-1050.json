@@ -329,7 +329,116 @@
    "guenstigster": 548.98,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-27T19:46:43+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: Garmin Edge 1050",
+     "url": "https://geizhals.de/garmin-edge-1050-010-02890-01-a3217786.html",
+     "abgerufen_um": "2026-11-27T19:46:43+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 548.98,
+     "angebote_anzahl": 25,
+     "grund": "6 lieferbar"
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "bikepirat.at",
+     "preis": 548.98,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAL9ZaCP6SLU5VtL5tqfLyvPIW549Mji3bGFl4WXwaaVtf5VaywpGHy4OCytqnfQSfyW7bpjnB6fwaPG4FbxSJplbeZWoElnPRuk_WCvWhvdIkvTkEBXrFpGC1oY2_OH8_kgqVv3BBheYtSAW5UWDMRo",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 548.98,
+     "lieferung": "lagernd/abholbereit",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 548.98
+    },
+    {
+     "haendler": "Fitstore24.de",
+     "preis": 549.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAKNjLuwmMfYxfsYjUP4yvgVtwojiaD0ETJQc7kXosGqg5vjlFTk6T6S9zTMq4ixYZqGkSBfy0dl8w8T-G_zwm5rWp2fUdbIQp2X8urhOE9LRIgBpbgf1bba7t3PbC-Fp9ioP7jk45rno1HKKOrBL2BhhPmCXIHlnSqehM8QYvx7YB0WXxdhkrRVLA4Weow_Yb9-kw6Do7-uAp8sp5bf544Akq4p6HicoOPtYteetjGfu",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 549.0,
+     "lieferung": "lagernd, 3-4 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 549.0
+    },
+    {
+     "haendler": "double.bike",
+     "preis": 599.99,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAANmYoI_VnXnOIdJzT_zzx9INgrxTMgfFUYwQdPsPZe_Whstfaa882gvz5UtX9p42Ln51j8lvk4VYrVOL-ANcuUER8Ogshqw_3Lzwg720dd6ZHvDK6Ps9v0O0rYGs6lJabnXE20saq_tcuVIVXqvSr7c",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 599.99,
+     "lieferung": "Sofort verfügbar, Lieferzeit: 1-3 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 599.99
+    },
+    {
+     "haendler": "JB-Computer",
+     "preis": 668.89,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAEFLlv36Zt7SKIfaiT2T-e_bX0uwF7g1btpjtPyntYnNXoDpzxD0wzSlMv1Oo_-bbIz6prsj1iFe7bD4ufxdxkdOm1_YgY0ndTgxsA4eob0yttTRrfBVPLzXwaPaFLKavkm7YIkTRkWWTQUDHp5S48Q-JDgg9mzA3G6dQynW1lzDgGs4Qu-Yvc0GhN_-tHkPU9lB3d7Ty4JgNd9vF5c4aOs",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 668.89,
+     "lieferung": "Auf Lager, sofort versandfertig Lieferzeit 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 668.89
+    },
+    {
+     "haendler": "Haushaltsparadies",
+     "preis": 746.98,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAMsI2zLkl4yYBt2vzQS3NQR1WSzrE3j-zb3Q5wpitiK_Fs6l3VbEJWuplxGWMnLK038F7yRSSFedVMtNyRYOCo7kgGQe0u8JASRLzxwmENBspc2dsN4vARsa2iUOqUh8dqlcbLC6cKqCIWRJN8s28uspsPtln68frAdnxu9wdfZOydEUuW-KS6J9tHYr4ry8IwDfaWeWTrIt6FJOMBpDCPIJgTAL_0yP9hbjSG4bOIZUtqeM__YrxHBUfz7kprfmDysvAc7bzFoIHVDjRdPYygfpHNEE_KhrgpCeBhUwa-vVpSHGa1y7VZgbRPOnrhxwJZbO6gFc2Kh_QZdoip3RJM4R8Ogshqw_3Lzwg720dd6ZAMVb5gRVJoELoXt-p9zmyXXE20saq_tcuVIVXqvSr7c",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 746.98,
+     "lieferung": "sofort versandbereit, Lieferzeit 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 746.98
+    },
+    {
+     "haendler": "jb-vertrieb",
+     "preis": 857.75,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAABMVxCMR9yPbsDFkFUHFUg1YHj-CNGlZGbvFwx-hNtDS9B8cBwYf9-cS_xHj0T9W2jhFHHRusk4rbj1YFXyHTt_SHZG3O3GvytIfiX9ctToY9kZR4HmqO0ZZFmReTHurT0ScbDBeMzV4SGkK_hHzkjUBGhSYGCYHkdB_qP031kkGre89-UL28uotsO_aZQGrVNAAkz7OmGfp1uycMSICKXbnZ0URSzz7lubM_DYq7a6juMCWyiN-MVZUCfsscy5xCw",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 857.75,
+     "lieferung": "lagernd",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 857.75
+    }
+   ],
+   "guenstigster": 548.98,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-27T19:39:57+01:00"
+ "stand": "2026-11-27T19:46:43+01:00"
 }
