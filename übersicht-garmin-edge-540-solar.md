@@ -2,9 +2,9 @@
 
 *Garmin Edge 540 Solar Fahrradcomputer, neu* · Zielpreis **0 €**
 
-**Stand 2026-11-27 19:56: günstigster geprüfter Preis 462 €** (0 € zum Lauf davor), noch 462 € über dem Ziel
+**Stand 2026-11-27 19:59: günstigster geprüfter Preis 462 €** (0 € zum Lauf davor), noch 462 € über dem Ziel
 
-Tiefstwert 462 € · Höchstwert 462 € · 7 Läufe seit 2026-11-27
+Tiefstwert 462 € · Höchstwert 462 € · 8 Läufe seit 2026-11-27
 
 ## Quellen
 
@@ -16,6 +16,7 @@ Tiefstwert 462 € · Höchstwert 462 € · 7 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-27 19:59 | 462 € |
 | 2026-11-27 19:56 | 462 € |
 | 2026-11-27 19:54 | – |
 | 2026-11-27 19:48 | 462 € |

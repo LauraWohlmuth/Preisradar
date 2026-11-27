@@ -1,0 +1,135 @@
+{
+ "produkt": "Garmin Forerunner 570 42 mm Slate Grey / Schwarz (010-02970-00), neu",
+ "zielpreis": 0,
+ "uvp": 0,
+ "laeufe": [
+  {
+   "zeit": "2026-11-27T19:59:47+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de",
+     "url": "https://geizhals.de/garmin-forerunner-570-42mm-slate-grey-aluminium-translucent-black-010-02970-00-a3493607.html",
+     "abgerufen_um": "2026-11-27T19:59:47+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 449.0,
+     "angebote_anzahl": 24,
+     "grund": "6 lieferbar"
+    },
+    {
+     "quelle": "bike-components",
+     "url": "https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/",
+     "abgerufen_um": "2026-11-27T19:59:47+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 419.0
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "bike-components",
+     "preis": 419.0,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 419.0,
+     "url": "https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/?o=1001011082-schwarz-schiefergrau",
+     "via": "bike-components",
+     "verfuegbar": true,
+     "preis_mit_code": 419.0
+    },
+    {
+     "haendler": "Fitstore24.de",
+     "preis": 449.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAPsFY_ULxLOmhAXtV0-86DPiSgtHw1zkt_sG74IMVCFUL--WohCKRpwcmS_ZKNADCxTzaPvbohJZXHd8ov426Rm0Pb0feKGruTRzJjPaIeYBHQ2xKy-EOwFNOKrmyakpt8iqzhAyltt59JkKgVwf2tnpHNEE_KhrgpCeBhUwa-vVGbqpbVJQJOJdHzS5jGqnK-2BNl9s1ygFPpwqgfZNngKczMGjGQ1H3xEieMTyKRtAIzhlMJkm__ZwuVDt_dblLPbqgI3qBabs21U-IkE0nyE",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 449.0,
+     "lieferung": "lagernd, 3-4 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 449.0
+    },
+    {
+     "haendler": "galaxus",
+     "preis": 474.66,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAL_gDuIJaGIaHVCFxG9wRGpFnTgwMn5qDdytpx8dukbAWOuHUqLXRMMm9eXzjVy-dU3oERGNcv5c5CAlpU9MPABJAHQa2WAmQyZZgbCKSJnw-qcLLWM9R-arUzKh2FrnUVGlSrRFx2x86gKOFXswNQvpihOnWoKbroT2UmGXxZErr7PTGrW10AvxW-I9ct1Th8c9AhnmABXfUzouIaN62ko1XjekJQ9FGiPxFu0oniKQFLRgvzS_LqUwRqk-Mb-PmVcQ89LA-E-wAx8NQzR70MYkVqbloi-B-8jHKkge1-l0loYQ7LYpdsbGdR6-LmpORlRXt0QYNc2e7qn3DsdQ8uHZQd3e08uCYDXfbxeXOGjr",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 474.66,
+     "lieferung": "Auf Lager, 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 474.66
+    },
+    {
+     "haendler": "ARLT Computer",
+     "preis": 499.99,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAEzJVpKKIe13TG-f5VqnqTBQSe06ItaGc_6yiV9_GalBI0PFEAM3TzmdBA_JJQnHegLp3RFHUJVtOn1Ptwf8Dj8u3j5tr4U8bYls_13CNeqsOQVj3spDYXlsKaV8TTfcAQQ09eywPGfBgTsjjfsCMSJ0rz-WARe5lvhh_LoAfcpBmBi-l55wW8qYXiqXIpjOhReQZ_rp_x5lRt5Abz9Ntw-mAJaGK45ifojiEzAcF462JFMAsP9r_QAR-rVrSif9-uqiYfDe-Vm1P6YzgfwUJpY",
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 499.99,
+     "lieferung": "4-6 Werktage nach Bestelleingang",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 499.99
+    },
+    {
+     "haendler": "camp4.de",
+     "preis": 499.99,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCDBpRL9kylDoB3T_-IyeOrfRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvERskyO4_W2eSCDkMv1vES5S0vVqPNnOiGAeJhg0lmmvltMFV-oswmqkhSVm4IrXpDy5MMbRgCwpNfz4tsHN7Jg",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 499.99,
+     "lieferung": "Auf Lager, Lieferzeit 2-3 Werktage oder sofort in Berlin abholen",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 499.99
+    },
+    {
+     "haendler": "JB-Computer",
+     "preis": 529.34,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAOcYIppzoklMKBQwSbvhlruv_75L4fruzPCT0x_o-waIP3HJOIntr4irwKJlNYz1Sssy72xQjOnslXTfAuT4QJeHkitzK6fBtkbRGelbIyuec7jWLIVLahqE9M-E0jx8K22hXsaWLxsatIDHDEo1thqhpJ1hN9HjjgV7X8fvzwfc6WEAYHSJMWy4piyvBW7wnmnZzI2KyJh_zVNCRKxH5D6C7HOhCzZ_Fyzvb7H3uYUTnMzBoxkNR98RInjE8ikbQLAIjewQcDZT0Raff1VJBZT26oCN6gWm7NtVPiJBNJ8h",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 529.34,
+     "lieferung": "Auf Lager, sofort versandfertig Lieferzeit 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 529.34
+    },
+    {
+     "haendler": "machsport",
+     "preis": 549.99,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAGUgr8mDWfAQb3KbDHid11gceSY_quYkMFdaWZougqC73p7qHrw4gttglf6uq4zlFo-OPUG4hlMypTmKy19MjoyMi-wlmfDM214qyHOZK3myAHBL6mds3gqM6QcY_MohR_3wt8U24Jw3peXHqzDmJZLsZNE035TZoceCGlwFWINgsoBMnefJZnAWYEP-3AGLywCqcFKAq-gIXn6-EsdpPf8o-LARGfCr0X2D0Nc5l521",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 549.99,
+     "lieferung": "Auf Lager, 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 549.99
+    }
+   ],
+   "guenstigster": 419.0,
+   "neuer_tiefstwert": true,
+   "melden": false
+  }
+ ],
+ "stand": "2026-11-27T19:59:47+01:00"
+}

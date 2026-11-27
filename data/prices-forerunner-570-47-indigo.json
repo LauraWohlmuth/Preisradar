@@ -1,0 +1,102 @@
+{
+ "produkt": "Garmin Forerunner 570 47 mm Indigo / Imperial Purple / Indigo (010-02971-02), neu",
+ "zielpreis": 0,
+ "uvp": 0,
+ "laeufe": [
+  {
+   "zeit": "2026-11-27T19:59:51+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de",
+     "url": "https://geizhals.de/garmin-forerunner-570-47mm-indigo-aluminium-translucent-imperial-purple-indigo-010-02971-02-a3493599.html",
+     "abgerufen_um": "2026-11-27T19:59:51+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 449.0,
+     "angebote_anzahl": 22,
+     "grund": "5 lieferbar"
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "Fitstore24.de",
+     "preis": 449.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAHrALPBe8Ej0JwX1YJ4Y_4viSgtHw1zkt_sG74IMVCFUL--WohCKRpwcmS_ZKNADCzqkrHoYQ4JcsnzTDw1A1C0Kz05sx2LvS-JhOliQf0dFAHBL6mds3gqM6QcY_MohR_3wt8U24Jw3peXHqzDmJZL5q4ovBWTep1DoYOtAQxnVS_kkB_52PoIFFhuTR-HcX3Oh2QHfvWqqf2ROUnf3EyHFxT2V_LZdXfFaOlqo1-acQP3USwcsh3_37Ew_PbckUJS9JdYFPu5hPFL4kReWtC0",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 449.0,
+     "lieferung": "lagernd, 3-4 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 449.0
+    },
+    {
+     "haendler": "camp4.de",
+     "preis": 499.99,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCIiW9bFeGlxG1GZtNrub05fRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvGUvoandGqQg20HFVtok4WuZkpPlFwEOu5nzXSnOB4dTpuJucz-kQKQkIaF0txk_KDy5MMbRgCwpNfz4tsHN7Jg",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 499.99,
+     "lieferung": "Auf Lager, Lieferzeit 2-3 Werktage oder sofort in Berlin abholen",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 499.99
+    },
+    {
+     "haendler": "JB-Computer",
+     "preis": 538.39,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAF0DgwpI5l_RNErh-Q5gOXWv_75L4fruzPCT0x_o-waIMtdnDqMILx1_4hOT9V_un7-ylDPI0IbyjRVCymU1OF0yBymLC0VA4JA-nzvku961iUxDQi62aHbuCMWXikCZ-5NcG2z8_5cUZdLXjF_qQ-Nk4CaKbYQBQ2fOBeLcASw8gjaxVbL-FGxQM9EJtTMnblFbw_DLIWpjrwAv46bFBqDwbpXu38bjPT_gLdnOg3KslG56qkN4AKZV7Pngal5wA5AlYOOIL1Gr_RnxlnVwogj_YtqI4BICla_kg5ijoo14",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 538.39,
+     "lieferung": "Auf Lager, sofort versandfertig Lieferzeit 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 538.39
+    },
+    {
+     "haendler": "machsport",
+     "preis": 549.99,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAOGEleJfxBiO5gCVJE5yeBu6Xxne411HXvgBsrT-KqHcLyM8yRsC5jexl8rVr0-bS_tSYY1RqShZAKuKMKeWk3eDh91_GPIOX78zRkoMoISKre-lVMgY7kcNTb1VZwC4FX9fdPNxZYQJyws6mDs1EZgfRz--4HsToWfDj8OZe5LXSQt60pCakp2MoqSrauOFfYA6ilLjCV-AwLNqIHW49DgivpyMnID7Em95bB3WK0PD9J6fvB-eZ3z6N9EfHJpEquqiYfDe-Vm1P6YzgfwUJpY",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 549.99,
+     "lieferung": "Auf Lager, 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 549.99
+    },
+    {
+     "haendler": "jb-vertrieb",
+     "preis": 733.13,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAABMVxCMR9yPbsDFkFUHFUg2mMlBSwYXIOLya3eFrv3pg9B8cBwYf9-cS_xHj0T9W2jhFHHRusk4rbj1YFXyHTt_SHZG3O3GvytIfiX9ctToY9kZR4HmqO0ZZFmReTHurT0ScbDBeMzV4SGkK_hHzkjUBGhSYGCYHkdB_qP031kkGGzJvWytTnq9aLCq9GBx5JX_-Xfrtb4BAAaqLBtM-9sjBGvOgSSpZ6ZAxzCaQTdivTOhfvMNrcDQ6XIYL06Pm8A",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 733.13,
+     "lieferung": "lagernd",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 733.13
+    }
+   ],
+   "guenstigster": 449.0,
+   "neuer_tiefstwert": true,
+   "melden": false
+  }
+ ],
+ "stand": "2026-11-27T19:59:51+01:00"
+}
