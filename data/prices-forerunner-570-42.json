@@ -264,9 +264,10 @@
      "preis_mit_code": 414.0
     }
    ],
-   "guenstigster": 414.0,
-   "neuer_tiefstwert": true,
-   "melden": true
+   "guenstigster": null,
+   "neuer_tiefstwert": false,
+   "melden": false,
+   "korrektur": "27.11.: nur ausverkauftes Angebot gelesen (geizhals nicht erreichbar), kein gültiger Preis"
   },
   {
    "zeit": "2026-11-27T19:56:27+01:00",

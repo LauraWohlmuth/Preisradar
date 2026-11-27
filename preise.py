@@ -504,7 +504,8 @@ def main():
     # Der günstigste Preis kommt nur aus den ausgewerteten Angeboten (mit Code-Prüfung), nicht aus dem rohen Quellen-Tiefstpreis.
     # Angebote mit Kriterien-Prüfung (iPhone: Farbe, Speicher, Zustand, Akku) zählen nur, wenn sie passen.
     preise = [a["preis_mit_code"] for a in angebote if a.get("passt", True) and a.get("verfuegbar", True) is not False]
-    if not preise:
+    if not preise and not angebote:
+        # Nur wenn gar keine Einzelangebote gelesen wurden; sonst wären ausverkaufte Preise als Ersatz möglich
         preise = [q["tiefstpreis"] for q in quellen if q.get("status") == "geprüft" and q.get("tiefstpreis")]
     preise = [p for p in preise if p >= CFG["warn_unter"]]  # darunter: Fake-Shop-Verdacht, zählt nicht
     lauf = {"zeit": jetzt, "quellen": quellen, "angebote": sorted(angebote, key=lambda a: a["preis_mit_code"]),
