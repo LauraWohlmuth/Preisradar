@@ -2,9 +2,9 @@
 
 *Garmin Forerunner 570, 42 mm, Cloud Blue Aluminium mit Armband Steinweiß/Cloud Blue (010-02970-01), neu* · Zielpreis **350 €**
 
-**Stand 2026-11-27 19:46: günstigster geprüfter Preis 449 €** (+30 € zum Lauf davor), noch 99 € über dem Ziel
+**Stand 2026-11-27 19:48: günstigster geprüfter Preis 449 €** (0 € zum Lauf davor), noch 99 € über dem Ziel
 
-Tiefstwert 419 € · Höchstwert 449 € · 2 Läufe seit 2026-11-27
+Tiefstwert 419 € · Höchstwert 449 € · 3 Läufe seit 2026-11-27
 
 ## Angebote
 
@@ -29,6 +29,7 @@ Tiefstwert 419 € · Höchstwert 449 € · 2 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-27 19:48 | 449 € |
 | 2026-11-27 19:46 | 449 € |
 | 2026-11-27 19:39 | 419 € |
 
