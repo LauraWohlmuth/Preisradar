@@ -1,0 +1,26 @@
+{
+ "produkt": "Garmin Edge 840 Solar Fahrradcomputer, neu",
+ "zielpreis": 0,
+ "uvp": 0,
+ "laeufe": [
+  {
+   "zeit": "2026-11-27T19:34:40+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: Garmin Edge 840 Solar",
+     "url": "https://geizhals.de/garmin-edge-840-solar-010-02695-21-a2928554.html",
+     "abgerufen_um": "2026-11-27T19:34:40+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 349.99,
+     "angebote_anzahl": 6,
+     "grund": "0 lieferbar"
+    }
+   ],
+   "angebote": [],
+   "guenstigster": 349.99,
+   "neuer_tiefstwert": true,
+   "melden": false
+  }
+ ],
+ "stand": "2026-11-27T19:34:40+01:00"
+}
