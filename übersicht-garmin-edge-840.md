@@ -2,16 +2,16 @@
 
 *Garmin Edge 840 Fahrradcomputer (010-02695-01), neu, ohne Solar und ohne Bundle* · Zielpreis **310 €**
 
-**Stand 2026-11-27 19:34: günstigster geprüfter Preis 319,44 €** (0 € zum Lauf davor), noch 9,44 € über dem Ziel
+**Stand 2026-11-27 19:37: günstigster geprüfter Preis 319,44 €** (0 € zum Lauf davor), noch 9,44 € über dem Ziel
 
-Tiefstwert 319,44 € · Höchstwert 319,44 € · 3 Läufe seit 2026-11-27
+Tiefstwert 319,44 € · Höchstwert 319,44 € · 4 Läufe seit 2026-11-27
 
 ## Angebote
 
 | Händler | Mit Code | Preis | Versand | Code | Cashback (später) |
 |---|---:|---:|---:|---|---|
-| [SportOkay.com Deutschland](https://geizhals.de/redir/BAAAAOHGNgn-lZYpZ_LB4j8PhZ3NZ3QliajS845u3yEs1UpaJMEg7UDxJ5D2Cbo96lDuEa6Gm2FOuTtN1krAGXVL_OuwvItJs3BNPvVFS2b-e6XDVnhNeghQS2okBdp3W3KWZQOVsO6aJVRXNMDsaERhfkmxnYNaZR44fIilf_KNlMttAmZl7bWO8JgcEIY-6q4eeBkcOg9afi2DnMLTi5-2lScMiXegDSIfHjnfZXB6OdPPMOQKWkXcQZtIyp1XEjmFEnEOH4Yge-NefFywGbgU_vwXfyXWcqq0GxBqeeQia0zY) | **319,44 €** | 319,44 € | 0 € | – | – |
-| [TechnikDirekt](https://geizhals.de/redir/BAAAANfDP1J7C1_RLO-4SZYGl_7KdHWJE0aRFzGp-BxGItW0k-rSK_vMwSbFBGchSFXaLa9J7Y1NcR05M9mijkr5voltDYJk-NYHazUHDiLBgje7hbhNLkoGxroDgTT8_2w87oDQ2-7BepUDJpYJlTV--JN5uNyvdi4SnAYr3xd10iHhM4halTs5UHsi8MiYkNph4g) | **381,58 €** | 381,58 € | unbekannt | – | – |
+| [SportOkay.com Deutschland](https://geizhals.de/redir/BAAAAOHGNgn-lZYpZ_LB4j8PhZ3NZ3QliajS845u3yEs1UpaJMEg7UDxJ5D2Cbo96lDuEa6Gm2FOuTtN1krAGXVL_OuwvItJs3BNPvVFS2b-e6XDVnhNeghQS2okBdp3W3KWZQOVsO6aJVRXNMDsaERhfkmxnYNaZR44fIilf_KNlMttAmZl7bWO8JgcEIY-6q4eeBkcOg9afi2DnMLTi5-2lSfMWf3O6YJA3LSz8KtMsLKCMOQKWkXcQZtIyp1XEjmFEpjdts7acleWn3GqBdoCVgX_Gv6V3quRkKV39wDC-jCe) | **319,44 €** | 319,44 € | 0 € | – | – |
+| [TechnikDirekt](https://geizhals.de/redir/BAAAANfDP1J7C1_RLO-4SZYGl_7KdHWJE0aRFzGp-BxGItW0k-rSK_vMwSbFBGchSFXaLa9J7Y1NcR05M9mijkr5voltDYJk-NYHazUHDiLBgje7pT442CKiMT5EVwilDp3M24DQ2-7BepUDJpYJlTV--JNjkOtsHz38aQKMS2hyvuMGWucUQq5waIiAb2FH13RWJA) | **381,58 €** | 381,58 € | unbekannt | – | – |
 
 ## Quellen
 
@@ -24,6 +24,7 @@ Tiefstwert 319,44 € · Höchstwert 319,44 € · 3 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-27 19:37 | 319,44 € |
 | 2026-11-27 19:34 | 319,44 € |
 | 2026-11-27 19:18 | 319,44 € |
 | 2026-11-27 18:17 | 319,44 € |

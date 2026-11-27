@@ -20,7 +20,25 @@
    "guenstigster": 462.0,
    "neuer_tiefstwert": true,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-27T19:37:34+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: Garmin Edge 540 Solar",
+     "url": "https://geizhals.de/garmin-edge-540-solar-010-02694-21-a2928610.html",
+     "abgerufen_um": "2026-11-27T19:37:34+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 462.0,
+     "angebote_anzahl": 2,
+     "grund": "0 lieferbar"
+    }
+   ],
+   "angebote": [],
+   "guenstigster": 462.0,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-27T19:34:39+01:00"
+ "stand": "2026-11-27T19:37:34+01:00"
 }
