@@ -157,9 +157,22 @@ def akku_lesen(seite):
     return "nicht angegeben"
 
 
-def passt_kriterien(a):
-    k = {"farbe": a.get("farbe"), "speicher": a.get("speicher"), "zustand": a.get("zustand"), "akku": a.get("akku")}
+AKKU_ZIEL = ["neu"]  # nur diese Akkus zählen für Preis und Ziel; "optimal" wird als zweite Wahl gezeigt
+
+
+def passt_ohne_akku(a):
+    k = {"farbe": a.get("farbe"), "speicher": a.get("speicher"), "zustand": a.get("zustand")}
     return all(v and any(e == str(v).lower() for e in REF_ERLAUBT[f]) for f, v in k.items())
+
+
+def passt_kriterien(a):
+    """Erste Wahl: alle Kriterien und Akku neu."""
+    return passt_ohne_akku(a) and str(a.get("akku") or "").lower() in AKKU_ZIEL
+
+
+def zweite_wahl(a):
+    """Alles passt, aber Akku optimal statt neu: wird gezeigt, zählt nicht fürs Ziel."""
+    return passt_ohne_akku(a) and str(a.get("akku") or "").lower() == "optimal"
 
 
 def text(fragment):
@@ -299,9 +312,10 @@ def pruefe(quelle, jetzt):
         passend = [a for a in alle if passt_kriterien(a) and a["verfuegbar"]]
         for a in alle:
             a["passt"] = passt_kriterien(a)
+            a["zweite_wahl"] = zweite_wahl(a)
         if alle:
             eintrag.update(status="geprüft", tiefstpreis=min(a["gesamtpreis"] for a in (passend or alle)), angebote_anzahl=len(alle),
-                           grund=f"{len(passend)} von {len(alle)} passen (Farbe, Speicher, Zustand, Akku)")
+                           grund=f"{len(passend)} von {len(alle)} passen mit neuem Akku, {sum(1 for a in alle if zweite_wahl(a) and a['verfuegbar'])} mit Akku optimal")
             return eintrag, [a for a in alle if a["verfuegbar"]]
         eintrag.update(status="nicht prüfbar", grund="refurbed-Angebotsdaten nicht erkannt")
         return eintrag, []
@@ -320,6 +334,7 @@ def pruefe(quelle, jetzt):
     for a in angebote:
         if "akku" in a:
             a["passt"] = passt_kriterien(a)
+            a["zweite_wahl"] = zweite_wahl(a)
     agg = next((d for d in daten if d["art"] == "aggregat" and d.get("tiefst") is not None), None)
     if agg:
         eintrag.update(status="geprüft", tiefstpreis=euro(str(agg["tiefst"])), hoechstpreis=euro(str(agg.get("hoechst") or "")), angebote_anzahl=agg.get("anzahl"))

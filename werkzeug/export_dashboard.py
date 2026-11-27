@@ -55,10 +55,11 @@ def _iphone(out):
             if "akku" not in a: continue
             lab = f"{a['haendler']}: {a.get('farbe') or '?'}, {a.get('speicher') or '?'}"
             if "offer=20894256" in u: lab = "Dein Angebot: " + lab.split(": ", 1)[1]
-            art = "passt" if a.get("passt") else "pruefen"
+            art = "passt" if a.get("passt") else ("optimal" if a.get("zweite_wahl") else "pruefen")
             fehlt = [n for n, f in (("Farbe", "farbe"), ("Speicher", "speicher"), ("Zustand", "zustand"), ("Akku", "akku"))
-                     if not a.get("passt") and str(a.get(f) or "").lower() not in {"tiefblau", "silber", "256 gb", "512 gb", "sehr gut", "exzellent", "premium", "neu", "optimal"}]
-            det = "passt zu allen Kriterien" if a.get("passt") else "passt nicht: " + ", ".join(fehlt)
+                     if str(a.get(f) or "").lower() not in {"tiefblau", "silber", "256 gb", "512 gb", "sehr gut", "exzellent", "premium", "neu"}]
+            det = {"passt": "erste Wahl: passt mit neuem Akku",
+                   "optimal": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel"}.get(art) or "passt nicht: " + ", ".join(fehlt)
             zeilen.append([lab, a["preis_mit_code"], art, det, u, a.get("akku") or "nicht angegeben", a.get("zustand") or "nicht angegeben"])
             continue
         ist_fokus = fokus in u
@@ -69,10 +70,11 @@ def _iphone(out):
         else:
             lab, art, det, ak, zu = a["haendler"], "pruefen", "alter Lauf: Akku nicht ausgelesen", "nicht ausgelesen", "nicht ausgelesen"
         zeilen.append([lab, a["preis_mit_code"], art, det, u, ak, zu])
-    zeilen.sort(key=lambda z: (z[2] != "passt", z[1]))
+    rang = {"passt": 0, "optimal": 1}
+    zeilen.sort(key=lambda z: (rang.get(z[2], 2), z[1]))
     if neu_format:
-        # Falsche Farben weglassen; von den übrigen nicht passenden nur die 6 günstigsten zeigen
-        zeilen = [z for z in zeilen if z[2] == "passt"] + [z for z in zeilen if z[2] != "passt" and "Farbe" not in z[3]][:6]
+        # Erst Akku neu, dann Akku optimal; falsche Farben weglassen, von den übrigen nur die 4 günstigsten
+        zeilen = [z for z in zeilen if z[2] in rang] + [z for z in zeilen if z[2] not in rang and "Farbe" not in z[3]][:4]
     with open(f"{out}/iphone_angebote.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["label", "preis", "art", "detail", "link", "akku", "zustand"]); w.writerows(zeilen)
     # Verlauf deines Angebots und Quellenstatus
@@ -80,7 +82,7 @@ def _iphone(out):
         w = csv.writer(f); w.writerow(["zeit", "preis"])
         for l_ in d["laeufe"]:
             if any("akku" in a for a in l_.get("angebote", [])):
-                x = l_.get("guenstigster")  # günstigstes passendes Angebot
+                x = l_.get("guenstigster")  # günstigstes passendes Angebot mit neuem Akku
             elif neu_format:
                 x = None  # alte Läufe kannten nur dein Angebot, nicht das günstigste passende: nicht mischen
             else:
@@ -94,7 +96,7 @@ def _iphone(out):
     hist = []
     with open(f"{out}/iphone_laeufe.csv", encoding="utf-8") as f:
         hist = [float(r["preis"]) for r in csv.DictReader(f) if r["preis"]]
-    return {"id": "iphone", "name": "iPhone 17 Pro refurbished", "unter": "Tiefblau/Silber · 256/512 GB · Sehr gut+ · Akku neu/optimal",
+    return {"id": "iphone", "name": "iPhone 17 Pro refurbished", "unter": "Tiefblau/Silber · 256/512 GB · Sehr gut+ · Akku neu",
             "preis": fok[1] if fok else "", "haendler": next((n for n in ("refurbed", "Swappie", "Coolblue") if fok and n.lower() in fok[4].lower()), "refurbed"), "ziel": cfg["zielpreis"], "stand": last["zeit"][:16],
             "trend": _trend(hist), "anker": "iphone", "link": fok[4] if fok else ""}
 
