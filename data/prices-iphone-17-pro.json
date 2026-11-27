@@ -3699,7 +3699,486 @@
    "guenstigster": 979.58,
    "neuer_tiefstwert": false,
    "melden": true
+  },
+  {
+   "zeit": "2026-11-27T07:09:35+01:00",
+   "quellen": [
+    {
+     "quelle": "refurbed: dein Angebot (Tiefblau 256 GB)",
+     "url": "https://www.refurbed.de/p/iphone-17-pro/407262aa/?offer=20894256",
+     "abgerufen_um": "2026-11-27T07:09:35+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 987.99
+    },
+    {
+     "quelle": "refurbed Tiefblau 256 GB",
+     "url": "https://www.refurbed.de/p/iphone-17-pro/407262/",
+     "abgerufen_um": "2026-11-27T07:09:35+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 1080.99
+    },
+    {
+     "quelle": "refurbed Silber 256 GB",
+     "url": "https://www.refurbed.de/p/iphone-17-pro/407263aa/",
+     "abgerufen_um": "2026-11-27T07:09:35+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 985.0
+    },
+    {
+     "quelle": "refurbed 512 GB",
+     "url": "https://www.refurbed.de/p/iphone-17-pro/407259aa/",
+     "abgerufen_um": "2026-11-27T07:09:35+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 1080.99
+    },
+    {
+     "quelle": "Swappie 512 GB Silber",
+     "url": "https://swappie.com/de/iphone/iphone-17-pro/iphone-17-pro-512gb-silber/",
+     "abgerufen_um": "2026-11-27T07:09:35+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 1109.0
+    },
+    {
+     "quelle": "Coolblue refurbished 512 GB Silber",
+     "url": "https://www.coolblue.de/produkt/971367/refurbished-iphone-17-pro-512gb-silber-sehr-gut.html",
+     "abgerufen_um": "2026-11-27T07:09:35+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 1249.0
+    },
+    {
+     "quelle": "Back Market iPhone 17 Pro",
+     "url": "https://www.backmarket.de/de-de/p/iphone-17-pro",
+     "abgerufen_um": "2026-11-27T07:09:35+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 403: Forbidden"
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "refurbed",
+     "preis": 985.0,
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 985.0,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/407263aa/",
+     "via": "refurbed Silber 256 GB",
+     "preis_mit_code": 985.0
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 987.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 987.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359101c/?offer=16200599",
+     "via": "refurbed: dein Angebot (Tiefblau 256 GB)",
+     "preis_mit_code": 987.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1010.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1010.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359103c/?offer=16200595",
+     "via": "refurbed: dein Angebot (Tiefblau 256 GB)",
+     "preis_mit_code": 1010.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1050.99,
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 1050.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/407262aa/",
+     "via": "refurbed: dein Angebot (Tiefblau 256 GB)",
+     "preis_mit_code": 1050.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1080.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1080.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359103aa/?offer=16200593",
+     "via": "refurbed Tiefblau 256 GB",
+     "preis_mit_code": 1080.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1080.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1080.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359103aa/?offer=16200593",
+     "via": "refurbed Silber 256 GB",
+     "preis_mit_code": 1080.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1080.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1080.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359103aa/?offer=16200593",
+     "via": "refurbed 512 GB",
+     "preis_mit_code": 1080.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1091.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1091.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359101aa/?offer=19908738",
+     "via": "refurbed Tiefblau 256 GB",
+     "preis_mit_code": 1091.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1091.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1091.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359101aa/?offer=19908738",
+     "via": "refurbed Silber 256 GB",
+     "preis_mit_code": 1091.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1091.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1091.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359101aa/?offer=19908738",
+     "via": "refurbed 512 GB",
+     "preis_mit_code": 1091.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1093.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1093.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359095aa/?offer=16200601",
+     "via": "refurbed Tiefblau 256 GB",
+     "preis_mit_code": 1093.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1093.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1093.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359095aa/?offer=16200601",
+     "via": "refurbed Silber 256 GB",
+     "preis_mit_code": 1093.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1093.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1093.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359095aa/?offer=16200601",
+     "via": "refurbed 512 GB",
+     "preis_mit_code": 1093.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1101.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1101.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359095c/?offer=21513221",
+     "via": "refurbed: dein Angebot (Tiefblau 256 GB)",
+     "preis_mit_code": 1101.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1108.99,
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 1108.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/407262/",
+     "via": "refurbed Tiefblau 256 GB",
+     "preis_mit_code": 1108.99
+    },
+    {
+     "haendler": "Swappie",
+     "preis": 1109.0,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1109.0,
+     "url": "https://swappie.com/de/modell/iphone-17-pro/",
+     "via": "Swappie 512 GB Silber",
+     "preis_mit_code": 1109.0
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1159.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1159.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359104aa/?offer=20723738",
+     "via": "refurbed Tiefblau 256 GB",
+     "preis_mit_code": 1159.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1159.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1159.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359104aa/?offer=20723738",
+     "via": "refurbed Silber 256 GB",
+     "preis_mit_code": 1159.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1159.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1159.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359104aa/?offer=20723738",
+     "via": "refurbed 512 GB",
+     "preis_mit_code": 1159.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1164.39,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1164.39,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359097aa/?offer=20723737",
+     "via": "refurbed Tiefblau 256 GB",
+     "preis_mit_code": 1164.39
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1164.39,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1164.39,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359097aa/?offer=20723737",
+     "via": "refurbed Silber 256 GB",
+     "preis_mit_code": 1164.39
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1164.39,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1164.39,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359097aa/?offer=20723737",
+     "via": "refurbed 512 GB",
+     "preis_mit_code": 1164.39
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1205.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1205.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359100c/?offer=21588712",
+     "via": "refurbed: dein Angebot (Tiefblau 256 GB)",
+     "preis_mit_code": 1205.99
+    },
+    {
+     "haendler": "Coolblue",
+     "preis": 1249.0,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1249.0,
+     "url": "https://www.coolblue.de/produkt/971367/refurbished-iphone-17-pro-512gb-silber-sehr-gut.html",
+     "via": "Coolblue refurbished 512 GB Silber",
+     "preis_mit_code": 1249.0
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1251.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1251.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359097c/?offer=20379466",
+     "via": "refurbed: dein Angebot (Tiefblau 256 GB)",
+     "preis_mit_code": 1251.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1253.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1253.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359104c/?offer=20896607",
+     "via": "refurbed: dein Angebot (Tiefblau 256 GB)",
+     "preis_mit_code": 1253.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1328.99,
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 1328.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/407259aa/",
+     "via": "refurbed 512 GB",
+     "preis_mit_code": 1328.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1334.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1334.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/407266aa/?offer=21300192",
+     "via": "refurbed Tiefblau 256 GB",
+     "preis_mit_code": 1334.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1334.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1334.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/407266aa/?offer=21300192",
+     "via": "refurbed Silber 256 GB",
+     "preis_mit_code": 1334.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1334.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1334.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/407266aa/?offer=21300192",
+     "via": "refurbed 512 GB",
+     "preis_mit_code": 1334.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1355.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1355.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359102c/?offer=21435048",
+     "via": "refurbed: dein Angebot (Tiefblau 256 GB)",
+     "preis_mit_code": 1355.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1365.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1365.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359098c/?offer=21709720",
+     "via": "refurbed: dein Angebot (Tiefblau 256 GB)",
+     "preis_mit_code": 1365.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1366.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1366.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359105c/?offer=21481231",
+     "via": "refurbed: dein Angebot (Tiefblau 256 GB)",
+     "preis_mit_code": 1366.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1533.01,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1533.01,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359100aa/?offer=20092815",
+     "via": "refurbed Tiefblau 256 GB",
+     "preis_mit_code": 1533.01
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1533.01,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1533.01,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359100aa/?offer=20092815",
+     "via": "refurbed Silber 256 GB",
+     "preis_mit_code": 1533.01
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1533.01,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1533.01,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359100aa/?offer=20092815",
+     "via": "refurbed 512 GB",
+     "preis_mit_code": 1533.01
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1630.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1630.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359105aa/?offer=15581276",
+     "via": "refurbed Tiefblau 256 GB",
+     "preis_mit_code": 1630.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1630.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1630.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359105aa/?offer=15581276",
+     "via": "refurbed Silber 256 GB",
+     "preis_mit_code": 1630.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1630.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1630.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359105aa/?offer=15581276",
+     "via": "refurbed 512 GB",
+     "preis_mit_code": 1630.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1660.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1660.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359102aa/?offer=20092839",
+     "via": "refurbed Tiefblau 256 GB",
+     "preis_mit_code": 1660.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1660.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1660.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359102aa/?offer=20092839",
+     "via": "refurbed Silber 256 GB",
+     "preis_mit_code": 1660.99
+    },
+    {
+     "haendler": "refurbed",
+     "preis": 1660.99,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 1660.99,
+     "url": "https://www.refurbed.de/p/iphone-17-pro/359102aa/?offer=20092839",
+     "via": "refurbed 512 GB",
+     "preis_mit_code": 1660.99
+    }
+   ],
+   "guenstigster": 985.0,
+   "neuer_tiefstwert": false,
+   "melden": true
   }
  ],
- "stand": "2026-11-27T06:59:43+01:00"
+ "stand": "2026-11-27T07:09:35+01:00"
 }
