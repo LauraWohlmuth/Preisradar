@@ -28,13 +28,9 @@ jobs:
         run: python preise.py
         env:
           DEBUG_HTML: ${{ github.event.inputs.debug == 'ja' && '1' || '' }}
-      - name: MacBook refurbished prüfen
-        run: python preise.py produkte/macbook-refurbished.json
-        env:
-          DEBUG_HTML: ${{ github.event.inputs.debug == 'ja' && '1' || '' }}
-        continue-on-error: true
-      - name: KICKR CORE 2 prüfen
-        run: python preise.py produkte/kickr-core-2.json
+      - name: Weitere Produkte prüfen (alle produkte/*.json)
+        run: |
+          for f in produkte/*.json; do echo "== $f"; python preise.py "$f" || echo "Fehler bei $f"; done
         env:
           DEBUG_HTML: ${{ github.event.inputs.debug == 'ja' && '1' || '' }}
         continue-on-error: true
@@ -47,7 +43,7 @@ jobs:
         run: |
           git config user.name "preisradar-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/prices.json übersicht.md data/prices-macbook-refurbished.json übersicht-macbook-refurbished.md data/prices-kickr-core-2.json übersicht-kickr-core-2.md
+          git add data/prices*.json übersicht*.md
           [ -d debug ] && git add -f debug || true
           [ -d docs ] && git add docs || true
           git commit -m "Preise: Lauf $(TZ=Europe/Berlin date '+%d.%m.%Y %H:%M')" || exit 0

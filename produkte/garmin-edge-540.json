@@ -1,0 +1,39 @@
+{
+ "id": "garmin-edge-540",
+ "kurzname": "Garmin Edge 540",
+ "unterzeile": "Fahrradcomputer · neu · ohne Solar, ohne Sensor-Bundle",
+ "produkt": "Garmin Edge 540 Fahrradcomputer (010-02694-01), neu, ohne Solar und ohne Bundle",
+ "zielpreis": 220,
+ "uvp": 349.99,
+ "warn_unter": 150,
+ "variante_muss": [
+  "edge 540"
+ ],
+ "quellen": [
+  {
+   "name": "geizhals.de: Garmin Edge 540",
+   "typ": "geizhals",
+   "variante_block": "",
+   "url": "https://geizhals.de/garmin-edge-540-010-02694-01-a2928679.html"
+  },
+  {
+   "name": "mydealz.de",
+   "typ": "mydealz",
+   "url": "https://www.mydealz.de/search?q=garmin+edge+540"
+  }
+ ],
+ "mydealz_filter": {
+  "muss": [
+   "edge 540"
+  ],
+  "nicht": [
+   "solar",
+   "bundle",
+   "1040",
+   "1050"
+  ]
+ },
+ "gutscheine": [],
+ "cashback": [],
+ "debug": false
+}

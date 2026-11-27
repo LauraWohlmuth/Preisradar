@@ -1,0 +1,39 @@
+{
+ "id": "garmin-edge-840",
+ "kurzname": "Garmin Edge 840",
+ "unterzeile": "Fahrradcomputer · neu · ohne Solar, ohne Sensor-Bundle",
+ "produkt": "Garmin Edge 840 Fahrradcomputer (010-02695-01), neu, ohne Solar und ohne Bundle",
+ "zielpreis": 310,
+ "uvp": 449.99,
+ "warn_unter": 150,
+ "variante_muss": [
+  "edge 840"
+ ],
+ "quellen": [
+  {
+   "name": "geizhals.de: Garmin Edge 840",
+   "typ": "geizhals",
+   "variante_block": "",
+   "url": "https://geizhals.de/garmin-edge-840-010-02695-01-a2928592.html"
+  },
+  {
+   "name": "mydealz.de",
+   "typ": "mydealz",
+   "url": "https://www.mydealz.de/search?q=garmin+edge+840"
+  }
+ ],
+ "mydealz_filter": {
+  "muss": [
+   "edge 840"
+  ],
+  "nicht": [
+   "solar",
+   "bundle",
+   "1040",
+   "1050"
+  ]
+ },
+ "gutscheine": [],
+ "cashback": [],
+ "debug": false
+}
