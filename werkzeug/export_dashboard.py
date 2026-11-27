@@ -110,9 +110,51 @@ def _macbook():
             "preis": best["preis_mit_code"], "haendler": best["haendler"], "ziel": d["zielpreis"], "stand": last["zeit"][:16],
             "trend": _trend([l["guenstigster"] for l in laeufe]), "anker": "kopf", "link": best["url"]}
 
+def _weitere(out):
+    """Alle weiteren Produkte aus produkte/*.json (außer iPhone): Kachel, Angebotsliste und Verlauf."""
+    import glob as _glob
+    basis = _os.path.dirname(_os.path.dirname(src))
+    kacheln, zeilen, verlauf = [], [], []
+    for cp in sorted(_glob.glob(_os.path.join(basis, "produkte", "*.json"))):
+        cfg = json.load(open(cp, encoding="utf-8"))
+        pid = cfg.get("id")
+        if pid in (None, "iphone-17-pro"):
+            continue
+        dp = _os.path.join(basis, "data", f"prices-{pid}.json")
+        if not _os.path.exists(dp):
+            continue
+        dd = json.load(open(dp, encoding="utf-8"))
+        if not dd["laeufe"]:
+            continue
+        la = dd["laeufe"][-1]
+        ang = sorted(la.get("angebote", []), key=lambda a: a["preis_mit_code"])
+        for a in ang:
+            det = []
+            if a.get("variante"): det.append(a["variante"])
+            det.append("Versand " + (f"{a['versand']:.2f} €".replace(".", ",") if a.get("versand") else ("frei" if a.get("versand") == 0 else "unbekannt")))
+            if a.get("lieferung"): det.append(a["lieferung"])
+            if a.get("code"): det.append(f"mit Code {a['code']}")
+            zeilen.append([pid, a["haendler"], a["preis_mit_code"], " · ".join(det), a.get("url", "")])
+        for l_ in dd["laeufe"]:
+            if l_.get("guenstigster"):
+                verlauf.append([pid, l_["zeit"][:16], l_["guenstigster"]])
+        best = ang[0] if ang else None
+        kurz = cfg.get("kurzname") or cfg["produkt"].split(",")[0].split("(")[0].strip()
+        kacheln.append({"id": pid, "name": kurz, "unter": cfg.get("unterzeile", ""),
+                        "preis": best["preis_mit_code"] if best else "", "haendler": best["haendler"] if best else "–",
+                        "ziel": cfg["zielpreis"], "stand": la["zeit"][:16],
+                        "trend": _trend([l_["guenstigster"] for l_ in dd["laeufe"] if l_.get("guenstigster")]),
+                        "anker": "p-" + pid, "link": best["url"] if best else ""})
+    with open(f"{out}/weitere_angebote.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["produkt", "haendler", "preis", "detail", "link"]); w.writerows(zeilen)
+    with open(f"{out}/weitere_laeufe.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["produkt", "zeit", "preis"]); w.writerows(verlauf)
+    return kacheln
+
 _prod = [_macbook()]
 _ip = _iphone(out)
 if _ip: _prod.append(_ip)
+_prod.extend(_weitere(out))
 with open(f"{out}/produkte.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f); w.writerow(["id", "name", "unter", "preis", "haendler", "ziel", "abstand", "trend", "stand", "anker", "link"])
     for p_ in _prod:

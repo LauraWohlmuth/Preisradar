@@ -46,9 +46,16 @@
    "kickr",
    "core 2"
   ],
-  "nicht": []
+  "nicht": [
+   "zwift ride",
+   "ride v2",
+   "ride with",
+   "ride mit"
+  ]
  },
  "gutscheine": [],
  "cashback": [],
- "debug": true
+ "debug": true,
+ "kurzname": "Wahoo KICKR CORE 2",
+ "unterzeile": "Smart-Trainer · neu · mit oder ohne Zwift Cog"
 }

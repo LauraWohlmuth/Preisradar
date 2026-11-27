@@ -341,6 +341,7 @@ def pruefe(quelle, jetzt):
                 angebote.append({"haendler": d.get("haendler") or quelle.get("haendler") or "unbekannt", "preis": p,
                                  "versand": v, "versand_bekannt": v is not None, "gesamtpreis": round(p + (v or 0), 2),
                                  "url": d.get("url") or quelle["url"], "via": quelle["name"],
+                                 **({"variante": quelle["variante"]} if quelle.get("variante") else {}),
                                  **({"farbe": quelle.get("farbe"), "speicher": quelle.get("speicher"), "zustand": quelle.get("zustand"),
                                      "akku": akku_lesen(seite)} if quelle.get("akku_lesen") else {})})
     for a in angebote:

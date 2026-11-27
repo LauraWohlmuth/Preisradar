@@ -190,7 +190,7 @@
 <div class="pr">
   <nav class="pr-nav" id="navigation" aria-label="Bereiche">
     <span class="pr-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 12l5-5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>Preisradar</span>
-    <div class="pr-navlinks"><a href="#angebote">Angebote</a><a href="#blackfriday">Black Friday</a><a href="#verlauf">Preisverlauf</a><a href="#vorgaenger">Vorjahre</a><a href="#deals">Deals</a><a href="#iphone">iPhone</a></div>
+    <div class="pr-navlinks"><a href="#angebote">Angebote</a><a href="#blackfriday">Black Friday</a><a href="#verlauf">Preisverlauf</a><a href="#vorgaenger">Vorjahre</a><a href="#deals">Deals</a><a href="#iphone">iPhone</a><a href="#weitere">Weitere</a></div>
     <a class="pr-btn pr-navbtn" id="alle-pruefen" href="https://github.com/LauraWohlmuth/preisradar/actions/workflows/preise.yml" target="_blank" rel="noopener" aria-describedby="alle-pruefen-hinweis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>Alle prüfen</a>
   </nav>
   
@@ -329,6 +329,11 @@
     <div class="pr-tw"><table class="pr-t" data-source="iphone_quellen" data-row-key="quelle"><thead><tr><th data-field="quelle">Quelle</th><th data-field="status">Status</th><th data-field="hinweis">Hinweis</th></tr></thead><tbody data-draw="ip-quellen"></tbody></table></div>
     <div class="pr-antwort" id="ip-antwort" data-draw="ip-antwort" data-source="iphone_angebote produkte"></div>
     <ul class="pr-check"><li>Zustand und Akku stehen im Angebot so, wie du sie willst</li><li>Farbe und Speichergröße stimmen</li><li>Gesamtpreis inklusive Versand</li><li>Akku und Zustand sind bei jeder Zeile aus der Shopseite ausgelesen; vor dem Kauf im Warenkorb gegenprüfen</li></ul>
+  </section>
+  <section class="pr-sec" id="weitere">
+    <h2 class="pr-h2">Weitere Produkte</h2>
+    <p class="pr-note">Jedes weitere Produkt wird stündlich mit denselben Quellen geprüft. Preis inklusive Versand und gültigem Code.</p>
+    <div data-draw="weitere" data-source="weitere_angebote weitere_laeufe produkte"></div>
   </section>
   <footer class="pr-footer" id="fusszeile"><span>Preisradar · privat für Laura</span><span>Daten: geizhals.de, notebookinfo.de, mydealz.de</span><span>stündlich geprüft, Preise ohne Gewähr</span><span>Kein Kauf über diese Seite</span></footer>
 </div>
@@ -828,4 +833,39 @@ dash.draw('ip-antwort', (el) => {
   el.append(prEl('h3', null, n + (n === 1 ? ' Angebot passt' : ' Angebote passen') + ' mit neuem Akku'), prEl('p', null, 'Am günstigsten: ' + f.label + ', Zustand ' + f.zustand + ', Akku ' + f.akku + ', heute ' + PR.eur(f.preis) + (ab != null ? (ab > 0 ? ', ' + PR.eur(ab) + ' über deinem Zielpreis von ' + PR.eur(p.ziel) : ', unter deinem Zielpreis') : '') + '. ' + (() => { const o = d.data.find((r) => r.art === 'optimal'); return o ? 'Mit Akku optimal ginge es ab ' + PR.eur(o.preis) + ' (zweite Wahl, zählt nicht fürs Ziel). ' : ''; })() + 'Prüf vor dem Kauf den Gesamtpreis im Warenkorb, die Garantie (refurbed: mindestens 12 Monate) und die Rückgabe (30 Tage).'));
 });
 
+
+dash.draw('weitere', (el) => {
+  const a = dash.data('weitere_angebote'), v = dash.data('weitere_laeufe'), p = dash.data('produkte');
+  if (a.status !== 'ok' || p.status !== 'ok') { if (!el.firstChild) el.textContent = '—'; return; }
+  el.replaceChildren();
+  const prods = p.data.filter((r) => r.id !== 'macbook' && r.id !== 'iphone');
+  if (!prods.length) { el.textContent = 'Noch keine weiteren Produkte gelesen.'; return; }
+  prods.forEach((r) => {
+    const box = prEl('div'); box.id = r.anker; box.style.marginTop = '18px';
+    box.append(prEl('h3', 'pr-h2', r.name));
+    if (r.unter) box.append(prEl('p', 'pr-note', r.unter));
+    const m = prEl('div', 'pr-metrics');
+    const met = (lab, wert, feld) => { const d = prEl('div', 'pr-metric'); d.append(prEl('span', null, lab)); const b = prEl('b', null, wert); if (feld) { b.dataset.source = 'produkte'; b.dataset.field = feld; b.dataset.where = 'id=' + encodeURIComponent(r.id); } d.append(b); return d; };
+    m.append(met('Bester Preis', PR.eur(r.preis), 'preis'), met('Abstand zum Ziel ' + PR.eur(r.ziel), +r.abstand === 0 ? 'erreicht' : PR.eur(r.abstand), +r.abstand === 0 ? null : 'abstand'), met('Zuletzt geprüft', r.stand ? r.stand.slice(8, 10) + '.' + r.stand.slice(5, 7) + '., ' + r.stand.slice(11, 16) : '—'));
+    box.append(m);
+    if (v.status === 'ok') {
+      const ps = v.data.filter((x) => x.produkt === r.id).map((x) => +x.preis);
+      if (ps.length) box.append(prEl('p', 'pr-insight', ps.length === 1 ? 'Erster Lauf. Der Verlauf füllt sich stündlich.' : 'Seit Beginn der Messung zwischen ' + PR.eur(Math.min(...ps)) + ' und ' + PR.eur(Math.max(...ps)) + ', jetzt ' + PR.eur(ps[ps.length - 1]) + '.'));
+    }
+    const list = prEl('div', 'pr-list');
+    a.data.filter((x) => x.produkt === r.id).forEach((x, i) => {
+      const row = prEl('div', 'pr-row' + (i === 0 ? ' bester' : ''));
+      const logo = prEl('div', 'pr-logo-m', prKuerzel(x.haendler)); logo.style.background = prFarbe(x.haendler); logo.setAttribute('aria-hidden', 'true');
+      const mid = prEl('div'); mid.style.minWidth = '0';
+      const n = prEl('div', 'pr-row-name', x.haendler); if (i === 0) n.append(prEl('span', 'pr-badge top', 'günstigster'));
+      mid.append(n, prEl('div', 'pr-row-sub', x.detail || ''));
+      const pr = prEl('div', 'pr-row-preis'); const b = prEl('b', null, PR.eur(x.preis)); b.dataset.source = 'weitere_angebote'; b.dataset.field = 'preis'; b.dataset.where = 'produkt=' + encodeURIComponent(x.produkt) + '&link=' + encodeURIComponent(x.link); pr.append(b);
+      row.append(logo, mid, pr);
+      if (/^https?:\/\//.test(x.link || '')) { const l = prEl('a', 'pr-btn pr-btn-primary pr-shopbtn', 'Zum Angebot'); l.href = x.link; l.target = '_blank'; l.rel = 'noopener'; row.append(l); }
+      list.append(row);
+    });
+    if (!list.firstChild) list.append(prEl('p', 'pr-note', 'Im letzten Lauf kein Angebot gelesen.'));
+    box.append(list); el.append(box);
+  });
+});
 </script>

@@ -13,7 +13,7 @@ HIER = os.path.dirname(os.path.abspath(__file__))
 ordner, ziel = sys.argv[1], sys.argv[2]
 NAMEN = {"amazon": "amazon_verlauf"}
 IDS = ["angebote", "laeufe", "quellen", "deals", "produkte", "iphone_angebote", "iphone_laeufe", "iphone_quellen",
-       "vorgaenger", "blackfriday", "amazon", "codes"]
+       "vorgaenger", "blackfriday", "amazon", "codes", "weitere_angebote", "weitere_laeufe"]
 daten = {}
 for i in IDS:
     p = os.path.join(ordner, NAMEN.get(i, i) + ".csv")
