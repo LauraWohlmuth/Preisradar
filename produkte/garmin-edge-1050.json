@@ -1,0 +1,24 @@
+{
+ "id": "garmin-edge-1050",
+ "kurzname": "Garmin Edge 1050",
+ "produkt": "Garmin Edge 1050 Fahrradcomputer, neu",
+ "zielpreis": 0,
+ "uvp": 0,
+ "warn_unter": 100,
+ "nur_vergleich": true,
+ "gruppe": "fahrradcomputer",
+ "variante_muss": [
+  "edge 1050"
+ ],
+ "quellen": [
+  {
+   "name": "geizhals.de: Garmin Edge 1050",
+   "typ": "geizhals",
+   "variante_block": "",
+   "url": "https://geizhals.de/garmin-edge-1050-010-02890-01-a3217786.html"
+  }
+ ],
+ "gutscheine": [],
+ "cashback": [],
+ "debug": false
+}

@@ -190,7 +190,7 @@
 <div class="pr">
   <nav class="pr-nav" id="navigation" aria-label="Bereiche">
     <span class="pr-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 12l5-5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>Preisradar</span>
-    <div class="pr-navlinks"><a href="#angebote">Angebote</a><a href="#blackfriday">Black Friday</a><a href="#verlauf">Preisverlauf</a><a href="#vorgaenger">Vorjahre</a><a href="#deals">Deals</a><a href="#weitere">Weitere</a></div>
+    <div class="pr-navlinks"><a href="#angebote">Angebote</a><a href="#blackfriday">Black Friday</a><a href="#verlauf">Preisverlauf</a><a href="#vorgaenger">Vorjahre</a><a href="#deals">Deals</a><a href="#weitere">Weitere</a><a href="#fahrradcomputer">Radcomputer</a></div>
     <a class="pr-btn pr-navbtn" id="alle-pruefen" href="https://github.com/LauraWohlmuth/preisradar/actions/workflows/preise.yml" target="_blank" rel="noopener" aria-describedby="alle-pruefen-hinweis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>Alle prüfen</a>
   </nav>
   
@@ -317,6 +317,12 @@
     <h2 class="pr-h2">Weitere Produkte</h2>
     <p class="pr-note">Jedes weitere Produkt wird stündlich mit denselben Quellen geprüft. Preis inklusive Versand und gültigem Code.</p>
     <div data-draw="weitere" data-source="weitere_angebote weitere_laeufe produkte"></div>
+  </section>
+  <section class="pr-sec" id="fahrradcomputer">
+    <h2 class="pr-h2">Fahrradcomputer vergleichen</h2>
+    <p class="pr-note">Wähle die Ausstattung, die du brauchst. Technische Daten aus den geizhals-Datenblättern, Preise aus dem letzten Lauf (günstigstes lieferbares Angebot inkl. Versand).</p>
+    <div id="fc-filter"><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Touchscreen filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Touchscreen</span><button type="button" class="pr-chip" data-fcf="touch" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="touch" data-wert="ja" aria-pressed="false">Ja</button><button type="button" class="pr-chip" data-fcf="touch" data-wert="nein" aria-pressed="false">Nein</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Solar filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Solar</span><button type="button" class="pr-chip" data-fcf="solar" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="solar" data-wert="ja" aria-pressed="false">Ja</button><button type="button" class="pr-chip" data-fcf="solar" data-wert="nein" aria-pressed="false">Nein</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Akku filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Akku</span><button type="button" class="pr-chip" data-fcf="akku" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="akku" data-wert="24" aria-pressed="false">ab 24 h</button><button type="button" class="pr-chip" data-fcf="akku" data-wert="30" aria-pressed="false">ab 30 h</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Display filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Display</span><button type="button" class="pr-chip" data-fcf="display" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="display" data-wert="2.6" aria-pressed="false">ab 2,6"</button><button type="button" class="pr-chip" data-fcf="display" data-wert="3.5" aria-pressed="false">ab 3,5"</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Speicher filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Speicher</span><button type="button" class="pr-chip" data-fcf="speicher" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="speicher" data-wert="32" aria-pressed="false">ab 32 GB</button><button type="button" class="pr-chip" data-fcf="speicher" data-wert="64" aria-pressed="false">ab 64 GB</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach WLAN filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">WLAN</span><button type="button" class="pr-chip" data-fcf="wlan" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="wlan" data-wert="ja" aria-pressed="false">Ja</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Preis filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Preis</span><button type="button" class="pr-chip" data-fcf="preis" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="preis" data-wert="250" aria-pressed="false">bis 250 €</button><button type="button" class="pr-chip" data-fcf="preis" data-wert="350" aria-pressed="false">bis 350 €</button><button type="button" class="pr-chip" data-fcf="preis" data-wert="500" aria-pressed="false">bis 500 €</button></div><div class="pr-toolbar" style="margin-top:6px"><span class="pr-zaehler" data-draw="fc-zaehler">—</span></div></div>
+    <div class="pr-list" data-draw="fc-rows" data-source="fahrradcomputer"></div>
   </section>
   <footer class="pr-footer" id="fusszeile"><span>Preisradar · privat für Laura</span><span>Daten: geizhals.de, notebookinfo.de, mydealz.de</span><span>stündlich geprüft, Preise ohne Gewähr</span><span>Kein Kauf über diese Seite</span></footer>
 </div>
@@ -849,6 +855,43 @@ dash.draw('weitere', (el) => {
     });
     if (!list.firstChild) list.append(prEl('p', 'pr-note', 'Im letzten Lauf kein Angebot gelesen.'));
     box.append(list); el.append(box);
+  });
+});
+
+window.FC_STATE = {touch: 'alle', solar: 'alle', akku: 'alle', display: 'alle', speicher: 'alle', wlan: 'alle', preis: 'alle'};
+window.fcAuswahl = (rows) => rows.filter((r) => { const s = window.FC_STATE;
+  return (s.touch === 'alle' || r.touch === s.touch) && (s.solar === 'alle' || r.solar === s.solar) && (s.wlan === 'alle' || r.wlan === s.wlan)
+    && (s.akku === 'alle' || +r.akku_h >= +s.akku) && (s.display === 'alle' || +r.display_zoll >= +s.display)
+    && (s.speicher === 'alle' || +r.speicher_gb >= +s.speicher) && (s.preis === 'alle' || (r.preis !== null && r.preis !== '' && +r.preis <= +s.preis)); });
+dash.draw('fc-zaehler', (el) => { const d = dash.data('fahrradcomputer'); el.textContent = d.status === 'ok' ? fcAuswahl(d.data).length + ' von ' + d.data.length + ' Modellen' : '—'; });
+document.querySelectorAll('.pr-chip[data-fcf]').forEach((b) => b.addEventListener('click', () => {
+  window.FC_STATE[b.dataset.fcf] = b.dataset.wert;
+  document.querySelectorAll('.pr-chip[data-fcf="' + b.dataset.fcf + '"]').forEach((x) => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+  dash.draw('fc-rows'); dash.draw('fc-zaehler');
+}));
+dash.draw('fc-rows', (el) => {
+  const d = dash.data('fahrradcomputer');
+  if (d.status !== 'ok') { if (d.status === 'error') el.textContent = 'Vergleich konnte nicht geladen werden.'; else if (!el.firstChild) el.textContent = '—'; return; }
+  el.replaceChildren();
+  const zeilen = fcAuswahl(d.data).sort((a, b) => (a.preis === null || a.preis === '' ? 1e9 : +a.preis) - (b.preis === null || b.preis === '' ? 1e9 : +b.preis));
+  if (!zeilen.length) { el.textContent = 'Kein Modell passt zu dieser Auswahl.'; return; }
+  zeilen.forEach((r, i) => {
+    const row = prEl('div', 'pr-row' + (i === 0 ? ' bester' : ''));
+    const logo = prEl('div', 'pr-logo-m', 'G'); logo.style.background = prFarbe('Garmin'); logo.setAttribute('aria-hidden', 'true');
+    const mid = prEl('div'); mid.style.minWidth = '0';
+    const n = prEl('div', 'pr-row-name', r.modell); if (i === 0) n.append(prEl('span', 'pr-badge top', 'günstigster passender'));
+    const chips = prEl('div'); chips.style.cssText = 'display:flex;flex-wrap:wrap;gap:4px;margin:4px 0 2px';
+    const chip = (txt, an) => { const c = prEl('span', 'pr-badge', txt); c.style.marginLeft = '0'; if (an === false) c.style.opacity = '.55'; return c; };
+    chips.append(chip(String(r.display_zoll).replace('.', ',') + '" · ' + r.aufloesung), chip(r.touch === 'ja' ? 'Touchscreen' : 'Tasten', r.touch === 'ja'),
+      chip(r.solar === 'ja' ? 'Solar' : 'ohne Solar', r.solar === 'ja'), chip('Akku bis ' + r.akku_h + ' h'), chip(r.speicher_gb + ' GB'),
+      chip(String(r.gewicht_g).replace('.', ',') + ' g'), chip(r.wlan === 'ja' ? 'WLAN' : 'kein WLAN', r.wlan === 'ja'));
+    const sub = prEl('div', 'pr-row-sub', r.preis ? 'bei ' + r.haendler + (r.code ? ' · mit Code ' + r.code : '') + ' · inkl. Versand' : 'gerade kein lieferbares Angebot gelesen');
+    mid.append(n, chips, sub);
+    const pr = prEl('div', 'pr-row-preis'); const b = prEl('b', null, r.preis ? PR.eur(r.preis) : '—');
+    if (r.preis) { b.dataset.source = 'fahrradcomputer'; b.dataset.field = 'preis'; b.dataset.where = 'id=' + encodeURIComponent(r.id); }
+    pr.append(b); row.append(logo, mid, pr);
+    if (/^https?:\/\//.test(r.link || '')) { const l = prEl('a', 'pr-btn pr-btn-primary pr-shopbtn', 'Zum Angebot'); l.href = r.link; l.target = '_blank'; l.rel = 'noopener'; row.append(l); }
+    el.append(row);
   });
 });
 </script>

@@ -1,0 +1,7 @@
+id,modell,display_zoll,aufloesung,touch,solar,akku_h,speicher_gb,gewicht_g,wlan,multiband,quelle,stand
+garmin-edge-540,Garmin Edge 540,2.6,322x246,nein,nein,26,16,80.4,ja,ja,https://geizhals.de/garmin-edge-540-010-02694-01-a2928679.html,2026-11-27
+garmin-edge-840,Garmin Edge 840,2.6,322x246,ja,nein,32,32,84.8,ja,ja,https://geizhals.de/garmin-edge-840-010-02695-01-a2928592.html,2026-11-27
+garmin-edge-540-solar,Garmin Edge 540 Solar,2.6,322x246,nein,ja,24,16,84.9,ja,ja,https://geizhals.de/garmin-edge-540-solar-010-02694-21-a2928610.html,2026-11-27
+garmin-edge-840-solar,Garmin Edge 840 Solar,2.6,322x246,ja,ja,32,32,88.9,ja,ja,https://geizhals.de/garmin-edge-840-solar-010-02695-21-a2928554.html,2026-11-27
+garmin-edge-1050,Garmin Edge 1050,3.5,800x480,ja,nein,20,64,161.0,ja,ja,https://geizhals.de/garmin-edge-1050-010-02890-01-a3217786.html,2026-11-27
+garmin-edge-mtb,Garmin Edge MTB,2.1,320x240,nein,nein,14,32,58.0,nein,ja,https://geizhals.de/garmin-edge-mtb-010-02993-10-a3518184.html,2026-11-27

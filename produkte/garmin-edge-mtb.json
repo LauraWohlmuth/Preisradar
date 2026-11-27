@@ -1,0 +1,24 @@
+{
+ "id": "garmin-edge-mtb",
+ "kurzname": "Garmin Edge MTB",
+ "produkt": "Garmin Edge MTB Fahrradcomputer, neu",
+ "zielpreis": 0,
+ "uvp": 0,
+ "warn_unter": 100,
+ "nur_vergleich": true,
+ "gruppe": "fahrradcomputer",
+ "variante_muss": [
+  "edge mtb"
+ ],
+ "quellen": [
+  {
+   "name": "geizhals.de: Garmin Edge MTB",
+   "typ": "geizhals",
+   "variante_block": "",
+   "url": "https://geizhals.de/garmin-edge-mtb-010-02993-10-a3518184.html"
+  }
+ ],
+ "gutscheine": [],
+ "cashback": [],
+ "debug": false
+}

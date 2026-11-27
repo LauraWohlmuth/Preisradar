@@ -120,7 +120,7 @@ def _weitere(out):
     for cp in sorted(_glob.glob(_os.path.join(basis, "produkte", "*.json"))):
         cfg = json.load(open(cp, encoding="utf-8"))
         pid = cfg.get("id")
-        if pid in (None, "iphone-17-pro"):
+        if pid in (None, "iphone-17-pro") or cfg.get("nur_vergleich"):
             continue
         dp = _os.path.join(basis, "data", f"prices-{pid}.json")
         if not _os.path.exists(dp):
@@ -216,3 +216,28 @@ with open(f"{out}/codes.csv", "w", newline="", encoding="utf-8") as f:
         if g.get("gueltig_bis", "9999") >= _heute and g["code"] not in _cfg.get("gesperrte_codes", {}):
             w.writerow([g["haendler"], g["code"], g.get("rabatt_eur", ""), g.get("gueltig_bis", ""), g.get("bedingung", "")])
 print("tagesaktuell:", _heute, "BW", _bw, "BF", _bf, "Monate", _monate)
+
+
+# ---- Fahrradcomputer-Vergleich: Datenblatt (werkzeug/fahrradcomputer_specs.csv) + aktueller Bestpreis ----
+def _fahrradcomputer(out):
+    basis = _os.path.dirname(_os.path.dirname(src))
+    sp = _os.path.join(basis, "werkzeug", "fahrradcomputer_specs.csv")
+    if not _os.path.exists(sp): return
+    zeilen = []
+    for r in csv.DictReader(open(sp, encoding="utf-8")):
+        dp = _os.path.join(basis, "data", f"prices-{r['id']}.json")
+        preis = haendler = link = stand = code = ""
+        if _os.path.exists(dp):
+            dd = json.load(open(dp, encoding="utf-8"))
+            if dd["laeufe"]:
+                la = dd["laeufe"][-1]
+                ang = sorted([a for a in la.get("angebote", []) if a.get("verfuegbar", True) is not False], key=lambda a: a["preis_mit_code"])
+                if ang:
+                    preis, haendler, link, code = ang[0]["preis_mit_code"], ang[0]["haendler"], ang[0].get("url", ""), ang[0].get("code") or ""
+                stand = la["zeit"][:16]
+        zeilen.append({**r, "preis": preis, "haendler": haendler, "code": code, "link": link, "preis_stand": stand})
+    with open(f"{out}/fahrradcomputer.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(zeilen[0])); w.writeheader(); w.writerows(zeilen)
+    print("Fahrradcomputer:", len(zeilen))
+
+_fahrradcomputer(out)

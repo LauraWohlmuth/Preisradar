@@ -1,0 +1,24 @@
+{
+ "id": "garmin-edge-540-solar",
+ "kurzname": "Garmin Edge 540 Solar",
+ "produkt": "Garmin Edge 540 Solar Fahrradcomputer, neu",
+ "zielpreis": 0,
+ "uvp": 0,
+ "warn_unter": 100,
+ "nur_vergleich": true,
+ "gruppe": "fahrradcomputer",
+ "variante_muss": [
+  "edge 540"
+ ],
+ "quellen": [
+  {
+   "name": "geizhals.de: Garmin Edge 540 Solar",
+   "typ": "geizhals",
+   "variante_block": "",
+   "url": "https://geizhals.de/garmin-edge-540-solar-010-02694-21-a2928610.html"
+  }
+ ],
+ "gutscheine": [],
+ "cashback": [],
+ "debug": false
+}

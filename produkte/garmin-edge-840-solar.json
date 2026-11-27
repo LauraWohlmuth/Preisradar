@@ -1,0 +1,24 @@
+{
+ "id": "garmin-edge-840-solar",
+ "kurzname": "Garmin Edge 840 Solar",
+ "produkt": "Garmin Edge 840 Solar Fahrradcomputer, neu",
+ "zielpreis": 0,
+ "uvp": 0,
+ "warn_unter": 100,
+ "nur_vergleich": true,
+ "gruppe": "fahrradcomputer",
+ "variante_muss": [
+  "edge 840"
+ ],
+ "quellen": [
+  {
+   "name": "geizhals.de: Garmin Edge 840 Solar",
+   "typ": "geizhals",
+   "variante_block": "",
+   "url": "https://geizhals.de/garmin-edge-840-solar-010-02695-21-a2928554.html"
+  }
+ ],
+ "gutscheine": [],
+ "cashback": [],
+ "debug": false
+}
