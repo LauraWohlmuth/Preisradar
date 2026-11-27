@@ -1,0 +1,58 @@
+{
+ "id": "forerunner-570-42",
+ "kurzname": "Garmin Forerunner 570 (42 mm)",
+ "unterzeile": "Steinweiß / Cloud Blue Aluminium · 010-02970-01 · neu",
+ "produkt": "Garmin Forerunner 570, 42 mm, Cloud Blue Aluminium mit Armband Steinweiß/Cloud Blue (010-02970-01), neu",
+ "zielpreis": 350,
+ "uvp": 549.99,
+ "warn_unter": 250,
+ "variante_muss": [
+  "forerunner 570"
+ ],
+ "quellen": [
+  {
+   "name": "geizhals.de: Forerunner 570 42 mm Cloud Blue",
+   "typ": "geizhals",
+   "variante_block": "",
+   "url": "https://geizhals.de/garmin-forerunner-570-42mm-cloud-blue-aluminium-translucent-whitestone-cloud-blue-010-02970-01-a3493611.html"
+  },
+  {
+   "name": "bike-components",
+   "typ": "jsonld",
+   "haendler": "bike-components",
+   "url": "https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/"
+  },
+  {
+   "name": "r2-bike",
+   "typ": "jsonld",
+   "haendler": "r2-bike",
+   "url": "https://r2-bike.com/GARMIN-Forerunner-570-GPS-Lauf-und-Triathlon-Smartwatch-42-mm-Steinweiss-Cloud-Blue"
+  },
+  {
+   "name": "Rabe Bike",
+   "typ": "jsonld",
+   "haendler": "Rabe Bike",
+   "url": "https://www.rabe-bike.de/de/garmin-forerunner-570-42mm-cloud-blue-aluminium"
+  },
+  {
+   "name": "Bike24",
+   "typ": "jsonld",
+   "haendler": "Bike24",
+   "url": "https://www.bike24.de/p1936960.html"
+  },
+  {
+   "name": "mydealz.de",
+   "typ": "mydealz",
+   "url": "https://www.mydealz.de/search?q=forerunner+570"
+  }
+ ],
+ "mydealz_filter": {
+  "muss": [
+   "forerunner 570"
+  ],
+  "nicht": []
+ },
+ "gutscheine": [],
+ "cashback": [],
+ "debug": true
+}
