@@ -1,0 +1,858 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Preisradar</title><style>:root{color-scheme:dark;--color-fg:#e6edf7;--color-fg-muted:#8fa3c2;--color-bg:#05070d;--color-panel:#0b1324;--color-border-line:#1b2a46;--color-ok:#34d399;--color-warn:#fbbf24;--color-bad:#f87171;--cds-gap-xs:4px;--cds-gap-sm:8px;--cds-gap-md:12px;--cds-gap-lg:16px;--cds-gap-xl:24px;--cds-pad-xs:4px;--cds-pad-sm:8px;--cds-pad-md:12px;--cds-pad-lg:16px;--cds-pad-xl:24px;--cds-radius:10px;--cds-font-size-caption:12px;--cds-font-size-body:14px;--cds-font-size-heading:18px;--cds-font-size-title:24px;--cds-font-weight-medium:600;--font-anthropic-sans:system-ui,-apple-system,'Segoe UI',sans-serif;--font-anthropic-serif:Georgia,serif;--cds-text-secondary:#8fa3c2;--cds-chart-grid:#15223a;--cds-chart-axis:#2a3c5f;--cds-chart-muted:#5b6f93;--cds-chart-reference:#64748b;--cds-surface-popover:#0f1a30;--cds-border:#24365a;--cds-shadow-popover:0 4px 12px #000}
+body{margin:0;background:#05070d;color:#e6edf7;font:14px system-ui,-apple-system,'Segoe UI',sans-serif}
+#alle-pruefen,#alle-pruefen-hinweis{display:none!important}</style><script>
+window.__DATA = {"angebote": [{"haendler": "notebooksbilliger.de", "preis_mit_code": "1149.0", "preis": "1149.0", "versand": "0.0", "code": null, "code_hinweis": "Code CLICK2P ungültig: laut notebooksbilliger-Warenkorb am 26.11. ungültig (Screenshot von Laura)", "lieferung": "lagernd, 24-h Service möglich, Lieferung 2-3 Werktage", "cashback": null, "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAANt3JrfUAuN3_m0USmM7BH8tlIW8DWUJvQOke96LnwGar3bGwpDbnPjcPTn7999ayXqPp9eNHOp7dKfYVVvJ65G2-cdr67dVrMo9YS8vcMsaWlfTWeGFrv_WLEhonLARAbbG9TFh6DGeSu7IyWAF7NrWNQVD-wmNa-f0iJDYKOL_Wdh7eCHc9PXR16MW3fSKJAM8fX3ti_M4ICMClURjDYU"}, {"haendler": "Amazon.de", "preis_mit_code": "1149.0", "preis": "1149.0", "versand": "0.0", "code": null, "code_hinweis": null, "lieferung": null, "cashback": null, "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAAFY4XMbVVXpEZqv2o6_8gg655UVkOiYpP1lScsqxk0mh0FMoq3md0RTVnlju8ztl0IIri7YwXKlH1kHf-peIUd5hrTc8_-_jxThwt88LDDns_GKEHts5dDXxYsgj6gcSSVSNE8CCfWhCVmCjp461KjoEUfYh_40SidJobiM2pFFIxuuK9B__oSS3GAqopeDpSV9VdagKXXv2wKvCYD3pkRkRpY8GtcvMTFahpO70dPIHAzx9fe2L8zggIwKVRGMNhQ"}, {"haendler": "Saturn", "preis_mit_code": "1149.0", "preis": "1149.0", "versand": "0.0", "code": null, "code_hinweis": null, "lieferung": "Lieferung in 1 - 3 Werktagen", "cashback": null, "quelle": "notebookinfo.de", "link": "https://www.notebookinfo.de/produkt/apple-macbook-air-13-2026-m5-10c-cpu-8c-gpu-16gb-ram-512gb-ssd-mitternacht-mdhe4d-a-48211#preisvergleich"}, {"haendler": "Cyberport Stores Deutschland", "preis_mit_code": "1154.0", "preis": "1179.0", "versand": null, "code": "PAYPAL25-BW26", "code_hinweis": "nur bei Zahlung mit PayPal; nicht mit anderen Aktionen kombinierbar", "lieferung": "lagernd", "cashback": "3.5 % über Shoop (wird später gutgeschrieben, nicht im Preis enthalten)", "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAADdG-I__lxVbqoTG8FLCVhSVBf5WMRsegYytDcnMQWF2wBDcKTsSXPuVfu6LbIUIHdrbkbXhJ-4Bz5f0PdPnK1lTjOyFKlFJ4BlGgEaRVP84Z034M6u6pBSetfYG4cF-CqFwBcexyaDfw63eBvF5wrB1xkWnnFYl-txxjQVGZqYwJkiZUWFpZiRVIVxAMowb8BWZ4AtxInlbmLzgiL_5QT53NagKH9-WkpHQPZd04exlubSANg5upIK3H4KfwSB_Blnky0dXbHqFdA-0DSYr_jVHF1pqeZw1PHzK2No4dYT7ZRIjh47BLn3PB3gKvlyfVgrIcxIoSA3Z2Udxn1offy8"}, {"haendler": "Coolblue", "preis_mit_code": "1159.0", "preis": "1159.0", "versand": "0.0", "code": null, "code_hinweis": null, "lieferung": "Lieferzeit: 1 Werktag", "cashback": "5 % über Shoop (nur Neukunden; später gutgeschrieben)", "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAAGRco6US0yXKgVcOX0InWX3jSDnNMFjF5Hn8c-ssTsBha0My3V7nQTVjF2rwPYOgmi_82qpQh7caKJxJJESDEuNRLfJZcmIKWL9bkH3PwC-lHjIfogsYzcUcvZGt6OO4FRmcdx5RvLUJxau8k2BHZEYoivxgSVI2VideNMDKv3SryYnCvWP5lhUhGekolrhrcD7iF2apsnsa2Mo0pfg0mK7X4qDvDFayiaeif00yRsyfOjfznAUU-VLhQBWKO8Vd3A"}, {"haendler": "computeruniverse.net", "preis_mit_code": "1179.0", "preis": "1179.0", "versand": "0.0", "code": null, "code_hinweis": null, "lieferung": "Sofort lieferbar, Lieferzeit max. 1-3 Werktage", "cashback": null, "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAABDxSgtp2Oax7pW517UJpM1EWhTHy_dcwePzUu0NbwxiFQVlAGuJ7bphEth43IiPahoTQbsCDNHoe1N_cMugFnGhPO29AVOe4zjLGAiQaaOyDD6jX9WLdRby6k5W5fEqfjJJMZPOJ5_QY3fBdKkUk7ymhJkjPmtR7TiPFhb_DNh0KQT5Dhm6J9iBJfWfm6emYE2covNoL_FPdhI2MBK-Peu5LJOhrvOMnjI5foaD5HlRNtYV_qI5b4CzAPaAfpUyjaa5gP2ynf_X9PP2lZXxO9Larg_p_MINLphA4Cs1rtuu"}, {"haendler": "galaxus", "preis_mit_code": "1185.73", "preis": "1185.73", "versand": "0.0", "code": null, "code_hinweis": null, "lieferung": "Auf Lager, 1-2 Werktage", "cashback": null, "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAAKady2bjf3Hu3dGhcH_ryvVFnTgwMn5qDdytpx8dukbAHyEnyiY_xvxzva3E-gqIttHJDexn4aQ_svClTd0zkEb04mMNb0csDb1IG5lvXr-e-TMVlvMvrELbe-i2N-ff30U0UKGsxzT7cfynLzux-WJ3LHRISwNYbC7Mwh8ie4ORmwxBX1MNWoxLctNR3NSjAKvUAycSVSukK2g7b8HyEoQfRz--4HsToWfDj8OZe5LXSQt60pCakp2MoqSrauOFfZCiJQNrrIyR1S6rGSq3JeTpCAE8KDz_hy5nl3ArobB1iEmGVgy9QEAO2c80_GejujR6E744JPTA8Htnyz7cp1Q"}, {"haendler": "Easynotebooks.de", "preis_mit_code": "1214.37", "preis": "1214.37", "versand": null, "code": null, "code_hinweis": null, "lieferung": null, "cashback": null, "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAAL4xYnOtMKolnWFyZxIvrAIF29dEyjjdIOBlwBKh3xKotadJYb0yIvUqprGp6EzkAiVb_StcBeiN1LMj-6UWdZx77mezTylf87Qv4hcXcWhenJCHz1w65F24JdW1Y7SWWRWk1XVhf52GsfKj7BpZ_humY2VI3pdSOma1qSVplT30VYPtvqVwqMSIQvtK7aSURPa4Hkg6-_dHRjvVjn3zV7HVlfA5ScXEYLnnkt2ym5B5hLa0m_iLGG4Gl4A9s5tIoQblc1uXJXT-VSW2pkH8-u3snfwRi3pJqZZqXCUphWr-BGsV5GH6zcF6dzRwT3vPEisd4kn9VesflmH2Z_TNFM9nrzobwHu31GnLJp0L-PJTgbAzsJCtkC4Hr1hNfw0XDaPeWeBMylaiA1laqPh2PneDs7zDmhUD4CxqQLuVzmcIzzXnL3CMdGUuTIJ1au0oXw"}, {"haendler": "Otto.de", "preis_mit_code": "1214.57", "preis": "1209.62", "versand": "4.95", "code": null, "code_hinweis": null, "lieferung": "lieferbar in 3 Wochen", "cashback": null, "quelle": "notebookinfo.de", "link": "https://www.notebookinfo.de/produkt/apple-macbook-air-13-2026-m5-10c-cpu-8c-gpu-16gb-ram-512gb-ssd-mitternacht-mdhe4d-a-48211#preisvergleich"}, {"haendler": "Jacob Elektronik", "preis_mit_code": "1227.64", "preis": "1227.64", "versand": "0.0", "code": null, "code_hinweis": null, "lieferung": "Lieferzeit 3-6 Werktage", "cashback": null, "quelle": "notebookinfo.de", "link": "https://www.notebookinfo.de/produkt/apple-macbook-air-13-2026-m5-10c-cpu-8c-gpu-16gb-ram-512gb-ssd-mitternacht-mdhe4d-a-48211#preisvergleich"}, {"haendler": "playox.de", "preis_mit_code": "1248.89", "preis": "1248.89", "versand": null, "code": null, "code_hinweis": null, "lieferung": "Auf Lager, sofort versandfertig Lieferzeit 1-2 Werktage", "cashback": null, "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAADqm1Z3CtpQnKPU48jHvO-9sYl-YaYVjVGULCne3NIZgjnHcWq_KGOvXL_wZdLTGVxww6EDqP72nmcsbg2ZRViY5889G1LeeBIawSLu8MbR3_1PMlgznws-srudh7-Lu7KOuOkv2WNHPM_6td7g1zboPOxZRoenjBOuOKhaIzcLIx6Z1lCMhKAdj6ZINmljXitCEsLP-nD7Jvbkt20uHBXZfzNGuyMSXuUY4GlRZp8IJ"}, {"haendler": "office-partner.de", "preis_mit_code": "1248.9", "preis": "1248.9", "versand": null, "code": null, "code_hinweis": null, "lieferung": "Auf Lager, sofort versandfertig Lieferzeit 1-2 Werktage", "cashback": null, "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAAHtDiO_LD5COBVR84HtavvZe8sxOa-FochHih7CnQhJzlM_cTG9aPKbLoSq1gQWURjHoqSv03ZvxjAKzndN5m2cC161WvExZRFN3dslhN22P2OckCsGQbKnWqImdUVWm5SBwOUVLyKhGRO9jTotuiK7ScjqRnDEWjF3-fgapdUEVRsUeNHI7dAB22F6SKA-bxMwUp35R2x1nT-cyu6on_cTIn9oYWb1bv04LiY0D7Ftk"}, {"haendler": "Conrad Electronic", "preis_mit_code": "1259.0", "preis": "1259.0", "versand": "0.0", "code": null, "code_hinweis": null, "lieferung": "Lieferung in 2 bis 4 Tagen", "cashback": null, "quelle": "notebookinfo.de", "link": "https://www.notebookinfo.de/produkt/apple-macbook-air-13-2026-m5-10c-cpu-8c-gpu-16gb-ram-512gb-ssd-mitternacht-mdhe4d-a-48211#preisvergleich"}, {"haendler": "electronic4you.de", "preis_mit_code": "1269.0", "preis": "1269.0", "versand": "0.0", "code": null, "code_hinweis": null, "lieferung": "lagernd: 5+", "cashback": null, "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAAJscDJ70DmGAd_mKbsNRvtnXtht_en5UqZHupjYjackvL4k_YYBPMUBiSWTA_n5Yh54ZfPa192oVvaWuJ6vBtcGO7K8cPxB23aeFYRZ08wXZlyhSQuAtVU32BfN6s715-5Hshi5PNe1VS0k2_8Woid0ir8ri60MLt4pYj-N6tZgaru8tnL8FZ2LVzIWQdGifFktrEdteGfA72xXMc1Bt-kkq-vhld6r5kiWBjHFqWkVE79dTHb2ArM_vi7ce65IKamNVOcA5EXtQ4UBON1WdnHyFfuTrt059J1RXVA85OEpQTI3Cnl-x0xOLKfkoAgkemFpJrWl4HyMVByqRZxVXLBhwZNZWv1FbH-SOb9JZxp6W2nmivNYlOgn3j6FMQ99yEtUYomdVwaLTIsQWpecaa-ce6yLI5eN24P54O5DP4j_zEkw7qjkzc-aTW7tTWTa0EPxsyKgFfPAo-QLoanVCDyDDTr1tMJkcGS3yw0W86cGzaQocEf2XQGb0ek_2r_HHDgrIcxIoSA3Z2Udxn1offy8"}, {"haendler": "Future-X.de", "preis_mit_code": "1285.19", "preis": "1285.19", "versand": "0.0", "code": null, "code_hinweis": null, "lieferung": null, "cashback": null, "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAAH2uVQHXHHPfUXO40GahgpBab6loFLiQil0deFT5dlLB_bsrTIM66zTBYlm9xem1TrJeaeOu1cqsrks3tNjdAgL-5Xw6MwQImfUVtO_XSvpE0LsnuflhJrI_PlGn5wJVVlraVbk7bIHMHq56H5RjLz8zxFnm-7t-8z67Bh4n52j_TJ6og33SYSxmBorsfvEM4zRiFFeKa4nnaK0LFZDYlEMJgTAL_0yP9hbjSG4bOIZUtqeM__YrxHBUfz7kprfmD8RhWIzHv-5yy8047BprTcExTHyjWOvgLy9GBon50zJV6QgBPCg8_4cuZ5dwK6GwdSwC1EvZeFrHGiXEso0NsQ80ehO-OCT0wPB7Z8s-3KdU"}, {"haendler": "Alternate", "preis_mit_code": "1286.0", "preis": "1286.0", "versand": null, "code": null, "code_hinweis": null, "lieferung": null, "cashback": null, "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAAHE6TKqO1SYcV5CiEc5cvc4hanLyXzmhBv2WwUdMUkSr5Aqs-b0P7eRD24RS-70wusKjOPWlWw0CCq1LyfK5_9N_4OYysRFK7A1fOzXl2KUIZmBMS-wAuKS19kXFwQak1O1cNhzjODMbw-7bnbvzHrJtppR9ptV7NMycl3p_oZACPishrQ5exiZzGiu8vfVhnV5REZLsc-WGpB3YC18wbp1fVXWoCl179sCrwmA96ZEZvxW4s4DmjVD89y4fktCq_QM8fX3ti_M4ICMClURjDYU"}, {"haendler": "epos | Apple Premium Partner", "preis_mit_code": "1299.0", "preis": "1299.0", "versand": "0.0", "code": null, "code_hinweis": null, "lieferung": "lagernd, 24-h Service möglich, Lieferung 2-3 Werktage", "cashback": null, "quelle": "geizhals.de", "link": "https://geizhals.de/redir/BAAAAMrq-KQ_w4PMU-lWfAZmzhE9R8bHPHuZRuIMeva-cIQklaBDe5_qMEBeEaSxHMw1dS_1AdpuQqd0EVWF9iUu7ta26CNpq_U12eL1FBQj0Ik23OlJo1NHd6mAg5voNOS41F9VdagKXXv2wKvCYD3pkRlKWJ_vhy8mmRqtchpFzZmWAzx9fe2L8zggIwKVRGMNhQ"}, {"haendler": "Proshop", "preis_mit_code": "1338.0", "preis": "1333.01", "versand": "4.99", "code": null, "code_hinweis": null, "lieferung": "DE", "cashback": null, "quelle": "notebookinfo.de", "link": "https://www.notebookinfo.de/produkt/apple-macbook-air-13-2026-m5-10c-cpu-8c-gpu-16gb-ram-512gb-ssd-mitternacht-mdhe4d-a-48211#preisvergleich"}], "laeufe": [{"zeit": "2026-11-26T12:23", "guenstigster": "1149.0"}, {"zeit": "2026-11-26T12:31", "guenstigster": "1149.0"}, {"zeit": "2026-11-26T13:53", "guenstigster": "1149.0"}, {"zeit": "2026-11-26T13:57", "guenstigster": "1149.0"}, {"zeit": "2026-11-26T16:49", "guenstigster": "1149.0"}, {"zeit": "2026-11-26T16:49", "guenstigster": "1149.0"}, {"zeit": "2026-11-26T22:25", "guenstigster": "1149.0"}, {"zeit": "2026-11-26T23:17", "guenstigster": "1149.0"}, {"zeit": "2026-11-26T23:37", "guenstigster": "1149.0"}, {"zeit": "2026-11-26T23:49", "guenstigster": "1149.0"}, {"zeit": "2026-11-26T23:50", "guenstigster": "1149.0"}, {"zeit": "2026-11-26T23:51", "guenstigster": "1149.0"}, {"zeit": "2026-11-27T00:04", "guenstigster": "1149.0"}, {"zeit": "2026-11-27T00:14", "guenstigster": "1149.0"}, {"zeit": "2026-11-27T00:22", "guenstigster": "1149.0"}, {"zeit": "2026-11-27T05:08", "guenstigster": "1149.0"}, {"zeit": "2026-11-27T06:22", "guenstigster": "1149.0"}, {"zeit": "2026-11-27T06:59", "guenstigster": "1149.0"}, {"zeit": "2026-11-27T07:09", "guenstigster": "1149.0"}, {"zeit": "2026-11-27T07:51", "guenstigster": "1149.0"}, {"zeit": "2026-11-27T08:05", "guenstigster": "1149.0"}, {"zeit": "2026-11-27T08:40", "guenstigster": "1149.0"}, {"zeit": "2026-11-27T10:08", "guenstigster": "1149.0"}], "quellen": [{"quelle": "geizhals.de", "status": "geprüft", "hinweis": "14 lieferbar", "link": "https://geizhals.de/apple-macbook-air-13-m5-mdhe4d-a-z1l6-a3743120.html"}, {"quelle": "notebookinfo.de", "status": "geprüft", "hinweis": "7 Angebote", "link": "https://www.notebookinfo.de/produkt/apple-macbook-air-13-2026-m5-10c-cpu-8c-gpu-16gb-ram-512gb-ssd-mitternacht-mdhe4d-a-48211"}, {"quelle": "mydealz.de", "status": "geprüft", "hinweis": "3 aktive Deals zur Variante", "link": "https://www.mydealz.de/search?q=macbook+air+m5"}, {"quelle": "idealo.de", "status": "nicht prüfbar", "hinweis": "blockt automatische Abrufe (403), auch von GitHub", "link": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=MDHE4D%2FA"}, {"quelle": "billiger.de", "status": "nicht prüfbar", "hinweis": "blockt automatische Abrufe (403)", "link": "https://www.billiger.de/search?searchstring=MDHE4D%2FA"}, {"quelle": "guenstiger.de", "status": "nicht prüfbar", "hinweis": "blockt automatische Abrufe (403)", "link": "https://www.guenstiger.de/Produkt/Apple/MacBook_Air_13_2026_M5_10_Core_CPU_8_Core_GPU_16GB_512GB_MDHE4D_A.html"}, {"quelle": "check24.de", "status": "nicht prüfbar", "hinweis": "blockt automatische Abrufe (403)", "link": "https://preisvergleich.check24.de/search?query=MDHE4D%2FA"}], "deals": [{"titel": "Apple MacBook Air 13” M5 (2026) | 16 GB RAM | 512 GB SSD für effektiv 1.120,06 €", "haendler": "Cyberport", "preis": "1154", "code": "PAYPAL25-BW26", "veroeffentlicht": "2026-11-21", "link": "https://www.mydealz.de/share-deal/2878268"}, {"titel": "Apple MacBook Air 13” M5 (2026) | 16 GB RAM / 512 GB SSD für 1.160 € – effektiv 1.102 € mit 5 % Shoop Cashback (Neukunden)", "haendler": "Coolblue", "preis": "1161", "code": null, "veroeffentlicht": "2026-11-21", "link": "https://www.mydealz.de/share-deal/2878276"}, {"titel": "[CB+Edu] MacBook Air 13\" 2026 M5 10/8 Cores CPU/GPU | 16GB RAM | 512GB SSD | alle Farben | 3 Monate Finanzierung", "haendler": "MacTrade", "preis": "1126.83", "code": "MTSPAR-75FZG", "veroeffentlicht": "2026-10-10", "link": "https://www.mydealz.de/share-deal/2852015"}], "produkte": [{"id": "macbook", "name": "MacBook Air 13\" M5", "unter": "16 GB · 512 GB · Mitternacht · neu", "preis": "1149.0", "haendler": "notebooksbilliger.de", "ziel": "1100", "abstand": "49.0", "trend": "→", "stand": "2026-11-27T10:08", "anker": "kopf", "link": "https://geizhals.de/redir/BAAAANt3JrfUAuN3_m0USmM7BH8tlIW8DWUJvQOke96LnwGar3bGwpDbnPjcPTn7999ayXqPp9eNHOp7dKfYVVvJ65G2-cdr67dVrMo9YS8vcMsaWlfTWeGFrv_WLEhonLARAbbG9TFh6DGeSu7IyWAF7NrWNQVD-wmNa-f0iJDYKOL_Wdh7eCHc9PXR16MW3fSKJAM8fX3ti_M4ICMClURjDYU"}, {"id": "iphone", "name": "iPhone 17 Pro refurbished", "unter": "Tiefblau/Silber · 256/512 GB · Sehr gut+ · Akku neu", "preis": "915.4", "haendler": "refurbed", "ziel": "1000", "abstand": "0", "trend": "↓", "stand": "2026-11-27T10:08", "anker": "iphone", "link": "https://www.refurbed.de/p/iphone-17-pro/407262b/?offer=20919273"}], "iphone_angebote": [{"label": "refurbed: Tiefblau, 256 GB", "preis": "915.4", "art": "passt", "detail": "erste Wahl: passt mit neuem Akku · mit Code IPHONE8OFF (ohne Code 995,00 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407262b/?offer=20919273", "akku": "Neu", "zustand": "Sehr gut", "speicher": "256 GB", "farbe": "Tiefblau"}, {"label": "refurbed: Silber, 256 GB", "preis": "915.4", "art": "passt", "detail": "erste Wahl: passt mit neuem Akku · mit Code IPHONE8OFF (ohne Code 995,00 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407263b/?offer=20919271", "akku": "Neu", "zustand": "Sehr gut", "speicher": "256 GB", "farbe": "Silber"}, {"label": "refurbed: Silber, 256 GB", "preis": "961.4", "art": "passt", "detail": "erste Wahl: passt mit neuem Akku · mit Code IPHONE8OFF (ohne Code 1045,00 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407263aa/?offer=20894247", "akku": "Neu", "zustand": "Premium", "speicher": "256 GB", "farbe": "Silber"}, {"label": "Dein Angebot: Tiefblau, 256 GB", "preis": "967.83", "art": "passt", "detail": "erste Wahl: passt mit neuem Akku · mit Code IPHONE8OFF (ohne Code 1051,99 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407262aa/?offer=20894256", "akku": "Neu", "zustand": "Premium", "speicher": "256 GB", "farbe": "Tiefblau"}, {"label": "refurbed: Silber, 256 GB", "preis": "1001.88", "art": "passt", "detail": "erste Wahl: passt mit neuem Akku · mit Code IPHONE8OFF (ohne Code 1089,00 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407263/?offer=18725284", "akku": "Neu", "zustand": "Exzellent", "speicher": "256 GB", "farbe": "Silber"}, {"label": "refurbed: Tiefblau, 512 GB", "preis": "1035.87", "art": "passt", "detail": "erste Wahl: passt mit neuem Akku · mit Code IPHONE8OFF (ohne Code 1125,95 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407258b/?offer=21486456", "akku": "Neu", "zustand": "Sehr gut", "speicher": "512 GB", "farbe": "Tiefblau"}, {"label": "Coolblue: Silber, 512 GB", "preis": "1249.0", "art": "passt", "detail": "erste Wahl: passt mit neuem Akku", "link": "https://www.coolblue.de/produkt/971367/refurbished-iphone-17-pro-512gb-silber-sehr-gut.html", "akku": "Neu", "zustand": "Sehr gut", "speicher": "512 GB", "farbe": "Silber"}, {"label": "refurbed: Silber, 512 GB", "preis": "1370.8", "art": "passt", "detail": "erste Wahl: passt mit neuem Akku · mit Code IPHONE8OFF (ohne Code 1490,00 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407259/?offer=21821871", "akku": "Neu", "zustand": "Exzellent", "speicher": "512 GB", "farbe": "Silber"}, {"label": "refurbed: Tiefblau, 256 GB", "preis": "892.4", "art": "optimal", "detail": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel · mit Code IPHONE8OFF (ohne Code 970,00 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407262b/?offer=21267757", "akku": "Optimal", "zustand": "Sehr gut", "speicher": "256 GB", "farbe": "Tiefblau"}, {"label": "refurbed: Silber, 256 GB", "preis": "892.4", "art": "optimal", "detail": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel · mit Code IPHONE8OFF (ohne Code 970,00 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407263b/?offer=21618232", "akku": "Optimal", "zustand": "Sehr gut", "speicher": "256 GB", "farbe": "Silber"}, {"label": "refurbed: Silber, 256 GB", "preis": "910.79", "art": "optimal", "detail": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel · mit Code IPHONE8OFF (ohne Code 989,99 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407263/?offer=21897609", "akku": "Optimal", "zustand": "Exzellent", "speicher": "256 GB", "farbe": "Silber"}, {"label": "refurbed: Tiefblau, 256 GB", "preis": "910.8", "art": "optimal", "detail": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel · mit Code IPHONE8OFF (ohne Code 990,00 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407262aa/?offer=20723735", "akku": "Optimal", "zustand": "Premium", "speicher": "256 GB", "farbe": "Tiefblau"}, {"label": "refurbed: Silber, 512 GB", "preis": "919.99", "art": "optimal", "detail": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel · mit Code IPHONE8OFF (ohne Code 999,99 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407259/?offer=21887388", "akku": "Optimal", "zustand": "Exzellent", "speicher": "512 GB", "farbe": "Silber"}, {"label": "refurbed: Silber, 256 GB", "preis": "920.0", "art": "optimal", "detail": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel · mit Code IPHONE8OFF (ohne Code 1000,00 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407263aa/?offer=20723734", "akku": "Optimal", "zustand": "Premium", "speicher": "256 GB", "farbe": "Silber"}, {"label": "refurbed: Tiefblau, 256 GB", "preis": "1002.79", "art": "optimal", "detail": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel · mit Code IPHONE8OFF (ohne Code 1089,99 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407262/?offer=21284042", "akku": "Optimal", "zustand": "Exzellent", "speicher": "256 GB", "farbe": "Tiefblau"}, {"label": "refurbed: Tiefblau, 512 GB", "preis": "1106.42", "art": "optimal", "detail": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel · mit Code IPHONE8OFF (ohne Code 1202,63 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407258/?offer=21123589", "akku": "Optimal", "zustand": "Exzellent", "speicher": "512 GB", "farbe": "Tiefblau"}, {"label": "refurbed: Tiefblau, 512 GB", "preis": "1155.78", "art": "optimal", "detail": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel · mit Code IPHONE8OFF (ohne Code 1256,28 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407258aa/?offer=20723754", "akku": "Optimal", "zustand": "Premium", "speicher": "512 GB", "farbe": "Tiefblau"}, {"label": "refurbed: Tiefblau, 256 GB", "preis": "869.4", "art": "pruefen", "detail": "passt nicht: Zustand, Akku · mit Code IPHONE8OFF (ohne Code 945,00 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407262c/?offer=21267758", "akku": "Optimal", "zustand": "Gut", "speicher": "256 GB", "farbe": "Tiefblau"}, {"label": "refurbed: Tiefblau, 256 GB", "preis": "892.4", "art": "pruefen", "detail": "passt nicht: Zustand · mit Code IPHONE8OFF (ohne Code 970,00 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407262c/?offer=20919274", "akku": "Neu", "zustand": "Gut", "speicher": "256 GB", "farbe": "Tiefblau"}, {"label": "refurbed: Silber, 256 GB", "preis": "903.43", "art": "pruefen", "detail": "passt nicht: Zustand, Akku · mit Code IPHONE8OFF (ohne Code 981,99 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407263c/?offer=21548655", "akku": "Optimal", "zustand": "Gut", "speicher": "256 GB", "farbe": "Silber"}, {"label": "refurbed: Silber, 256 GB", "preis": "920.91", "art": "pruefen", "detail": "passt nicht: Zustand · mit Code IPHONE8OFF (ohne Code 1000,99 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407263c/?offer=20919272", "akku": "Neu", "zustand": "Gut", "speicher": "256 GB", "farbe": "Silber"}, {"label": "refurbed: Tiefblau, 512 GB", "preis": "1065.35", "art": "pruefen", "detail": "passt nicht: Zustand · mit Code IPHONE8OFF (ohne Code 1157,99 €; im Warenkorb prüfen)", "link": "https://www.refurbed.de/p/iphone-17-pro/407258c/?offer=21486459", "akku": "Neu", "zustand": "Gut", "speicher": "512 GB", "farbe": "Tiefblau"}, {"label": "Swappie: Silber, 512 GB", "preis": "1109.0", "art": "pruefen", "detail": "passt nicht: Zustand, Akku", "link": "https://swappie.com/de/modell/iphone-17-pro/", "akku": "Standard (mind. 86 %)", "zustand": "nicht angegeben", "speicher": "512 GB", "farbe": "Silber"}], "iphone_laeufe": [{"zeit": "2026-11-27T07:51", "preis": "985.0"}, {"zeit": "2026-11-27T08:05", "preis": "985.0"}, {"zeit": "2026-11-27T08:40", "preis": "995.0"}, {"zeit": "2026-11-27T10:08", "preis": "915.4"}], "iphone_quellen": [{"quelle": "refurbed: alle Kombinationen (Farbe, Speicher, Zustand, Akku)", "status": "geprüft", "hinweis": "7 von 33 passen mit neuem Akku, 9 mit Akku optimal", "link": "https://www.refurbed.de/p/iphone-17-pro/407262aa/?offer=20894256"}, {"quelle": "Swappie 512 GB Silber", "status": "geprüft", "hinweis": null, "link": "https://swappie.com/de/iphone/iphone-17-pro/iphone-17-pro-512gb-silber/"}, {"quelle": "Coolblue refurbished 512 GB Silber", "status": "geprüft", "hinweis": null, "link": "https://www.coolblue.de/produkt/971367/refurbished-iphone-17-pro-512gb-silber-sehr-gut.html"}, {"quelle": "Back Market iPhone 17 Pro", "status": "nicht prüfbar", "hinweis": "Seite nicht geladen: HTTP Error 403: Forbidden", "link": "https://www.backmarket.de/de-de/p/iphone-17-pro"}], "vorgaenger": [{"modell": "M3 (2024)", "monate_nach_start": "5", "rabatt_prozent": "24", "preis": "989", "uvp": "1299", "anlass": "Bestpreis August 2024 (8/256 GB)", "quelle": "https://www.pcgameshardware.de/Apple-Mac-Book-Hardware-255602/News/MacBook-Air-M3-2024-Deal-Amazon-1454565/"}, {"modell": "M3 (2024)", "monate_nach_start": "8", "rabatt_prozent": "23", "preis": "999", "uvp": "1299", "anlass": "Black Friday 2024 (16/256 GB)", "quelle": "https://www.tvmovie.de/news/macbook-air-13-2024-unter-1000-euro-black-friday-deal-fuer-apples-neues-notebook-144586"}, {"modell": "M4 (2025)", "monate_nach_start": "1", "rabatt_prozent": "13", "preis": "1039", "uvp": "1199", "anlass": "kurz nach Marktstart", "quelle": "https://www.pcgameshardware.de/Apple-Mac-Book-Hardware-255602/News/Run-auf-Apple-Laptops-MacBook-Air-M4-noch-nie-guenstiger-MacBook-Air-M5-schon-bis-zu-300-Rabatt-1535013/"}, {"modell": "M4 (2025)", "monate_nach_start": "3", "rabatt_prozent": "18", "preis": "979", "uvp": "1199", "anlass": "Frühjahr 2025", "quelle": "https://www.macwelt.de/article/2887584/neuer-tiefstpreis-macbook-air-m4-nahert-sich-der-900-euro-marke.html"}, {"modell": "M4 (2025)", "monate_nach_start": "8", "rabatt_prozent": "28", "preis": "859", "uvp": "1199", "anlass": "Herbst 2025 (256 GB)", "quelle": "https://www.pcgameshardware.de/Apple-Mac-Book-Hardware-255602/News/Run-auf-Apple-Laptops-MacBook-Air-M4-noch-nie-guenstiger-MacBook-Air-M5-schon-bis-zu-300-Rabatt-1535013/"}, {"modell": "M5 (2026)", "monate_nach_start": "3", "rabatt_prozent": "18", "preis": "980", "uvp": "1199", "anlass": "Frühjahr 2026 (Amazon; vor UVP-Erhöhung)", "quelle": null}, {"modell": "M5 (2026)", "monate_nach_start": "8.9", "rabatt_prozent": "18", "preis": "1149.0", "uvp": "1399", "anlass": "heute 27.11.: bester Preis aller Händler", "quelle": null}], "blackfriday": [{"jahr": "2025", "modell": "MacBook Air M4 13\" 16/256 GB", "vorher": "999", "black_week": "879", "black_friday": "790", "danach": "848", "hinweis": "Großer Sprung kurz VOR der Black Week (999 → 879), dann am Black Friday nochmal −89 €; danach wieder teurer", "quelle": "https://www.ifun.de/macbook-air-m4-zum-tiefstpreis-zum-black-friday-unter-900-euro-269373/"}, {"jahr": "2024", "modell": "MacBook Air M3 13\" 16/512 GB", "vorher": null, "black_week": null, "black_friday": "889", "danach": "899", "hinweis": "Am Black Friday nur 10 € unter dem Preis danach; laut Macwelt nur einige Stunden günstiger", "quelle": "https://www.macwelt.de/article/2526628/beste-mac-angebote-black-friday.html"}, {"jahr": "2024", "modell": "MacBook Air M3 13\" 16/256 GB", "vorher": null, "black_week": null, "black_friday": "987", "danach": "999", "hinweis": "Black Friday 987 € (Amazon), danach 999 €; andere Händler ab 947 €", "quelle": "https://t3n.de/news/black-friday-macbook-air-m3-arbeitsspeicher-1660789/"}, {"jahr": "2023", "modell": "MacBook Air M2 13\"", "vorher": null, "black_week": null, "black_friday": null, "danach": null, "hinweis": "Am Black Friday rund 220 € unter Apple-Preis; MediaMarkt zuerst, Amazon zog nach. Genauer Euro-Preis nicht gefunden", "quelle": "https://www.pcgameshardware.de/Apple-Mac-Book-Hardware-255602/News/Amazon-Apple-MacBook-Air-M2-guenstig-1433758/"}, {"jahr": "2026", "modell": "MacBook Air M5 13\" 16/512 GB (dein Modell)", "vorher": "1199", "black_week": "1149.0", "black_friday": "1149.0", "danach": null, "hinweis": "aus den Läufen deines Preisradars (bester Preis aller Händler); Anfang November ca. 1.199 € laut Amazon-Screenshot", "quelle": "https://github.com/LauraWohlmuth/preisradar/blob/main/data/prices.json"}], "amazon": [{"monat": "2026-03-01", "preis": "1200", "hinweis": "Start (Amazon-App; aus Screenshot abgelesen", "null": [" ca. ±20 €)"]}, {"monat": "2026-04-01", "preis": "1080", "hinweis": "aus Screenshot abgelesen"}, {"monat": "2026-05-01", "preis": "995", "hinweis": "aus Screenshot abgelesen"}, {"monat": "2026-06-01", "preis": "980", "hinweis": "Tiefpunkt Frühjahr; UVP damals noch 1.199 €"}, {"monat": "2026-07-01", "preis": "1220", "hinweis": "Sprung nach der UVP-Erhöhung auf 1.399 €"}, {"monat": "2026-08-01", "preis": "1340", "hinweis": "Spitze kurzzeitig ca. 1.440 €"}, {"monat": "2026-09-01", "preis": "1255", "hinweis": "aus Screenshot abgelesen"}, {"monat": "2026-10-01", "preis": "1225", "hinweis": "aus Screenshot abgelesen"}, {"monat": "2026-11-27", "preis": "1149.0", "hinweis": "Amazon laut Preisradar am 27.11."}], "codes": [{"haendler": "Cyberport", "code": "PAYPAL25-BW26", "rabatt_eur": "25", "gueltig_bis": "2026-12-02", "bedingung": "nur bei Zahlung mit PayPal; nicht mit anderen Aktionen kombinierbar"}]};
+(function () {
+  const draws = [], calcs = {};
+  function lauf(n, f, el) {
+    try { if (typeof f === 'function') f(el); else { const m = f.mount ? f.mount(el) : undefined; if (f.update) f.update(el, m); } }
+    catch (e) { console.error('Zeichnung ' + n + ': ' + e.message); }
+  }
+  window.dash = {
+    colors: ['#5b8def', '#8a96ab', '#c9a96a', '#34d399'],
+    data(id) {
+      if (calcs[id]) { const c = calcs[id]; return {status: 'ok', data: c.fn(...c.inputs.map((i) => dash.data(i).data))}; }
+      const r = window.__DATA[id];
+      return r ? {status: 'ok', data: r, columns: Object.keys(r[0] || {})} : {status: 'missing', data: []};
+    },
+    calc(id, o) { calcs[id] = o; }, loader() {}, onData(f) { f(); }, refresh() {},
+    params() { return {}; }, setParams() {}, resetParams() {}, setLink() {},
+    draw(name, f) {
+      if (f === undefined) { draws.filter(([n]) => n === name).forEach(([n, g]) => document.querySelectorAll('[data-draw="' + n + '"]').forEach((el) => lauf(n, g, el))); return; }
+      draws.push([name, f]);
+    }
+  };
+  window.__alleZeichnen = () => draws.forEach(([n, f]) => document.querySelectorAll('[data-draw="' + n + '"]').forEach((el) => lauf(n, f, el)));
+})();
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script></head><body><div id="dash-root"><meta name="dash-one-writer">
+<meta name="dash-form" content="dashboard">
+<style>
+/* shadcn-Stil: neutrale Flächen, feine Rahmen, kleine Labels, kräftige Sans-Zahlen, dezente Badges */
+.pr{--sh-radius:10px;--sh-shadow:0 1px 2px color-mix(in srgb,var(--color-fg) 6%,transparent);display:flex;flex-direction:column;gap:var(--cds-gap-lg);max-width:1100px;font-family:var(--font-anthropic-sans)}
+.pr-h1{font-family:var(--font-anthropic-sans);font-weight:650;letter-spacing:-.02em;font-size:var(--cds-font-size-title);margin:0;text-wrap:balance}
+.pr-sub,.pr-note{color:var(--color-fg-muted);margin:0;font-size:var(--cds-font-size-caption);line-height:1.5}
+.pr-take{font-size:var(--cds-font-size-body);margin:0;line-height:1.55;padding:var(--cds-pad-md) var(--cds-pad-lg);border:1px solid var(--color-border-line);border-radius:var(--sh-radius);background:var(--color-panel);box-shadow:var(--sh-shadow)}
+.pr-cards,.pr-top,.pr-ass{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:var(--cds-gap-md)}
+.pr-card,.pr-offer{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--sh-radius);box-shadow:var(--sh-shadow);padding:var(--cds-pad-lg);display:flex;flex-direction:column;gap:6px;min-width:0}
+.pr-offer.erster{border-color:color-mix(in srgb,var(--color-ok) 55%,var(--color-border-line));box-shadow:0 0 0 1px color-mix(in srgb,var(--color-ok) 35%,transparent)}
+.pr-offer .pr-big a{color:inherit;text-decoration:none}
+.pr-lab{color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);font-weight:var(--cds-font-weight-medium)}
+.pr-big{font-family:var(--font-anthropic-sans);font-weight:700;letter-spacing:-.025em;font-size:1.75rem;line-height:1.15;font-variant-numeric:tabular-nums}
+.pr-h2{font-size:var(--cds-font-size-heading);font-weight:650;letter-spacing:-.01em;margin:0}
+.pr-sec{display:flex;flex-direction:column;gap:var(--cds-gap-sm);min-width:0}
+.pr-sec+.pr-sec,.pr-cards+.pr-sec{padding-top:var(--cds-pad-md);border-top:1px solid var(--color-border-line)}
+.pr-chart{position:relative;min-height:260px;padding:0;overflow:hidden;border:1px solid var(--color-border-line);border-radius:var(--sh-radius);background:var(--color-panel);box-shadow:var(--sh-shadow)}
+.pr-chart svg text{fill:var(--cds-text-secondary);font-size:var(--cds-font-size-caption)}
+.pr-tip{position:absolute;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);box-shadow:var(--cds-shadow-popover);border-radius:8px;padding:6px 10px;font-size:var(--cds-font-size-caption);max-width:240px}
+.pr-tw{overflow-x:auto;border:1px solid var(--color-border-line);border-radius:var(--sh-radius);background:var(--color-panel);box-shadow:var(--sh-shadow)}
+.pr-t{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:var(--cds-font-size-body)}
+.pr-t th,.pr-t td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--color-border-line);vertical-align:top}
+.pr-t tbody tr:last-child td{border-bottom:0}
+.pr-t tbody tr:hover td{background:color-mix(in srgb,var(--color-fg) 3%,transparent)}
+.pr-t th{color:var(--color-fg-muted);font-weight:var(--cds-font-weight-medium);font-size:var(--cds-font-size-caption);background:color-mix(in srgb,var(--color-fg) 2.5%,transparent)}
+.pr-t a{color:inherit;text-underline-offset:3px;text-decoration-color:color-mix(in srgb,var(--color-fg) 30%,transparent)}
+.pr-num{text-align:right!important;white-space:nowrap}
+.pr-pill{display:inline-flex;align-items:center;border-radius:6px;padding:1px 8px;font-size:var(--cds-font-size-caption);font-weight:var(--cds-font-weight-medium);white-space:nowrap;border:1px solid color-mix(in srgb,currentColor 25%,transparent);background:color-mix(in srgb,currentColor 10%,transparent);width:fit-content}
+.pr-ok{color:var(--color-ok)}.pr-warn{color:var(--color-warn)}.pr-bad{color:var(--color-bad)}
+.pr-code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:var(--cds-font-size-caption);padding:1px 6px;border-radius:6px;background:color-mix(in srgb,var(--color-fg) 6%,transparent);border:1px solid var(--color-border-line)}
+.pr-ass .pr-card p{margin:0;line-height:1.5}
+.pr-leg{display:flex;flex-wrap:wrap;gap:var(--cds-gap-md);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.pr-leg span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px;background:var(--c)}
+
+.pr{--acc:var(--color-ok);--acc-soft:color-mix(in srgb,var(--color-ok) 10%,transparent);--cta:var(--color-warn)}
+.pr-hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:var(--cds-gap-lg);padding:var(--cds-pad-xl);border-radius:16px;border:1px solid color-mix(in srgb,var(--acc) 30%,var(--color-border-line));background:linear-gradient(135deg,var(--acc-soft),transparent 60%),var(--color-panel);box-shadow:var(--sh-shadow)}
+@media (max-width:640px){.pr-hero{grid-template-columns:1fr;padding:var(--cds-pad-lg)}}
+.pr-hero-main{display:flex;flex-direction:column;gap:10px;min-width:0}
+.pr-eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:var(--cds-font-size-caption);font-weight:600;color:var(--acc);text-transform:uppercase;letter-spacing:.06em}
+.pr-eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--acc)}
+.pr-hero-price{font-size:clamp(2.4rem,7vw,3.4rem);font-weight:750;letter-spacing:-.035em;line-height:1;font-variant-numeric:tabular-nums}
+.pr-hero-shop{font-size:var(--cds-font-size-heading);font-weight:600}
+.pr-hero-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
+.pr-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.pr-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:10px;font:inherit;font-weight:600;font-size:var(--cds-font-size-body);cursor:pointer;text-decoration:none;border:1px solid var(--color-border-line);background:var(--color-panel);color:var(--color-fg);transition:transform .15s ease,background-color .2s ease,border-color .2s ease}
+.pr-btn:hover{border-color:color-mix(in srgb,var(--color-fg) 30%,var(--color-border-line))}
+.pr-btn:active{transform:scale(.98)}
+.pr-btn:focus-visible,.pr a:focus-visible,.pr-copy:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.pr-btn-primary{background:var(--acc);border-color:var(--acc);color:var(--color-bg)}
+.pr-btn-primary:hover{background:color-mix(in srgb,var(--acc) 88%,var(--color-fg))}
+.pr-btn[disabled]{opacity:.6;cursor:progress}
+.pr-btn svg{width:18px;height:18px;flex:none}
+.pr-copy{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 10px;border-radius:8px;border:1px dashed color-mix(in srgb,var(--acc) 50%,var(--color-border-line));background:var(--acc-soft);font:inherit;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:var(--cds-font-size-caption);color:var(--color-fg);cursor:pointer}
+.pr-hero-side{display:flex;flex-direction:column;gap:12px;justify-content:center;min-width:0}
+.pr-stat{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--color-border-line)}
+.pr-stat:last-child{border-bottom:0;padding-bottom:0}
+.pr-stat b{font-size:1.25rem;font-variant-numeric:tabular-nums}
+.pr-status{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);min-height:1.4em}
+.pr-status.laeuft{color:var(--acc)}
+.pr-status.fehler{color:var(--color-bad)}
+@media (prefers-reduced-motion:reduce){.pr-btn{transition:none}.pr-btn:active{transform:none}}
+
+/* Dunkles Design: Schwarz-Blau, bewusst ein Look für beide Systemthemen */
+#dash-root{--dash-gutter:0}
+.pr{--color-bg:#05070d;--color-panel:#0b1324;--color-fg:#e6edf7;--color-fg-muted:#8fa3c2;--color-border-line:#1b2a46;--color-ok:#34d399;--color-warn:#fbbf24;--color-bad:#f87171;
+  --acc:#3b82f6;--acc2:#22d3ee;--acc-soft:rgba(59,130,246,.14);--cds-text-secondary:#8fa3c2;--cds-chart-grid:#15223a;--cds-chart-axis:#2a3c5f;--cds-chart-muted:#5b6f93;--cds-chart-reference:#64748b;
+  --cds-surface-popover:#0f1a30;--cds-border:#24365a;--sh-shadow:0 1px 0 rgba(255,255,255,.03) inset,0 8px 24px -12px rgba(0,0,0,.6);
+  color-scheme:dark;color:var(--color-fg);background:radial-gradient(1200px 500px at 85% -10%,rgba(59,130,246,.22),transparent 60%),radial-gradient(900px 400px at -10% 10%,rgba(34,211,238,.10),transparent 60%),#05070d;
+  padding:max(16px,env(safe-area-inset-left,0px));padding-block:24px 40px;border-radius:0;min-height:100%}
+.pr-hero{border-color:rgba(59,130,246,.35);background:linear-gradient(140deg,rgba(59,130,246,.18),rgba(34,211,238,.05) 55%,transparent),#0a1222;box-shadow:0 0 0 1px rgba(59,130,246,.15),0 20px 60px -30px rgba(59,130,246,.55)}
+.pr-eyebrow{color:var(--acc2)}
+.pr-eyebrow::before{background:var(--acc2);box-shadow:0 0 0 0 rgba(34,211,238,.6)}
+@media (prefers-reduced-motion:no-preference){.pr-eyebrow::before{animation:pr-puls 2s ease-out infinite}}
+@keyframes pr-puls{0%{box-shadow:0 0 0 0 rgba(34,211,238,.55)}70%{box-shadow:0 0 0 10px rgba(34,211,238,0)}100%{box-shadow:0 0 0 0 rgba(34,211,238,0)}}
+.pr-hero-price{background:linear-gradient(90deg,#fff,#9cc2ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pr-btn{background:#0f1a30;border-color:#24365a;color:var(--color-fg)}
+.pr-btn:hover{border-color:var(--acc);box-shadow:0 0 0 3px rgba(59,130,246,.18)}
+.pr-btn-primary{background:linear-gradient(180deg,#4f8ff8,#2f6fe0);border-color:#4f8ff8;color:#fff}
+.pr-btn-primary:hover{background:linear-gradient(180deg,#609bff,#3a7af0)}
+.pr-btn:focus-visible,.pr a:focus-visible,.pr-copy:focus-visible,.pr-chip:focus-visible,.pr-sort:focus-visible{outline:2px solid var(--acc2);outline-offset:2px}
+.pr-copy{border-color:rgba(59,130,246,.5);background:rgba(59,130,246,.12)}
+.pr-card,.pr-offer,.pr-tw,.pr-chart{background:#0b1324;border-color:#1b2a46}
+@media (prefers-reduced-motion:no-preference){.pr-card,.pr-offer{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.pr-card:hover,.pr-offer:hover{transform:translateY(-2px)}}
+.pr-card:hover,.pr-offer:hover{border-color:rgba(59,130,246,.55);box-shadow:0 12px 30px -18px rgba(59,130,246,.7)}
+.pr-offer.erster{border-color:rgba(52,211,153,.6);box-shadow:0 0 0 1px rgba(52,211,153,.25),0 12px 30px -18px rgba(52,211,153,.6)}
+.pr-t th{background:#0d1830;color:#9fb3d3}
+.pr-t tbody tr:hover td{background:rgba(59,130,246,.08)}
+.pr-t a{color:#cfe0ff}
+.pr-sec+.pr-sec,.pr-cards+.pr-sec{border-top-color:#14213a}
+.pr-code{background:rgba(59,130,246,.12);border-color:#24365a;color:#cfe0ff}
+.pr-toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pr-chip{min-height:36px;padding:0 14px;border-radius:999px;border:1px solid #24365a;background:#0f1a30;color:var(--color-fg-muted);font:inherit;font-size:var(--cds-font-size-caption);font-weight:600;cursor:pointer}
+.pr-chip[aria-pressed="true"]{background:rgba(59,130,246,.2);border-color:var(--acc);color:#fff}
+.pr-sort{all:unset;cursor:pointer;display:inline-flex;gap:4px;align-items:center}
+.pr-sort[aria-sort="ascending"]::after{content:"▲";font-size:.7em;color:var(--acc2)}
+.pr-sort[aria-sort="descending"]::after{content:"▼";font-size:.7em;color:var(--acc2)}
+.pr-zaehler{color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);margin-left:auto}
+
+/* Shop-Look: Navigation, Produktkopf, Angebotsliste wie bei einem Preisvergleich */
+.pr-hero-price{background:none;-webkit-background-clip:initial;background-clip:initial;color:#fff}
+.pr-hero{box-shadow:0 1px 0 rgba(255,255,255,.04) inset;background:#0a1222}
+.pr-nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:20px;padding:10px max(16px,env(safe-area-inset-left,0px));margin:-24px calc(-1*max(16px,env(safe-area-inset-left,0px))) 0;background:rgba(5,7,13,.92);backdrop-filter:blur(8px);border-bottom:1px solid #14213a}
+.pr-logo{display:flex;align-items:center;gap:8px;font-weight:800;letter-spacing:-.02em;font-size:1.05rem;color:#fff;white-space:nowrap}
+.pr-logo svg{width:22px;height:22px;color:var(--acc)}
+.pr-navlinks{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.pr-navlinks a{color:#9fb3d3;text-decoration:none;font-size:var(--cds-font-size-caption);font-weight:600;padding:8px 10px;border-radius:8px;white-space:nowrap}
+.pr-navlinks a:hover{color:#fff;background:#0f1a30}
+.pr-crumbs{color:#6f84a6;font-size:var(--cds-font-size-caption)}
+.pr-crumbs span+span::before{content:"›";margin:0 6px}
+.pr-produkt{display:flex;gap:18px;align-items:center}
+.pr-produkt svg{width:84px;height:60px;flex:none;color:#7fa7ff}
+.pr-specs{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.pr-spec{font-size:var(--cds-font-size-caption);padding:3px 9px;border-radius:6px;background:#0f1a30;border:1px solid #1d2d4d;color:#c4d3ea}
+.pr-list{display:flex;flex-direction:column;gap:8px}
+.pr-row{display:grid;grid-template-columns:44px minmax(0,1fr) auto auto;gap:14px;align-items:center;padding:12px 14px;border-radius:12px;background:#0b1324;border:1px solid #1b2a46}
+.pr-row:hover{border-color:#2f4a7a}
+.pr-row.bester{border-color:rgba(52,211,153,.55);background:linear-gradient(90deg,rgba(52,211,153,.07),transparent 40%),#0b1324}
+.pr-logo-m{width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:.95rem;color:#fff;letter-spacing:-.02em}
+.pr-row-name{font-weight:700;color:#fff;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.pr-row-sub{font-size:var(--cds-font-size-caption);color:#8fa3c2;margin-top:2px}
+.pr-badge{font-size:11px;font-weight:700;padding:2px 7px;border-radius:5px;letter-spacing:.02em}
+.pr-badge.top{background:#34d399;color:#04130c}
+.pr-badge.code{background:#1e3a8a;color:#cfe0ff}
+.pr-badge.lager{background:rgba(52,211,153,.14);color:#6ee7b7}
+.pr-row-preis{text-align:right;white-space:nowrap}
+.pr-row-preis b{font-size:1.25rem;color:#fff;font-variant-numeric:tabular-nums}
+.pr-row-preis small{display:block;color:#7f93b4;font-size:11px}
+.pr-shopbtn{min-height:40px;padding:0 14px;font-size:var(--cds-font-size-caption)}
+@media (max-width:560px){.pr-row{grid-template-columns:40px minmax(0,1fr) auto}.pr-row .pr-shopbtn{grid-column:2/-1;justify-self:stretch}.pr-logo-m{width:40px;height:40px}}
+.pr-bf{display:grid;gap:10px}
+.pr-bf-row{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:14px;border-radius:12px;background:#0b1324;border:1px solid #1b2a46}
+.pr-bf-row.jetzt{border-color:rgba(59,130,246,.6)}
+.pr-bf-jahr{font-size:1.3rem;font-weight:800;color:#fff}
+.pr-bf-steps{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0}
+.pr-step{padding:4px 10px;border-radius:8px;background:#0f1a30;border:1px solid #1d2d4d;font-variant-numeric:tabular-nums;font-size:var(--cds-font-size-caption);color:#c4d3ea}
+.pr-step b{color:#fff}
+.pr-step.bf{border-color:#fbbf24;color:#fde68a}
+.pr-step.leer{opacity:.5}
+.pr-arrow{color:#4b6290}
+.pr-antwort{padding:18px;border-radius:14px;border:1px solid rgba(251,191,36,.45);background:linear-gradient(120deg,rgba(251,191,36,.08),transparent 50%),#0b1324}
+.pr-antwort h3{margin:0 0 6px;font-size:1.15rem;color:#fff}
+.pr-antwort p{margin:0;line-height:1.55;color:#c4d3ea}
+.pr-footer{margin-top:12px;padding-top:18px;border-top:1px solid #14213a;color:#6f84a6;font-size:var(--cds-font-size-caption);display:flex;flex-wrap:wrap;gap:6px 18px}
+
+.pr{--c-main:#5b8def;--c-ctx:#8a96ab;--c-ink:#e6edf7;--c-ink2:#8fa3c2;--c-grid:rgba(143,163,194,.12);--c-note:#c9a96a}
+.pr-chartcard{display:flex;flex-direction:column;gap:6px}
+.pr-insight{margin:0;color:var(--c-ink);font-size:var(--cds-font-size-body);line-height:1.5}
+.pr-insight b{font-variant-numeric:tabular-nums}
+.pr-chart{background:transparent!important;border:0!important;box-shadow:none!important;border-top:1px solid #14213a!important;border-bottom:1px solid #14213a!important;border-radius:0!important;padding:8px 0!important}
+.pr-chart svg text{font-family:var(--font-anthropic-sans);font-size:11px;fill:var(--c-ink2);font-variant-numeric:tabular-nums}
+.pr-chart svg .lab-main{fill:var(--c-main);font-weight:700;font-size:12px}
+.pr-chart svg .lab-ctx{fill:var(--c-ctx);font-size:11px}
+.pr-chart svg .lab-note{fill:var(--c-note);font-size:10.5px}
+.pr-chart svg .lab-val{fill:var(--c-ink);font-weight:600}
+.pr-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid #14213a}
+.pr-metric{padding:10px 0;display:flex;flex-direction:column;gap:2px;min-width:0}
+.pr-metric+.pr-metric{padding-left:14px;border-left:1px solid #14213a}
+.pr-metric span{font-size:11px;color:var(--c-ink2);text-transform:uppercase;letter-spacing:.06em}
+.pr-metric b{font-size:1.1rem;color:var(--c-ink);font-variant-numeric:tabular-nums;font-weight:650}
+.pr-sm{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:520px){.pr-sm{grid-template-columns:1fr}}
+.pr-sm-panel{min-width:0;position:relative}
+.pr-sm-title{font-size:12px;font-weight:700;color:var(--c-ink);display:flex;justify-content:space-between;gap:8px}
+.pr-sm-title span{color:var(--c-ink2);font-weight:500}
+.pr-sm-panel.fokus .pr-sm-title{color:var(--c-main)}
+.pr-chart svg .xh{stroke:rgba(230,237,247,.25);stroke-width:1}
+
+/* Kachel-Übersicht und iPhone */
+.pr-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.pr-tile{display:flex;flex-direction:column;gap:4px;padding:16px;border-radius:12px;background:#0b1324;border:1px solid #1b2a46;color:inherit;text-decoration:none;min-width:0}
+.pr-tile:hover{border-color:rgba(91,141,239,.7);transform:translateY(-2px)}
+@media (prefers-reduced-motion:no-preference){.pr-tile{transition:transform .2s ease,border-color .2s ease}}
+.pr-tile:focus-visible{outline:2px solid var(--acc2);outline-offset:2px}
+.pr-tile h3{margin:0;font-size:1rem;color:#fff}
+.pr-tile .u{color:#8fa3c2;font-size:12px}
+.pr-tile .p{font-size:1.9rem;font-weight:750;letter-spacing:-.03em;color:#fff;font-variant-numeric:tabular-nums;margin-top:6px}
+.pr-tile .m{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:12px;color:#8fa3c2}
+.pr-tile .tr{font-weight:700}
+.pr-tile .gap{color:var(--color-warn);font-weight:650}
+.pr-tile .gap.ok{color:var(--color-ok)}
+.pr-check{margin:8px 0 0;padding-left:1.2em;color:#c4d3ea;line-height:1.6}
+
+.pr-navbtn{margin-left:auto;flex:none;min-height:38px;padding:0 12px;font-size:13px;background:linear-gradient(180deg,#4f8ff8,#2f6fe0);border-color:#4f8ff8;color:#fff}
+.pr-navbtn:hover{background:linear-gradient(180deg,#609bff,#3a7af0)}
+.pr-nav{gap:12px}
+.pr-navlinks{min-width:0;flex:1 1 auto}
+@media (max-width:420px){.pr-logo span,.pr-logo{font-size:.95rem}.pr-navbtn{padding:0 10px}}
+</style>
+<div class="pr">
+  <nav class="pr-nav" id="navigation" aria-label="Bereiche">
+    <span class="pr-logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 12l5-5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>Preisradar</span>
+    <div class="pr-navlinks"><a href="#angebote">Angebote</a><a href="#blackfriday">Black Friday</a><a href="#verlauf">Preisverlauf</a><a href="#vorgaenger">Vorjahre</a><a href="#deals">Deals</a><a href="#iphone">iPhone</a></div>
+    <a class="pr-btn pr-navbtn" id="alle-pruefen" href="#" target="_blank" rel="noopener" aria-describedby="alle-pruefen-hinweis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>Alle prüfen</a>
+  </nav>
+  
+  <section class="pr-sec" id="produkte">
+    <h2 class="pr-h2">Meine Produkte</h2>
+    <div class="pr-tiles" data-draw="tiles" data-source="produkte"></div>
+    <p class="pr-note" id="alle-pruefen-hinweis">Alle Produkte werden stündlich gemeinsam geprüft. „Alle prüfen“ oben rechts startet sofort eine Prüfung für alle Produkte: bei GitHub auf „Run workflow“ tippen. Die Seite übernimmt neue Preise stündlich um :17 (7:17 bis 23:17 Uhr).</p>
+  </section>
+  <header class="pr-sec" id="kopf">
+    <div class="pr-crumbs"><span>Notebooks</span><span>Apple</span><span>MacBook Air 13" M5</span></div>
+    <div class="pr-produkt">
+      <svg viewBox="0 0 84 60" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="14" y="6" width="56" height="38" rx="3"/><rect x="18" y="10" width="48" height="30" rx="1" fill="currentColor" fill-opacity=".12" stroke="none"/><path d="M4 48h76l-4 6H8z" fill="currentColor" fill-opacity=".18"/></svg>
+      <div>
+        <h1 class="pr-h1">Apple MacBook Air 13" M5 (2026)</h1>
+        <div class="pr-specs"><span class="pr-spec">10-Core CPU</span><span class="pr-spec">8-Core GPU</span><span class="pr-spec">16 GB RAM</span><span class="pr-spec">512 GB SSD</span><span class="pr-spec">Mitternacht</span><span class="pr-spec">MDHE4D/A</span></div>
+      </div>
+    </div>
+    <p class="pr-sub">Dein Zielpreis: 1.100 €. Preise aktualisiert: <span data-draw="stand">—</span>.</p>
+    <div class="pr-hero" id="hero">
+      <div class="pr-hero-main">
+        <span class="pr-eyebrow">Bester Preis</span>
+        <span class="pr-hero-price" data-draw="hero-price" data-source="bester" data-field="preis_mit_code" data-row="0">—</span>
+        <span class="pr-hero-shop" data-draw="hero-shop">—</span>
+        <div class="pr-hero-meta" data-draw="hero-meta"></div>
+        <div class="pr-actions">
+          <span data-draw="hero-cta"></span>
+          
+        </div>
+        <p class="pr-status" id="pruef-status" data-draw="pruef-status" aria-live="polite">—</p>
+      </div>
+      <div class="pr-hero-side">
+        <div class="pr-stat"><span class="pr-lab">Bis zum Ziel 1.100 €</span><b data-draw="hero-gap" data-source="bester" data-field="abstand" data-row="0">—</b></div>
+        <div class="pr-stat"><span class="pr-lab">Unter UVP 1.399 €</span><b data-draw="hero-rabatt" data-source="bester" data-field="rabatt" data-row="0">—</b></div>
+        <div class="pr-stat"><span class="pr-lab">Zuletzt geprüft</span><b data-draw="stand2">—</b></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="pr-sec" id="top3">
+    <h2 class="pr-h2">Top 3 im Vergleich</h2>
+    <div class="pr-top" data-draw="top3" data-source="angebote"></div>
+  </section>
+
+  <p class="pr-note" id="netzteil-hinweis">Netzteil: In der EU nicht dabei. Ein 65-W-USB-C-Netzteil von Ugreen oder Anker für ca. 20 € reicht.</p>
+
+  <section class="pr-sec" id="einschaetzung">
+    <h2 class="pr-h2">Kaufen oder warten?</h2>
+    <p class="pr-note">Einschätzung aus den Daten unten. Nur zwei Vorgänger-Generationen zum Vergleich, also keine Statistik und keine Garantie.</p>
+    <div class="pr-ass" data-draw="einschaetzung" data-source="bester codes laeufe"></div>
+  </section>
+
+  <section class="pr-sec" id="blackfriday">
+    <h2 class="pr-h2">Black Friday: dein Modell und die Vorjahre</h2>
+    <p class="pr-note">Ähnliche MacBook-Air-Modelle in den letzten Jahren: Preis vor der Black Week, in der Black Week, am Black Friday selbst und danach.</p>
+    <div class="pr-antwort" id="bf-antwort" data-draw="bf-antwort" data-source="blackfriday bester"></div>
+    <div class="pr-bf" data-draw="bf-rows" data-source="blackfriday"></div>
+  </section>
+
+  <section class="pr-sec pr-chartcard" id="verlauf">
+    <h2 class="pr-h2">Preisverlauf seit Marktstart</h2>
+    <p class="pr-insight" data-draw="verlauf-insight">—</p>
+    <div class="pr-chart" data-draw="chart-verlauf" data-source="amazon laeufe"></div>
+    <div class="pr-metrics">
+      <div class="pr-metric"><span>Tief (Juni)</span><b data-draw="m-tief" data-source="amazon" data-field="preis" data-where="monat=2026-06-01">—</b></div>
+      <div class="pr-metric"><span>Bester Preis heute</span><b data-draw="m-jetzt" data-source="bester" data-field="preis_mit_code" data-row="0">—</b></div>
+      <div class="pr-metric"><span>Abstand zum Ziel</span><b data-draw="m-ziel" data-source="bester" data-field="abstand" data-row="0">—</b></div>
+    </div>
+    <p class="pr-note">Amazon: Monatswerte aus deinem Screenshot der Amazon-App (ca. ±20 €). Preisradar: günstigster geprüfter Preis aller Händler.</p>
+  </section>
+
+  <section class="pr-sec" id="vorgaenger">
+    <h2 class="pr-h2">Rabatt nach Marktstart: M3, M4, M5</h2>
+    <p class="pr-note">Rabatt gegenüber der jeweiligen UVP, Monate nach Marktstart, aus Deal-Berichten. Gleiche Skala in allen drei Feldern.</p>
+    <p class="pr-insight" data-draw="vorg-insight">—</p>
+    <div class="pr-chart"><div class="pr-sm" data-draw="chart-vorg" data-source="vorgaenger"></div></div>
+    <div class="pr-tw">
+      <table class="pr-t" data-source="vorgaenger" data-row-key="modell,monate_nach_start">
+        <thead><tr><th data-field="modell">Modell</th><th data-field="monate_nach_start" class="pr-num">Monate</th><th data-field="preis" class="pr-num">Preis</th><th data-field="rabatt_prozent" class="pr-num">unter UVP</th><th data-field="anlass">Anlass</th></tr></thead>
+        <tbody data-draw="vorg-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="pr-sec" id="angebote">
+    <h2 class="pr-h2">Preisvergleich: alle Händler</h2>
+    <p class="pr-note">Aus geizhals und notebookinfo, direkt von den Seiten gelesen. „Preis“ ist inklusive Versand und gültigem Code. Cashback kommt später und zählt nicht.</p>
+    <div class="pr-toolbar" role="group" aria-label="Angebote filtern">
+      <button type="button" class="pr-chip" data-filter="alle" aria-pressed="true">Alle</button>
+      <button type="button" class="pr-chip" data-filter="code" aria-pressed="false">Mit Code</button>
+      <button type="button" class="pr-chip" data-filter="schnell" aria-pressed="false">Schnell lieferbar</button>
+      <button type="button" class="pr-chip" data-filter="ziel" aria-pressed="false">Unter 1.200 €</button>
+      <button type="button" class="pr-chip pr-sort" data-sort="preis_mit_code" aria-sort="ascending">Preis</button>
+      <button type="button" class="pr-chip pr-sort" data-sort="haendler">Händler A–Z</button>
+      <span class="pr-zaehler" data-draw="zaehler">—</span>
+    </div>
+    <div class="pr-list" data-draw="rows" data-source="angebote"></div>
+  </section>
+
+  <section class="pr-sec" id="deals">
+    <h2 class="pr-h2">Aktive Deals auf mydealz</h2>
+    <p class="pr-note">Nur Deals für genau diese Ausstattung, die nicht abgelaufen sind. Im Warenkorb prüfen.</p>
+    <div class="pr-tw">
+      <table class="pr-t" data-source="deals" data-row-key="titel">
+        <thead><tr><th data-field="titel">Deal</th><th data-field="haendler">Händler</th><th data-field="preis" class="pr-num">Preis</th><th data-field="code">Code</th><th data-field="veroeffentlicht">seit</th></tr></thead>
+        <tbody data-draw="deal-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="pr-sec" id="quellen">
+    <h2 class="pr-h2">Geprüfte Quellen und Lücken</h2>
+    <p class="pr-note">idealo, billiger.de, guenstiger.de und Check24 blocken automatische Abrufe. Sie zeigen aber fast dieselben Händler wie geizhals.</p>
+    <div class="pr-tw">
+      <table class="pr-t" data-source="quellen" data-row-key="quelle">
+        <thead><tr><th data-field="quelle">Quelle</th><th data-field="status">Status</th><th data-field="hinweis">Hinweis</th></tr></thead>
+        <tbody data-draw="quellen-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  
+  <section class="pr-sec" id="iphone">
+    <h2 class="pr-h2">iPhone 17 Pro refurbished</h2>
+    <p class="pr-note">Deine Kriterien: Tiefblau oder Silber, 256 oder 512 GB, Zustand sehr gut oder besser, Akku neu. Angebote mit Akku optimal stehen als zweite Wahl darunter und zählen nicht fürs Ziel. Preise von refurbed und weiteren Händlern, stündlich vom Preisradar gelesen.</p>
+    <div class="pr-specs"><span class="pr-spec">Tiefblau / Silber</span><span class="pr-spec">256 / 512 GB</span><span class="pr-spec">Zustand ab Sehr gut</span><span class="pr-spec">Akku neu</span><span class="pr-spec">Akku optimal nur 2. Wahl</span></div>
+    <div class="pr-metrics">
+      <div class="pr-metric"><span>Günstigstes mit neuem Akku</span><b data-draw="ip-preis" data-source="produkte" data-field="preis" data-where="id=iphone">—</b></div>
+      <div class="pr-metric"><span>Abstand zum Ziel</span><b data-draw="ip-abstand" data-source="produkte" data-field="abstand" data-where="id=iphone">—</b></div>
+      <div class="pr-metric"><span>Zuletzt geprüft</span><b data-draw="ip-stand">—</b></div>
+    </div>
+    <p class="pr-insight" data-draw="ip-insight">—</p>
+    <div class="pr-chart" data-draw="ip-chart" data-source="iphone_laeufe"></div>
+    <div id="ip-filter"><div class="pr-toolbar" role="group" aria-label="iPhone nach Speicher filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:64px">Speicher</span><button type="button" class="pr-chip" data-ipf="speicher" data-wert="alle" aria-pressed="true">Alle</button><button type="button" class="pr-chip" data-ipf="speicher" data-wert="256 GB" aria-pressed="false">256 GB</button><button type="button" class="pr-chip" data-ipf="speicher" data-wert="512 GB" aria-pressed="false">512 GB</button></div><div class="pr-toolbar" role="group" aria-label="iPhone nach Akku filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:64px">Akku</span><button type="button" class="pr-chip" data-ipf="akku" data-wert="alle" aria-pressed="true">Alle</button><button type="button" class="pr-chip" data-ipf="akku" data-wert="Neu" aria-pressed="false">Neu</button><button type="button" class="pr-chip" data-ipf="akku" data-wert="Optimal" aria-pressed="false">Optimal</button></div><div class="pr-toolbar" role="group" aria-label="iPhone nach Zustand filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:64px">Zustand</span><button type="button" class="pr-chip" data-ipf="zustand" data-wert="alle" aria-pressed="true">Alle</button><button type="button" class="pr-chip" data-ipf="zustand" data-wert="Sehr gut" aria-pressed="false">Sehr gut</button><button type="button" class="pr-chip" data-ipf="zustand" data-wert="Exzellent" aria-pressed="false">Exzellent</button><button type="button" class="pr-chip" data-ipf="zustand" data-wert="Premium" aria-pressed="false">Premium</button></div><div class="pr-toolbar" role="group" aria-label="iPhone nach Farbe filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:64px">Farbe</span><button type="button" class="pr-chip" data-ipf="farbe" data-wert="alle" aria-pressed="true">Alle</button><button type="button" class="pr-chip" data-ipf="farbe" data-wert="Tiefblau" aria-pressed="false">Tiefblau</button><button type="button" class="pr-chip" data-ipf="farbe" data-wert="Silber" aria-pressed="false">Silber</button></div><div class="pr-toolbar" style="margin-top:6px"><span class="pr-zaehler" data-draw="ip-zaehler">—</span></div></div>
+    <div class="pr-list" data-draw="iphone-rows" data-source="iphone_angebote"></div>
+    <h3 class="pr-h2" style="margin-top:12px">Geprüfte Quellen</h3>
+    <div class="pr-tw"><table class="pr-t" data-source="iphone_quellen" data-row-key="quelle"><thead><tr><th data-field="quelle">Quelle</th><th data-field="status">Status</th><th data-field="hinweis">Hinweis</th></tr></thead><tbody data-draw="ip-quellen"></tbody></table></div>
+    <div class="pr-antwort" id="ip-antwort" data-draw="ip-antwort" data-source="iphone_angebote produkte"></div>
+    <ul class="pr-check"><li>Zustand und Akku stehen im Angebot so, wie du sie willst</li><li>Farbe und Speichergröße stimmen</li><li>Gesamtpreis inklusive Versand</li><li>Akku und Zustand sind bei jeder Zeile aus der Shopseite ausgelesen; vor dem Kauf im Warenkorb gegenprüfen</li></ul>
+  </section>
+  <footer class="pr-footer" id="fusszeile"><span>Preisradar</span><span>Daten: geizhals.de, notebookinfo.de, mydealz.de</span><span>stündlich geprüft, Preise ohne Gewähr</span><span>Kein Kauf über diese Seite</span></footer>
+</div>
+<script>
+window.PR = {
+  ziel: 1100, uvp: 1399,
+  eur: (v) => (v == null || v === '' || isNaN(v)) ? '—' : new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR', maximumFractionDigits: (+v) % 1 ? 2 : 0}).format(+v),
+  link: (text, url) => { if (/^https?:\/\//.test(url || '')) { const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = text; return a; } return document.createTextNode(text); },
+  cell: (tr, content, cls) => { const td = tr.insertCell(); if (content instanceof Node) td.append(content); else td.textContent = content ?? ''; if (cls) td.className = cls; return td; }
+};
+dash.calc('bester', {
+  title: 'Günstigstes Angebot',
+  description: 'Niedrigster Preis inkl. Versand und gültigem Code, Abstand zum Ziel 1.100 € und Rabatt gegenüber UVP 1.399 €.',
+  inputs: ['angebote'],
+  fn: (angebote) => {
+    const r = angebote.map((a) => ({...a, p: +a.preis_mit_code})).filter((a) => !isNaN(a.p));
+    if (!r.length) return [];
+    const b = r.reduce((x, y) => (y.p < x.p ? y : x));
+    return [{haendler: b.haendler, preis_mit_code: b.p, abstand: Math.max(0, Math.round((b.p - 1100) * 100) / 100), rabatt: Math.round((1 - b.p / 1399) * 100) + ' %'}];
+  }
+});
+function prBest(el, field, fmt) {
+  const c = dash.data('bester');
+  if (c.status === 'loading') return;
+  el.classList.remove('dash-skeleton');
+  el.textContent = c.status === 'ok' && c.data && c.data[0] ? fmt(c.data[0][field]) : '—';
+}
+dash.draw('best-shop', (el) => prBest(el, 'haendler', (v) => v));
+dash.draw('best-price', (el) => prBest(el, 'preis_mit_code', PR.eur));
+dash.draw('gap', (el) => prBest(el, 'abstand', PR.eur));
+dash.draw('card-best', (el) => prBest(el, 'preis_mit_code', PR.eur));
+dash.draw('card-best-shop', (el) => prBest(el, 'haendler', (v) => 'bei ' + v));
+dash.draw('card-gap', (el) => prBest(el, 'abstand', PR.eur));
+dash.draw('card-save', (el) => prBest(el, 'rabatt', (v) => v));
+dash.draw('stand', (el) => {
+  const d = dash.data('laeufe');
+  if (d.status !== 'ok' || !d.data.length) { el.textContent = '—'; return; }
+  const z = d.data[d.data.length - 1].zeit;
+  el.textContent = z.slice(8, 10) + '.' + z.slice(5, 7) + '.' + z.slice(0, 4) + ', ' + z.slice(11, 16) + ' Uhr';
+});
+
+function prTable(name, src, fill, cols) {
+  dash.draw(name, (tb) => {
+    const d = dash.data(src);
+    tb.replaceChildren();
+    if (d.status !== 'ok') { if (d.status === 'error') { const tr = tb.insertRow(); const td = tr.insertCell(); td.colSpan = cols; td.textContent = 'Konnte nicht geladen werden.'; } return; }
+    fill(tb, d.data);
+  });
+}
+window.PR_FARBEN = ['#2563eb','#7c3aed','#db2777','#ea580c','#0891b2','#16a34a','#ca8a04','#4f46e5','#be123c','#0d9488'];
+window.prKuerzel = (n) => n.replace(/\.(de|net|com)$/i, '').split(/[\s.-]+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
+window.prFarbe = (n) => PR_FARBEN[[...n].reduce((s, c) => s + c.charCodeAt(0), 0) % PR_FARBEN.length];
+dash.draw('rows', (el) => {
+  const d = dash.data('angebote');
+  if (d.status !== 'ok') { if (d.status === 'error') el.textContent = 'Angebote konnten nicht geladen werden.'; else if (!el.firstChild) el.textContent = '—'; return; }
+  el.replaceChildren();
+  const minP = Math.min(...d.data.map((r) => +r.preis_mit_code));
+  prAuswahl(d.data).forEach((r) => {
+    const row = document.createElement('div'); row.className = 'pr-row' + (+r.preis_mit_code === minP ? ' bester' : '');
+    const logo = document.createElement('div'); logo.className = 'pr-logo-m'; logo.style.background = prFarbe(r.haendler); logo.textContent = prKuerzel(r.haendler); logo.setAttribute('aria-hidden', 'true');
+    const mid = document.createElement('div'); mid.style.minWidth = '0';
+    const name = document.createElement('div'); name.className = 'pr-row-name'; name.append(document.createTextNode(r.haendler));
+    const badge = (cls, txt) => { const b = document.createElement('span'); b.className = 'pr-badge ' + cls; b.textContent = txt; name.append(b); };
+    if (+r.preis_mit_code === minP) badge('top', 'Bestpreis');
+    if (r.code) badge('code', 'Code ' + r.code);
+    if (/lagernd|sofort|auf lager/i.test(r.lieferung || '')) badge('lager', 'auf Lager');
+    const sub = document.createElement('div'); sub.className = 'pr-row-sub';
+    sub.textContent = [r.lieferung, r.cashback ? r.cashback.replace(/\s*\(.*\)$/, '') + ' Cashback' : '', 'via ' + r.quelle].filter(Boolean).join(' · ');
+    mid.append(name, sub);
+    const preis = document.createElement('div'); preis.className = 'pr-row-preis';
+    const b = document.createElement('b'); b.dataset.source = 'angebote'; b.dataset.field = 'preis_mit_code'; b.dataset.where = 'haendler=' + encodeURIComponent(r.haendler); b.textContent = PR.eur(r.preis_mit_code);
+    const sm = document.createElement('small'); sm.textContent = r.versand === '' ? 'Versand unbekannt' : (+r.versand === 0 ? 'inkl. Versand' : 'inkl. ' + PR.eur(r.versand) + ' Versand');
+    preis.append(b, sm);
+    row.append(logo, mid, preis);
+    if (/^https?:\/\//.test(r.link || '')) { const a = document.createElement('a'); a.className = 'pr-btn pr-btn-primary pr-shopbtn'; a.href = r.link; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Zum Shop'; row.append(a); }
+    el.append(row);
+  });
+});
+prTable('vorg-rows', 'vorgaenger', (tb, rows) => rows.forEach((r) => {
+  const tr = tb.insertRow(); tr.dataset.key = encodeURIComponent(r.modell) + ',' + r.monate_nach_start;
+  PR.cell(tr, r.modell); PR.cell(tr, r.monate_nach_start, 'pr-num'); PR.cell(tr, PR.eur(r.preis), 'pr-num'); PR.cell(tr, r.rabatt_prozent + ' %', 'pr-num'); PR.cell(tr, r.link ? PR.link(r.anlass, r.quelle) : PR.link(r.anlass, r.quelle));
+}), 5);
+prTable('deal-rows', 'deals', (tb, rows) => rows.forEach((r) => {
+  const tr = tb.insertRow(); PR.cell(tr, PR.link(r.titel, r.link)); PR.cell(tr, r.haendler); PR.cell(tr, PR.eur(r.preis), 'pr-num');
+  const c = tr.insertCell(); if (r.code) { const s = document.createElement('span'); s.className = 'pr-code'; s.textContent = r.code; c.append(s); } else c.textContent = '–';
+  PR.cell(tr, r.veroeffentlicht.split('-').reverse().join('.'));
+}), 5);
+prTable('quellen-rows', 'quellen', (tb, rows) => rows.forEach((r) => {
+  const tr = tb.insertRow(); PR.cell(tr, PR.link(r.quelle, r.link));
+  const s = document.createElement('span'); s.className = 'pr-pill ' + (r.status === 'geprüft' ? 'pr-ok' : 'pr-bad'); s.textContent = r.status; PR.cell(tr, s);
+  PR.cell(tr, r.hinweis);
+}), 3);
+
+function prTip(el) { let t = el.querySelector('.pr-tip'); if (!t) { t = document.createElement('div'); t.className = 'pr-tip'; t.hidden = true; el.append(t); } return t; }
+function prShow(el, tip, ev, text) { const b = el.getBoundingClientRect(); tip.hidden = false; tip.textContent = text; tip.style.left = Math.max(0, Math.min(ev.clientX - b.left + 10, b.width - 250)) + 'px'; tip.style.top = (ev.clientY - b.top + 12) + 'px'; }
+
+
+dash.draw('top3', (el) => {
+  const d = dash.data('angebote');
+  if (d.status !== 'ok') { if (d.status === 'error') el.textContent = 'Angebote konnten nicht geladen werden.'; else if (!el.firstChild) el.textContent = '—'; return; }
+  el.replaceChildren();
+  [...d.data].sort((a, b) => a.preis_mit_code - b.preis_mit_code).slice(0, 3).forEach((r, i) => {
+    const c = document.createElement('div'); c.className = 'pr-offer' + (i === 0 ? ' erster' : '');
+    const lab = document.createElement('span'); lab.className = 'pr-lab'; lab.textContent = (i + 1) + '. ' + r.haendler;
+    const big = document.createElement('span'); big.className = 'pr-big'; big.append(PR.link(PR.eur(r.preis_mit_code), r.link));
+    if (+r.preis_mit_code <= PR.ziel) big.classList.add('pr-ok');
+    const info = document.createElement('span'); info.className = 'pr-note';
+    info.textContent = [r.code ? 'Code ' + r.code : 'ohne Code', r.lieferung || null].filter(Boolean).join(' · ');
+    c.append(lab, big, info); el.append(c);
+  });
+});
+
+dash.draw('hero-price', (el) => {
+  const c = dash.data('bester');
+  if (c.status === 'loading') return;
+  const v = c.status === 'ok' && c.data && c.data[0] ? +c.data[0].preis_mit_code : null;
+  if (v == null) { el.textContent = '—'; return; }
+  const ruhig = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (ruhig || el.dataset.gezaehlt === String(v)) { el.textContent = PR.eur(v); el.dataset.gezaehlt = String(v); return; }
+  el.dataset.gezaehlt = String(v);
+  const start = performance.now(), von = Math.round(v * 1.25);
+  const schritt = (jetzt) => { const p = Math.min(1, (jetzt - start) / 900), e = 1 - Math.pow(1 - p, 3); el.textContent = PR.eur(Math.round(von + (v - von) * e)); if (p < 1) requestAnimationFrame(schritt); else el.textContent = PR.eur(v); };
+  requestAnimationFrame(schritt);
+});
+dash.draw('hero-shop', (el) => prBest(el, 'haendler', (v) => 'bei ' + v));
+dash.draw('hero-gap', (el) => prBest(el, 'abstand', (v) => (+v === 0 ? 'erreicht' : PR.eur(v))));
+dash.draw('hero-rabatt', (el) => prBest(el, 'rabatt', (v) => v));
+dash.draw('stand2', (el) => {
+  const d = dash.data('laeufe');
+  if (d.status !== 'ok' || !d.data.length) { el.textContent = '—'; return; }
+  const z = d.data[d.data.length - 1].zeit;
+  el.textContent = z.slice(8, 10) + '.' + z.slice(5, 7) + '., ' + z.slice(11, 16);
+});
+function prBestRow() {
+  const a = dash.data('angebote');
+  if (a.status !== 'ok' || !a.data.length) return null;
+  return [...a.data].sort((x, y) => x.preis_mit_code - y.preis_mit_code)[0];
+}
+dash.draw('hero-meta', (el) => {
+  el.replaceChildren();
+  const r = prBestRow();
+  if (!r) { el.textContent = '—'; return; }
+  if (r.code) {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'pr-copy'; b.setAttribute('aria-label', 'Code ' + r.code + ' kopieren');
+    b.textContent = r.code + ' kopieren';
+    b.onclick = () => { navigator.clipboard.writeText(r.code).then(() => { b.textContent = r.code + ' kopiert'; }).catch(() => { b.textContent = r.code; }); };
+    el.append(b);
+  }
+  if (r.lieferung) { const s = document.createElement('span'); s.textContent = r.lieferung; el.append(s); }
+});
+dash.draw('hero-cta', (el) => {
+  el.replaceChildren();
+  const r = prBestRow();
+  if (!r || !/^https?:\/\//.test(r.link || '')) return;
+  const a = document.createElement('a'); a.className = 'pr-btn pr-btn-primary'; a.href = r.link; a.target = '_blank'; a.rel = 'noopener';
+  a.textContent = 'Zum Angebot'; el.append(a);
+});
+
+window.PR_ACTIONS = '#';
+dash.draw('pruef-status', {
+  mount(el) {
+    el.textContent = 'Wird stündlich automatisch geprüft.';
+    const btn = document.getElementById('jetzt-pruefen');
+    if (!btn) return {};
+    const onClick = () => {};
+    btn.setAttribute('aria-label', 'Jetzt prüfen: öffnet GitHub, dort Run workflow tippen');
+    btn.addEventListener('click', onClick);
+    return {btn, onClick};
+  },
+  update() {},
+  unmount(el, made) { if (made && made.btn) made.btn.removeEventListener('click', made.onClick); }
+});
+
+window.PR_STATE = {filter: 'alle', sort: 'preis_mit_code', dir: 1};
+window.prAuswahl = (rows) => {
+  const s = window.PR_STATE;
+  const f = {alle: () => true, code: (r) => !!r.code, schnell: (r) => /sofort|lagernd|1-2|1-3|morgen|1 werktag|2-3/i.test(r.lieferung || ''), ziel: (r) => +r.preis_mit_code < 1200}[s.filter] || (() => true);
+  return rows.filter(f).sort((a, b) => (s.sort === 'haendler' ? a.haendler.localeCompare(b.haendler, 'de') : a.preis_mit_code - b.preis_mit_code) * s.dir);
+};
+dash.draw('zaehler', (el) => {
+  const d = dash.data('angebote');
+  el.textContent = d.status === 'ok' ? prAuswahl(d.data).length + ' von ' + d.data.length + ' Angeboten' : '—';
+});
+document.querySelectorAll('.pr-chip[data-filter]').forEach((b) => b.addEventListener('click', () => {
+  window.PR_STATE.filter = b.dataset.filter;
+  document.querySelectorAll('.pr-chip[data-filter]').forEach((x) => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+  dash.draw('rows'); dash.draw('zaehler');
+}));
+document.querySelectorAll('.pr-sort').forEach((b) => b.addEventListener('click', () => {
+  const s = window.PR_STATE;
+  s.dir = s.sort === b.dataset.sort ? -s.dir : 1; s.sort = b.dataset.sort;
+  document.querySelectorAll('.pr-sort').forEach((x) => { if (x === b) x.setAttribute('aria-sort', s.dir > 0 ? 'ascending' : 'descending'); else x.removeAttribute('aria-sort'); });
+  dash.draw('rows');
+}));
+
+dash.draw('bf-rows', (el) => {
+  const d = dash.data('blackfriday');
+  if (d.status !== 'ok') { if (d.status === 'error') el.textContent = 'Vergleich konnte nicht geladen werden.'; else if (!el.firstChild) el.textContent = '—'; return; }
+  el.replaceChildren();
+  [...d.data].sort((a, b) => b.jahr - a.jahr).forEach((r, i) => {
+    const row = document.createElement('div'); row.className = 'pr-bf-row' + (r.jahr === '2026' ? ' jetzt' : '');
+    const j = document.createElement('div'); j.className = 'pr-bf-jahr'; j.textContent = r.jahr;
+    const body = document.createElement('div'); body.style.minWidth = '0';
+    const m = document.createElement('div'); m.className = 'pr-row-name'; m.textContent = r.modell;
+    const steps = document.createElement('div'); steps.className = 'pr-bf-steps';
+    [['vorher', 'davor'], ['black_week', 'Black Week'], ['black_friday', 'Black Friday'], ['danach', 'danach']].forEach(([k, lab], n) => {
+      if (n) { const ar = document.createElement('span'); ar.className = 'pr-arrow'; ar.textContent = '→'; ar.setAttribute('aria-hidden', 'true'); steps.append(ar); }
+      const s = document.createElement('span'); s.className = 'pr-step' + (k === 'black_friday' ? ' bf' : '') + ((r[k] == null || r[k] === '') ? ' leer' : '');
+      const bb = document.createElement('b');
+      if (r[k] != null && r[k] !== '') { bb.dataset.source = 'blackfriday'; bb.dataset.field = k; bb.dataset.where = 'jahr=' + r.jahr + '&modell=' + encodeURIComponent(r.modell); }
+      const leer = r[k] == null || r[k] === '';
+      bb.textContent = leer ? (r.jahr === '2026' ? (k === 'black_friday' && prHeute() < '2026-11-27' ? 'morgen' : '…') : '?') : PR.eur(r[k]);
+      s.append(document.createTextNode(lab + ' '), bb); steps.append(s);
+    });
+    const h = document.createElement('div'); h.className = 'pr-row-sub'; h.append(document.createTextNode(r.hinweis + ' · '), PR.link('Quelle', r.quelle));
+    body.append(m, steps, h); row.append(j, body); el.append(row);
+  });
+});
+
+window.prFmtMon = (d) => ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'][d.getUTCMonth()];
+dash.calc('verlauf_kennzahlen', {
+  title: 'Kennzahlen Preisverlauf',
+  description: 'Tief und Hoch des Amazon-Verlaufs und der beste Preis heute.',
+  inputs: ['amazon', 'bester'],
+  fn: (amazon, bester) => {
+    if (!amazon.length) return [];
+    const p = amazon.map((r) => +r.preis);
+    return [{tief: Math.min(...p), hoch: Math.max(...p), jetzt: bester[0] ? +bester[0].preis_mit_code : null}];
+  }
+});
+dash.draw('verlauf-insight', (el) => {
+  const k = dash.data('verlauf_kennzahlen');
+  if (k.status !== 'ok' || !k.data || !k.data[0]) { el.textContent = '—'; return; }
+  const r = k.data[0];
+  el.replaceChildren();
+  const b = (v, f) => { const x = document.createElement('b'); x.dataset.source = 'verlauf_kennzahlen'; x.dataset.field = f; x.dataset.row = '0'; x.textContent = PR.eur(v); return x; };
+  el.append('Nach der UVP-Erhöhung im Juli kletterte der Preis bis ', b(r.hoch, 'hoch'), '. Heute liegt der beste Preis bei ', b(r.jetzt, 'jetzt'), ', das Frühjahrstief von ', b(r.tief, 'tief'), ' bleibt außer Reichweite.');
+});
+dash.draw('m-tief', (el) => { const d = dash.data('amazon'); const r = d.status === 'ok' ? d.data.find((x) => x.monat === '2026-06-01') : null; el.textContent = r ? PR.eur(r.preis) : '—'; });
+dash.draw('m-jetzt', (el) => prBest(el, 'preis_mit_code', PR.eur));
+dash.draw('m-ziel', (el) => prBest(el, 'abstand', (v) => (+v === 0 ? 'erreicht' : PR.eur(v))));
+
+dash.draw('chart-verlauf', (el) => {
+  const a = dash.data('amazon'), l = dash.data('laeufe');
+  if (a.status !== 'ok') { if (a.status === 'error') el.textContent = 'Verlauf konnte nicht geladen werden.'; else if (!el.firstChild) el.textContent = '—'; return; }
+  el.replaceChildren();
+  const parse = d3.utcParse('%Y-%m-%d'), parseT = d3.utcParse('%Y-%m-%dT%H:%M');
+  const am = a.data.map((r) => ({t: parse(r.monat), p: +r.preis, h: r.hinweis}));
+  const lr = (l.status === 'ok' ? l.data : []).map((r) => ({t: parseT(r.zeit), p: +r.guenstigster}));
+  const W = el.clientWidth || 600, H = 250, m = {l: 58, r: 92, t: 22, b: 22};
+  const tEnd = d3.max([...am, ...lr], (d) => d.t);
+  const x = d3.scaleUtc().domain([am[0].t, tEnd]).range([m.l, W - m.r]);
+  const y = d3.scaleLinear().domain([950, 1450]).range([H - m.b, m.t]);
+  const svg = d3.select(el).append('svg').attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Preisverlauf: Amazon-Monatswerte seit März 2026 und bester Preis des Preisradars heute, mit Zielpreis 1.100 Euro und UVP-Erhöhung im Juli');
+  const uvp = parse('2026-07-01');
+  svg.append('rect').attr('x', x(uvp)).attr('y', m.t).attr('width', Math.max(0, x(parse('2026-08-15')) - x(uvp))).attr('height', H - m.b - m.t).style('fill', 'rgba(201,169,106,.06)');
+  svg.append('line').attr('x1', x(uvp)).attr('x2', x(uvp)).attr('y1', m.t - 6).attr('y2', H - m.b).style('stroke', 'var(--c-note)').style('stroke-width', 1).style('opacity', .6);
+  svg.append('text').attr('class', 'lab-note').attr('x', x(uvp) + 5).attr('y', m.t - 8).text('UVP 1.199 → 1.399 €');
+  [1000, 1200, 1400].forEach((v) => {
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(v)).attr('y2', y(v)).style('stroke', 'var(--c-grid)');
+    svg.append('text').attr('x', m.l - 8).attr('y', y(v)).attr('dy', '0.35em').attr('text-anchor', 'end').text(PR.eur(v));
+  });
+  const months = d3.utcMonth.range(am[0].t, d3.utcDay.offset(tEnd, 1));
+  const every = W < 420 ? 2 : 1;
+  months.forEach((d, i) => { if (i % every === 0) svg.append('text').attr('x', x(d)).attr('y', H - 4).attr('text-anchor', 'middle').text(prFmtMon(d)); });
+  svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(PR.ziel)).attr('y2', y(PR.ziel)).style('stroke', 'var(--c-ink2)').style('stroke-dasharray', '2 4').style('opacity', .55);
+  svg.append('text').attr('class', 'lab-ctx').attr('x', m.l + 4).attr('y', y(PR.ziel) + 13).text('Ziel 1.100 €');
+  const line = d3.line().x((d) => x(d.t)).y((d) => y(d.p));
+  svg.append('path').datum(am).attr('d', d3.area().x((d) => x(d.t)).y0(H - m.b).y1((d) => y(d.p))).style('fill', 'var(--c-ctx)').style('opacity', .05);
+  svg.append('path').datum(am).attr('d', line).style('fill', 'none').style('stroke', 'var(--c-ctx)').style('stroke-width', 1.5).style('opacity', .85);
+  const lo = am.reduce((p, c) => (c.p < p.p ? c : p)), hi = am.reduce((p, c) => (c.p > p.p ? c : p)), lastA = am[am.length - 1];
+  [[lo, 'Tief ' + PR.eur(lo.p), 16], [hi, 'Hoch ' + PR.eur(hi.p), -9]].forEach(([d, txt, dy]) => {
+    svg.append('circle').attr('cx', x(d.t)).attr('cy', y(d.p)).attr('r', 3).style('fill', 'var(--c-ctx)');
+    svg.append('text').attr('class', 'lab-ctx').attr('x', x(d.t)).attr('y', y(d.p) + dy).attr('text-anchor', 'middle').text(txt);
+  });
+  const lastR = lr.length ? lr[lr.length - 1] : null;
+  if (lastR) {
+    svg.append('path').datum([lastA, lastR]).attr('d', line).style('fill', 'none').style('stroke', 'var(--c-main)').style('stroke-width', 2);
+    svg.append('circle').attr('cx', x(lastR.t)).attr('cy', y(lastR.p)).attr('r', 7).style('fill', 'var(--c-main)').style('opacity', .18);
+    svg.append('circle').attr('cx', x(lastR.t)).attr('cy', y(lastR.p)).attr('r', 4).style('fill', 'var(--c-main)').style('stroke', '#0b1324').style('stroke-width', 2);
+    svg.append('text').attr('class', 'lab-main').attr('x', x(lastR.t) + 10).attr('y', y(lastR.p) + 4).text(PR.eur(lastR.p));
+    svg.append('text').attr('class', 'lab-main').attr('x', x(lastR.t) + 10).attr('y', y(lastR.p) + 18).style('font-weight', 500).style('font-size', '10.5px').text('Preisradar');
+  }
+  svg.append('text').attr('class', 'lab-ctx').attr('x', x(lastA.t) - 6).attr('y', y(lastA.p) - 10).attr('text-anchor', 'end').text('Amazon');
+  const tip = prTip(el);
+  const xh = svg.append('line').attr('class', 'xh').attr('y1', m.t).attr('y2', H - m.b).style('display', 'none');
+  const pts = [...am.map((d) => ({...d, s: 'Amazon'})), ...lr.map((d) => ({...d, s: 'Preisradar'}))];
+  svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', W - m.l - m.r).attr('height', H - m.t - m.b).style('fill', 'transparent')
+    .on('pointermove', (ev) => {
+      const [px] = d3.pointer(ev); const tt = x.invert(px);
+      const n = pts.reduce((p, c) => (Math.abs(c.t - tt) < Math.abs(p.t - tt) ? c : p));
+      xh.style('display', null).attr('x1', x(n.t)).attr('x2', x(n.t));
+      prShow(el, tip, ev, (n.s === 'Amazon' ? prFmtMon(n.t) + ' 2026 · Amazon' : d3.utcFormat('%d.%m. %H:%M')(n.t) + ' · Preisradar') + ': ' + PR.eur(n.p));
+    })
+    .on('pointerleave', () => { xh.style('display', 'none'); tip.hidden = true; });
+});
+
+dash.draw('vorg-insight', (el) => {
+  const d = dash.data('vorgaenger');
+  if (d.status !== 'ok') { el.textContent = '—'; return; }
+  const m5 = d.data.filter((r) => r.modell.startsWith('M5')).sort((a, b) => b.monate_nach_start - a.monate_nach_start)[0];
+  const bei8 = d.data.filter((r) => +r.monate_nach_start === 8 && !r.modell.startsWith('M5')).map((r) => +r.rabatt_prozent);
+  el.replaceChildren();
+  const b = document.createElement('b');
+  if (m5) { b.dataset.source = 'vorgaenger'; b.dataset.field = 'rabatt_prozent'; b.dataset.where = 'modell=' + encodeURIComponent(m5.modell) + '&monate_nach_start=' + m5.monate_nach_start; }
+  b.textContent = m5 ? m5.rabatt_prozent + ' %' : '—';
+  el.append('Acht Monate nach Marktstart lagen M3 und M4 ' + Math.min(...bei8) + '–' + Math.max(...bei8) + ' % unter UVP. Der M5 steht heute bei ', b, '. Viel Luft nach unten ist das nicht.');
+});
+dash.draw('chart-vorg', (el) => {
+  const d = dash.data('vorgaenger');
+  if (d.status !== 'ok') { if (d.status === 'error') el.textContent = 'Vergleich konnte nicht geladen werden.'; else if (!el.firstChild) el.textContent = '—'; return; }
+  el.replaceChildren();
+  const rows = d.data.map((r) => ({...r, m: +r.monate_nach_start, r: +r.rabatt_prozent}));
+  const models = ['M3 (2024)', 'M4 (2025)', 'M5 (2026)'].filter((mo) => rows.some((r) => r.modell === mo));
+  const panels = models.map((mo) => {
+    const panel = document.createElement('div'); panel.className = 'pr-sm-panel' + (mo.startsWith('M5') ? ' fokus' : '');
+    el.append(panel); return [mo, panel];
+  });
+  panels.forEach(([mo, panel]) => {
+    const fokus = mo.startsWith('M5');
+    const pts = rows.filter((r) => r.modell === mo).sort((a, b) => a.m - b.m);
+    const ttl = document.createElement('div'); ttl.className = 'pr-sm-title'; const sp = document.createElement('span'); sp.textContent = 'max. ' + Math.max(...pts.map((p) => p.r)) + ' %'; ttl.append(mo, sp);
+    panel.append(ttl);
+    const W = panel.clientWidth || 200, H = 138, mg = {l: 34, r: 34, t: 16, b: 26};
+    const x = d3.scaleLinear().domain([0, 10]).range([mg.l, W - mg.r]);
+    const y = d3.scaleLinear().domain([0, 30]).range([H - mg.b, mg.t]);
+    const svg = d3.select(panel).append('svg').attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', mo + ': Rabatt unter UVP nach Monaten seit Marktstart');
+    [0, 15, 30].forEach((v) => { svg.append('line').attr('x1', mg.l).attr('x2', W - mg.r).attr('y1', y(v)).attr('y2', y(v)).style('stroke', 'var(--c-grid)'); svg.append('text').attr('x', mg.l - 6).attr('y', y(v)).attr('dy', '0.35em').attr('text-anchor', 'end').text(v + '%'); });
+    [0, 5, 10].forEach((v) => svg.append('text').attr('x', x(v)).attr('y', H - 4).attr('text-anchor', 'middle').text(v + ' Mon.'));
+    const c = fokus ? 'var(--c-main)' : 'var(--c-ctx)';
+    svg.append('path').datum(pts).attr('d', d3.line().x((p) => x(p.m)).y((p) => y(p.r))).style('fill', 'none').style('stroke', c).style('stroke-width', fokus ? 2 : 1.25).style('opacity', fokus ? 1 : .7);
+    const tip = prTip(panel);
+    pts.forEach((p, i) => {
+      const last = i === pts.length - 1;
+      svg.append('circle').attr('cx', x(p.m)).attr('cy', y(p.r)).attr('r', last ? 4 : 2.5).style('fill', c);
+      if (last) svg.append('text').attr('class', fokus ? 'lab-main' : 'lab-val').attr('x', x(p.m) + 7).attr('y', y(p.r) + 4).text(p.r + ' %');
+      svg.append('circle').attr('cx', x(p.m)).attr('cy', y(p.r)).attr('r', 12).style('fill', 'transparent')
+        .on('pointerenter pointermove', (ev) => prShow(panel, tip, ev, `${mo}, Monat ${p.m}: ${p.r} % unter UVP (${PR.eur(p.preis)}; ${p.anlass})`)).on('pointerleave', () => { tip.hidden = true; });
+    });
+  });
+});
+dash.draw('tiles', (el) => {
+  const d = dash.data('produkte');
+  if (d.status !== 'ok') { if (d.status === 'error') el.textContent = 'Produkte konnten nicht geladen werden.'; else if (!el.firstChild) el.textContent = '—'; return; }
+  el.replaceChildren();
+  d.data.forEach((r) => {
+    const a = document.createElement('a'); a.className = 'pr-tile'; a.href = '#' + r.anker; a.setAttribute('aria-label', r.name + ': ' + PR.eur(r.preis));
+    const h = document.createElement('h3'); h.textContent = r.name;
+    const u = document.createElement('span'); u.className = 'u'; u.textContent = r.unter;
+    const p = document.createElement('span'); p.className = 'p'; p.dataset.source = 'produkte'; p.dataset.field = 'preis'; p.dataset.where = 'id=' + r.id; p.textContent = PR.eur(r.preis);
+    const m = document.createElement('div'); m.className = 'm';
+    const sh = document.createElement('span'); sh.textContent = 'bei ' + r.haendler;
+    const gap = document.createElement('span'); const ab = +r.abstand; gap.className = 'gap' + (ab === 0 ? ' ok' : ''); gap.textContent = ab === 0 ? 'Ziel erreicht' : PR.eur(r.abstand) + ' bis Ziel ' + PR.eur(r.ziel);
+    const tr = document.createElement('span'); tr.className = 'tr'; tr.textContent = r.trend; tr.setAttribute('aria-label', r.trend === '↓' ? 'günstiger geworden' : r.trend === '↑' ? 'teurer geworden' : 'unverändert');
+    m.append(sh, gap, tr);
+    a.append(h, u, p, m); el.append(a);
+  });
+});
+window.IP_STATE = {speicher: 'alle', akku: 'alle', zustand: 'alle', farbe: 'alle'};
+window.ipAuswahl = (rows) => rows.filter((r) => Object.entries(window.IP_STATE).every(([k, v]) => v === 'alle' || (r[k] || '').toLowerCase() === v.toLowerCase()));
+dash.draw('ip-zaehler', (el) => {
+  const d = dash.data('iphone_angebote');
+  el.textContent = d.status === 'ok' ? ipAuswahl(d.data).length + ' von ' + d.data.length + ' Angeboten' : '—';
+});
+document.querySelectorAll('.pr-chip[data-ipf]').forEach((b) => b.addEventListener('click', () => {
+  window.IP_STATE[b.dataset.ipf] = b.dataset.wert;
+  document.querySelectorAll('.pr-chip[data-ipf="' + b.dataset.ipf + '"]').forEach((x) => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+  dash.draw('iphone-rows'); dash.draw('ip-zaehler');
+}));
+dash.draw('iphone-rows', (el) => {
+  const d = dash.data('iphone_angebote');
+  if (d.status !== 'ok') { if (d.status === 'error') el.textContent = 'Angebote konnten nicht geladen werden.'; else if (!el.firstChild) el.textContent = '—'; return; }
+  el.replaceChildren();
+  const zeilen = ipAuswahl(d.data);
+  if (!zeilen.length) { el.textContent = 'Kein Angebot passt zu diesem Filter.'; return; }
+  const gruppen = {passt: 'Erste Wahl: alle Kriterien, Akku neu', optimal: 'Zweite Wahl: Akku optimal (zählt nicht fürs Ziel)', pruefen: 'Passt nicht (günstigste)'};
+  let letzte = null;
+  zeilen.forEach((r) => {
+    if (r.art !== letzte) { letzte = r.art; const h = document.createElement('h3'); h.className = 'pr-h2'; h.style.cssText = 'font-size:15px;margin:18px 0 8px'; h.textContent = gruppen[r.art] || r.art; el.append(h); }
+    const row = document.createElement('div'); row.className = 'pr-row' + (r.art === 'passt' ? ' bester' : '');
+    const logo = document.createElement('div'); logo.className = 'pr-logo-m'; const hn = r.art === 'passt' ? 'refurbed' : r.label.split(':')[0]; logo.style.background = prFarbe(hn); logo.textContent = prKuerzel(hn); logo.setAttribute('aria-hidden', 'true');
+    const mid = document.createElement('div'); mid.style.minWidth = '0';
+    const name = document.createElement('div'); name.className = 'pr-row-name'; name.append(document.createTextNode(r.label));
+    if (r.art === 'passt') { const b = document.createElement('span'); b.className = 'pr-badge top'; b.textContent = 'passt zu dir'; name.append(b); } else if (r.art === 'optimal') { const b = document.createElement('span'); b.className = 'pr-badge'; b.textContent = 'zweite Wahl'; name.append(b); }
+    const sub = document.createElement('div'); sub.className = 'pr-row-sub';
+    const chip = (lab, wert, gut) => { const c = document.createElement('span'); c.className = 'pr-badge'; c.style.marginLeft = '0'; c.style.background = gut ? 'rgba(52,211,153,.14)' : 'rgba(251,191,36,.14)'; c.style.color = gut ? 'var(--color-ok)' : 'var(--color-warn)'; c.textContent = lab + ': ' + (wert || 'nicht angegeben'); return c; };
+    const akkuOk = /^neu$/i.test(r.akku || ''), zustOk = /^(sehr gut|exzellent|premium)$/i.test(r.zustand || '');
+    const chips = document.createElement('div'); chips.style.cssText = 'display:flex;flex-wrap:wrap;gap:4px;margin:4px 0 2px'; chips.append(chip('Akku', r.akku, akkuOk), chip('Zustand', r.zustand, zustOk)); sub.append(chips, document.createTextNode(r.detail));
+    mid.append(name, sub);
+    const pr = document.createElement('div'); pr.className = 'pr-row-preis';
+    const b = document.createElement('b'); b.dataset.source = 'iphone_angebote'; b.dataset.field = 'preis'; b.dataset.where = 'link=' + encodeURIComponent(r.link); b.textContent = PR.eur(r.preis);
+    pr.append(b);
+    row.append(logo, mid, pr);
+    if (/^https?:\/\//.test(r.link || '')) { const a = document.createElement('a'); a.className = 'pr-btn pr-btn-primary pr-shopbtn'; a.href = r.link; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Zum Angebot'; row.append(a); }
+    el.append(row);
+  });
+});
+
+function ipProdukt() { const d = dash.data('produkte'); return d.status === 'ok' ? d.data.find((r) => r.id === 'iphone') : null; }
+dash.draw('ip-preis', (el) => { const r = ipProdukt(); el.textContent = r ? PR.eur(r.preis) : '—'; });
+dash.draw('ip-abstand', (el) => { const r = ipProdukt(); el.textContent = r ? (+r.abstand === 0 ? 'erreicht' : PR.eur(r.abstand)) : '—'; });
+dash.draw('ip-stand', (el) => { const r = ipProdukt(); el.textContent = r ? r.stand.slice(8, 10) + '.' + r.stand.slice(5, 7) + '., ' + r.stand.slice(11, 16) : '—'; });
+dash.draw('ip-insight', (el) => {
+  const d = dash.data('iphone_laeufe'), r = ipProdukt();
+  if (d.status !== 'ok' || !d.data.length || !r) { el.textContent = '—'; return; }
+  const ps = d.data.map((x) => +x.preis), lo = Math.min(...ps), hi = Math.max(...ps);
+  el.textContent = ps.length < 2 ? 'Erst ein Lauf gespeichert. Der Verlauf füllt sich stündlich.' : (lo === hi ? 'Das günstigste Angebot mit neuem Akku liegt seit ' + ps.length + ' Läufen unverändert bei ' + PR.eur(lo) + '.' : 'Das günstigste Angebot mit neuem Akku lag zwischen ' + PR.eur(lo) + ' und ' + PR.eur(hi) + ', jetzt bei ' + PR.eur(ps[ps.length - 1]) + '.');
+});
+dash.draw('ip-quellen', (tb) => {
+  const d = dash.data('iphone_quellen'); tb.replaceChildren();
+  if (d.status !== 'ok') return;
+  d.data.forEach((r) => { const tr = tb.insertRow(); PR.cell(tr, PR.link(r.quelle, r.link)); const s = document.createElement('span'); s.className = 'pr-pill ' + (r.status === 'geprüft' ? 'pr-ok' : 'pr-bad'); s.textContent = r.status; PR.cell(tr, s); PR.cell(tr, r.hinweis || ''); });
+});
+dash.draw('ip-chart', (el) => {
+  const d = dash.data('iphone_laeufe');
+  if (d.status !== 'ok') { if (d.status === 'error') el.textContent = 'Verlauf konnte nicht geladen werden.'; else if (!el.firstChild) el.textContent = '—'; return; }
+  el.replaceChildren();
+  const pr = d3.utcParse('%Y-%m-%dT%H:%M');
+  const pts = d.data.map((r) => ({t: pr(r.zeit), p: +r.preis})).filter((p) => p.t);
+  const ziel = ipProdukt() ? +ipProdukt().ziel : 1000;
+  if (!pts.length) { el.textContent = 'Noch keine Läufe.'; return; }
+  const W = el.clientWidth || 500, H = 170, m = {l: 58, r: 84, t: 14, b: 22};
+  const t0 = pts[0].t, t1 = pts[pts.length - 1].t.getTime() === t0.getTime() ? new Date(t0.getTime() + 3600e3) : pts[pts.length - 1].t;
+  const x = d3.scaleUtc().domain([t0, t1]).range([m.l, W - m.r]);
+  const lo = Math.min(ziel, ...pts.map((p) => p.p)) - 30, hi = Math.max(ziel, ...pts.map((p) => p.p)) + 30;
+  const y = d3.scaleLinear().domain([lo, hi]).range([H - m.b, m.t]);
+  const svg = d3.select(el).append('svg').attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Preisverlauf deines iPhone-Angebots mit Zielpreis');
+  [lo + 30, ziel, hi - 30].forEach((v, i) => { if (i === 1) return; svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(v)).attr('y2', y(v)).style('stroke', 'var(--c-grid)'); svg.append('text').attr('x', m.l - 8).attr('y', y(v)).attr('dy', '0.35em').attr('text-anchor', 'end').text(PR.eur(Math.round(v))); });
+  svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(ziel)).attr('y2', y(ziel)).style('stroke', 'var(--c-ink2)').style('stroke-dasharray', '2 4').style('opacity', .55);
+  svg.append('text').attr('x', m.l - 8).attr('y', y(ziel)).attr('dy', '0.35em').attr('text-anchor', 'end').attr('class', 'lab-ctx').text(PR.eur(ziel));
+  svg.append('text').attr('class', 'lab-ctx').attr('x', m.l + 4).attr('y', y(ziel) - 6).text('Ziel');
+  svg.append('path').datum(pts).attr('d', d3.line().x((p) => x(p.t)).y((p) => y(p.p))).style('fill', 'none').style('stroke', 'var(--c-main)').style('stroke-width', 2);
+  const e = pts[pts.length - 1];
+  svg.append('circle').attr('cx', x(e.t)).attr('cy', y(e.p)).attr('r', 4).style('fill', 'var(--c-main)').style('stroke', '#0b1324').style('stroke-width', 2);
+  svg.append('text').attr('class', 'lab-main').attr('x', x(e.t) + 10).attr('y', y(e.p) + 4).text(PR.eur(e.p));
+  svg.append('text').attr('x', m.l).attr('y', H - 4).text(d3.utcFormat('%d.%m. %H:%M')(t0));
+  svg.append('text').attr('x', W - m.r).attr('y', H - 4).attr('text-anchor', 'end').text(d3.utcFormat('%d.%m. %H:%M')(e.t));
+});
+document.addEventListener('click', (ev) => {
+  const a = ev.target.closest && ev.target.closest('a[href^="#"]');
+  if (!a) return;
+  const id = a.getAttribute('href').slice(1); const z = id && document.getElementById(id);
+  if (!z) return;
+  ev.preventDefault();
+  z.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start'});
+});
+
+window.prHeute = () => new Intl.DateTimeFormat('sv-SE', {timeZone: 'Europe/Berlin'}).format(new Date());
+window.prDatum = (iso) => iso ? iso.slice(8, 10) + '.' + iso.slice(5, 7) + '.' : '';
+function prEl(tag, cls, txt) { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+function prCard(pill, pillCls, titel, saetze) {
+  const c = prEl('div', 'pr-card'); c.append(prEl('span', 'pr-pill ' + pillCls, pill));
+  const h = prEl('p'); h.append(prEl('b', null, titel)); c.append(h);
+  const p = prEl('p'); saetze.forEach((s) => p.append(s)); c.append(p); return c;
+}
+dash.draw('einschaetzung', (el) => {
+  const b = dash.data('bester'), co = dash.data('codes');
+  if (b.status !== 'ok' || !b.data || !b.data[0]) { el.textContent = b.status === 'error' ? 'Einschätzung konnte nicht geladen werden.' : '—'; return; }
+  el.replaceChildren();
+  const r = b.data[0], best = +r.preis_mit_code, ab = +r.abstand, heute = prHeute();
+  const tageCM = Math.round((Date.parse('2026-11-30') - Date.parse(heute)) / 864e5);
+  const mk = (v, f) => { const x = prEl('b', null, PR.eur(v)); x.dataset.source = 'bester'; x.dataset.field = f; x.dataset.row = '0'; return x; };
+  let pill, cls;
+  if (ab <= 0) { pill = 'Ziel erreicht'; cls = 'pr-ok'; } else if (ab <= 20) { pill = 'möglich'; cls = 'pr-warn'; } else if (ab <= 60) { pill = 'eher unwahrscheinlich'; cls = 'pr-warn'; } else { pill = 'unwahrscheinlich'; cls = 'pr-bad'; }
+  const bis = tageCM >= 0 ? 'bis Cyber Monday (30.11.)' : 'in den nächsten Tagen';
+  el.append(prCard(pill + ' (Faustregel nach Abstand)', cls, 'Unter 1.100 € ' + bis, ['Bester Preis heute ', mk(best, 'preis_mit_code'), ', ' + r.rabatt + ' unter UVP. ', ab > 0 ? 'Bis 1.100 € fehlen ' : 'Dein Ziel ist erreicht.', ab > 0 ? mk(ab, 'abstand') : '', ab > 0 ? '. 2025 gab es am Black Friday selbst noch einmal rund 10 % Rabatt, 2024 kaum.' : '']));
+  const fr = Math.round(1399 * 0.82);
+  el.append(prCard('sehr unwahrscheinlich', 'pr-bad', 'Wieder um 980 € wie im Frühjahr', ['Das Frühjahrstief lag vor der UVP-Erhöhung von 1.199 € auf 1.399 €. Dieselben 18 % Rabatt auf die neue UVP ergeben rund ' + PR.eur(fr) + '.']));
+  const codes = co.status === 'ok' ? co.data : [];
+  el.append(prCard(codes.length ? codes.length + ' gültiger Code' + (codes.length > 1 ? 's' : '') : 'keine Codes', codes.length ? 'pr-ok' : 'pr-warn', 'Gutscheincodes heute', codes.length ? codes.map((c) => c.haendler + ': ' + c.code + (c.rabatt_eur ? ' (−' + PR.eur(c.rabatt_eur) + ')' : '') + ', gültig bis ' + prDatum(c.gueltig_bis) + (c.bedingung ? ', ' + c.bedingung : '') + '. ') : ['Aktuell ist kein geprüfter Code gültig. Ungültige Codes (z. B. CLICK2P) zählen nicht.']));
+  let rat;
+  if (ab <= 0) rat = 'Der Preis liegt bei deinem Ziel oder darunter. Wenn Händler und Lieferzeit passen: kaufen.';
+  else if (tageCM > 0) rat = 'Bis Cyber Monday sind es noch ' + tageCM + ' Tag' + (tageCM > 1 ? 'e' : '') + '. Du kannst beobachten und kaufen, sobald ein Preis zu dir passt. Die Meldung aufs Handy sagt dir Bescheid, wenn er unter 1.100 € fällt.';
+  else if (tageCM === 0) rat = 'Heute ist Cyber Monday. Wenn der aktuelle Bestpreis für dich passt, ist heute ein guter Tag zum Kaufen.';
+  else rat = 'Die Black Week ist vorbei. Danach steigen Preise oft wieder. Wenn der aktuelle Bestpreis passt, nicht zu lange warten.';
+  el.append(prCard('Empfehlung', 'pr-ok', 'Kaufen oder warten?', [rat]));
+});
+dash.draw('bf-antwort', (el) => {
+  const d = dash.data('blackfriday'), b = dash.data('bester');
+  if (d.status !== 'ok' || b.status !== 'ok' || !b.data[0]) { el.textContent = '—'; return; }
+  el.replaceChildren();
+  const r = d.data.find((x) => x.jahr === '2026'); const heute = prHeute(); const best = +b.data[0].preis_mit_code;
+  const bw = r && r.black_week ? +r.black_week : null, bf = r && r.black_friday ? +r.black_friday : null;
+  let h3, txt;
+  if (heute < '2026-11-27') { h3 = 'Black Friday ist am 27.11.'; txt = 'In der Black Week liegt dein Modell bisher bei ' + PR.eur(bw ?? best) + '. 2025 gab es am Black Friday selbst noch einmal rund 10 %, 2024 kaum etwas.'; }
+  else if (bf != null) { const diff = bw != null ? bf - bw : 0; h3 = 'Black Friday 2026: bester Preis ' + PR.eur(bf); txt = (bw != null ? (diff < 0 ? 'Das sind ' + PR.eur(-diff) + ' weniger als in der Black Week (' + PR.eur(bw) + ').' : diff > 0 ? 'Das sind ' + PR.eur(diff) + ' mehr als in der Black Week (' + PR.eur(bw) + ').' : 'Genauso viel wie in der Black Week (' + PR.eur(bw) + '). ' + (heute === '2026-11-27' ? 'Bisher heute kein zusätzlicher Rabatt (2025 gab es am Black Friday selbst noch einmal rund 10 %).' : 'Anders als 2025 gab es am Black Friday keinen zusätzlichen Rabatt.')) : '') + ' Bis 1.100 € fehlen ' + PR.eur(Math.max(0, best - 1100)) + '.'; }
+  else { h3 = 'Black Friday 2026'; txt = 'Für den Black Friday liegt noch kein Lauf vor.'; }
+  el.append(prEl('h3', null, h3), prEl('p', null, txt));
+});
+dash.draw('ip-antwort', (el) => {
+  const d = dash.data('iphone_angebote'), pr = dash.data('produkte');
+  if (d.status !== 'ok' || pr.status !== 'ok') { el.textContent = '—'; return; }
+  el.replaceChildren();
+  const f = d.data.find((r) => r.art === 'passt'); const p = pr.data.find((r) => r.id === 'iphone');
+  if (!f) { el.append(prEl('h3', null, 'Gerade passt kein Angebot'), prEl('p', null, 'Im letzten Lauf erfüllte kein lieferbares Angebot mit neuem Akku alle Kriterien (Farbe, Speicher, Zustand ab Sehr gut). Die Zeilen oben zeigen die zweite Wahl mit Akku optimal und woran die übrigen scheitern.')); return; }
+  const ab = p ? +p.abstand : null, n = d.data.filter((r) => r.art === 'passt').length;
+  el.append(prEl('h3', null, n + (n === 1 ? ' Angebot passt' : ' Angebote passen') + ' mit neuem Akku'), prEl('p', null, 'Am günstigsten: ' + f.label + ', Zustand ' + f.zustand + ', Akku ' + f.akku + ', heute ' + PR.eur(f.preis) + (ab != null ? (ab > 0 ? ', ' + PR.eur(ab) + ' über deinem Zielpreis von ' + PR.eur(p.ziel) : ', unter deinem Zielpreis') : '') + '. ' + (() => { const o = d.data.find((r) => r.art === 'optimal'); return o ? 'Mit Akku optimal ginge es ab ' + PR.eur(o.preis) + ' (zweite Wahl, zählt nicht fürs Ziel). ' : ''; })() + 'Prüf vor dem Kauf den Gesamtpreis im Warenkorb, die Garantie (refurbed: mindestens 12 Monate) und die Rückgabe (30 Tage).'));
+});
+
+</script>
+</div><script>window.addEventListener("load",()=>{__alleZeichnen();let t;window.addEventListener("resize",()=>{clearTimeout(t);t=setTimeout(__alleZeichnen,200);});});</script></body></html>
