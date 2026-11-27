@@ -2,9 +2,9 @@
 
 *Garmin Edge 840 Fahrradcomputer (010-02695-01), neu, ohne Solar und ohne Bundle* · Zielpreis **310 €**
 
-**Stand 2026-11-27 19:59: günstigster geprüfter Preis 319,44 €** (0 € zum Lauf davor), noch 9,44 € über dem Ziel
+**Stand 2026-11-27 20:00: günstigster geprüfter Preis 319,44 €** (0 € zum Lauf davor), noch 9,44 € über dem Ziel
 
-Tiefstwert 319,44 € · Höchstwert 319,44 € · 10 Läufe seit 2026-11-27
+Tiefstwert 319,44 € · Höchstwert 319,44 € · 11 Läufe seit 2026-11-27
 
 ## Angebote
 
@@ -24,6 +24,7 @@ Tiefstwert 319,44 € · Höchstwert 319,44 € · 10 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-27 20:00 | 319,44 € |
 | 2026-11-27 19:59 | 319,44 € |
 | 2026-11-27 19:56 | 319,44 € |
 | 2026-11-27 19:54 | – |

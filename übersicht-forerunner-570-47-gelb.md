@@ -2,9 +2,9 @@
 
 *Garmin Forerunner 570 47 mm Amp Yellow / Steinweiß / Türkis (010-02971-01), neu* · Zielpreis **0 €**
 
-**Stand 2026-11-27 19:59: günstigster geprüfter Preis 449 €**, noch 449 € über dem Ziel
+**Stand 2026-11-27 20:00: günstigster geprüfter Preis 449 €** (0 € zum Lauf davor), noch 449 € über dem Ziel
 
-Tiefstwert 449 € · Höchstwert 449 € · 1 Läufe seit 2026-11-27
+Tiefstwert 449 € · Höchstwert 449 € · 2 Läufe seit 2026-11-27
 
 ## Angebote
 
@@ -26,6 +26,7 @@ Tiefstwert 449 € · Höchstwert 449 € · 1 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-27 20:00 | 449 € |
 | 2026-11-27 19:59 | 449 € |
 
 _Preise werden nie geschätzt: Was nicht lesbar war, steht als „nicht prüfbar“ da. Codes nur, wenn belegt und gültig; Cashback zählt nicht zum Preis. Vor dem Kauf im Shop prüfen._

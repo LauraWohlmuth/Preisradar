@@ -2,9 +2,9 @@
 
 *Garmin Forerunner 570 42 mm Slate Grey / Schwarz (010-02970-00), neu* · Zielpreis **0 €**
 
-**Stand 2026-11-27 19:59: günstigster geprüfter Preis 419 €**, noch 419 € über dem Ziel
+**Stand 2026-11-27 20:00: günstigster geprüfter Preis 419 €** (0 € zum Lauf davor), noch 419 € über dem Ziel
 
-Tiefstwert 419 € · Höchstwert 419 € · 1 Läufe seit 2026-11-27
+Tiefstwert 419 € · Höchstwert 419 € · 2 Läufe seit 2026-11-27
 
 ## Angebote
 
@@ -29,6 +29,7 @@ Tiefstwert 419 € · Höchstwert 419 € · 1 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-27 20:00 | 419 € |
 | 2026-11-27 19:59 | 419 € |
 
 _Preise werden nie geschätzt: Was nicht lesbar war, steht als „nicht prüfbar“ da. Codes nur, wenn belegt und gültig; Cashback zählt nicht zum Preis. Vor dem Kauf im Shop prüfen._

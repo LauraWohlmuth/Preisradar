@@ -2,9 +2,9 @@
 
 *Garmin Edge 1050 Fahrradcomputer, neu* · Zielpreis **0 €**
 
-**Stand 2026-11-27 19:59: günstigster geprüfter Preis 548,98 €** (0 € zum Lauf davor), noch 548,98 € über dem Ziel
+**Stand 2026-11-27 20:00: günstigster geprüfter Preis 548,98 €** (0 € zum Lauf davor), noch 548,98 € über dem Ziel
 
-Tiefstwert 548,98 € · Höchstwert 548,98 € · 8 Läufe seit 2026-11-27
+Tiefstwert 548,98 € · Höchstwert 548,98 € · 9 Läufe seit 2026-11-27
 
 ## Angebote
 
@@ -27,6 +27,7 @@ Tiefstwert 548,98 € · Höchstwert 548,98 € · 8 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-27 20:00 | 548,98 € |
 | 2026-11-27 19:59 | 548,98 € |
 | 2026-11-27 19:56 | 548,98 € |
 | 2026-11-27 19:54 | – |
