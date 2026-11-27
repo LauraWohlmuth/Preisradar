@@ -61,8 +61,9 @@ def _iphone(out):
             det = {"passt": "erste Wahl: passt mit neuem Akku",
                    "optimal": "zweite Wahl: Akku optimal statt neu, zählt nicht fürs Ziel"}.get(art) or "passt nicht: " + ", ".join(fehlt)
             if a.get("code") and a["preis_mit_code"] < a["gesamtpreis"]:
-                det += f" · mit Code {a['code']} (ohne Code {str(a['gesamtpreis']).replace('.', ',')} €; im Warenkorb prüfen)"
-            zeilen.append([lab, a["preis_mit_code"], art, det, u, a.get("akku") or "nicht angegeben", a.get("zustand") or "nicht angegeben"])
+                det += f" · mit Code {a['code']} (ohne Code " + f"{a['gesamtpreis']:.2f}".replace(".", ",") + " €; im Warenkorb prüfen)"
+            zeilen.append([lab, a["preis_mit_code"], art, det, u, a.get("akku") or "nicht angegeben", a.get("zustand") or "nicht angegeben",
+                           a.get("speicher") or "", a.get("farbe") or ""])
             continue
         ist_fokus = fokus in u
         passt = any(q["url"].split("?")[0].rstrip("/") in u for q in cfg["quellen"]) and "?offer=" not in u
@@ -71,14 +72,14 @@ def _iphone(out):
             lab, art, det, ak, zu = "Dein Angebot: Tiefblau, 256 GB", "passt", "lieferbar", "Neu", "Premium"
         else:
             lab, art, det, ak, zu = a["haendler"], "pruefen", "alter Lauf: Akku nicht ausgelesen", "nicht ausgelesen", "nicht ausgelesen"
-        zeilen.append([lab, a["preis_mit_code"], art, det, u, ak, zu])
+        zeilen.append([lab, a["preis_mit_code"], art, det, u, ak, zu, "", ""])
     rang = {"passt": 0, "optimal": 1}
     zeilen.sort(key=lambda z: (rang.get(z[2], 2), z[1]))
     if neu_format:
         # Erst Akku neu, dann Akku optimal; falsche Farben weglassen, von den übrigen nur die 4 günstigsten
-        zeilen = [z for z in zeilen if z[2] in rang] + [z for z in zeilen if z[2] not in rang and "Farbe" not in z[3]][:4]
+        zeilen = [z for z in zeilen if z[2] in rang] + [z for z in zeilen if z[2] not in rang and "Farbe" not in z[3]][:8]
     with open(f"{out}/iphone_angebote.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f); w.writerow(["label", "preis", "art", "detail", "link", "akku", "zustand"]); w.writerows(zeilen)
+        w = csv.writer(f); w.writerow(["label", "preis", "art", "detail", "link", "akku", "zustand", "speicher", "farbe"]); w.writerows(zeilen)
     # Verlauf deines Angebots und Quellenstatus
     with open(f"{out}/iphone_laeufe.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["zeit", "preis"])
