@@ -2,9 +2,9 @@
 
 *Wahoo KICKR CORE 2 Smart-Trainer (neu), mit oder ohne Zwift Click & Cog* · Zielpreis **375 €**
 
-**Stand 2026-11-27 16:18: günstigster geprüfter Preis 399,95 €** (0 € zum Lauf davor), noch 24,95 € über dem Ziel
+**Stand 2026-11-27 16:20: günstigster geprüfter Preis 399,95 €** (0 € zum Lauf davor), noch 24,95 € über dem Ziel
 
-Tiefstwert 399,95 € · Höchstwert 399,95 € · 7 Läufe seit 2026-11-27
+Tiefstwert 399,95 € · Höchstwert 399,95 € · 8 Läufe seit 2026-11-27
 
 ## Angebote
 
@@ -38,6 +38,7 @@ Tiefstwert 399,95 € · Höchstwert 399,95 € · 7 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-27 16:20 | 399,95 € |
 | 2026-11-27 16:18 | 399,95 € |
 | 2026-11-27 15:19 | 399,95 € |
 | 2026-11-27 12:26 | 399,95 € |
