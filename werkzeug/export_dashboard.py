@@ -70,6 +70,9 @@ def _iphone(out):
             lab, art, det, ak, zu = a["haendler"], "pruefen", "alter Lauf: Akku nicht ausgelesen", "nicht ausgelesen", "nicht ausgelesen"
         zeilen.append([lab, a["preis_mit_code"], art, det, u, ak, zu])
     zeilen.sort(key=lambda z: (z[2] != "passt", z[1]))
+    if neu_format:
+        # Falsche Farben weglassen; von den übrigen nicht passenden nur die 6 günstigsten zeigen
+        zeilen = [z for z in zeilen if z[2] == "passt"] + [z for z in zeilen if z[2] != "passt" and "Farbe" not in z[3]][:6]
     with open(f"{out}/iphone_angebote.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["label", "preis", "art", "detail", "link", "akku", "zustand"]); w.writerows(zeilen)
     # Verlauf deines Angebots und Quellenstatus
@@ -78,6 +81,8 @@ def _iphone(out):
         for l_ in d["laeufe"]:
             if any("akku" in a for a in l_.get("angebote", [])):
                 x = l_.get("guenstigster")  # günstigstes passendes Angebot
+            elif neu_format:
+                x = None  # alte Läufe kannten nur dein Angebot, nicht das günstigste passende: nicht mischen
             else:
                 x = next((a["preis_mit_code"] for a in l_.get("angebote", []) if fokus in a.get("url", "")), None)
             if x is not None: w.writerow([l_["zeit"][:16], x])
