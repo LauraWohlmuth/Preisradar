@@ -384,6 +384,8 @@ def gutscheine_anwenden(angebote, heute):
         for g in codes:
             if g["haendler"].lower() not in (a["haendler"] or "").lower():
                 continue
+            if g.get("code") in CFG.get("gesperrte_codes", {}):
+                continue  # im Warenkorb als ungültig bestätigt, egal aus welcher Quelle (geizhals, mydealz, Konfiguration)
             if g.get("gueltig_bis") and g["gueltig_bis"] < heute:
                 continue
             if a["gesamtpreis"] < g.get("mindestwert", 0):

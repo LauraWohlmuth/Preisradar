@@ -13383,24 +13383,6 @@
    ],
    "angebote": [
     {
-     "haendler": "notebooksbilliger.de",
-     "preis": 1149.0,
-     "via": "geizhals.de",
-     "url": "https://geizhals.de/redir/BAAAANt3JrfUAuN3_m0USmM7BH8tlIW8DWUJvQOke96LnwGar3bGwpDbnPjcPTn7999ayXqPp9eNHOp7dKfYVVvJ65G2-cdr67dVrMo9YS8vcMsaWlfTWeGFrv_WLEhonLARARHSjOdEymPOIJS_7vTaKuLWNQVD-wmNa-f0iJDYKOL_p6nf9WzndP5YkOuJJQxbRg_SfUj8N00xq_yRw-vVm6UMgeN11f3xACtzGR1WekYo",
-     "versand": 0.0,
-     "versand_bekannt": true,
-     "gesamtpreis": 1149.0,
-     "lieferung": "lagernd, 24-h Service möglich, Lieferung 2-3 Werktage",
-     "verfuegbar": true,
-     "preis_stand": null,
-     "variante_ok": true,
-     "netzteil_dabei": false,
-     "preis_mit_code": 1139.0,
-     "code": "CLICK2P",
-     "code_bedingung": "laut mydealz-Deal; im Warenkorb prüfen",
-     "code_quelle": "https://www.mydealz.de/share-deal/2883980"
-    },
-    {
      "haendler": "schuetzundpartner",
      "preis": 1144.8,
      "via": "geizhals.de",
@@ -13414,6 +13396,24 @@
      "variante_ok": true,
      "netzteil_dabei": false,
      "preis_mit_code": 1144.8
+    },
+    {
+     "haendler": "notebooksbilliger.de",
+     "preis": 1149.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAANt3JrfUAuN3_m0USmM7BH8tlIW8DWUJvQOke96LnwGar3bGwpDbnPjcPTn7999ayXqPp9eNHOp7dKfYVVvJ65G2-cdr67dVrMo9YS8vcMsaWlfTWeGFrv_WLEhonLARARHSjOdEymPOIJS_7vTaKuLWNQVD-wmNa-f0iJDYKOL_p6nf9WzndP5YkOuJJQxbRg_SfUj8N00xq_yRw-vVm6UMgeN11f3xACtzGR1WekYo",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 1149.0,
+     "lieferung": "lagernd, 24-h Service möglich, Lieferung 2-3 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": false,
+     "preis_mit_code": 1149.0,
+     "code": null,
+     "code_bedingung": "Code CLICK2P ungültig: laut notebooksbilliger-Warenkorb am 26.11. ungültig (Screenshot von Laura)",
+     "code_quelle": "https://www.mydealz.de/share-deal/2883980"
     },
     {
      "haendler": "Amazon.de",
@@ -13731,9 +13731,10 @@
      "preis_mit_code": 1331.33
     }
    ],
-   "guenstigster": 1139.0,
-   "neuer_tiefstwert": true,
-   "melden": true
+   "guenstigster": 1144.8,
+   "neuer_tiefstwert": false,
+   "melden": true,
+   "korrektur": "27.11. 16:30: gesperrten Code CLICK2P aus mydealz nicht mehr abgezogen (vorher 1139.0 €)"
   }
  ],
  "stand": "2026-11-27T16:18:07+01:00"
