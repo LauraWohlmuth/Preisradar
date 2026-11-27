@@ -101,3 +101,52 @@ with open(f"{out}/produkte.csv", "w", newline="", encoding="utf-8") as f:
         ab = round(max(0, float(p_["preis"]) - float(p_["ziel"])), 2) if p_["preis"] != "" else ""
         w.writerow([p_["id"], p_["name"], p_["unter"], p_["preis"], p_["haendler"], p_["ziel"], ab, p_["trend"], p_["stand"], p_["anker"], p_["link"]])
 print("Produkte:", len(_prod))
+
+
+# ---- Tagesaktuelle Ableitungen: Vorjahresvergleich, Black Friday 2026, Amazon-Verlauf, Codes ----
+import datetime as _dt
+_W = _os.path.dirname(_os.path.abspath(__file__))
+_heute = last["zeit"][:10]
+_alle = [l for l in L if l.get("guenstigster")]
+_best_jetzt = min(a["preis_mit_code"] for a in last["angebote"])
+_uvp = d.get("uvp", 1399)
+
+# Vorjahresvergleich: feste Vorjahreswerte + M5 heute (Monate seit Marktstart März 2026)
+_start = _dt.date(2026, 3, 1)
+_monate = round(((_dt.date.fromisoformat(_heute) - _start).days) / 30.44, 1)
+_rows = list(csv.reader(open(_os.path.join(_W, "vorjahre_vorgaenger.csv"), encoding="utf-8")))
+with open(f"{out}/vorgaenger.csv", "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f); w.writerows(_rows)
+    w.writerow(["M5 (2026)", _monate, round((1 - _best_jetzt / _uvp) * 100), _best_jetzt, _uvp, "heute " + _heute[8:10] + "." + _heute[5:7] + ".: bester Preis aller Händler", ""])
+
+# Black Friday 2026: Werte aus den Läufen des Preisradars
+def _min_zw(von, bis):
+    xs = [l["guenstigster"] for l in _alle if von <= l["zeit"][:10] <= bis]
+    return min(xs) if xs else ""
+_bw = _min_zw("2026-11-20", "2026-11-26")
+_bf = _min_zw("2026-11-27", "2026-11-27")
+_cm = _min_zw("2026-11-28", "2026-11-30")
+_nach = _min_zw("2026-12-01", "2099-12-31")
+_rows = list(csv.reader(open(_os.path.join(_W, "vorjahre_blackfriday.csv"), encoding="utf-8")))
+with open(f"{out}/blackfriday.csv", "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f); w.writerows(_rows)
+    hinweis = "aus den Läufen deines Preisradars (bester Preis aller Händler); Anfang November ca. 1.199 € laut Amazon-Screenshot"
+    if _cm != "": hinweis += f"; Wochenende/Cyber Monday bisher {_cm:.0f} €"
+    w.writerow(["2026", "MacBook Air M5 13\" 16/512 GB (dein Modell)", 1199, _bw, _bf, _nach, hinweis, "https://github.com/LauraWohlmuth/preisradar/blob/main/data/prices.json"])
+
+# Amazon-Verlauf: Screenshot-Monate + aktueller Amazon-Preis aus dem letzten Lauf
+_amz = next((a["preis_mit_code"] for a in sorted(last["angebote"], key=lambda a: a["preis_mit_code"]) if a["haendler"].lower().startswith("amazon")), None)
+_rows = list(csv.reader(open(_os.path.join(_W, "amazon_screenshot.csv"), encoding="utf-8")))
+with open(f"{out}/amazon_verlauf.csv", "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f); w.writerows(_rows)
+    if _amz is not None:
+        w.writerow([_heute, _amz, "Amazon laut Preisradar am " + _heute[8:10] + "." + _heute[5:7] + "."])
+
+# Gültige Codes (aus config.json), abgelaufene und gesperrte weglassen
+_cfg = json.load(open(_os.path.join(_os.path.dirname(_W), "config.json"), encoding="utf-8"))
+with open(f"{out}/codes.csv", "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f); w.writerow(["haendler", "code", "rabatt_eur", "gueltig_bis", "bedingung"])
+    for g in _cfg.get("gutscheine", []):
+        if g.get("gueltig_bis", "9999") >= _heute and g["code"] not in _cfg.get("gesperrte_codes", {}):
+            w.writerow([g["haendler"], g["code"], g.get("rabatt_eur", ""), g.get("gueltig_bis", ""), g.get("bedingung", "")])
+print("tagesaktuell:", _heute, "BW", _bw, "BF", _bf, "Monate", _monate)
