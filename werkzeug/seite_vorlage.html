@@ -320,9 +320,9 @@
   </section>
   <section class="pr-sec" id="fahrradcomputer">
     <h2 class="pr-h2">Fahrradcomputer vergleichen</h2>
-    <p class="pr-note">Wähle die Ausstattung, die du brauchst. Technische Daten aus den geizhals-Datenblättern, Preise aus dem letzten Lauf (günstigstes lieferbares Angebot inkl. Versand).</p>
+    <p class="pr-note">Erst die Ausstattung wählen, darunter erscheinen die passenden Geräte mit Preis und Preisverlauf. Wähle die Ausstattung, die du brauchst. Technische Daten aus den geizhals-Datenblättern, Preise aus dem letzten Lauf (günstigstes lieferbares Angebot inkl. Versand).</p>
     <div id="fc-filter"><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Touchscreen filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Touchscreen</span><button type="button" class="pr-chip" data-fcf="touch" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="touch" data-wert="ja" aria-pressed="false">Ja</button><button type="button" class="pr-chip" data-fcf="touch" data-wert="nein" aria-pressed="false">Nein</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Solar filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Solar</span><button type="button" class="pr-chip" data-fcf="solar" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="solar" data-wert="ja" aria-pressed="false">Ja</button><button type="button" class="pr-chip" data-fcf="solar" data-wert="nein" aria-pressed="false">Nein</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Akku filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Akku</span><button type="button" class="pr-chip" data-fcf="akku" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="akku" data-wert="24" aria-pressed="false">ab 24 h</button><button type="button" class="pr-chip" data-fcf="akku" data-wert="30" aria-pressed="false">ab 30 h</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Display filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Display</span><button type="button" class="pr-chip" data-fcf="display" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="display" data-wert="2.6" aria-pressed="false">ab 2,6"</button><button type="button" class="pr-chip" data-fcf="display" data-wert="3.5" aria-pressed="false">ab 3,5"</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Speicher filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Speicher</span><button type="button" class="pr-chip" data-fcf="speicher" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="speicher" data-wert="32" aria-pressed="false">ab 32 GB</button><button type="button" class="pr-chip" data-fcf="speicher" data-wert="64" aria-pressed="false">ab 64 GB</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach WLAN filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">WLAN</span><button type="button" class="pr-chip" data-fcf="wlan" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="wlan" data-wert="ja" aria-pressed="false">Ja</button></div><div class="pr-toolbar" role="group" aria-label="Fahrradcomputer nach Preis filtern" style="margin-top:6px"><span class="pr-zaehler" style="margin:0 4px 0 0;min-width:84px">Preis</span><button type="button" class="pr-chip" data-fcf="preis" data-wert="alle" aria-pressed="true">Egal</button><button type="button" class="pr-chip" data-fcf="preis" data-wert="250" aria-pressed="false">bis 250 €</button><button type="button" class="pr-chip" data-fcf="preis" data-wert="350" aria-pressed="false">bis 350 €</button><button type="button" class="pr-chip" data-fcf="preis" data-wert="500" aria-pressed="false">bis 500 €</button></div><div class="pr-toolbar" style="margin-top:6px"><span class="pr-zaehler" data-draw="fc-zaehler">—</span></div></div>
-    <div class="pr-list" data-draw="fc-rows" data-source="fahrradcomputer"></div>
+    <div class="pr-list" data-draw="fc-rows" data-source="fahrradcomputer weitere_laeufe"></div>
   </section>
   <footer class="pr-footer" id="fusszeile"><span>Preisradar · privat für Laura</span><span>Daten: geizhals.de, notebookinfo.de, mydealz.de</span><span>stündlich geprüft, Preise ohne Gewähr</span><span>Kein Kauf über diese Seite</span></footer>
 </div>
@@ -827,7 +827,7 @@ dash.draw('weitere', (el) => {
   const a = dash.data('weitere_angebote'), v = dash.data('weitere_laeufe'), p = dash.data('produkte');
   if (a.status !== 'ok' || p.status !== 'ok') { if (!el.firstChild) el.textContent = '—'; return; }
   el.replaceChildren();
-  const prods = p.data.filter((r) => r.id !== 'macbook' && r.id !== 'iphone');
+  const prods = p.data.filter((r) => r.id !== 'macbook' && r.id !== 'iphone' && r.anker !== 'fahrradcomputer');
   if (!prods.length) { el.textContent = 'Noch keine weiteren Produkte gelesen.'; return; }
   prods.forEach((r) => {
     const box = prEl('div'); box.id = r.anker; box.style.marginTop = '18px';
@@ -841,6 +841,8 @@ dash.draw('weitere', (el) => {
       const ps = v.data.filter((x) => x.produkt === r.id).map((x) => +x.preis);
       if (ps.length) box.append(prEl('p', 'pr-insight', ps.length === 1 ? 'Erster Lauf. Der Verlauf füllt sich stündlich.' : 'Seit Beginn der Messung zwischen ' + PR.eur(Math.min(...ps)) + ' und ' + PR.eur(Math.max(...ps)) + ', jetzt ' + PR.eur(ps[ps.length - 1]) + '.'));
     }
+    const ch = prEl('div', 'pr-chart'); ch.dataset.source = 'weitere_laeufe'; ch.id = 'verlauf-' + r.id; box.append(ch);
+    requestAnimationFrame(() => prVerlauf(ch, prLaeufe(r.id), +r.ziel, 130));
     const list = prEl('div', 'pr-list');
     a.data.filter((x) => x.produkt === r.id).forEach((x, i) => {
       const row = prEl('div', 'pr-row' + (i === 0 ? ' bester' : ''));
@@ -886,7 +888,9 @@ dash.draw('fc-rows', (el) => {
       chip(r.solar === 'ja' ? 'Solar' : 'ohne Solar', r.solar === 'ja'), chip('Akku bis ' + r.akku_h + ' h'), chip(r.speicher_gb + ' GB'),
       chip(String(r.gewicht_g).replace('.', ',') + ' g'), chip(r.wlan === 'ja' ? 'WLAN' : 'kein WLAN', r.wlan === 'ja'));
     const sub = prEl('div', 'pr-row-sub', r.preis ? 'bei ' + r.haendler + (r.code ? ' · mit Code ' + r.code : '') + ' · inkl. Versand' : 'gerade kein lieferbares Angebot gelesen');
-    mid.append(n, chips, sub);
+    const ch = prEl('div'); ch.dataset.source = 'weitere_laeufe'; ch.style.marginTop = '6px';
+    mid.append(n, chips, sub, ch);
+    requestAnimationFrame(() => prVerlauf(ch, prLaeufe(r.id), 0, 90));
     const pr = prEl('div', 'pr-row-preis'); const b = prEl('b', null, r.preis ? PR.eur(r.preis) : '—');
     if (r.preis) { b.dataset.source = 'fahrradcomputer'; b.dataset.field = 'preis'; b.dataset.where = 'id=' + encodeURIComponent(r.id); }
     pr.append(b); row.append(logo, mid, pr);
@@ -894,4 +898,42 @@ dash.draw('fc-rows', (el) => {
     el.append(row);
   });
 });
+
+window.prVerlauf = function (el, werte, ziel, hoehe) {
+  // werte: [{t: Date, p: Zahl}], ziel: Zahl oder 0
+  el.replaceChildren();
+  if (!werte.length) { el.append(prEl('p', 'pr-note', 'Noch kein Verlauf.')); return; }
+  const W = el.clientWidth || 320, H = hoehe || 120, m = {l: 50, r: 64, t: 12, b: 20};
+  const ps = werte.map((d) => d.p).concat(ziel > 0 ? [ziel] : []);
+  const lo = d3.min(ps), hi = d3.max(ps), pad = Math.max((hi - lo) * 0.25, hi * 0.02);
+  const t0 = werte[0].t, t1 = werte[werte.length - 1].t;
+  const x = d3.scaleTime().domain(t0 - t1 === 0 ? [new Date(+t0 - 3600e3), new Date(+t1 + 3600e3)] : [t0, t1]).range([m.l, W - m.r]);
+  const y = d3.scaleLinear().domain([lo - pad, hi + pad]).range([H - m.b, m.t]).nice(4);
+  const svg = d3.select(el).append('svg').attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img')
+    .attr('aria-label', 'Preisverlauf: ' + werte.length + ' Läufe, zuletzt ' + PR.eur(werte[werte.length - 1].p));
+  svg.append('g').selectAll('line').data(y.ticks(H < 110 ? 3 : 4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d)).style('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').selectAll('text').data(y.ticks(H < 110 ? 3 : 4)).join('text').attr('x', m.l - 6).attr('y', (d) => y(d) + 4).attr('text-anchor', 'end').style('font-size', '11px').style('fill', 'var(--cds-text-secondary)').text((d) => PR.eur(d));
+  if (ziel > 0) {
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(ziel)).attr('y2', y(ziel)).style('stroke', 'var(--color-ok)').style('stroke-dasharray', '4 4');
+    svg.append('text').attr('x', W - m.r + 4).attr('y', y(ziel) + 4).style('font-size', '11px').style('fill', 'var(--color-ok)').text('Ziel');
+  }
+  const fmt = d3.timeFormat('%d.%m. %H:%M');
+  svg.append('text').attr('x', m.l).attr('y', H - 4).style('font-size', '10px').style('fill', 'var(--cds-text-secondary)').text(fmt(t0));
+  if (+t1 !== +t0 && W - m.l - m.r > 200) svg.append('text').attr('x', W - m.r).attr('y', H - 4).attr('text-anchor', 'end').style('font-size', '10px').style('fill', 'var(--cds-text-secondary)').text(fmt(t1));
+  svg.append('path').datum(werte).attr('d', d3.line().x((d) => x(d.t)).y((d) => y(d.p)).curve(d3.curveStepAfter)).style('fill', 'none').style('stroke', '#5b8def').style('stroke-width', 2);
+  const last = werte[werte.length - 1];
+  svg.append('circle').attr('cx', x(last.t)).attr('cy', y(last.p)).attr('r', 4).style('fill', '#5b8def');
+  svg.append('text').attr('x', x(last.t) + 7).attr('y', y(last.p) + 4).style('font-size', '12px').style('font-weight', '600').style('fill', 'var(--color-fg)').text(PR.eur(last.p));
+  const tip = prEl('div'); tip.style.cssText = 'position:absolute;pointer-events:none;display:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:6px;padding:4px 8px;font-size:12px;box-shadow:var(--cds-shadow-popover)';
+  el.style.position = 'relative'; el.append(tip);
+  svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', W - m.l - m.r).attr('height', H - m.t - m.b).style('fill', 'transparent')
+    .on('mousemove', (ev) => { const [mx] = d3.pointer(ev); const tt = x.invert(mx); const i = Math.min(werte.length - 1, d3.bisector((d) => d.t).center(werte, tt)); const d = werte[i];
+      tip.style.display = 'block'; tip.textContent = fmt(d.t) + ': ' + PR.eur(d.p); tip.style.left = Math.min(W - 140, x(d.t) + 8) + 'px'; tip.style.top = Math.max(0, y(d.p) - 30) + 'px'; })
+    .on('mouseleave', () => { tip.style.display = 'none'; });
+};
+window.prLaeufe = function (id) {
+  const v = dash.data('weitere_laeufe'); if (v.status !== 'ok') return [];
+  const pt = d3.timeParse('%Y-%m-%dT%H:%M');
+  return v.data.filter((x) => x.produkt === id).map((x) => ({t: pt(x.zeit), p: +x.preis})).filter((d) => d.t).sort((a, b) => a.t - b.t);
+};
 </script>

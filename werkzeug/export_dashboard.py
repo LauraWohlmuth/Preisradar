@@ -120,7 +120,7 @@ def _weitere(out):
     for cp in sorted(_glob.glob(_os.path.join(basis, "produkte", "*.json"))):
         cfg = json.load(open(cp, encoding="utf-8"))
         pid = cfg.get("id")
-        if pid in (None, "iphone-17-pro") or cfg.get("nur_vergleich"):
+        if pid in (None, "iphone-17-pro"):
             continue
         dp = _os.path.join(basis, "data", f"prices-{pid}.json")
         if not _os.path.exists(dp):
@@ -128,6 +128,13 @@ def _weitere(out):
         dd = json.load(open(dp, encoding="utf-8"))
         if not dd["laeufe"]:
             continue
+        # Verlauf für alle Produkte (auch Vergleichsmodelle), damit jede Karte einen Preisverlauf zeigen kann
+        for l_ in dd["laeufe"]:
+            if l_.get("guenstigster"):
+                verlauf.append([pid, l_["zeit"][:16], l_["guenstigster"]])
+        if cfg.get("nur_vergleich"):
+            continue
+        fc = cfg.get("gruppe") == "fahrradcomputer"  # Fahrradcomputer stehen nur im Vergleich (Filter zuerst), nicht doppelt unter „Weitere“
         la = dd["laeufe"][-1]
         ang = sorted([a for a in la.get("angebote", []) if a.get("passt", True)], key=lambda a: (a.get("verfuegbar", True) is False, a["preis_mit_code"]))
         for a in ang:
@@ -140,17 +147,15 @@ def _weitere(out):
             det.append("Versand " + (f"{a['versand']:.2f} €".replace(".", ",") if a.get("versand") else ("frei" if a.get("versand") == 0 else "unbekannt")))
             if a.get("lieferung"): det.append(a["lieferung"])
             if a.get("code"): det.append(f"mit Code {a['code']}")
-            zeilen.append([pid, a["haendler"], a["preis_mit_code"], " · ".join(det), a.get("url", "")])
-        for l_ in dd["laeufe"]:
-            if l_.get("guenstigster"):
-                verlauf.append([pid, l_["zeit"][:16], l_["guenstigster"]])
+            if not fc:
+                zeilen.append([pid, a["haendler"], a["preis_mit_code"], " · ".join(det), a.get("url", "")])
         best = next((a for a in ang if a.get("verfuegbar", True) is not False), None)
         kurz = cfg.get("kurzname") or cfg["produkt"].split(",")[0].split("(")[0].strip()
         kacheln.append({"id": pid, "name": kurz, "unter": cfg.get("unterzeile", ""),
                         "preis": best["preis_mit_code"] if best else "", "haendler": best["haendler"] if best else "–",
                         "ziel": cfg["zielpreis"], "stand": la["zeit"][:16],
                         "trend": _trend([l_["guenstigster"] for l_ in dd["laeufe"] if l_.get("guenstigster")]),
-                        "anker": "p-" + pid, "link": best["url"] if best else ""})
+                        "anker": "fahrradcomputer" if fc else "p-" + pid, "link": best["url"] if best else ""})
     with open(f"{out}/weitere_angebote.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["produkt", "haendler", "preis", "detail", "link"]); w.writerows(zeilen)
     with open(f"{out}/weitere_laeufe.csv", "w", newline="", encoding="utf-8") as f:
