@@ -2,20 +2,21 @@
 
 *Garmin Edge 540 Solar Fahrradcomputer, neu* · Zielpreis **0 €**
 
-**Stand 2026-11-27 19:54:** Keine Quelle konnte geprüft werden. Details unten.
+**Stand 2026-11-27 19:56: günstigster geprüfter Preis 462 €** (0 € zum Lauf davor), noch 462 € über dem Ziel
 
-Tiefstwert 462 € · Höchstwert 462 € · 6 Läufe seit 2026-11-27
+Tiefstwert 462 € · Höchstwert 462 € · 7 Läufe seit 2026-11-27
 
 ## Quellen
 
 | Quelle | ab | Status | Hinweis |
 |---|---:|---|---|
-| [geizhals.de: Garmin Edge 540 Solar](https://geizhals.de/garmin-edge-540-solar-010-02694-21-a2928610.html) | – | ❌ nicht prüfbar | Seite nicht geladen: HTTP Error 429: Too Many Requests |
+| [geizhals.de: Garmin Edge 540 Solar](https://geizhals.de/garmin-edge-540-solar-010-02694-21-a2928610.html) | 462 € | ✅ geprüft | 0 lieferbar |
 
 ## Verlauf
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-27 19:56 | 462 € |
 | 2026-11-27 19:54 | – |
 | 2026-11-27 19:48 | 462 € |
 | 2026-11-27 19:46 | 462 € |

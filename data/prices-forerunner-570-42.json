@@ -267,7 +267,111 @@
    "guenstigster": 414.0,
    "neuer_tiefstwert": true,
    "melden": true
+  },
+  {
+   "zeit": "2026-11-27T19:56:27+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: Forerunner 570 42 mm Cloud Blue",
+     "url": "https://geizhals.de/garmin-forerunner-570-42mm-cloud-blue-aluminium-translucent-whitestone-cloud-blue-010-02970-01-a3493611.html",
+     "abgerufen_um": "2026-11-27T19:56:27+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 449.0,
+     "angebote_anzahl": 12,
+     "grund": "3 lieferbar"
+    },
+    {
+     "quelle": "bike-components",
+     "url": "https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/",
+     "abgerufen_um": "2026-11-27T19:56:27+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 414.0
+    },
+    {
+     "quelle": "r2-bike",
+     "url": "https://r2-bike.com/GARMIN-Forerunner-570-GPS-Lauf-und-Triathlon-Smartwatch-42-mm-Steinweiss-Cloud-Blue",
+     "abgerufen_um": "2026-11-27T19:56:27+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 403: Forbidden"
+    },
+    {
+     "quelle": "Bike24",
+     "url": "https://www.bike24.de/p1936960.html",
+     "abgerufen_um": "2026-11-27T19:56:27+01:00",
+     "status": "nicht prüfbar",
+     "grund": "Seite nicht geladen: HTTP Error 403: Forbidden"
+    },
+    {
+     "quelle": "mydealz.de",
+     "url": "https://www.mydealz.de/search?q=forerunner+570",
+     "abgerufen_um": "2026-11-27T19:56:27+01:00",
+     "status": "geprüft",
+     "grund": "0 aktive Deals zur Variante",
+     "deals": []
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "bike-components",
+     "preis": 414.0,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 414.0,
+     "url": "https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/?o=1001011080-steinweiss-blau",
+     "via": "bike-components",
+     "verfuegbar": false,
+     "preis_mit_code": 414.0
+    },
+    {
+     "haendler": "Fitstore24.de",
+     "preis": 449.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAANlUS85SFpgp2XG0DkqWBQ3iSgtHw1zkt_sG74IMVCFUL--WohCKRpwcmS_ZKNADC-4LttYAPuUvYMmdd5koDzMcn21h2PcEq4HSiJ0uc9sDygmnCrBjH1MWtPl10_ArjBZbF1msNOCVNjSrlydElbtRMdMtTA69KExdiUl6OQR1_EGuqULfRFP42auBIhsFWMaz5gEjp0gOyrkhABbwWyAAozO7hgk6oPoSn66Y82vTvApJwR6riLwim21r3SNCSLwIUJ6JhNqX7vJk4wdI1jc",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 449.0,
+     "lieferung": "lagernd, 3-4 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 449.0
+    },
+    {
+     "haendler": "camp4.de",
+     "preis": 499.99,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCDBpRL9kylDoB3T_-IyeOrfRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvtK37k5A8tVDkzM-Ru3xp8LnsPobuBcnejkZiHX9h5ECeXA2uCsOtijWJi_yUFQJzc0_wc_37j3qjeCudR3TlYNlB3d7Ty4JgNd9vF5c4aOs",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 499.99,
+     "lieferung": "Auf Lager, Lieferzeit 2-3 Werktage oder sofort in Berlin abholen",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 499.99
+    },
+    {
+     "haendler": "machsport",
+     "preis": 549.99,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAEtiANuM68TfGBvhNY75WxgceSY_quYkMFdaWZougqC73p7qHrw4gttglf6uq4zlFvoecVf6Rbt6iGDcOGo-nOlePet3qaK93gB21wqQ-ZooH0c_vuB7E6Fnw4_DmXuS10kLetKQmpKdjKKkq2rjhX2AOopS4wlfgMCzaiB1uPQ4Sbaip_wos22f4wjZWPOfu_Gz_o3qkGnsEEpY_l1Tm1rAPI_ZlLHc1pNKCXIuAleG2q4P6fzCDS6YQOArNa7brg",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 549.99,
+     "lieferung": "Auf Lager, 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 549.99
+    }
+   ],
+   "guenstigster": 449.0,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-27T19:54:23+01:00"
+ "stand": "2026-11-27T19:56:27+01:00"
 }
