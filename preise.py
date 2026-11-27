@@ -70,15 +70,18 @@ def jsonld_angebote(seite):
     return treffer
 
 
-REF_ERLAUBT = {  # Lauras Kriterien; nur diese Optionen werden weiter verfolgt
+REF_ERLAUBT = CFG.get("kriterien") or {  # Kaufkriterien je Produkt (produkte/*.json "kriterien"); leere Liste = egal
     "farbe": ["tiefblau", "silber"],
     "speicher": ["256 gb", "512 gb"],
     "zustand": ["sehr gut", "exzellent", "premium"],
     "akku": ["neu", "optimal"],
 }
+for _f in ("farbe", "speicher", "zustand", "akku"):
+    REF_ERLAUBT.setdefault(_f, [])
 REF_AKKU = {"new": "Neu", "optimal": "Optimal", "standard": "Standard", "good": "Gut"}
 REF_ZUSTAND = {"AA": "Premium", "A": "Exzellent", "B": "Sehr gut", "C": "Gut"}
-REF_FARBE = {"deep blue": "Tiefblau", "silver": "Silber", "cosmic orange": "Cosmic Orange"}
+REF_FARBE = {"deep blue": "Tiefblau", "silver": "Silber", "cosmic orange": "Cosmic Orange", "midnight": "Mitternacht",
+             "starlight": "Polarstern", "sky blue": "Himmelblau", "space gray": "Space Grau", "space grey": "Space Grau"}
 
 
 def refurbed_optionen(seite):
@@ -136,7 +139,7 @@ def refurbed_alle(start, quelle, erste=None, max_seiten=40):
             angebote[a["angebot_id"]] = a
         for feld, liste in refurbed_optionen(seite).items():
             for label, link in liste:
-                if any(e in label.lower() for e in REF_ERLAUBT[feld]):
+                if not REF_ERLAUBT.get(feld) or any(e in label.lower() for e in REF_ERLAUBT[feld]):
                     voll = link if link.startswith("http") else basis + link
                     if voll not in gesehen:
                         offen.append((voll, None))
@@ -157,22 +160,22 @@ def akku_lesen(seite):
     return "nicht angegeben"
 
 
-AKKU_ZIEL = ["neu"]  # nur diese Akkus zählen für Preis und Ziel; "optimal" wird als zweite Wahl gezeigt
+AKKU_ZIEL = CFG.get("akku_ziel", ["neu"])  # nur diese Akkus zählen fürs Ziel; leer = Akku egal; "optimal" = zweite Wahl
 
 
 def passt_ohne_akku(a):
     k = {"farbe": a.get("farbe"), "speicher": a.get("speicher"), "zustand": a.get("zustand")}
-    return all(v and any(e == str(v).lower() for e in REF_ERLAUBT[f]) for f, v in k.items())
+    return all(not REF_ERLAUBT.get(f) or (v and any(e == str(v).lower() for e in REF_ERLAUBT[f])) for f, v in k.items())
 
 
 def passt_kriterien(a):
     """Erste Wahl: alle Kriterien und Akku neu."""
-    return passt_ohne_akku(a) and str(a.get("akku") or "").lower() in AKKU_ZIEL
+    return passt_ohne_akku(a) and (not AKKU_ZIEL or str(a.get("akku") or "").lower() in AKKU_ZIEL)
 
 
 def zweite_wahl(a):
     """Alles passt, aber Akku optimal statt neu: wird gezeigt, zählt nicht fürs Ziel."""
-    return passt_ohne_akku(a) and str(a.get("akku") or "").lower() == "optimal"
+    return bool(AKKU_ZIEL) and passt_ohne_akku(a) and str(a.get("akku") or "").lower() == "optimal" and "optimal" not in AKKU_ZIEL
 
 
 def text(fragment):
@@ -343,7 +346,8 @@ def pruefe(quelle, jetzt):
                                  "url": d.get("url") or quelle["url"], "via": quelle["name"],
                                  **({"variante": quelle["variante"]} if quelle.get("variante") else {}),
                                  **({"farbe": quelle.get("farbe"), "speicher": quelle.get("speicher"), "zustand": quelle.get("zustand"),
-                                     "akku": akku_lesen(seite)} if quelle.get("akku_lesen") else {})})
+                                     "akku": akku_lesen(seite) if quelle.get("akku_lesen") else (quelle.get("akku") or "nicht angegeben")}
+                                    if (quelle.get("akku_lesen") or quelle.get("zustand")) else {})})
     for a in angebote:
         if "akku" in a:
             a["passt"] = passt_kriterien(a)

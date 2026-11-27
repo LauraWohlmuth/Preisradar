@@ -38,6 +38,8 @@ def _trend(werte):
 def _iphone(out):
     pfad = _os.path.join(_os.path.dirname(src), "prices-iphone-17-pro.json")
     if not _os.path.exists(pfad): return None
+    if not _os.path.exists(_os.path.join(_os.path.dirname(_os.path.dirname(src)), "produkte", "iphone-17-pro.json")):
+        return None  # iPhone nicht mehr beobachtet (27.11.: durch MacBook refurbished ersetzt)
     d = json.load(open(pfad, encoding="utf-8"))
     if not d["laeufe"]: return None
     last = d["laeufe"][-1]

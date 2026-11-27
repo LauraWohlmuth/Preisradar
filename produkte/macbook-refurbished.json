@@ -1,0 +1,56 @@
+{
+ "id": "macbook-refurbished",
+ "kurzname": "MacBook Air 13\" M5 refurbished",
+ "unterzeile": "16 GB · 512 GB · Mitternacht · 8-Core GPU · refurbished",
+ "produkt": "Apple MacBook Air 13\" M5 (2026), 10-Core CPU, 8-Core GPU, 16 GB, 512 GB, Mitternacht, refurbished (Apple: FDHE4D/A)",
+ "zielpreis": 1000,
+ "uvp": 1399,
+ "warn_unter": 700,
+ "variante_muss": [
+  "macbook air"
+ ],
+ "kriterien": {
+  "farbe": [
+   "mitternacht"
+  ],
+  "speicher": [
+   "512 gb"
+  ],
+  "zustand": [
+   "sehr gut",
+   "exzellent",
+   "premium",
+   "wie neu (apple)"
+  ],
+  "akku": []
+ },
+ "akku_ziel": [],
+ "quellen": [
+  {
+   "name": "Apple Refurbished Store (FDHE4D/A)",
+   "typ": "jsonld",
+   "haendler": "Apple Refurbished",
+   "url": "https://www.apple.com/de/shop/product/fdhe4d/a",
+   "farbe": "Mitternacht",
+   "speicher": "512 GB",
+   "zustand": "Wie neu (Apple)",
+   "akku": "laut Apple geprüft",
+   "variante": "Apple zertifiziert, 1 Jahr Garantie"
+  },
+  {
+   "name": "refurbed: MacBook Air 13 M5 (alle Kombinationen)",
+   "typ": "refurbed",
+   "haendler": "refurbed",
+   "url": "https://www.refurbed.de/p/apple-macbook-air-13-m5-2026/418007aa/"
+  },
+  {
+   "name": "Back Market",
+   "typ": "blockiert",
+   "url": "https://www.backmarket.de/de-de/search?q=macbook%20air%20m5",
+   "grund": "blockt automatische Abrufe (403)"
+  }
+ ],
+ "gutscheine": [],
+ "cashback": [],
+ "debug": true
+}
