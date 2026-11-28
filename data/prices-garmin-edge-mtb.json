@@ -1314,7 +1314,79 @@
    "guenstigster": 331.94,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-28T12:18:20+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: Garmin Edge MTB",
+     "url": "https://geizhals.de/garmin-edge-mtb-010-02993-10-a3518184.html",
+     "abgerufen_um": "2026-11-28T12:18:20+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 331.94,
+     "angebote_anzahl": 15,
+     "grund": "3 lieferbar"
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "bikevienna.at",
+     "preis": 331.94,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAACmJsGGYJrUrecigOCgAy4S4JmvToknce-tY2eCqBm9WTHb-XnjGqabepbu-EntKu-DpbAXzUzFg9Xze9nsIrsvA-T88Um7JtWN5hHPY9jFAC9OO_W6_DirAc8njeOoxdalCsmMpN5NdFerQmXWPFAk",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 331.94,
+     "lieferung": "lagernd",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 331.94
+    },
+    {
+     "haendler": "SportOkay.com Deutschland",
+     "preis": 343.19,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAOHGNgn-lZYpZ_LB4j8PhZ3NZ3QliajS845u3yEs1Upa-Pw6tgiTF5m7SHUfUXMXqK6Gm2FOuTtN1krAGXVL_OuwvItJs3BNPvVFS2b-e6XDVnhNeghQS2okBdp3W3KWZQOVsO6aJVRXNMDsaERhfkmxnYNaZR44fIilf_KNlMttAmZl7bWO8JgcEIY-6q4eeBkcOg9afi2DnMLTi5-2lSePmz-WkSaS64cKmM399nRF-_-L2u0-5TC-xRdazvNlhahoNNIHKkqcfHKPVuBFa9_ZQd3e08uCYDXfbxeXOGjr",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 343.19,
+     "lieferung": "Sofort lieferbar, Lieferzeit: Innerhalb 1 bis 3 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "gh_code": {
+      "code": "BLACK12",
+      "rabatt_eur": null,
+      "rabatt_prozent": null,
+      "gueltig_bis": null,
+      "beschreibung": "",
+      "quelle": "geizhals.de"
+     },
+     "preis_mit_code": 343.19
+    },
+    {
+     "haendler": "Fitstore24.de",
+     "preis": 399.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAEW1OIuij-6IxirEAuVAv61twojiaD0ETJQc7kXosGqgqMemXmwEmXL7bc5-UnUlxRD-_erKbZQ4aoADGv-i5WPHX7_x4B48mkidhTuLq-aVsZ2DWmUeOHyIpX_yjZTLbdxzr21FawvEyS2aS9ZJ4Pe3UTFmHdZDKMr6DdlmygVXBapOPoin_pjc3gDT3lSdDweonTQyZxe4t3c37qzsDhfID80h1sgIBbU_J4QZJO18",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 399.0,
+     "lieferung": "lagernd, 3-4 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 399.0
+    }
+   ],
+   "guenstigster": 331.94,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-28T11:17:58+01:00"
+ "stand": "2026-11-28T12:18:20+01:00"
 }

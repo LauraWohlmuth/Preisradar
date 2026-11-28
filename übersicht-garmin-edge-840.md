@@ -2,16 +2,16 @@
 
 *Garmin Edge 840 Fahrradcomputer (010-02695-01), neu, ohne Solar und ohne Bundle* · Zielpreis **310 €**
 
-**Stand 2026-11-28 11:17: günstigster geprüfter Preis 319,44 €** (0 € zum Lauf davor), noch 9,44 € über dem Ziel
+**Stand 2026-11-28 12:18: günstigster geprüfter Preis 319,44 €** (0 € zum Lauf davor), noch 9,44 € über dem Ziel
 
-Tiefstwert 319,44 € · Höchstwert 319,44 € · 21 Läufe seit 2026-11-27
+Tiefstwert 319,44 € · Höchstwert 319,44 € · 22 Läufe seit 2026-11-27
 
 ## Angebote
 
 | Händler | Mit Code | Preis | Versand | Code | Cashback (später) |
 |---|---:|---:|---:|---|---|
-| [SportOkay.com Deutschland](https://geizhals.de/redir/BAAAAOHGNgn-lZYpZ_LB4j8PhZ3NZ3QliajS845u3yEs1UpaJMEg7UDxJ5D2Cbo96lDuEa6Gm2FOuTtN1krAGXVL_OuwvItJs3BNPvVFS2b-e6XDVnhNeghQS2okBdp3W3KWZQOVsO6aJVRXNMDsaERhfkmxnYNaZR44fIilf_KNlMttAmZl7bWO8JgcEIY-6q4eeBkcOg9afi2DnMLTi5-2lSfVBJ9NlE8sjbadUbQR8ZeQMOQKWkXcQZtIyp1XEjmFEmjSkA3yAN9RXw6QnLr5p2fZQd3e08uCYDXfbxeXOGjr) | **319,44 €** | 319,44 € | 0 € | – | – |
-| [TechnikDirekt](https://geizhals.de/redir/BAAAANfDP1J7C1_RLO-4SZYGl_7KdHWJE0aRFzGp-BxGItW0k-rSK_vMwSbFBGchSFXaLa9J7Y1NcR05M9mijkr5voltDYJk-NYHazUHDiLBgje7EjLrxowmcZUSe5OINucgF4DQ2-7BepUDJpYJlTV--JM5mSc94zqKvP-KP1kgmizbE4-M13f8FEqs6qwvC1ouWQ) | **381,58 €** | 381,58 € | unbekannt | – | – |
+| [SportOkay.com Deutschland](https://geizhals.de/redir/BAAAAOHGNgn-lZYpZ_LB4j8PhZ3NZ3QliajS845u3yEs1UpaJMEg7UDxJ5D2Cbo96lDuEa6Gm2FOuTtN1krAGXVL_OuwvItJs3BNPvVFS2b-e6XDVnhNeghQS2okBdp3W3KWZQOVsO6aJVRXNMDsaERhfkmxnYNaZR44fIilf_KNlMttAmZl7bWO8JgcEIY-6q4eeBkcOg9afi2DnMLTi5-2lSePmz-WkSaS64cKmM399nRFMOQKWkXcQZtIyp1XEjmFEuXv7BwCWgOqPFF79UxdCTnZQd3e08uCYDXfbxeXOGjr) | **319,44 €** | 319,44 € | 0 € | – | – |
+| [TechnikDirekt](https://geizhals.de/redir/BAAAANfDP1J7C1_RLO-4SZYGl_7KdHWJE0aRFzGp-BxGItW0k-rSK_vMwSbFBGchSFXaLa9J7Y1NcR05M9mijkr5voltDYJk-NYHazUHDiLBgje7re5IFO4Est_Jm0sk4W2V1YDQ2-7BepUDJpYJlTV--JOMQ-x4ElmPl1NSc9JaA_k0HWWS5rtuIQWPuasjzsoHuw) | **381,58 €** | 381,58 € | unbekannt | – | – |
 
 ## Quellen
 
@@ -24,6 +24,7 @@ Tiefstwert 319,44 € · Höchstwert 319,44 € · 21 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-28 12:18 | 319,44 € |
 | 2026-11-28 11:17 | 319,44 € |
 | 2026-11-28 10:18 | 319,44 € |
 | 2026-11-28 09:18 | 319,44 € |
@@ -35,6 +36,5 @@ Tiefstwert 319,44 € · Höchstwert 319,44 € · 21 Läufe seit 2026-11-27
 | 2026-11-27 22:17 | 319,44 € |
 | 2026-11-27 21:18 | 319,44 € |
 | 2026-11-27 20:00 | 319,44 € |
-| 2026-11-27 19:59 | 319,44 € |
 
 _Preise werden nie geschätzt: Was nicht lesbar war, steht als „nicht prüfbar“ da. Codes nur, wenn belegt und gültig; Cashback zählt nicht zum Preis. Vor dem Kauf im Shop prüfen._
