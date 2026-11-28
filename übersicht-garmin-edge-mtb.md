@@ -2,17 +2,17 @@
 
 *Garmin Edge MTB Fahrradcomputer, neu* · Zielpreis **0 €**
 
-**Stand 2026-11-28 04:43: günstigster geprüfter Preis 331,94 €** (0 € zum Lauf davor), noch 331,94 € über dem Ziel
+**Stand 2026-11-28 07:18: günstigster geprüfter Preis 331,94 €** (0 € zum Lauf davor), noch 331,94 € über dem Ziel
 
-Tiefstwert 331,94 € · Höchstwert 331,94 € · 14 Läufe seit 2026-11-27
+Tiefstwert 331,94 € · Höchstwert 331,94 € · 15 Läufe seit 2026-11-27
 
 ## Angebote
 
 | Händler | Mit Code | Preis | Versand | Code | Cashback (später) |
 |---|---:|---:|---:|---|---|
-| [bikevienna.at](https://geizhals.de/redir/BAAAACmJsGGYJrUrecigOCgAy4S4JmvToknce-tY2eCqBm9WTHb-XnjGqabepbu-EntKu25BhGcj-Ab7Llc6S5XgSipy4oWaKlg7CYDCVwQNPPDoKTLWiOPgUEwaw6nCPZ_iLd4A7TdNs3KKYHKWXhoxYKo) | **331,94 €** | 331,94 € | 0 € | – | – |
-| [SportOkay.com Deutschland](https://geizhals.de/redir/BAAAAOHGNgn-lZYpZ_LB4j8PhZ3NZ3QliajS845u3yEs1Upa-Pw6tgiTF5m7SHUfUXMXqK6Gm2FOuTtN1krAGXVL_OuwvItJs3BNPvVFS2b-e6XDVnhNeghQS2okBdp3W3KWZQOVsO6aJVRXNMDsaERhfkmxnYNaZR44fIilf_KNlMttAmZl7bWO8JgcEIY-6q4eeBkcOg9afi2DnMLTi5-2lScjFmoSQ2YPr65yM28ej3EB-_-L2u0-5TC-xRdazvNlhQQpTX0kVkP0FzwRRq3-WC1zugp95kNp48ssAdLobaiK) | **343,19 €** | 343,19 € | 0 € | – | – |
-| [Fitstore24.de](https://geizhals.de/redir/BAAAAEW1OIuij-6IxirEAuVAv61twojiaD0ETJQc7kXosGqgqMemXmwEmXL7bc5-UnUlxRD-_erKbZQ4aoADGv-i5WPHX7_x4B48mkidhTuLq-aVsZ2DWmUeOHyIpX_yjZTLbdxzr21FawvEyS2aS9ZJ4PeSHgb80h3-_XavbV83Erp0BapOPoin_pjc3gDT3lSdD-l7ubF1GABzap5p6JducTmAY4M_mF7lhHehmPdELctz) | **399 €** | 399 € | 0 € | – | – |
+| [bikevienna.at](https://geizhals.de/redir/BAAAACmJsGGYJrUrecigOCgAy4S4JmvToknce-tY2eCqBm9WTHb-XnjGqabepbu-EntKu7CBk6rALv9gXLL0TsoOxo-tLSnGPizt0SL-5lAFFWXfGb5zGYG50BPLLrCtzhMZ7RGoBAAZtC7otKl4HOyqC8g) | **331,94 €** | 331,94 € | 0 € | – | – |
+| [SportOkay.com Deutschland](https://geizhals.de/redir/BAAAAOHGNgn-lZYpZ_LB4j8PhZ3NZ3QliajS845u3yEs1Upa-Pw6tgiTF5m7SHUfUXMXqK6Gm2FOuTtN1krAGXVL_OuwvItJs3BNPvVFS2b-e6XDVnhNeghQS2okBdp3W3KWZQOVsO6aJVRXNMDsaERhfkmxnYNaZR44fIilf_KNlMttAmZl7bWO8JgcEIY-6q4eeBkcOg9afi2DnMLTi5-2lSdSQIJBHky4vyJfrmVnQDDo-_-L2u0-5TC-xRdazvNlhcZrc3wtwCde6ylrbvU_ZFIS4rlNEA5bc66NI8nd0oya) | **343,19 €** | 343,19 € | 0 € | – | – |
+| [Fitstore24.de](https://geizhals.de/redir/BAAAAEW1OIuij-6IxirEAuVAv61twojiaD0ETJQc7kXosGqgqMemXmwEmXL7bc5-UnUlxRD-_erKbZQ4aoADGv-i5WPHX7_x4B48mkidhTuLq-aVsZ2DWmUeOHyIpX_yjZTLbdxzr21FawvEyS2aS9ZJ4Pd7lOjTHS9THKQRnz7HrPZLBapOPoin_pjc3gDT3lSdD-v8P1yEWBcq_6yUPBBaac-vlUNdKEKibN6tJHe-mz3O) | **399 €** | 399 € | 0 € | – | – |
 
 ## Quellen
 
@@ -24,6 +24,7 @@ Tiefstwert 331,94 € · Höchstwert 331,94 € · 14 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-28 07:18 | 331,94 € |
 | 2026-11-28 04:43 | 331,94 € |
 | 2026-11-28 01:29 | 331,94 € |
 | 2026-11-27 23:18 | 331,94 € |
@@ -35,6 +36,5 @@ Tiefstwert 331,94 € · Höchstwert 331,94 € · 14 Läufe seit 2026-11-27
 | 2026-11-27 19:54 | – |
 | 2026-11-27 19:48 | 331,94 € |
 | 2026-11-27 19:46 | 331,94 € |
-| 2026-11-27 19:40 | 331,94 € |
 
 _Preise werden nie geschätzt: Was nicht lesbar war, steht als „nicht prüfbar“ da. Codes nur, wenn belegt und gültig; Cashback zählt nicht zum Preis. Vor dem Kauf im Shop prüfen._

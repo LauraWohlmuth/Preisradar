@@ -345,7 +345,56 @@
    "guenstigster": 449.0,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-28T07:18:31+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de",
+     "url": "https://geizhals.de/garmin-forerunner-570-47mm-slate-grey-aluminium-translucent-black-010-02971-00-a3493578.html",
+     "abgerufen_um": "2026-11-28T07:18:31+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 449.0,
+     "angebote_anzahl": 13,
+     "grund": "2 lieferbar"
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "Fitstore24.de",
+     "preis": 449.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAPsFY_ULxLOmhAXtV0-86DPiSgtHw1zkt_sG74IMVCFUL--WohCKRpwcmS_ZKNADC6_FLuh9uN7PQ-ICMRYqDDG0Pb0feKGruTRzJjPaIeYBHQ2xKy-EOwFNOKrmyakpt8iqzhAyltt59JkKgVwf2tnpHNEE_KhrgpCeBhUwa-vVGbqpbVJQJOJdHzS5jGqnK1UoX_3IvfPZcZnm8swTWdFbiUzkSlSl9ACPJKTCwPPV4edX6HR9OdgtwIdF70ZOX8G4K_uBr08Hsrw9NGY5xrY",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 449.0,
+     "lieferung": "lagernd, 3-4 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 449.0
+    },
+    {
+     "haendler": "camp4.de",
+     "preis": 499.99,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCIiW9bFeGlxG1GZtNrub05fRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvJQpTHARgGKhwDb90QNoPBgtYdIOFYlkIlm7oZ8Ge2UtsarqauRxP6w8d6h9th3dzXul7N2EGzModqzITSMjUTQ",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 499.99,
+     "lieferung": "Auf Lager, Lieferzeit 2-3 Werktage oder sofort in Berlin abholen",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 499.99
+    }
+   ],
+   "guenstigster": 449.0,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-28T04:43:02+01:00"
+ "stand": "2026-11-28T07:18:31+01:00"
 }
