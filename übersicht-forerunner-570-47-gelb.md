@@ -2,19 +2,19 @@
 
 *Garmin Forerunner 570 47 mm Amp Yellow / Steinweiß / Türkis (010-02971-01), neu* · Zielpreis **0 €**
 
-**Stand 2026-11-28 08:18: günstigster geprüfter Preis 449 €** (0 € zum Lauf davor), noch 449 € über dem Ziel
+**Stand 2026-11-28 09:18: günstigster geprüfter Preis 449 €** (0 € zum Lauf davor), noch 449 € über dem Ziel
 
-Tiefstwert 449 € · Höchstwert 449 € · 9 Läufe seit 2026-11-27
+Tiefstwert 449 € · Höchstwert 449 € · 10 Läufe seit 2026-11-27
 
 ## Angebote
 
 | Händler | Mit Code | Preis | Versand | Code | Cashback (später) |
 |---|---:|---:|---:|---|---|
-| [Fitstore24.de](https://geizhals.de/redir/BAAAANlUS85SFpgp2XG0DkqWBQ3iSgtHw1zkt_sG74IMVCFUL--WohCKRpwcmS_ZKNADC1zHPbUe2QAypT6OSpUkzCOqKgHdWCebWloKdoCTnwHnygmnCrBjH1MWtPl10_ArjBZbF1msNOCVNjSrlydElbtRMdMtTA69KExdiUl6OQR1_EGuqULfRFP42auBIhsFWDKlaPdEmrKp3cxxBH7bhEBX20N9cEmVBrTdKY-yorO8k7vetc8rgvcY7v3UBF2CDGLqm3SCxFNmxMLGpDkvaDM) | **449 €** | 449 € | 0 € | – | – |
-| [JB-Computer](https://geizhals.de/redir/BAAAABFvuCCHNUSMNgwtv32nQquv_75L4fruzPCT0x_o-waIMtdnDqMILx1_4hOT9V_un7-ylDPI0IbyjRVCymU1OF0yBymLC0VA4JA-nzvku961iUxDQi62aHbuCMWXikCZ-18QC4L-nJN57Quzvyh9y9MJtcFkrUIAuuJ2qEWSMKeOtLLGmPRHdxjqGmTYcSIV9FSDBv9XSbfL55tm25w1rxPP4h-1UA_FlDxH8rdLjZOzHSeK4T8y15v66TBwsHUiH83JI1bKx16BwHNB7okX8PIOMyXufXDFUhEOFX76ZfGZ) | **484,84 €** | 484,84 € | 0 € | – | – |
-| [galaxus](https://geizhals.de/redir/BAAAALPw32pvoDVeG8GeFJlLFylFnTgwMn5qDdytpx8dukbAWOuHUqLXRMMm9eXzjVy-dezWT6On7s0gyPoKpVwEljpIJ68IKKwGjWNofqGc0RHZSU5oeKXf78xvTsXQNy18xhWMAwvH-6ZoDimfJ93sAN0UjqB0Cl1xKr0ittnb_3CvW_z6-AA7232ONYEBQOJm8em1IAhef0nHzIbylTX21BMEJSxoDuljBiejRfhHNhhHIUNd9OW4WAQBoNBgGoeTqR0NsSsvhDsBTTiq5smpKbeQROTZjdzA5XTEIvj6N-NROoV7DkjLHmxuIjsNt1wzmKu4aACVVbojHcKI3GYYTB3HPRPufFgT4Qx3ml_1JW40oQ44seswx2JheN7XtvbRAw) | **487,59 €** | 487,59 € | 0 € | – | – |
-| [camp4.de](https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCIiW9bFeGlxG1GZtNrub05fRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvMJiEgJaxqBg3lZpL8-Z7qB0XoB4I8sT8CBeS-af3Y-ZJpSsJ48GcVmAyQDExHXdhy3OtVnGT2I80xT73oIe7Vw) | **499,99 €** | 499,99 € | 0 € | – | – |
-| [jb-vertrieb](https://geizhals.de/redir/BAAAABMVxCMR9yPbsDFkFUHFUg2yRUoPeTqkCuB5nXaz5L0L9B8cBwYf9-cS_xHj0T9W2jhFHHRusk4rbj1YFXyHTt_SHZG3O3GvytIfiX9ctToY9kZR4HmqO0ZZFmReTHurT0ScbDBeMzV4SGkK_hHzkjUBGhSYGCYHkdB_qP031kkGEVVo-v_iB0z2Ihx5u1OMjYH78YNFAM7xjz6oKKiSG4p3k2bygxC8a-00ZMs3KhKD5JnVZo4w-muvoCUyn0X7SQ) | **679,04 €** | 679,04 € | 0 € | – | – |
+| [Fitstore24.de](https://geizhals.de/redir/BAAAANlUS85SFpgp2XG0DkqWBQ3iSgtHw1zkt_sG74IMVCFUL--WohCKRpwcmS_ZKNADC1zHPbUe2QAypT6OSpUkzCOqKgHdWCebWloKdoCTnwHnygmnCrBjH1MWtPl10_ArjBZbF1msNOCVNjSrlydElbtRMdMtTA69KExdiUl6OQR1_EGuqULfRFP42auBIhsFWK7ZQ78fTacVglrBW8VIjXpX20N9cEmVBrTdKY-yorO8kW-jOyTBy46LQnHkBwWkWsrSySdcUxts7nsKpU9yXW0) | **449 €** | 449 € | 0 € | – | – |
+| [JB-Computer](https://geizhals.de/redir/BAAAABFvuCCHNUSMNgwtv32nQquv_75L4fruzPCT0x_o-waIMtdnDqMILx1_4hOT9V_un7-ylDPI0IbyjRVCymU1OF0yBymLC0VA4JA-nzvku961iUxDQi62aHbuCMWXikCZ-18QC4L-nJN57Quzvyh9y9MJtcFkrUIAuuJ2qEWSMKeOtLLGmPRHdxjqGmTYcSIV9FSDBv9XSbfL55tm25w1rxMnPulTF9Vi31tANgRuH8l0HSeK4T8y15v66TBwsHUiH1Ua52PuPboLDetGwplOOdaorIi3LRJ3k8wmUHUZBzqw) | **484,84 €** | 484,84 € | 0 € | – | – |
+| [galaxus](https://geizhals.de/redir/BAAAALPw32pvoDVeG8GeFJlLFylFnTgwMn5qDdytpx8dukbAWOuHUqLXRMMm9eXzjVy-dezWT6On7s0gyPoKpVwEljpIJ68IKKwGjWNofqGc0RHZSU5oeKXf78xvTsXQNy18xhWMAwvH-6ZoDimfJ93sAN0UjqB0Cl1xKr0ittnb_3CvW_z6-AA7232ONYEBQOJm8em1IAhef0nHzIbylTX21BMEJSxoDuljBiejRfhHNhhHIUNd9OW4WAQBoNBgGoeTqR0NsSsvhDsBTTiq5smpKbeQROTZjdzA5XTEIvj6N-NRBjWhsbiibfqWSyGsyCWmX6u4aACVVbojHcKI3GYYTB2ws80_qdeVio3379u_U6cG-1QO3b5jPaz0UPxbaAvKVA) | **487,59 €** | 487,59 € | 0 € | – | – |
+| [camp4.de](https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCIiW9bFeGlxG1GZtNrub05fRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvMJiEgJaxqBg3lZpL8-Z7qMXeNwFWXQuTpkVgN9btgnBJpSsJ48GcVmAyQDExHXdhMPO2lAc3GronEae0Z3qcvtlB3d7Ty4JgNd9vF5c4aOs) | **499,99 €** | 499,99 € | 0 € | – | – |
+| [jb-vertrieb](https://geizhals.de/redir/BAAAABMVxCMR9yPbsDFkFUHFUg2yRUoPeTqkCuB5nXaz5L0L9B8cBwYf9-cS_xHj0T9W2jhFHHRusk4rbj1YFXyHTt_SHZG3O3GvytIfiX9ctToY9kZR4HmqO0ZZFmReTHurT0ScbDBeMzV4SGkK_hHzkjUBGhSYGCYHkdB_qP031kkG2ZLRutw8jBsVBw2SwscHR4H78YNFAM7xjz6oKKiSG4rh8EKYLoNmKx90HOsIaQV2XelRVSNKIGcOJWvGALUSQQ) | **679,04 €** | 679,04 € | 0 € | – | – |
 
 ## Quellen
 
@@ -26,6 +26,7 @@ Tiefstwert 449 € · Höchstwert 449 € · 9 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-28 09:18 | 449 € |
 | 2026-11-28 08:18 | 449 € |
 | 2026-11-28 07:18 | 449 € |
 | 2026-11-28 04:43 | 449 € |

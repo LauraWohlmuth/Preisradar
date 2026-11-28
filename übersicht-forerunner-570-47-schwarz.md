@@ -2,16 +2,16 @@
 
 *Garmin Forerunner 570 47 mm Slate Grey / Schwarz (010-02971-00), neu* · Zielpreis **0 €**
 
-**Stand 2026-11-28 08:18: günstigster geprüfter Preis 449 €** (0 € zum Lauf davor), noch 449 € über dem Ziel
+**Stand 2026-11-28 09:18: günstigster geprüfter Preis 449 €** (0 € zum Lauf davor), noch 449 € über dem Ziel
 
-Tiefstwert 449 € · Höchstwert 449 € · 9 Läufe seit 2026-11-27
+Tiefstwert 449 € · Höchstwert 449 € · 10 Läufe seit 2026-11-27
 
 ## Angebote
 
 | Händler | Mit Code | Preis | Versand | Code | Cashback (später) |
 |---|---:|---:|---:|---|---|
-| [Fitstore24.de](https://geizhals.de/redir/BAAAAPsFY_ULxLOmhAXtV0-86DPiSgtHw1zkt_sG74IMVCFUL--WohCKRpwcmS_ZKNADC6_FLuh9uN7PQ-ICMRYqDDG0Pb0feKGruTRzJjPaIeYBHQ2xKy-EOwFNOKrmyakpt8iqzhAyltt59JkKgVwf2tnpHNEE_KhrgpCeBhUwa-vVGbqpbVJQJOJdHzS5jGqnK5npMK8JXiP_Y0UdeRr1KLtbiUzkSlSl9ACPJKTCwPPV3p9QEV04sSWmubqLaGaN3HTYP_TJBJWiGqx7aF1-VTU) | **449 €** | 449 € | 0 € | – | – |
-| [camp4.de](https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCIiW9bFeGlxG1GZtNrub05fRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvJQpTHARgGKhwDb90QNoPBnyZm7mMldbthnRaruW5_h9sarqauRxP6w8d6h9th3dzy3OtVnGT2I80xT73oIe7Vw) | **499,99 €** | 499,99 € | 0 € | – | – |
+| [Fitstore24.de](https://geizhals.de/redir/BAAAAPsFY_ULxLOmhAXtV0-86DPiSgtHw1zkt_sG74IMVCFUL--WohCKRpwcmS_ZKNADC6_FLuh9uN7PQ-ICMRYqDDG0Pb0feKGruTRzJjPaIeYBHQ2xKy-EOwFNOKrmyakpt8iqzhAyltt59JkKgVwf2tnpHNEE_KhrgpCeBhUwa-vVGbqpbVJQJOJdHzS5jGqnKweAfQ8JNlbjVqaRNuwHD6hbiUzkSlSl9ACPJKTCwPPVvu8rsRXnj3cC4gE9TR4YMiyJORiSf_AE2EYTqkm_G3s) | **449 €** | 449 € | 0 € | – | – |
+| [camp4.de](https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCIiW9bFeGlxG1GZtNrub05fRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvJQpTHARgGKhwDb90QNoPBn5ccnmbtWREHAwL2TCtSgxsarqauRxP6w8d6h9th3dzMPO2lAc3GronEae0Z3qcvtlB3d7Ty4JgNd9vF5c4aOs) | **499,99 €** | 499,99 € | 0 € | – | – |
 
 ## Quellen
 
@@ -23,6 +23,7 @@ Tiefstwert 449 € · Höchstwert 449 € · 9 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-28 09:18 | 449 € |
 | 2026-11-28 08:18 | 449 € |
 | 2026-11-28 07:18 | 449 € |
 | 2026-11-28 04:43 | 449 € |
