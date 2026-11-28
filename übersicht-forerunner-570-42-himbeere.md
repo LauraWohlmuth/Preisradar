@@ -2,17 +2,17 @@
 
 *Garmin Forerunner 570 42 mm Raspberry / Bone / Mango (010-02970-02), neu* · Zielpreis **0 €**
 
-**Stand 2026-11-28 07:18: günstigster geprüfter Preis 449 €** (0 € zum Lauf davor), noch 449 € über dem Ziel
+**Stand 2026-11-28 08:18: günstigster geprüfter Preis 449 €** (0 € zum Lauf davor), noch 449 € über dem Ziel
 
-Tiefstwert 449 € · Höchstwert 449 € · 8 Läufe seit 2026-11-27
+Tiefstwert 449 € · Höchstwert 449 € · 9 Läufe seit 2026-11-27
 
 ## Angebote
 
 | Händler | Mit Code | Preis | Versand | Code | Cashback (später) |
 |---|---:|---:|---:|---|---|
 | [bike-components](https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/?o=1001011085-bone-himbeerrot-transparent-bone-mango) | **414 €** | 414 € | unbekannt | – | – |
-| [Fitstore24.de](https://geizhals.de/redir/BAAAAMwHS63IDUuMJyE8YfzmEPJtwojiaD0ETJQc7kXosGqgMxOqjyeXGM-c23QgVe3yj9GNEq1r2dhhKXT-EELqs9JdCRBU2z6x7e7pbqjr6n2XV-_RFbE3DjK26aaKVfaZ48ThnHUN1DsGrfV04uV0cb-glpVVMT41pdXM2vnI1hQV5Ll2KDkMeV1PfvSAPH1E30rvQosyG9UNCVye0Ng3v27rYnsCDxEZGAF1lw3HeJGOxmtzfC3AJ17rKWtu9T9kUhLiuU0QDltzro0jyd3SjJo) | **449 €** | 449 € | 0 € | – | – |
-| [camp4.de](https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCDBpRL9kylDoB3T_-IyeOrfRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvkcwPNPvd_VvDuIPhKAictA2ePjiUMRrgPlKlkzjXu24HrebwPvnyDft2GVR4bCDpXul7N2EGzModqzITSMjUTQ) | **499,99 €** | 499,99 € | 0 € | – | – |
+| [Fitstore24.de](https://geizhals.de/redir/BAAAAMwHS63IDUuMJyE8YfzmEPJtwojiaD0ETJQc7kXosGqgMxOqjyeXGM-c23QgVe3yj9GNEq1r2dhhKXT-EELqs9JdCRBU2z6x7e7pbqjr6n2XV-_RFbE3DjK26aaKVfaZ48ThnHUN1DsGrfV04uV0cb-glpVVMT41pdXM2vnI1hQV5Ll2KDkMeV1PfvSAPH1E34cMd5YpgyXmu7fPpEHlW5LrYnsCDxEZGAF1lw3HeJGODNBsYLkRZ2kTPgshj9Ig8G3WMxK07-f-h0z74gcZmjA) | **449 €** | 449 € | 0 € | – | – |
+| [camp4.de](https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCDBpRL9kylDoB3T_-IyeOrfRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvkcwPNPvd_VvDuIPhKAictJT0VM8fr94OGrsxTmNVIX8HrebwPvnyDft2GVR4bCDpy3OtVnGT2I80xT73oIe7Vw) | **499,99 €** | 499,99 € | 0 € | – | – |
 
 ## Quellen
 
@@ -25,6 +25,7 @@ Tiefstwert 449 € · Höchstwert 449 € · 8 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-28 08:18 | 449 € |
 | 2026-11-28 07:18 | 449 € |
 | 2026-11-28 04:42 | 449 € |
 | 2026-11-28 01:29 | 449 € |
