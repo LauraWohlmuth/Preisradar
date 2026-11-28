@@ -2,18 +2,18 @@
 
 *Garmin Forerunner 570, 42 mm, Cloud Blue Aluminium mit Armband Steinweiß/Cloud Blue (010-02970-01), neu* · Zielpreis **350 €**
 
-**Stand 2026-11-28 01:29: günstigster geprüfter Preis 449 €** (0 € zum Lauf davor), noch 99 € über dem Ziel
+**Stand 2026-11-28 04:43: günstigster geprüfter Preis 449 €** (0 € zum Lauf davor), noch 99 € über dem Ziel
 
-Tiefstwert 449 € · Höchstwert 449 € · 10 Läufe seit 2026-11-27
+Tiefstwert 449 € · Höchstwert 449 € · 11 Läufe seit 2026-11-27
 
 ## Angebote
 
 | Händler | Mit Code | Preis | Versand | Code | Cashback (später) |
 |---|---:|---:|---:|---|---|
 | [bike-components](https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/?o=1001011080-steinweiss-blau) | **414 €** | 414 € | unbekannt | – | – |
-| [Fitstore24.de](https://geizhals.de/redir/BAAAANlUS85SFpgp2XG0DkqWBQ3iSgtHw1zkt_sG74IMVCFUL--WohCKRpwcmS_ZKNADC-4LttYAPuUvYMmdd5koDzMcn21h2PcEq4HSiJ0uc9sDygmnCrBjH1MWtPl10_ArjBZbF1msNOCVNjSrlydElbtRMdMtTA69KExdiUl6OQR1_EGuqULfRFP42auBIhsFWD0d2GFU5oFxaLTJGxAhMJ0AozO7hgk6oPoSn66Y82vTv9x2qi-WXrcjCpKJKnnAIIcidKxpOc53wvLz9Uf2Z5k) | **449 €** | 449 € | 0 € | – | – |
-| [camp4.de](https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCDBpRL9kylDoB3T_-IyeOrfRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvtK37k5A8tVDkzM-Ru3xp8HkDghFa7oqmc_Gsh6Rq6YaeXA2uCsOtijWJi_yUFQJzREQoFpwrWoYCF0kEPgacUNlB3d7Ty4JgNd9vF5c4aOs) | **499,99 €** | 499,99 € | 0 € | – | – |
-| [machsport](https://geizhals.de/redir/BAAAAEtiANuM68TfGBvhNY75WxgceSY_quYkMFdaWZougqC73p7qHrw4gttglf6uq4zlFvoecVf6Rbt6iGDcOGo-nOlePet3qaK93gB21wqQ-ZooH0c_vuB7E6Fnw4_DmXuS10kLetKQmpKdjKKkq2rjhX2AOopS4wlfgMCzaiB1uPQ4um6GarTFnOumPIMo9mWerfGz_o3qkGnsEEpY_l1Tm1pi_jXNMIUh_wLLg5TagndI2q4P6fzCDS6YQOArNa7brg) | **549,99 €** | 549,99 € | 0 € | – | – |
+| [Fitstore24.de](https://geizhals.de/redir/BAAAANlUS85SFpgp2XG0DkqWBQ3iSgtHw1zkt_sG74IMVCFUL--WohCKRpwcmS_ZKNADC-4LttYAPuUvYMmdd5koDzMcn21h2PcEq4HSiJ0uc9sDygmnCrBjH1MWtPl10_ArjBZbF1msNOCVNjSrlydElbtRMdMtTA69KExdiUl6OQR1_EGuqULfRFP42auBIhsFWHNUoPfq6kIhytG0RSnCac8AozO7hgk6oPoSn66Y82vTEvzfYNyXXX5AmTJ6hZwkfG2DHfjgNo38y1RYwF4diiU) | **449 €** | 449 € | 0 € | – | – |
+| [camp4.de](https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCDBpRL9kylDoB3T_-IyeOrfRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvtK37k5A8tVDkzM-Ru3xp8HYBSf1MErt3rNGu1_c72u2eXA2uCsOtijWJi_yUFQJzD0r-VfJy0jmVAFOV15x12tlB3d7Ty4JgNd9vF5c4aOs) | **499,99 €** | 499,99 € | 0 € | – | – |
+| [machsport](https://geizhals.de/redir/BAAAAEtiANuM68TfGBvhNY75WxgceSY_quYkMFdaWZougqC73p7qHrw4gttglf6uq4zlFvoecVf6Rbt6iGDcOGo-nOlePet3qaK93gB21wqQ-ZooH0c_vuB7E6Fnw4_DmXuS10kLetKQmpKdjKKkq2rjhX2AOopS4wlfgMCzaiB1uPQ42kwp8Jp0a16N_002K5wuiPGz_o3qkGnsEEpY_l1Tm1p5jdROX4GvsJk6mr-iyPo7_2LaiOASApWv5IOYo6KNeA) | **549,99 €** | 549,99 € | 0 € | – | – |
 
 ## Quellen
 
@@ -29,6 +29,7 @@ Tiefstwert 449 € · Höchstwert 449 € · 10 Läufe seit 2026-11-27
 
 | Zeit | günstigster Preis |
 |---|---:|
+| 2026-11-28 04:43 | 449 € |
 | 2026-11-28 01:29 | 449 € |
 | 2026-11-27 23:17 | 449 € |
 | 2026-11-27 22:17 | 449 € |

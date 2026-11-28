@@ -566,7 +566,101 @@
    "guenstigster": 449.0,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-28T04:43:02+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de",
+     "url": "https://geizhals.de/garmin-forerunner-570-47mm-amp-yellow-aluminium-translucent-whitestone-turquoise-010-02971-01-a3493595.html",
+     "abgerufen_um": "2026-11-28T04:43:02+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 449.0,
+     "angebote_anzahl": 24,
+     "grund": "5 lieferbar"
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "Fitstore24.de",
+     "preis": 449.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAANlUS85SFpgp2XG0DkqWBQ3iSgtHw1zkt_sG74IMVCFUL--WohCKRpwcmS_ZKNADC1zHPbUe2QAypT6OSpUkzCOqKgHdWCebWloKdoCTnwHnygmnCrBjH1MWtPl10_ArjBZbF1msNOCVNjSrlydElbtRMdMtTA69KExdiUl6OQR1_EGuqULfRFP42auBIhsFWMM0Jbpw4XjADtLay2A2X69X20N9cEmVBrTdKY-yorO802E59rvp3i7gAbCGwLw3Qm2DHfjgNo38y1RYwF4diiU",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 449.0,
+     "lieferung": "lagernd, 3-4 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 449.0
+    },
+    {
+     "haendler": "JB-Computer",
+     "preis": 484.84,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAABFvuCCHNUSMNgwtv32nQquv_75L4fruzPCT0x_o-waIMtdnDqMILx1_4hOT9V_un7-ylDPI0IbyjRVCymU1OF0yBymLC0VA4JA-nzvku961iUxDQi62aHbuCMWXikCZ-18QC4L-nJN57Quzvyh9y9MJtcFkrUIAuuJ2qEWSMKeOtLLGmPRHdxjqGmTYcSIV9FSDBv9XSbfL55tm25w1rxMvSmgeHbxb4eMMVa7-MSHBHSeK4T8y15v66TBwsHUiH7-uV9FGLXcV8BbX-k38jSeAY4M_mF7lhHehmPdELctz",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 484.84,
+     "lieferung": "Auf Lager, sofort versandfertig Lieferzeit 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 484.84
+    },
+    {
+     "haendler": "galaxus",
+     "preis": 487.59,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAALPw32pvoDVeG8GeFJlLFylFnTgwMn5qDdytpx8dukbAWOuHUqLXRMMm9eXzjVy-dezWT6On7s0gyPoKpVwEljpIJ68IKKwGjWNofqGc0RHZSU5oeKXf78xvTsXQNy18xhWMAwvH-6ZoDimfJ93sAN0UjqB0Cl1xKr0ittnb_3CvW_z6-AA7232ONYEBQOJm8em1IAhef0nHzIbylTX21BMEJSxoDuljBiejRfhHNhhHIUNd9OW4WAQBoNBgGoeTqR0NsSsvhDsBTTiq5smpKbeQROTZjdzA5XTEIvj6N-NRA5dVanJuChJid93_UBzPC6u4aACVVbojHcKI3GYYTB2MKoKVIQYUOEoB-19ApCAxaf-a6adeE6RVvWXhHeAgGA",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 487.59,
+     "lieferung": "Auf Lager, 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 487.59
+    },
+    {
+     "haendler": "camp4.de",
+     "preis": 499.99,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCIiW9bFeGlxG1GZtNrub05fRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvMJiEgJaxqBg3lZpL8-Z7qI1CXCbH5LV5lIQpmaxDXJVJpSsJ48GcVmAyQDExHXdhD0r-VfJy0jmVAFOV15x12tlB3d7Ty4JgNd9vF5c4aOs",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 499.99,
+     "lieferung": "Auf Lager, Lieferzeit 2-3 Werktage oder sofort in Berlin abholen",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 499.99
+    },
+    {
+     "haendler": "jb-vertrieb",
+     "preis": 679.04,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAABMVxCMR9yPbsDFkFUHFUg2yRUoPeTqkCuB5nXaz5L0L9B8cBwYf9-cS_xHj0T9W2jhFHHRusk4rbj1YFXyHTt_SHZG3O3GvytIfiX9ctToY9kZR4HmqO0ZZFmReTHurT0ScbDBeMzV4SGkK_hHzkjUBGhSYGCYHkdB_qP031kkGzeIDDD2xv_oYWF9B9in9sYH78YNFAM7xjz6oKKiSG4oTPR6oVGkqt_SSi65Nu0Qzwjo7DlbftiewgrBR5nv-iw",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 679.04,
+     "lieferung": "lagernd",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 679.04
+    }
+   ],
+   "guenstigster": 449.0,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-28T01:29:16+01:00"
+ "stand": "2026-11-28T04:43:02+01:00"
 }
