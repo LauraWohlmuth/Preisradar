@@ -873,7 +873,74 @@
    "guenstigster": 449.0,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-28T13:19:39+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de",
+     "url": "https://geizhals.de/garmin-forerunner-570-42mm-raspberry-aluminium-translucent-bone-mango-010-02970-02-a3493616.html",
+     "abgerufen_um": "2026-11-28T13:19:39+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 449.0,
+     "angebote_anzahl": 13,
+     "grund": "2 lieferbar"
+    },
+    {
+     "quelle": "bike-components",
+     "url": "https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/",
+     "abgerufen_um": "2026-11-28T13:19:39+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 414.0
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "bike-components",
+     "preis": 414.0,
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 414.0,
+     "url": "https://www.bike-components.de/de/Garmin/Forerunner-570-42-mm-Smartwatch-p216937/?o=1001011085-bone-himbeerrot-transparent-bone-mango",
+     "via": "bike-components",
+     "verfuegbar": false,
+     "preis_mit_code": 414.0
+    },
+    {
+     "haendler": "Fitstore24.de",
+     "preis": 449.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAMwHS63IDUuMJyE8YfzmEPJtwojiaD0ETJQc7kXosGqgMxOqjyeXGM-c23QgVe3yj9GNEq1r2dhhKXT-EELqs9JdCRBU2z6x7e7pbqjr6n2XV-_RFbE3DjK26aaKVfaZ48ThnHUN1DsGrfV04uV0cb-glpVVMT41pdXM2vnI1hQV5Ll2KDkMeV1PfvSAPH1E33zsyMef_MzHeOEa9tw2V77rYnsCDxEZGAF1lw3HeJGOxGiYWyl38i8bSp3dkA6mGm3WMxK07-f-h0z74gcZmjA",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 449.0,
+     "lieferung": "lagernd, 3-4 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 449.0
+    },
+    {
+     "haendler": "camp4.de",
+     "preis": 499.99,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAADVjihqinxazZ6mnzEkOCdkHBzsFgWL2TtJ0V-V5jBlCDBpRL9kylDoB3T_-IyeOrfRT65IuUPNcxVFd_q4bo4lkNurW0P27F0sWcb-GKwKvkcwPNPvd_VvDuIPhKAictPsGLpy6uhuLw3ioRHUEv4oHrebwPvnyDft2GVR4bCDpy0djDkUHMJ7D0LjRdamhVQ",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 499.99,
+     "lieferung": "Auf Lager, Lieferzeit 2-3 Werktage oder sofort in Berlin abholen",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 499.99
+    }
+   ],
+   "guenstigster": 449.0,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-28T12:18:12+01:00"
+ "stand": "2026-11-28T13:19:39+01:00"
 }
