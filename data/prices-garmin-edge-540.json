@@ -3806,7 +3806,169 @@
    "guenstigster": 229.0,
    "neuer_tiefstwert": false,
    "melden": false
+  },
+  {
+   "zeit": "2026-11-28T11:17:55+01:00",
+   "quellen": [
+    {
+     "quelle": "geizhals.de: Garmin Edge 540",
+     "url": "https://geizhals.de/garmin-edge-540-010-02694-01-a2928679.html",
+     "abgerufen_um": "2026-11-28T11:17:55+01:00",
+     "status": "geprüft",
+     "tiefstpreis": 229.0,
+     "angebote_anzahl": 30,
+     "grund": "9 lieferbar"
+    },
+    {
+     "quelle": "mydealz.de",
+     "url": "https://www.mydealz.de/search?q=garmin+edge+540",
+     "abgerufen_um": "2026-11-28T11:17:55+01:00",
+     "status": "geprüft",
+     "grund": "0 aktive Deals zur Variante",
+     "deals": []
+    }
+   ],
+   "angebote": [
+    {
+     "haendler": "Amazon.de",
+     "preis": 229.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAFY4XMbVVXpEZqv2o6_8gg5BoG9oD8EcyoUNeKtCTT6w0FMoq3md0RTVnlju8ztl0IIri7YwXKlH1kHf-peIUd5hrTc8_-_jxThwt88LDDnsv_KtLMMnqGRbAQTeEWevlzQ6drhWwsugu1h0X0H6SEgEUfYh_40SidJobiM2pFFIM8x4knr2s-6hpjKKzcr_jK0tKcY-LO3RIv7mUAUVZd9JRWrXza6wPe0EIH4s8P-5iZNS7TQwv5jq7G3mGPZQZw",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 229.0,
+     "lieferung": null,
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 229.0
+    },
+    {
+     "haendler": "petrulupu86",
+     "preis": 237.08,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAABMVxCMR9yPbsDFkFUHFUg1hXcLyoOwewffoN2oOniY99B8cBwYf9-cS_xHj0T9W2jhFHHRusk4rbj1YFXyHTt_SHZG3O3GvytIfiX9ctToY9kZR4HmqO0ZZFmReTHurT4PnA4w9m7wxuEalCGHRVO_wIF2gyGBVrKNURjieHX8HiKQawp8xgUB3DtMngJ5tpa8MY31E116FS5-jIoknAYAHZXZKl2ErfbO9y1rzV7tX",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 237.08,
+     "lieferung": "lagernd",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 237.08
+    },
+    {
+     "haendler": "0815.eu",
+     "preis": 249.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAGh_-c8RSdtqyb4mU6FBPQ0MTuQh9SNkovERBiAatQFoF4ITd-Gm0r4isX9FzwJaqLdS4iZp0XbwhPQHsbmDtB3HX7_x4B48mkidhTuLq-aVtqnbbb9rsF_NI1ID-wZVGN99aU6cQYd70ISgLSrQqam4ngckcKJZf2t4WXs2dNAk9ZcpXGcpU3gQ5bJyMQ9uE28pb8SUsoMtS9bXbU7KpEHw_Yb_Y7ZOa-HOCy0iQxKp",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 249.0,
+     "lieferung": "Lagernd: Lieferzeit 1-3 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 249.0
+    },
+    {
+     "haendler": "Coolblue",
+     "preis": 249.0,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAGRco6US0yXKgVcOX0InWX1x9xZnmYrzWpVLOh4qcmxE3Nn7pkMbZyo0vn3FkC4uSS_82qpQh7caKJxJJESDEuNRLfJZcmIKWL9bkH3PwC-lHjIfogsYzcUcvZGt6OO4FRmcdx5RvLUJxau8k2BHZEYvEZkX24OV62eISXKN4qalrYEySkLXotazbvSpjhe7SOd43pA43bsEhkMIVAzCftcFC6ZjbPXYItK8k3DcDb82CLE9PY0f8BQFRa8JV8LMpA",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 249.0,
+     "lieferung": "Lieferzeit: 1 Werktag",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 249.0
+    },
+    {
+     "haendler": "TechnikDirekt",
+     "preis": 254.41,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAANfDP1J7C1_RLO-4SZYGl_7KdHWJE0aRFzGp-BxGItW0bpXsDRgg4sK7j47DNjBJ6q9J7Y1NcR05M9mijkr5voltDYJk-NYHazUHDiLBgje7BGo_MPQz11JajwUUww9oBiR0TJYRlzdv7vfn_KKUJZIp3PuGR7-WKgDjJHNGah7eE4-M13f8FEqs6qwvC1ouWQ",
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 254.41,
+     "lieferung": "Auf Lager, Lieferung in 1-3 Werktagen",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 254.41
+    },
+    {
+     "haendler": "Future-X.de",
+     "preis": 270.09,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAIZzRD15LKoxcXWQiiZBQgBKnnCsM9NPzq78EXShDZEBsPhJc1yjtYrQda31cftYbGcuSqBlDdHEEFFquhhWamxmbugi_EXRZTBgvu_trZ2b9sEIqjRiDyrG6ladjjImpP1ekeKaZ7xfozOMs2oaEHEjjRynzMRen8Mj2YnRmNL2P_dzgDmeMTPiaZeDqnaVroikGsKfMYFAdw7TJ4CebaXWgJtZ0md8EZhHLuStIXVNB2V2SpdhK32zvcta81e7Vw",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 270.09,
+     "lieferung": null,
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 270.09
+    },
+    {
+     "haendler": "JB-Computer",
+     "preis": 279.95,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAEIF1TX5b5SDEeMyJy_G1Rp5CDryI43adJox5ZKyY4DIxsKcJ8mdOxNIIjl1GMA3cq03E_VxMNp64McxDo3skt_r49EGHWv9IRCRGyUubiP7FjVSDMvOJ1bX_xwe93flG95UAAdv7dNfsv5OLFVKGbADkTycn5iXolptr7pLW75izSxA6Us698QTaEKQUIOqsD4c-kxWjpZHMyBRpmCqxLjfWQpEZqa2E4nHy8r8BPUjNhHgsu5SGQRmJO_UfVnA7A",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 279.95,
+     "lieferung": "Auf Lager, sofort versandfertig Lieferzeit 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 279.95
+    },
+    {
+     "haendler": "voelkner.de",
+     "preis": 319.94,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAKvXaVYTjjeV5cHYQsk5okhYrINI-0LSnORjZwN6VEw_at5rteojxmk1bwzv3T0eaSF0JnYld9nO7w6pamwJPLUVP99yvo63QMcxMUTARhMQccvXiBOPfN_UsYV3LPpGW9HlPChehoDbj87nm-Y-pFRrLxhX2f6p1eMNM7BvGAoM2KfyGR-xp7r4RaD2WU8Hnj1n9WzvBKXhSndYAssv8JDFn3-seDhzH90jov0Exq4EE__B7gVYYDy46I72KUioP7ibptggesmzsBenTF1y99-BNZvm463kaRriLA8nIUhk0EgkUAYb1AOUGFgMNVDfw4WCFcW5nE4tXTBvjebFqe6GoQg-sv1k9Fs3hMTUdWBfE4-M13f8FEqs6qwvC1ouWQ",
+     "versand": 0.0,
+     "versand_bekannt": true,
+     "gesamtpreis": 319.94,
+     "lieferung": "Auf Lager, Lieferzeit 1-2 Werktage",
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 319.94
+    },
+    {
+     "haendler": "bueromarkt-ag.de",
+     "preis": 368.89,
+     "via": "geizhals.de",
+     "url": "https://geizhals.de/redir/BAAAAFinuIDCBqHDVTSksx5xERhqS3w9KgaBOKRsL00mtq1Np2KOCOujy1DgGnIs-EOo6H0IIctmWw_SxJRjHir4WuENFUV8XPPRAvMyDUYL7Lga01EisU79JUqa0l_USnXIhiHtMbeEVod0HenDSoXvIOYlLikGc8kU49yiXwO-_UAitzDfZnxzyxUdSNyCyIQYopLXeiwhxJGaoOBLEfEQQghwuyoejyr83YfP3Cp1rYypqlxWiOmKM0D7DsdkXM_tebUE5t9oT30P4_0izyXKhh4",
+     "versand": null,
+     "versand_bekannt": false,
+     "gesamtpreis": 368.89,
+     "lieferung": null,
+     "verfuegbar": true,
+     "preis_stand": null,
+     "variante_ok": true,
+     "netzteil_dabei": null,
+     "preis_mit_code": 368.89
+    }
+   ],
+   "guenstigster": 229.0,
+   "neuer_tiefstwert": false,
+   "melden": false
   }
  ],
- "stand": "2026-11-28T10:18:01+01:00"
+ "stand": "2026-11-28T11:17:55+01:00"
 }
